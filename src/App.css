@@ -14,7 +14,7 @@
 
 
 /* Móviles Pequeños */
-@media only screen and (min-width: 350px) and (max-width: 480px) {
+@media (max-width: 480px) {
 
   .App-container {
     background-color: rgb(236, 179, 167);
