@@ -4,10 +4,69 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url('Images/App/FondoApp.png');
+  align-items: center;
+  /* background-image: url('Images/App/FondoApp.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  align-items: center;
+*/
 }
 
+
+/* Móviles Pequeños */
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+
+  .App-container {
+    background-color: rgb(236, 179, 167);
+  }
+
+}
+
+
+/* Móviles Medianos a Grandes */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  .App-container {
+    background-color: rgb(31, 183, 117);
+  }
+
+}
+
+
+/* Tabletas Pequeñas */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .App-container {
+    background-color: rgb(12, 41, 137);
+  }
+
+}
+
+
+/* Tabletas Grandes */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+  .App-container {
+    background-color: rgb(174, 0, 255);
+  }
+
+}
+
+
+/* Laptops y Desktops Pequeños */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+
+  .App-container {
+    background-color: rgb(255, 242, 0);
+  }
+
+}
+
+
+/* Desktops Grandes */
+@media only screen and (min-width: 1441px) {
+
+  .App-container {
+  }
+
+}
