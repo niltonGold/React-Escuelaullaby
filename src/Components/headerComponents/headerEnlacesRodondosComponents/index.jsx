@@ -4,23 +4,23 @@ import { useNavigate } from 'react-router-dom';
 
 export const HeaderEnlacesRedondos = () => {
 
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [active, setActive] = useState(null);
 
   const handleEscuelaDePadresClick = () => {
     setActive('escuelaDePadres');
-    // navigate('/escuelaDePadres');
+    navigate('/escuelaDePadresPage');
   };
 
   const handleZonaPrivadaClick = () => {
     setActive('zonaPrivada');
-    // navigate('/zonaPrivada');
+    navigate('/zonaPrivadaPage');
   };
 
   const handleContactoClick = () => {
     setActive('contacto');
-    // navigate('/contacto');
+    navigate('/contactoPage');
   };
 
   const handleClickOutside = (event) => {
@@ -40,15 +40,15 @@ export const HeaderEnlacesRedondos = () => {
   return (
     <div className='Header-enlaces-redondos-container'>
       <div
-        className={`header-escuelaDePadres logoRedondoHeader ${active === 'escuelaDePadres' ? 'active' : ''}`}
+        className={`header-escuelaDePadres logoRedondoHeader ${active === 'escuelaDePadres' ? 'header-enlaces-redondos-active' : ''}`}
         onClick={handleEscuelaDePadresClick}
       />
       <div
-        className={`header-zonaPrivada logoRedondoHeader ${active === 'zonaPrivada' ? 'active' : ''}`}
+        className={`header-zonaPrivada logoRedondoHeader ${active === 'zonaPrivada' ? 'header-enlaces-redondos-active' : ''}`}
         onClick={handleZonaPrivadaClick}
       />
       <div
-        className={`header-contacto logoRedondoHeader ${active === 'contacto' ? 'active' : ''}`}
+        className={`header-contacto logoRedondoHeader ${active === 'contacto' ? 'header-enlaces-redondos-active' : ''}`}
         onClick={handleContactoClick}
       />
     </div>

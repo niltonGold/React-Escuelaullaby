@@ -27,6 +27,6 @@
         cursor: pointer;
     }
 
-    .logoRedondoHeader.active {
+    .logoRedondoHeader.header-enlaces-redondos-active {
         transform: scale(1.3);
     }
