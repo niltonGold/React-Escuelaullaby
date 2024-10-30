@@ -1,0 +1,13 @@
+    .Lullaby-logo {
+        position: relative;
+        top: 9px;
+        left: -30px;
+        width: 84px;
+        height: 68px;
+        background-image: url('../../../Images/Header/lullabyLogo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+        cursor: pointer;
+    }

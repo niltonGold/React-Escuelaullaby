@@ -1,0 +1,42 @@
+.HeaderPaginasNavegacion-principal-container{
+    width: 100%;
+    background-color: #ddedf7;
+    color: #52646f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 7.5px;
+    height: 1.2rem;
+}
+
+                .HeaderPaginasNavegacion-sub-container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 1rem;
+                    position: relative;
+                    top: -9.5px;
+                    /* background-color: #4197cd; */
+                    padding-left: 3.6rem;
+                    
+                }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                                .headerPaginasNavegacion-inicioCasaLogo{
+                                    background-image: url('../../../Images/Header/inicioCasaLogo.png');
+                                    background-size: cover;
+                                    width: 14px;
+                                    height: 13px;
+                                }
+
+                                        .inicioCasaLogo-hide{
+                                            visibility: hidden;
+                                        }
+
+                                .headerPaginasNavegacion-texto{
+
+                                }

@@ -1,0 +1,32 @@
+    .Header-enlaces-redondos-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        position: relative;
+        top: 0.6rem;
+    }
+
+    .header-escuelaDePadres {
+        background-image: url('../../../Images/Header/escueladepadres.png');
+    }
+
+    .header-zonaPrivada {
+        background-image: url('../../../Images/Header/zonaprivada.png');
+    }
+
+    .header-contacto {
+        background-image: url('../../../Images/Header/contacto.png');
+    }
+
+    .logoRedondoHeader {
+        width: 28px;
+        height: 28px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+
+    .logoRedondoHeader.active {
+        transform: scale(1.3);
+    }
