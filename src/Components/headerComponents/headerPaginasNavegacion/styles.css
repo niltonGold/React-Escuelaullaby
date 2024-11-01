@@ -4,39 +4,65 @@
     color: #52646f;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    font-size: 6.5px;
+    font-size: 6px;
     height: 1.2rem;
 }
 
-                .HeaderPaginasNavegacion-sub-container{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    gap: 0.5rem;
-                    position: relative;
-                    top: -8px;
-                    /* background-color: #4197cd; */
-                    padding-left: 4rem;
-                    
-                }
+            .HeaderPaginasNavegacion-sub-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.5rem;
+                position: relative;
+                top: -8px;
+                /* background-color: #4197cd; */
+                padding-left: 4rem;
+            }
 
-                        .headerPaginasNavegacion-inicioCasaLogo-texto-container {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                        }
+                    .headerPaginasNavegacion-inicioCasaLogo-texto-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
 
-                                .headerPaginasNavegacion-inicioCasaLogo{
-                                    background-image: url('../../../Images/Header/inicioCasaLogo.png');
-                                    background-size: cover;
-                                    width: 14px;
-                                    height: 13px;
-                                }
+                    .headerPaginasNavegacion-inicioCasaLogo-texto-container-noHide{
+                        cursor: pointer;
+                    }
+                            .headerPaginasNavegacion-active{
+                                color: rgb(38, 139, 210);
+                                position: relative;
+                                top: -3px;
+                            }
 
-                                        .inicioCasaLogo-hide{
-                                            visibility: hidden;
-                                        }
+                            .headerPaginasNavegacion-inicioCasaLogo{
+                                background-image: url('../../../Images/Header/inicioCasaLogo.png');
+                                background-size: cover;
+                                width: 14px;
+                                height: 13px;
+                            }
 
-                                .headerPaginasNavegacion-texto{
+                                    .inicioCasaLogo-hide{
+                                        visibility: hidden;
+                                    }
 
-                                }
+                            .headerPaginasNavegacion-texto-inicio{
+                                color: rgb(42, 161, 152)
+                            }
+
+                            .headerPaginasNavegacion-texto{                         
+                            }
+
+                            .headerPaginasNavegacion-texto:hover{
+                                color:rgb(16, 44, 138);
+                                cursor: pointer;
+                            }
+
+                            .headerPaginasNavegacion-texto:active {
+                                background-color: rgb(192, 192, 192);
+                                color: rgb(255, 255, 255);
+                                padding: 1.5px;
+                                border-radius: 8px;  
+                            }
+
+
+                            
