@@ -1,6 +1,74 @@
 .Footer-Principal-Container{
-    background-color: rgb(87, 108, 108, 0.5);
+    background-color: #ddedf7;
     width: 100%;
-    color: white;
     text-align: center;
+    font-size: 6px;
+    display: flex;
+    justify-content: center;
 }
+
+        .footer-subContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: aqua;
+            width: 18rem;
+            justify-content: space-between;
+        }
+
+            .footer-sub-subContainer{
+                display: flex;
+                flex-direction: row;
+                background-color: azure;
+                align-items: center;
+                gap: 0.7rem;
+            }
+            
+            .footer-redesSociales{
+                width: 17px;
+                height: 17px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 100%;
+                border-radius: 5px;
+                
+            }
+
+                    .footer-instagram{
+                        background-image: url('../../../Images/Footer/instagram.png');
+                    }
+                    .footer-facebook{
+                        background-image: url('../../../Images/Footer/facebook.jpg');
+                    }
+                    .footer-x{
+                        background-image: url('../../../Images/Footer/x.png');
+                    }
+
+            .footer-contactanos{
+                color: rgb(103, 122, 133);
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+
+                    .footer-contactanos:hover{
+                        color: rgb(4, 0, 0);
+                    }
+
+            .footer-comundadDeMadrid{
+                background-image: url('../../../Images/Footer/comunidadDeMadrid.png');
+                width: 70px;
+                height: 29px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 100%;
+            }
+
+            .footer-logoLullabyEscudo{
+                background-image: url('../../../Images/Footer/logoLullabyEscudo.png');
+                width: 46px;
+                height: 47px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 100%;
+            }

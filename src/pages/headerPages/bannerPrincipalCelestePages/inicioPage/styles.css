@@ -1,0 +1,17 @@
+.InicioPage-Principal-Container{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    align-items: center;
+    width: 100%;
+}
+
+.inicioPage-parte1-enlacesRedondos-e-imagenes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 17rem;
+    background-color: blueviolet;
+    justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+.EnlacesRedondos-Principal-Container{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.enlacesRedondos-enlaceRedondo{
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-color: rgb(186, 106, 7);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+

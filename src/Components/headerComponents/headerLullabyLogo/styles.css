@@ -10,4 +10,6 @@
         background-size: cover;
         z-index: 2;
         cursor: pointer;
+        background-color: bisque;
+        border-radius: 50px;
     }

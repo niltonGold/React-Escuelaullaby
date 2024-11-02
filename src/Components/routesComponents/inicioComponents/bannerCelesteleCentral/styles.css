@@ -1,0 +1,64 @@
+.BannerCelesteCentral-Principal-Container{
+    background-color: #ddedf7;
+    height: 2rem;
+    font-size: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+        .bannerCelesteCentral-subcontainer{
+            display: flex;
+            flex-direction: row;
+            width: 18rem;
+            /* background-color: bisque; */
+            align-items: center;
+            justify-content: space-between;
+        }
+
+                .bannerCelesteCentral-titulo-texto-container{
+
+                }
+
+                        .bannerCelesteCentral-titulo{
+                            font-weight: 700;
+                        }
+
+                        .bannerCelesteCentral-texto{
+                            color: #268bd2;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+
+                        .bannerCelesteCentral-texto-telefono{
+                            font-weight: 900;
+                            color: rgb(16, 44, 138);
+                            font-size: 7px;
+                        }
+
+                .bannerCelesteCentral-redesSociales-container{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2px;
+                }
+
+                        .bannerCelesteCentral-redSocial{
+                            width: 17px;
+                            height: 17px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 100% 100%;
+                            border-radius: 5px;
+                        }
+
+                        .bannerCelesteCentral-instagram{
+                            background-image: url('../../../../Images/inicio/bannerCelesteCentralRedesSociales/instagram.png');
+                        }
+
+                        .bannerCelesteCentral-facebook{
+                            background-image: url('../../../../Images/inicio/bannerCelesteCentralRedesSociales/facebook.jpg');
+                        }
+
+                        .bannerCelesteCentral-x{
+                            background-image: url('../../../../Images/inicio/bannerCelesteCentralRedesSociales/x.png');
+                        }
