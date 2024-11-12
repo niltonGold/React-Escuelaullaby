@@ -1,0 +1,238 @@
+.InstalacionesEnlacesRedondos-Principal-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .instalacionesEnlacesRedondos-subContainer{
+        display: flex;
+        flex-direction: row;
+
+        /* gap: 1rem; */
+    }
+
+        .instalacionesEnlacesRedondos-Logo{
+            background-color: aqua;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            cursor: pointer;
+            
+            /* width: 53px;
+            height: 53px; */
+        }
+
+
+        .instalacionesEnlacesRedondos-aulasLogo{
+            background-image: url('../../../../../Images/instalaciones/logosRedondosInstalaciones/aulas.png');
+        }
+        .instalacionesEnlacesRedondos-hallYdespachoLogo{
+            background-image: url('../../../../../Images/instalaciones/logosRedondosInstalaciones/hallyDespachos.png');
+        }
+        .instalacionesEnlacesRedondos-comedorLogo{
+            background-image: url('../../../../../Images/instalaciones/logosRedondosInstalaciones/comedor.png');
+        }
+
+
+        .instalacionesEnlacesRedondos-cocinaYlavanderiaLogo{
+            background-image: url('../../../../../Images/instalaciones/logosRedondosInstalaciones/cocinayLavanderia.png');
+        }
+        .instalacionesEnlacesRedondos-patiosLogo{
+            background-image: url('../../../../../Images/instalaciones/logosRedondosInstalaciones/patios.png');
+        }
+        .instalacionesEnlacesRedondos-huertoEinvernaderoLogo{
+            background-image: url('../../../../../Images/instalaciones/logosRedondosInstalaciones/huertoeInvernaderos.png');
+        }
+        .instalacionesEnlacesRedondos-salonDeActosLogo{
+            background-image: url('../../../../../Images/instalaciones/logosRedondosInstalaciones/salondeActos.png');
+        }
+
+
+
+
+@media (max-width: 480px) {
+
+.InstalacionesEnlacesRedondos-Principal-Container{
+}
+
+    .instalacionesEnlacesRedondos-subContainer{
+        gap: 1rem;
+    }
+
+        .instalacionesEnlacesRedondos-Logo{
+            border-radius: 70px;
+            width: 53px;
+            height: 53px;
+        }
+
+
+        .instalacionesEnlacesRedondos-aulasLogo{
+        }
+        .instalacionesEnlacesRedondos-hallYdespachoLogo{
+        }
+        .instalacionesEnlacesRedondos-comedorLogo{
+        }
+
+
+        .instalacionesEnlacesRedondos-cocinaYlavanderiaLogo{
+        }
+        .instalacionesEnlacesRedondos-patiosLogo{
+        }
+        .instalacionesEnlacesRedondos-huertoEinvernaderoLogo{
+        }
+        .instalacionesEnlacesRedondos-salonDeActosLogo{
+        }
+    
+}
+    
+    
+    
+    
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+.InstalacionesEnlacesRedondos-Principal-Container{
+}
+
+    .instalacionesEnlacesRedondos-subContainer{
+        gap: 1.5rem;
+    }
+
+        .instalacionesEnlacesRedondos-Logo{
+            border-radius: 70px;
+            width: 80px;
+            height: 80px;
+        }
+
+
+        .instalacionesEnlacesRedondos-aulasLogo{
+        }
+        .instalacionesEnlacesRedondos-hallYdespachoLogo{
+        }
+        .instalacionesEnlacesRedondos-comedorLogo{
+        }
+
+
+        .instalacionesEnlacesRedondos-cocinaYlavanderiaLogo{
+        }
+        .instalacionesEnlacesRedondos-patiosLogo{
+        }
+        .instalacionesEnlacesRedondos-huertoEinvernaderoLogo{
+        }
+        .instalacionesEnlacesRedondos-salonDeActosLogo{
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.InstalacionesEnlacesRedondos-Principal-Container{
+}
+
+    .instalacionesEnlacesRedondos-subContainer{
+        gap: 2rem;
+    }
+
+        .instalacionesEnlacesRedondos-Logo{
+            border-radius: 70px;
+            width: 128px;
+            height: 128px;
+        }
+
+
+        .instalacionesEnlacesRedondos-aulasLogo{
+        }
+        .instalacionesEnlacesRedondos-hallYdespachoLogo{
+        }
+        .instalacionesEnlacesRedondos-comedorLogo{
+        }
+
+
+        .instalacionesEnlacesRedondos-cocinaYlavanderiaLogo{
+        }
+        .instalacionesEnlacesRedondos-patiosLogo{
+        }
+        .instalacionesEnlacesRedondos-huertoEinvernaderoLogo{
+        }
+        .instalacionesEnlacesRedondos-salonDeActosLogo{
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+.InstalacionesEnlacesRedondos-Principal-Container{
+}
+
+    .instalacionesEnlacesRedondos-subContainer{
+        gap: 2.5rem;
+    }
+
+        .instalacionesEnlacesRedondos-Logo{
+            border-radius: 80px;
+            width: 160px;
+            height: 160px;
+        }
+
+
+        .instalacionesEnlacesRedondos-aulasLogo{
+        }
+        .instalacionesEnlacesRedondos-hallYdespachoLogo{
+        }
+        .instalacionesEnlacesRedondos-comedorLogo{
+        }
+
+
+        .instalacionesEnlacesRedondos-cocinaYlavanderiaLogo{
+        }
+        .instalacionesEnlacesRedondos-patiosLogo{
+        }
+        .instalacionesEnlacesRedondos-huertoEinvernaderoLogo{
+        }
+        .instalacionesEnlacesRedondos-salonDeActosLogo{
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+.InstalacionesEnlacesRedondos-Principal-Container{
+}
+
+    .instalacionesEnlacesRedondos-subContainer{
+        gap: 3rem;
+    }
+
+        .instalacionesEnlacesRedondos-Logo{
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+        }
+
+
+        .instalacionesEnlacesRedondos-aulasLogo{
+        }
+        .instalacionesEnlacesRedondos-hallYdespachoLogo{
+        }
+        .instalacionesEnlacesRedondos-comedorLogo{
+        }
+
+
+        .instalacionesEnlacesRedondos-cocinaYlavanderiaLogo{
+        }
+        .instalacionesEnlacesRedondos-patiosLogo{
+        }
+        .instalacionesEnlacesRedondos-huertoEinvernaderoLogo{
+        }
+        .instalacionesEnlacesRedondos-salonDeActosLogo{
+        }
+
+}

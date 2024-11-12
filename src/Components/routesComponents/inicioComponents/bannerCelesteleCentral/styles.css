@@ -1,17 +1,16 @@
 .BannerCelesteCentral-Principal-Container{
     background-color: #ddedf7;
-    height: 2rem;
-    font-size: 6px;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* height: 2rem;
+    font-size: 6px; */
 }
 
         .bannerCelesteCentral-subcontainer{
             display: flex;
             flex-direction: row;
-            width: 18rem;
-            /* background-color: bisque; */
             align-items: center;
             justify-content: space-between;
         }
@@ -21,7 +20,8 @@
                 }
 
                         .bannerCelesteCentral-titulo{
-                            font-weight: 700;
+
+                            /* font-weight: 700; */
                         }
 
                         .bannerCelesteCentral-texto{
@@ -31,24 +31,28 @@
                         }
 
                         .bannerCelesteCentral-texto-telefono{
-                            font-weight: 900;
                             color: rgb(16, 44, 138);
-                            font-size: 7px;
+
+                            /* font-weight: 900;
+                            font-size: 7px; */
                         }
 
                 .bannerCelesteCentral-redesSociales-container{
                     display: flex;
                     flex-direction: row;
-                    gap: 2px;
+
+                    /* gap: 2px; */
                 }
 
                         .bannerCelesteCentral-redSocial{
-                            width: 17px;
-                            height: 17px;
+                            background-color: rgb(209, 209, 55);
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: 100% 100%;
-                            border-radius: 5px;
+                            cursor: pointer;
+                            /* border-radius: 5px;
+                            width: 17px;
+                            height: 17px; */
                         }
 
                         .bannerCelesteCentral-instagram{
@@ -62,3 +66,253 @@
                         .bannerCelesteCentral-x{
                             background-image: url('../../../../Images/inicio/bannerCelesteCentralRedesSociales/x.png');
                         }
+
+
+
+@media (max-width: 480px) {
+
+    .BannerCelesteCentral-Principal-Container{
+        /* height: 2rem; */
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 6px;
+    }
+    
+            .bannerCelesteCentral-subcontainer{
+            }
+    
+                    .bannerCelesteCentral-titulo-texto-container{
+                    }
+    
+                            .bannerCelesteCentral-titulo{
+                                font-weight: 900;
+                            }
+    
+                            .bannerCelesteCentral-texto{
+                            }
+    
+                            .bannerCelesteCentral-texto-telefono{
+                                font-weight: 900;
+                                font-size: 8px;
+                            }
+    
+                    .bannerCelesteCentral-redesSociales-container{
+                        gap: 3px;
+                    }
+    
+                            .bannerCelesteCentral-redSocial{
+                                border-radius: 5px;
+                                width: 17px;
+                                height: 17px;
+                            }
+    
+                            .bannerCelesteCentral-instagram{
+                            }
+    
+                            .bannerCelesteCentral-facebook{
+                            }
+    
+                            .bannerCelesteCentral-x{
+                            }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .BannerCelesteCentral-Principal-Container{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 8px;
+    }
+    
+            .bannerCelesteCentral-subcontainer{
+            }
+    
+                    .bannerCelesteCentral-titulo-texto-container{
+                    }
+    
+                            .bannerCelesteCentral-titulo{
+                                font-weight: 900;
+                            }
+    
+                            .bannerCelesteCentral-texto{
+                            }
+    
+                            .bannerCelesteCentral-texto-telefono{
+                                font-weight: 900;
+                                font-size: 10px;
+                            }
+    
+                    .bannerCelesteCentral-redesSociales-container{
+                        gap: 10px;
+                    }
+    
+                            .bannerCelesteCentral-redSocial{
+                                border-radius: 5px;
+                                width: 21px;
+                                height: 21px;
+                            }
+    
+                            .bannerCelesteCentral-instagram{
+                            }
+    
+                            .bannerCelesteCentral-facebook{
+                            }
+    
+                            .bannerCelesteCentral-x{
+                            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .BannerCelesteCentral-Principal-Container{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 14px;
+    }
+    
+            .bannerCelesteCentral-subcontainer{
+            }
+    
+                    .bannerCelesteCentral-titulo-texto-container{
+                    }
+    
+                            .bannerCelesteCentral-titulo{
+                                font-weight: 900;
+                            }
+    
+                            .bannerCelesteCentral-texto{
+                            }
+    
+                            .bannerCelesteCentral-texto-telefono{
+                                font-weight: 900;
+                                font-size: 16px;
+                            }
+    
+                    .bannerCelesteCentral-redesSociales-container{
+                        gap: 15px;
+                    }
+    
+                            .bannerCelesteCentral-redSocial{
+                                border-radius: 5px;
+                                width: 32px;
+                                height: 32px;
+                            }
+    
+                            .bannerCelesteCentral-instagram{
+                            }
+    
+                            .bannerCelesteCentral-facebook{
+                            }
+    
+                            .bannerCelesteCentral-x{
+                            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .BannerCelesteCentral-Principal-Container{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 16px;
+    }
+    
+            .bannerCelesteCentral-subcontainer{
+            }
+    
+                    .bannerCelesteCentral-titulo-texto-container{
+                    }
+    
+                            .bannerCelesteCentral-titulo{
+                                font-weight: 900;
+                            }
+    
+                            .bannerCelesteCentral-texto{
+                            }
+    
+                            .bannerCelesteCentral-texto-telefono{
+                                font-weight: 900;
+                                font-size: 18px;
+                            }
+    
+                    .bannerCelesteCentral-redesSociales-container{
+                        gap: 20px;
+                    }
+    
+                            .bannerCelesteCentral-redSocial{
+                                border-radius: 5px;
+                                width: 40px;
+                                height: 40px;
+                            }
+    
+                            .bannerCelesteCentral-instagram{
+                            }
+    
+                            .bannerCelesteCentral-facebook{
+                            }
+    
+                            .bannerCelesteCentral-x{
+                            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .BannerCelesteCentral-Principal-Container{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+    
+            .bannerCelesteCentral-subcontainer{
+            }
+    
+                    .bannerCelesteCentral-titulo-texto-container{
+                    }
+    
+                            .bannerCelesteCentral-titulo{
+                                font-weight: 900;
+                            }
+    
+                            .bannerCelesteCentral-texto{
+                            }
+    
+                            .bannerCelesteCentral-texto-telefono{
+                                font-weight: 900;
+                                font-size: 20px;
+                            }
+    
+                    .bannerCelesteCentral-redesSociales-container{
+                        gap: 25px;
+                    }
+    
+                            .bannerCelesteCentral-redSocial{
+                                border-radius: 5px;
+                                width: 50px;
+                                height: 50px;
+                            }
+    
+                            .bannerCelesteCentral-instagram{
+                            }
+    
+                            .bannerCelesteCentral-facebook{
+                            }
+    
+                            .bannerCelesteCentral-x{
+                            }
+
+}

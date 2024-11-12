@@ -1,15 +1,93 @@
+.Lullaby-logo {
+    /* background-color: bisque; */
+    position: relative;
+    background-image: url('../../../Images/Header/lullabyLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    cursor: pointer;
+    
+    /* border-radius: 50px;
+    top: 9px;
+    left: -22px;
+    width: 84px;
+    height: 68px; */
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
     .Lullaby-logo {
-        position: relative;
+        border-radius: 60px;
         top: 9px;
         left: -22px;
         width: 84px;
         height: 68px;
-        background-image: url('../../../Images/Header/lullabyLogo.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        z-index: 2;
-        cursor: pointer;
-        background-color: bisque;
-        border-radius: 50px;
     }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .Lullaby-logo {
+        border-radius: 60px;
+        top: 6px;
+        left: -33px;
+        width: 126px;
+        height: 102px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .Lullaby-logo {
+        border-radius: 80px;
+        top: 9px;
+        left: -49px;
+        width: 202px;
+        height: 164px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .Lullaby-logo {
+        border-radius: 100px;
+        top: 12px;
+        left: -60px;
+        width: 253px;
+        height: 205px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .Lullaby-logo {
+        border-radius: 110px;
+        top: 9px;
+        left: -75px;
+        width: 316px;
+        height: 257px;
+    }
+
+}

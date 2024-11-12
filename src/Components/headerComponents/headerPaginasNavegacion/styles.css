@@ -1,22 +1,16 @@
 .HeaderPaginasNavegacion-principal-container{
-    width: 100%;
     background-color: #ddedf7;
+    width: 100%;
     color: #52646f;
     font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 6px;
-    height: 1.2rem;
 }
 
             .HeaderPaginasNavegacion-sub-container{
+                /* background-color: #4197cd; */
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: 0.5rem;
                 position: relative;
-                top: -8px;
-                /* background-color: #4197cd; */
-                padding-left: 4rem;
             }
 
                     .headerPaginasNavegacion-inicioCasaLogo-texto-container {
@@ -31,14 +25,11 @@
                             .headerPaginasNavegacion-active{
                                 color: rgb(38, 139, 210);
                                 position: relative;
-                                top: -3px;
                             }
 
                             .headerPaginasNavegacion-inicioCasaLogo{
                                 background-image: url('../../../Images/Header/inicioCasaLogo.png');
                                 background-size: cover;
-                                width: 14px;
-                                height: 13px;
                             }
 
                                     .inicioCasaLogo-hide{
@@ -49,7 +40,8 @@
                                 color: rgb(42, 161, 152)
                             }
 
-                            .headerPaginasNavegacion-texto{                         
+                            .headerPaginasNavegacion-texto{
+                                white-space: nowrap; /* Evita que el texto se ajuste en varias líneas */                      
                             }
 
                             .headerPaginasNavegacion-texto:hover{
@@ -60,9 +52,425 @@
                             .headerPaginasNavegacion-texto:active {
                                 background-color: rgb(192, 192, 192);
                                 color: rgb(255, 255, 255);
-                                padding: 1.5px;
-                                border-radius: 8px;  
                             }
 
+/* Menu desplegable */
+.headerPaginasNavegacion_MenuDesplegable {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Aparece justo debajo del botón */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.8s ease; /* Transición de opacidad */
+    pointer-events: none; /* Evita que el menú interactúe cuando está oculto */
+
+    /* padding: 3px;
+    gap: 3px;
+    left: -1.5rem; */
+}
+
+/* Menú visible */
+.dropdown-menu.show {
+    opacity: 1;
+    pointer-events: auto; /* Permite la interacción cuando está visible */
+    color: rgb(38, 139, 210);
+
+}
+
+.dropdown-menu div {
+    cursor: pointer;
+    transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+.dropdown-menu div:hover {
+    color:rgb(16, 44, 138);
+    background-color: rgb(206, 222, 232);
+}
+
+.subpagina{
+    background-color: #ddedf7;
+
+    /* padding: 3px; */
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .HeaderPaginasNavegacion-principal-container{
+        font-weight: 900;
+        font-size: 6px;
+        height: 1.2rem;
+    }
+
+                .HeaderPaginasNavegacion-sub-container{
+                    gap: 0.5rem;
+                    top: -9px;
+                    padding-left: 4rem;
+                }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container {
+                        }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container-noHide{
+                        }
+                                .headerPaginasNavegacion-active{
+                                    top: -3px;
+                                }
+
+                                .headerPaginasNavegacion-inicioCasaLogo{
+                                    width: 14px;
+                                    height: 13px;
+                                }
+
+                                        .inicioCasaLogo-hide{
+                                        }
+
+                                .headerPaginasNavegacion-texto-inicio{
+                                }
+
+                                .headerPaginasNavegacion-texto{ 
+                                    padding: 1.2px;
+                                    border-radius: 8px;                          
+                                }
+
+                                .headerPaginasNavegacion-texto:hover{
+                                }
+
+                                .headerPaginasNavegacion-texto:active {
+                                    padding: 1.2px;
+                                    border-radius: 8px;  
+                                }
+
+    /* Menu desplegable */
+    .headerPaginasNavegacion_MenuDesplegable {
+    }
+
+    .dropdown-menu {
+        padding: 1.5px;
+        gap: 1.5px;
+        left: -1rem;
+    }
+
+    /* Menú visible */
+    .dropdown-menu.show {
+    }
+
+    .dropdown-menu div {
+    }
+
+    .dropdown-menu div:hover {
+    }
+
+    .subpagina{
+        padding: 3px;
+    }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .HeaderPaginasNavegacion-principal-container{
+        font-weight: 900;
+        font-size: 8px;
+        height: 1.6rem;
+    }
+
+                .HeaderPaginasNavegacion-sub-container{
+                    gap: 1rem;
+                    top: -8.5px;
+                    padding-left: 6.5rem;
+                }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container {
+                        }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container-noHide{
+                        }
+                                .headerPaginasNavegacion-active{
+                                    top: -4px;
+                                }
+
+                                .headerPaginasNavegacion-inicioCasaLogo{
+                                    width: 15px;
+                                    height: 14px;
+                                }
+
+                                        .inicioCasaLogo-hide{
+                                        }
+
+                                .headerPaginasNavegacion-texto-inicio{
+                                }
+
+                                .headerPaginasNavegacion-texto{ 
+                                    padding: 1.8px;
+                                    border-radius: 8px;                         
+                                }
+
+                                .headerPaginasNavegacion-texto:hover{
+                                }
+
+                                .headerPaginasNavegacion-texto:active {
+                                    padding: 1.8px;
+                                    border-radius: 8px;  
+                                }
+
+    /* Menu desplegable */
+    .headerPaginasNavegacion_MenuDesplegable {
+    }
+
+    .dropdown-menu {
+        padding: 1.5px;
+        gap: 1.5px;
+        left: -1rem;
+    }
+
+    /* Menú visible */
+    .dropdown-menu.show {
+    }
+
+    .dropdown-menu div {
+    }
+
+    .dropdown-menu div:hover {
+    }
+
+    .subpagina{
+        padding: 3px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .HeaderPaginasNavegacion-principal-container{
+        font-weight: 900;
+        font-size: 13px;
+        height: 2.5rem;
+    }
+
+                .HeaderPaginasNavegacion-sub-container{
+                    gap: 1.7rem;
+                    top: -13px;
+                    padding-left: 10rem;
+                }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container {
+                        }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container-noHide{
+                        }
+                                .headerPaginasNavegacion-active{
+                                    top: -6px;
+                                }
+
+                                .headerPaginasNavegacion-inicioCasaLogo{
+                                    width: 23px;
+                                    height: 21px;
+                                }
+
+                                        .inicioCasaLogo-hide{
+                                        }
+
+                                .headerPaginasNavegacion-texto-inicio{
+                                }
+
+                                .headerPaginasNavegacion-texto{
+                                    padding: 3.5px;
+                                    border-radius: 10px;                         
+                                }
+
+                                .headerPaginasNavegacion-texto:hover{
+                                }
+
+                                .headerPaginasNavegacion-texto:active {
+                                    padding: 3.5px;
+                                    border-radius: 10px;  
+                                }
+
+    /* Menu desplegable */
+    .headerPaginasNavegacion_MenuDesplegable {
+    }
+
+    .dropdown-menu {
+        padding: 2px;
+        gap: 2px;
+        left: -1.5rem;
+    }
+
+    /* Menú visible */
+    .dropdown-menu.show {
+    }
+
+    .dropdown-menu div {
+    }
+
+    .dropdown-menu div:hover {
+    }
+
+    .subpagina{
+        padding: 3px;
+    }
+
+}
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .HeaderPaginasNavegacion-principal-container{
+        font-weight: 900;
+        font-size: 17px;
+        height: 3.2rem;
+    }
+
+                .HeaderPaginasNavegacion-sub-container{
+                    gap: 1.6rem;
+                    top: -15.5px;
+                    padding-left: 13rem;
+                }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container {
+                        }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container-noHide{
+                        }
+                                .headerPaginasNavegacion-active{
+                                    top: -6px;
+                                }
+
+                                .headerPaginasNavegacion-inicioCasaLogo{
+                                    width: 28px;
+                                    height: 26px;
+                                }
+
+                                        .inicioCasaLogo-hide{
+                                        }
+
+                                .headerPaginasNavegacion-texto-inicio{
+                                }
+
+                                .headerPaginasNavegacion-texto{  
+                                    padding: 4px;
+                                    border-radius: 12px;                         
+                                }
+
+                                .headerPaginasNavegacion-texto:hover{
+                                }
+
+                                .headerPaginasNavegacion-texto:active {
+                                    padding: 4px;
+                                    border-radius: 12px;  
+                                }
+
+    /* Menu desplegable */
+    .headerPaginasNavegacion_MenuDesplegable {
+    }
+
+    .dropdown-menu {
+        padding: 2px;
+        gap: 2px;
+        left: -1.8rem;
+    }
+
+    /* Menú visible */
+    .dropdown-menu.show {
+    }
+
+    .dropdown-menu div {
+    }
+
+    .dropdown-menu div:hover {
+    }
+
+    .subpagina{
+        padding: 3px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .HeaderPaginasNavegacion-principal-container{
+        font-weight: 900;
+        font-size: 21px;
+        height: 3.8rem;
+    }
+
+                .HeaderPaginasNavegacion-sub-container{
+                    gap: 2.1rem;
+                    top: -22px;
+                    padding-left: 15.5rem;
+                }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container {
+                        }
+
+                        .headerPaginasNavegacion-inicioCasaLogo-texto-container-noHide{
+                        }
+                                .headerPaginasNavegacion-active{
+                                    top: -7px;
+                                }
+
+                                .headerPaginasNavegacion-inicioCasaLogo{
+                                    width: 35px;
+                                    height: 32px;
+                                }
+
+                                        .inicioCasaLogo-hide{
+                                        }
+
+                                .headerPaginasNavegacion-texto-inicio{
+                                }
+
+                                .headerPaginasNavegacion-texto{
+                                    padding: 6px;
+                                    border-radius: 15px;                     
+                                }
+
+                                .headerPaginasNavegacion-texto:hover{
+                                }
+
+                                .headerPaginasNavegacion-texto:active {
+                                    padding: 6px;
+                                    border-radius: 15px;  
+                                }
+
+    /* Menu desplegable */
+    .headerPaginasNavegacion_MenuDesplegable {
+    }
+
+    .dropdown-menu {
+        padding: 3px;
+        gap: 3px;
+        left: -2.3rem;
+    }
+
+    /* Menú visible */
+    .dropdown-menu.show {
+    }
+
+    .dropdown-menu div {
+    }
+
+    .dropdown-menu div:hover {
+    }
+
+    .subpagina{
+        padding: 3px;
+    }
+
+}
 
                             

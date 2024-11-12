@@ -6,86 +6,80 @@
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
-  /* background-image: url('Images/App/FondoApp.png');
+  background-image: url('Images/App/FondoApp.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-*/
+
 }
-
-
-/* .Main-Principal-Container{
-  flex-grow: 1;
-  width: 17rem;
-  background-color: rgb(230, 208, 208, 0.5);
-} */
 
 .main-container{
   flex-grow: 1;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-y: scroll;
 }
 
 
 
-/* Móviles Pequeños */
+
+
+
 @media (max-width: 480px) {
 
   .App-container {
-    background-color: rgb(236, 179, 167);
+    /* background-color: rgb(236, 179, 167); */
   }
 
 }
 
 
-/* Móviles Medianos a Grandes */
+
+
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
   .App-container {
-    background-color: rgb(31, 183, 117);
+    /* background-color: rgb(31, 183, 117); */
   }
 
 }
 
 
-/* Tabletas Pequeñas */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
 
   .App-container {
-    background-color: rgb(12, 41, 137);
+    /* background-color: rgb(12, 41, 137); */
   }
 
 }
 
 
-/* Tabletas Grandes */
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
 
   .App-container {
-    background-color: rgb(174, 0, 255);
+    /* background-color: rgb(174, 0, 255); */
   }
 
 }
 
 
-/* Laptops y Desktops Pequeños */
-@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+
+
+@media only screen and (min-width: 1200px) {
 
   .App-container {
-    background-color: rgb(255, 242, 0);
+    /* background-color: rgb(255, 242, 0); */
   }
 
 }
 
-
-/* Desktops Grandes */
-@media only screen and (min-width: 1441px) {
-
-  .App-container {
-  }
-
-}

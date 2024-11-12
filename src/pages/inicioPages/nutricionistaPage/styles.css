@@ -1,0 +1,417 @@
+.nutricionPage-volverAinicio-container{
+    color: #b58900;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    background-color: initial;
+    letter-spacing: normal;
+    text-shadow: none;
+    text-align: justify;
+    cursor: pointer;
+    display: flex;
+    /* background-color: rgb(125, 111, 91); */
+
+    /* font-size: 5px; */
+}
+
+        .nutricionPage-volverAinicio-subContainer{
+
+            /* padding: 3px;
+            border-radius: 5px; */
+        }
+        .nutricionPage-volverAinicio-subContainer:hover{
+            background-color: rgba(176, 213, 235, 0.5);
+ 
+            /* padding: 3px;
+            border-radius: 5px; */
+        }
+
+.nutricionPage-subContainer{
+        /* background-color: rgb(114, 114, 223); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        text-align: justify;
+        font-weight: 400;
+
+        /* gap: 1rem;
+        font-size: 5px;
+        line-height: 8px; */
+}
+
+        .nutricionPage-nutricionLogo-container{
+            /* background-color: rgb(98, 188, 188); */
+            display: flex;
+            justify-content: center;
+        }
+    
+    
+                .nutricionPage-nutricionLogo{
+                    background-image: url('../../../Images/inicio/nutricionista/nutricionistaLogo.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                    /* background-color: antiquewhite; */
+    
+                    /* border-radius: 18px;
+                    width: 33px;
+                    height: 33px; */
+                }
+
+        .nutricionPage-parrafo{
+
+        }
+
+        .nutricionPage-parrafo-conSangria-container{
+
+        }
+
+                .nutricionPage-parrafoSangria{
+                    position: relative;
+
+                    /* padding-left: 0.3rem; */
+                }
+                .nutricionPage-parrafoSangria::before{
+                    content: '-';
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0; 
+                }
+
+        .nutricionPage-imagenes-container{
+            position: relative;
+            overflow: hidden;
+
+            /* width: 206px;
+            height: 250px; */
+        }
+
+                .nutricionImages{
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    transition: opacity 1s ease-in-out; /* Controla la transición de desvanecimiento */
+                }
+
+                .nutricion-fade-in {
+                    opacity: 1;
+                }
+                
+                .nutricion-fade-out {
+                    opacity: 0;
+                }
+
+
+    
+
+@media (max-width: 480px) {
+
+.nutricionPage-volverAinicio-container{
+    font-size: 5px;
+}
+
+        .nutricionPage-volverAinicio-subContainer{
+            padding: 3px;
+            border-radius: 5px;
+        }
+        .nutricionPage-volverAinicio-subContainer:hover{
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+.nutricionPage-subContainer{
+        gap: 1rem;
+        font-size: 5px;
+        line-height: 8px;
+}
+
+        .nutricionPage-nutricionLogo-container{
+        }
+    
+    
+                .nutricionPage-nutricionLogo{
+                    border-radius: 18px;
+                    width: 33px;
+                    height: 33px;
+                }
+
+        .nutricionPage-parrafo{
+        }
+
+        .nutricionPage-parrafo-conSangria-container{
+        }
+
+                .nutricionPage-parrafoSangria{
+                    padding-left: 0.3rem;
+                }
+                .nutricionPage-parrafoSangria::before{
+                }
+
+        .nutricionPage-imagenes-container{
+            width: 260px;
+            height: 155px;
+        }
+
+                .nutricionImages{
+                }
+
+                .nutricion-fade-in {
+                }
+                
+                .nutricion-fade-out {
+                }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+.nutricionPage-volverAinicio-container{
+    font-size: 7px;
+}
+
+        .nutricionPage-volverAinicio-subContainer{
+            padding: 4px;
+            border-radius: 7px;
+        }
+        .nutricionPage-volverAinicio-subContainer:hover{
+            padding: 4px;
+            border-radius: 7px;
+        }
+
+.nutricionPage-subContainer{
+        gap: 1.5rem;
+        font-size: 7px;
+        line-height: 10px;
+}
+
+        .nutricionPage-nutricionLogo-container{
+        }
+    
+    
+                .nutricionPage-nutricionLogo{
+                    border-radius: 25px;
+                    width: 49px;
+                    height: 49px;
+                }
+
+        .nutricionPage-parrafo{
+        }
+
+        .nutricionPage-parrafo-conSangria-container{
+        }
+
+                .nutricionPage-parrafoSangria{
+                    padding-left: 0.4rem;
+                }
+                .nutricionPage-parrafoSangria::before{
+                }
+
+        .nutricionPage-imagenes-container{
+            width: 390px;
+            height: 233px;
+        }
+
+                .nutricionImages{
+                }
+
+                .nutricion-fade-in {
+                }
+                
+                .nutricion-fade-out {
+                }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.nutricionPage-volverAinicio-container{
+    font-size: 11px;
+}
+
+        .nutricionPage-volverAinicio-subContainer{
+            padding: 6px;
+            border-radius: 10px;
+        }
+        .nutricionPage-volverAinicio-subContainer:hover{
+            padding: 6px;
+            border-radius: 10px;
+        }
+
+.nutricionPage-subContainer{
+        gap: 2rem;
+        font-size: 11px;
+        line-height: 18px;
+}
+
+        .nutricionPage-nutricionLogo-container{
+        }
+    
+    
+                .nutricionPage-nutricionLogo{
+                    border-radius: 40px;
+                    width: 80px;
+                    height: 80px;
+                }
+
+        .nutricionPage-parrafo{
+        }
+
+        .nutricionPage-parrafo-conSangria-container{
+        }
+
+                .nutricionPage-parrafoSangria{
+                    padding-left: 0.7rem;
+                }
+                .nutricionPage-parrafoSangria::before{
+                }
+
+        .nutricionPage-imagenes-container{
+            width: 624px;
+            height: 373px;
+        }
+
+                .nutricionImages{
+                }
+
+                .nutricion-fade-in {
+                }
+                
+                .nutricion-fade-out {
+                }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+.nutricionPage-volverAinicio-container{
+    font-size: 15px;
+}
+
+        .nutricionPage-volverAinicio-subContainer{
+            padding: 8px;
+            border-radius: 12px;
+        }
+        .nutricionPage-volverAinicio-subContainer:hover{
+            padding: 8px;
+            border-radius: 12px;
+        }
+
+.nutricionPage-subContainer{
+        gap: 2.5rem;
+        font-size: 15px;
+        line-height: 23px;
+}
+
+        .nutricionPage-nutricionLogo-container{
+        }
+    
+    
+                .nutricionPage-nutricionLogo{
+                    border-radius: 50px;
+                    width: 100px;
+                    height: 100px;
+                }
+
+        .nutricionPage-parrafo{
+        }
+
+        .nutricionPage-parrafo-conSangria-container{
+        }
+
+                .nutricionPage-parrafoSangria{
+                    padding-left: 0.7rem;
+                }
+                .nutricionPage-parrafoSangria::before{
+                }
+
+        .nutricionPage-imagenes-container{
+            width: 780px;
+            height: 466px;
+        }
+
+                .nutricionImages{
+                }
+
+                .nutricion-fade-in {
+                }
+                
+                .nutricion-fade-out {
+                }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+.nutricionPage-volverAinicio-container{
+    font-size: 18px;
+}
+
+        .nutricionPage-volverAinicio-subContainer{
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .nutricionPage-volverAinicio-subContainer:hover{
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+.nutricionPage-subContainer{
+        gap: 3rem;
+        font-size: 18px;
+        line-height: 28px;
+}
+
+        .nutricionPage-nutricionLogo-container{
+        }
+    
+    
+                .nutricionPage-nutricionLogo{
+                    border-radius: 60px;
+                    width: 125px;
+                    height: 125px;
+                }
+
+        .nutricionPage-parrafo{
+        }
+
+        .nutricionPage-parrafo-conSangria-container{
+        }
+
+                .nutricionPage-parrafoSangria{
+                    padding-left: 1rem;
+                }
+                .nutricionPage-parrafoSangria::before{
+                }
+
+        .nutricionPage-imagenes-container{
+            width: 975px;
+            height: 583px;
+        }
+
+                .nutricionImages{
+                }
+
+                .nutricion-fade-in {
+                }
+                
+                .nutricion-fade-out {
+                }
+
+}

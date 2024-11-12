@@ -2,36 +2,38 @@
     background-color: #ddedf7;
     width: 100%;
     text-align: center;
-    font-size: 6px;
     display: flex;
     justify-content: center;
+
+    /* font-size: 6px; */
 }
 
         .footer-subContainer{
+            /* background-color: aqua; */
             display: flex;
             flex-direction: row;
             align-items: center;
-            background-color: aqua;
-            width: 18rem;
             justify-content: space-between;
         }
 
             .footer-sub-subContainer{
+                /* background-color: azure; */
                 display: flex;
                 flex-direction: row;
-                background-color: azure;
                 align-items: center;
-                gap: 0.7rem;
+
+                /* gap: 0.7rem; */
             }
             
             .footer-redesSociales{
-                width: 17px;
-                height: 17px;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100% 100%;
-                border-radius: 5px;
-                
+                /* background-color: blue; */
+                cursor: pointer;
+                /* width: 17px;
+                height: 17px;
+                border-radius: 5px; */
             }
 
                     .footer-instagram{
@@ -49,6 +51,8 @@
                 cursor: pointer;
                 display: flex;
                 align-items: center;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 800;
             }
 
                     .footer-contactanos:hover{
@@ -57,18 +61,259 @@
 
             .footer-comundadDeMadrid{
                 background-image: url('../../../Images/Footer/comunidadDeMadrid.png');
-                width: 70px;
-                height: 29px;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100% 100%;
+                cursor: pointer;
+
+                /* width: 70px;
+                height: 29px; */
             }
 
             .footer-logoLullabyEscudo{
                 background-image: url('../../../Images/Footer/logoLullabyEscudo.png');
-                width: 46px;
-                height: 47px;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100% 100%;
+                cursor: pointer;
+
+                /* width: 46px;
+                height: 47px; */
             }
+
+
+
+
+@media (max-width: 480px) {
+
+    .Footer-Principal-Container{
+        font-size: 6px;
+    }
+    
+            .footer-subContainer{
+            }
+    
+                .footer-sub-subContainer{
+                    gap: 0.7rem;
+                }
+                
+                .footer-redesSociales{ 
+                    width: 17px;
+                    height: 17px;
+                }
+    
+                        .footer-instagram{
+                        }
+                        .footer-facebook{
+                        }
+                        .footer-x{
+                        }
+    
+                .footer-contactanos{
+                }
+    
+                        .footer-contactanos:hover{
+                        }
+    
+                .footer-comundadDeMadrid{
+                    width: 70px;
+                    height: 29px;
+                }
+    
+                .footer-logoLullabyEscudo{
+                    width: 46px;
+                    height: 47px;
+                }
+    
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .Footer-Principal-Container{
+        font-size: 8px;
+    }
+    
+            .footer-subContainer{
+            }
+    
+                .footer-sub-subContainer{
+                    gap: 1.5rem;
+                }
+                
+                .footer-redesSociales{ 
+                    width: 21px;
+                    height: 21px;
+                    /* border-radius: 5px; */
+                }
+    
+                        .footer-instagram{
+                        }
+                        .footer-facebook{
+                        }
+                        .footer-x{
+                        }
+    
+                .footer-contactanos{
+                }
+    
+                        .footer-contactanos:hover{
+                        }
+    
+                .footer-comundadDeMadrid{
+                    width: 105px;
+                    height: 43px;
+                }
+    
+                .footer-logoLullabyEscudo{
+                    width: 68px;
+                    height: 70px;
+                }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .Footer-Principal-Container{
+        font-size: 19px;
+    }
+    
+            .footer-subContainer{
+            }
+    
+                .footer-sub-subContainer{
+                    gap: 1.5rem;
+                }
+                
+                .footer-redesSociales{ 
+                    width: 32px;
+                    height: 32px;
+                    /* border-radius: 5px; */
+                }
+    
+                        .footer-instagram{
+                        }
+                        .footer-facebook{
+                        }
+                        .footer-x{
+                        }
+    
+                .footer-contactanos{
+                }
+    
+                        .footer-contactanos:hover{
+                        }
+    
+                .footer-comundadDeMadrid{
+                    width: 168px;
+                    height: 69px;
+                }
+    
+                .footer-logoLullabyEscudo{
+                    width: 109px;
+                    height: 112px;
+                }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .Footer-Principal-Container{
+        font-size: 20px;
+    }
+    
+            .footer-subContainer{
+            }
+    
+                .footer-sub-subContainer{
+                    gap: 2rem;
+                }
+                
+                .footer-redesSociales{ 
+                    width: 40px;
+                    height: 40px;
+                    /* border-radius: 5px; */
+                }
+    
+                        .footer-instagram{
+                        }
+                        .footer-facebook{
+                        }
+                        .footer-x{
+                        }
+    
+                .footer-contactanos{
+                }
+    
+                        .footer-contactanos:hover{
+                        }
+    
+                .footer-comundadDeMadrid{
+                    width: 210px;
+                    height: 86px;
+                }
+    
+                .footer-logoLullabyEscudo{
+                    width: 136px;
+                    height: 140px;
+                }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .Footer-Principal-Container{
+        font-size: 22px;
+    }
+    
+            .footer-subContainer{
+            }
+    
+                .footer-sub-subContainer{
+                    gap: 2.5rem;
+                }
+                
+                .footer-redesSociales{ 
+                    width: 50px;
+                    height: 50px;
+                    /* border-radius: 5px; */
+                }
+    
+                        .footer-instagram{
+                        }
+                        .footer-facebook{
+                        }
+                        .footer-x{
+                        }
+    
+                .footer-contactanos{
+                }
+    
+                        .footer-contactanos:hover{
+                        }
+    
+                .footer-comundadDeMadrid{
+                    width: 263px;
+                    height: 108px;
+                }
+    
+                .footer-logoLullabyEscudo{
+                    width: 170px;
+                    height: 175px;
+                }
+
+}
+              

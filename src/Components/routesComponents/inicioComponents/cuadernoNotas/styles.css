@@ -1,55 +1,277 @@
 .CuadernoNotas-Principal-Container{
-    width: 262px;
-    height: 164px;
-    background-image: url('../../../../Images/inicio/cuadernoNotas/cuadernoNotas.png');
+    background-color: bisque;
+    
+
+     background-image: url('../../../../Images/inicio/cuadernoNotas/cuadernoNotas.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-color: bisque;
     display: flex;
     align-items: center;
     align-self: center;
     justify-content: center;
-    /* margin-bottom: 2rem; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
         .cuadernoNotas-subContainer{
-            font-size: 5px;
             display: flex;
             flex-direction: row;
-            /* background-color: rgb(112, 229, 229, 0.5); */
+
+            /* font-size: 5px;
             width: 220px;
-            height: 108px;
+            height: 108px; */
         }
 
         
 
                 .cuadernoNotas-parrafo-Container{
+                    /* background-color: rgba(88, 249, 196, 0.4); */
                     display: flex;
                     flex-direction: column;
-                    gap: 0.4rem;
-                    /* background-color: rgb(155, 242, 213, 0.5); */
+
+                    /* gap: 0.4rem; */
                 }
 
                 
                         .cuadernoNotas-parrafo-titulo{
-                            font-size: 10px;
-                            font-weight: 500;
                             color: rgb(16, 44, 138);
-                            line-height: 11px;
-
+                            
+                            /* line-height: 11px;
+                            font-size: 10px;
+                            font-weight: 500; */
                         }
 
                         .cuadernoNotas-parrafo{
-                            line-height: 7px;
+
+                            /* line-height: 7px; */
                         }
 
         .cuadernoNotas-lineaDivisora{
             background-color: rgb(184, 200, 210);
-            width: 7.5px;
+
+            /* width: 7.5px;
             height: 110px;
             margin-top: 10px;
             margin-left: 0.5rem;
-            margin-right: 0.5rem;
+            margin-right: 0.5rem; */
         }
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .CuadernoNotas-Principal-Container{
+        height: 164px;
+        margin-bottom: 0rem;
+    }
+
+            .cuadernoNotas-subContainer{
+                font-size: 5px;
+                width: 220px;
+                height: 108px;
+            }
+
+            
+
+                    .cuadernoNotas-parrafo-Container{
+                        gap: 0.4rem;
+                    }
+
+                    
+                            .cuadernoNotas-parrafo-titulo{
+                                line-height: 11px;
+                                font-size: 10px;
+                                font-weight: 500;
+                            }
+
+                            .cuadernoNotas-parrafo{
+                                line-height: 7px;
+                            }
+
+            .cuadernoNotas-lineaDivisora{
+                width: 7.5px;
+                height: 110px;
+                margin-top: 10px;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .CuadernoNotas-Principal-Container{
+        height: 246px;
+        margin-bottom: 0rem;
+    }
+
+            .cuadernoNotas-subContainer{
+                font-size: 7px;
+                width: 330px;
+                height: 165px;
+            }
+
+            
+
+                    .cuadernoNotas-parrafo-Container{
+                        gap: 0.5rem;
+                    }
+
+                    
+                            .cuadernoNotas-parrafo-titulo{
+                                line-height: 18px;
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+
+                            .cuadernoNotas-parrafo{
+                                line-height: 10px;
+                            }
+
+            .cuadernoNotas-lineaDivisora{
+                width: 13px;
+                height: 170px;
+                margin-top: 10px;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .CuadernoNotas-Principal-Container{
+        height: 393px;
+        margin-bottom: 4rem;
+    }
+
+            .cuadernoNotas-subContainer{
+                font-size: 12px;
+                width: 530px;
+                height: 260px;
+            }
+
+            
+
+                    .cuadernoNotas-parrafo-Container{
+                        gap: 1rem;
+                    }
+
+                    
+                            .cuadernoNotas-parrafo-titulo{
+                                line-height: 29px;
+                                font-size: 25px;
+                                font-weight: 600;
+                            }
+
+                            .cuadernoNotas-parrafo{
+                                line-height: 17px;
+                            }
+
+            .cuadernoNotas-lineaDivisora{
+                width: 17px;
+                height: 280px;
+                margin-top: 10px;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .CuadernoNotas-Principal-Container{
+        height: 491px;
+        margin-bottom: 5rem;
+    }
+
+            .cuadernoNotas-subContainer{
+                font-size: 16px;
+                width: 670px;
+                height: 320px;
+            }
+
+            
+
+                    .cuadernoNotas-parrafo-Container{
+                        gap: 1.5rem;
+                    }
+
+                    
+                            .cuadernoNotas-parrafo-titulo{
+                                line-height: 38px;
+                                font-size: 32px;
+                                font-weight: 600;
+                            }
+
+                            .cuadernoNotas-parrafo{
+                                line-height: 22px;
+                            }
+
+            .cuadernoNotas-lineaDivisora{
+                width: 20px;
+                height: 360px;
+                margin-top: 10px;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .CuadernoNotas-Principal-Container{
+        height: 613px;
+        margin-bottom: 5rem;
+    }
+
+            .cuadernoNotas-subContainer{
+                font-size: 20px;
+                width: 820px;
+                height: 410px;
+            }
+
+            
+
+                    .cuadernoNotas-parrafo-Container{
+                        gap: 2rem;
+                    }
+
+                    
+                            .cuadernoNotas-parrafo-titulo{
+                                line-height: 43px;
+                                font-size: 35px;
+                                font-weight: 600;
+                            }
+
+                            .cuadernoNotas-parrafo{
+                                line-height: 26px;
+                            }
+
+            .cuadernoNotas-lineaDivisora{
+                width: 28px;
+                height: 460px;
+                margin-top: 10px;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+}

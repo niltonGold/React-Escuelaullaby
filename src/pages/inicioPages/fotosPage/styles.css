@@ -1,0 +1,340 @@
+.fotosPage-volverAinicio-container{
+    color: #b58900;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    background-color: initial;
+    letter-spacing: normal;
+    text-shadow: none;
+    text-align: justify;
+    cursor: pointer;
+    display: flex;
+    /* background-color: rgb(224, 188, 138); */
+}
+
+        .fotosPage-volverAinicio-subContainer{
+        }
+        .fotosPage-volverAinicio-subContainer:hover{
+            background-color: rgba(176, 213, 235, 0.5);
+        }
+
+.fotosPage-fotosLogo-container{
+    background-color: rgb(98, 188, 188);
+    display: flex;
+    justify-content: center;
+}
+
+        .fotosPage-fotosLogo{
+            background-image: url('../../../Images/inicio/fotos/fotos.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            cursor: pointer;
+            background-color: antiquewhite;
+        }
+
+
+        .fotosPage-imagenes-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+                .fotosPage-imagenesContainer{
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                        .fotosPage-imagen{
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 100% 100%;
+                            cursor: pointer;
+                        }
+
+                        .fotosPage-imagen1{
+                            background-image: url('../../../Images/inicio/fotos/fotosImagen1.jpg');
+                        }
+                        .fotosPage-imagen2{
+                            background-image: url('../../../Images/inicio/fotos/fotosImagen2.jpg');
+                        }
+                        .fotosPage-imagen3{
+                            background-image: url('../../../Images/inicio/fotos/fotosImagen3.jpg');
+                        }
+                        .fotosPage-imagen4{
+                            background-image: url('../../../Images/inicio/fotos/fotosImagen4.jpg');
+                        }
+                
+
+
+
+@media (max-width: 480px) {
+
+
+.fotosPage-volverAinicio-container{
+    font-size: 5px;
+}
+
+        .fotosPage-volverAinicio-subContainer{
+            padding: 3px;
+            border-radius: 5px;
+        }
+        .fotosPage-volverAinicio-subContainer:hover{
+            padding: 3px;
+            border-radius: 5px;   
+        }
+
+.fotosPage-fotosLogo-container{
+    margin-bottom: 1rem;
+}
+
+        .fotosPage-fotosLogo{
+            border-radius: 18px;
+            width: 33px;
+            height: 33px;
+        }
+
+
+        .fotosPage-imagenes-container{
+            gap: 1rem;
+        }
+
+
+                .fotosPage-imagenesContainer{
+                    gap: 1rem;
+                }
+
+                        .fotosPage-imagen{
+                            width: 130px;
+                            height: 90px;
+                        }
+
+                        .fotosPage-imagen1{
+                        }
+                        .fotosPage-imagen2{
+                        }
+                        .fotosPage-imagen3{
+                        }
+                        .fotosPage-imagen4{
+                        }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .fotosPage-volverAinicio-container{
+        font-size: 7px;
+    }
+    
+            .fotosPage-volverAinicio-subContainer{
+                padding: 4px;
+                border-radius: 7px;
+            }
+            .fotosPage-volverAinicio-subContainer:hover{
+                padding: 4px;
+                border-radius: 7px;   
+            }
+    
+    .fotosPage-fotosLogo-container{
+        margin-bottom: 1.5rem;
+    }
+    
+            .fotosPage-fotosLogo{
+                border-radius: 25px;
+                width: 49px;
+                height: 49px;
+            }
+    
+    
+            .fotosPage-imagenes-container{
+                gap: 2.5rem;
+            }
+    
+    
+                    .fotosPage-imagenesContainer{
+                        gap: 2.5rem;
+                    }
+    
+                            .fotosPage-imagen{
+                                width: 217px;
+                                height: 160px;
+                            }
+    
+                            .fotosPage-imagen1{
+                            }
+                            .fotosPage-imagen2{
+                            }
+                            .fotosPage-imagen3{
+                            }
+                            .fotosPage-imagen4{
+                            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .fotosPage-volverAinicio-container{
+        font-size: 11px;
+    }
+    
+            .fotosPage-volverAinicio-subContainer{
+                padding: 6px;
+                border-radius: 10px;
+            }
+            .fotosPage-volverAinicio-subContainer:hover{
+                padding: 6px;
+                border-radius: 10px;   
+            }
+    
+    .fotosPage-fotosLogo-container{
+        margin-bottom: 2rem;
+    }
+    
+            .fotosPage-fotosLogo{
+                border-radius: 40px;
+                width: 80px;
+                height: 80px;
+            }
+    
+    
+            .fotosPage-imagenes-container{
+                gap: 3.5rem;
+            }
+    
+    
+                    .fotosPage-imagenesContainer{
+                        gap: 3.5rem;
+                    }
+    
+                            .fotosPage-imagen{
+                                width: 346px;
+                                height: 250px;
+                            }
+    
+                            .fotosPage-imagen1{
+                            }
+                            .fotosPage-imagen2{
+                            }
+                            .fotosPage-imagen3{
+                            }
+                            .fotosPage-imagen4{
+                            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .fotosPage-volverAinicio-container{
+        font-size: 15px;
+    }
+    
+            .fotosPage-volverAinicio-subContainer{
+                padding: 8px;
+                border-radius: 12px;
+            }
+            .fotosPage-volverAinicio-subContainer:hover{
+                padding: 8px;
+                border-radius: 12px;   
+            }
+    
+    .fotosPage-fotosLogo-container{
+        margin-bottom: 2.5rem;
+    }
+    
+            .fotosPage-fotosLogo{
+                border-radius: 50px;
+                width: 100px;
+                height: 100px;
+            }
+    
+    
+            .fotosPage-imagenes-container{
+                gap: 4.5rem;
+            }
+    
+    
+                    .fotosPage-imagenesContainer{
+                        gap: 4.5rem;
+                    }
+    
+                            .fotosPage-imagen{
+                                width: 432px;
+                                height: 300px;
+                            }
+    
+                            .fotosPage-imagen1{
+                            }
+                            .fotosPage-imagen2{
+                            }
+                            .fotosPage-imagen3{
+                            }
+                            .fotosPage-imagen4{
+                            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .fotosPage-volverAinicio-container{
+        font-size: 18px;
+    }
+    
+            .fotosPage-volverAinicio-subContainer{
+                padding: 10px;
+                border-radius: 15px;
+            }
+            .fotosPage-volverAinicio-subContainer:hover{
+                padding: 10px;
+                border-radius: 15px;   
+            }
+    
+    .fotosPage-fotosLogo-container{
+        margin-bottom: 3rem;
+    }
+    
+            .fotosPage-fotosLogo{
+                border-radius: 60px;
+                width: 125px;
+                height: 125px;
+            }
+    
+    
+            .fotosPage-imagenes-container{
+                gap: 5.5rem;
+            }
+    
+    
+                    .fotosPage-imagenesContainer{
+                        gap: 5.5rem;
+                    }
+    
+                            .fotosPage-imagen{
+                                width: 540px;
+                                height: 400px;
+                            }
+    
+                            .fotosPage-imagen1{
+                            }
+                            .fotosPage-imagen2{
+                            }
+                            .fotosPage-imagen3{
+                            }
+                            .fotosPage-imagen4{
+                            }
+
+}
+                          

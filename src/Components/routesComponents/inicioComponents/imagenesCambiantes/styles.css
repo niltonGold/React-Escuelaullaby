@@ -1,34 +1,20 @@
-/* .main-imagenes-centro {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    transition: opacity 2s ease-in-out;
-    width: 194px;
-    height: 133px;
-}
-
-.fade-in {
-    opacity: 1;
-}
-
-.fade-out {
-    opacity: 0;
-} */
-
-
-
 .image-container {
     position: relative;
-    width: 194px;
-    height: 133px;
     overflow: hidden;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; */
+    /* width: 194px;
+    height: 133px; */
+    
 }
 
 .image {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: 100% 100%;
     transition: opacity 1s ease-in-out; /* Controla la transición de desvanecimiento */
 }
 
@@ -38,4 +24,109 @@
 
 .fade-out {
     opacity: 0;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .image-container {
+        width: 194px;
+        height: 133px;
+    }
+    
+    .image {
+    }
+    
+    .fade-in {
+    }
+    
+    .fade-out {
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .image-container {
+        width: 300px;
+        height:200px;
+    }
+    
+    .image {
+    }
+    
+    .fade-in {
+    }
+    
+    .fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .image-container {
+        width: 490px;
+        height: 300px;
+    }
+    
+    .image {
+    }
+    
+    .fade-in {
+    }
+    
+    .fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .image-container {
+        width: 580px;
+        height: 400px;
+    }
+    
+    .image {
+    }
+    
+    .fade-in {
+    }
+    
+    .fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .image-container {
+        width: 725px;
+        height: 500px;
+    }
+    
+    .image {
+    }
+    
+    .fade-in {
+    }
+    
+    .fade-out {
+    }
+
 }

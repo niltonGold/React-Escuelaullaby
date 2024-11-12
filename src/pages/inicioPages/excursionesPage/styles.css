@@ -1,0 +1,486 @@
+.excursionesPage-volverAinicio-container{
+    color: #b58900;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    background-color: initial;
+    letter-spacing: normal;
+    text-shadow: none;
+    text-align: justify;
+    cursor: pointer;
+    display: flex;
+    /* background-color: rgb(125, 111, 91); */
+
+    /* font-size: 5px; */
+}
+
+
+        .excursionesPage-volverAinicio-subContainer{
+
+            /* padding: 3px;
+            border-radius: 5px; */
+        }
+        .excursionesPage-volverAinicio-subContainer:hover{
+            /* background-color: rgba(176, 213, 235, 0.5); */
+
+            /* padding: 3px;
+            border-radius: 5px;  */
+        }
+
+
+.excursionesPage-subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #e6b626; */
+
+    /* gap: 1rem; */
+}
+
+
+.excursionesPage-excursionesLogo-container{
+    /* background-color: rgb(98, 188, 188); */
+    display: flex;
+    justify-content: center;
+}
+
+
+        .excursionesPage-excursionesLogo{
+            background-image: url('../../../Images/inicio/excursiones/excursionesLogo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            cursor: pointer;
+            /* background-color: antiquewhite; */
+
+            /* border-radius: 18px;
+            width: 33px;
+            height: 33px; */
+        }
+
+.excursionesPage-parrafo-container{
+    display: flex;
+    flex-direction: row;
+
+    /* font-size: 5px;
+    line-height: 8px; */
+}
+
+    .excursionesPage-parragoLado{
+        display: flex;
+        flex-direction: column;
+
+        /* gap: 1rem; */
+    }
+
+            .excursionesPage-subParrafo{
+                /* background-color: rgb(178, 147, 110); */
+                display: flex;
+                flex-direction: column;
+
+                /* height: 5rem;
+                gap: 0.5rem; */
+            }   
+        
+                    .excursionesPage-parrafoTitulo{
+                        color: #102c8a;
+                        font-weight: 500;
+
+                        /* font-size: 10px; */
+                    } 
+                   
+                    .excursionesPage-parrafoTexto{
+                        font-weight: 400;
+                        text-align: justify;
+                    }
+
+.excursionesPage-lineaDivisora{
+    background-color: rgb(184, 200, 210);
+
+    /* width: 0.5rem;
+    margin-top: 10px;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem; */
+}
+
+.excursionesPage-imagen-container{
+    /* background-color: rgb(111, 165, 211); */
+    display: flex;
+    justify-content: center;
+}
+
+    .excursionesPage-imagen{
+        background-image: url('../../../Images/inicio/excursiones/excursiones_1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+
+        /* width: 231px;
+        height: 129px; */
+    }
+
+
+
+@media (max-width: 480px) {
+
+    .excursionesPage-volverAinicio-container{
+        font-size: 5px;
+    }
+    
+    
+            .excursionesPage-volverAinicio-subContainer{
+                padding: 3px;
+                border-radius: 5px;
+            }
+            .excursionesPage-volverAinicio-subContainer:hover{
+                padding: 3px;
+                border-radius: 5px; 
+            }
+    
+    
+    .excursionesPage-subContainer{
+        gap: 1rem;
+    }
+    
+    
+    .excursionesPage-excursionesLogo-container{
+    }
+    
+    
+            .excursionesPage-excursionesLogo{
+                border-radius: 18px;
+                width: 33px;
+                height: 33px;
+            }
+    
+    .excursionesPage-parrafo-container{
+        font-size: 5px;
+        line-height: 8px;
+    }
+    
+        .excursionesPage-parragoLado{
+            gap: 1rem;
+        }
+    
+                .excursionesPage-subParrafo{
+                    height: 5rem;
+                    gap: 0.5rem;
+                }   
+            
+                        .excursionesPage-parrafoTitulo{
+                            font-size: 10px;
+                        } 
+                       
+                        .excursionesPage-parrafoTexto{
+                        }
+    
+    .excursionesPage-lineaDivisora{
+        width: 0.5rem;
+        margin-top: 10px;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
+    
+    .excursionesPage-imagen-container{
+    }
+    
+        .excursionesPage-imagen{
+            width: 249px;
+            height: 129px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+.excursionesPage-volverAinicio-container{
+    font-size: 7px;
+}
+
+
+        .excursionesPage-volverAinicio-subContainer{
+            padding: 4px;
+            border-radius: 7px;
+        }
+        .excursionesPage-volverAinicio-subContainer:hover{
+            padding: 4px;
+            border-radius: 7px;
+        }
+
+
+.excursionesPage-subContainer{
+    gap: 1.5rem;
+}
+
+
+.excursionesPage-excursionesLogo-container{
+}
+
+
+        .excursionesPage-excursionesLogo{
+            border-radius: 25px;
+            width: 49px;
+            height: 49px;
+        }
+
+.excursionesPage-parrafo-container{
+    font-size: 7px;
+    line-height: 10px;
+}
+
+    .excursionesPage-parragoLado{
+        gap: 1.4rem;
+    }
+
+            .excursionesPage-subParrafo{
+                height: 6rem;
+                gap: 0.7rem;
+            }   
+        
+                    .excursionesPage-parrafoTitulo{
+                        font-size: 15px;
+                    } 
+                    
+                    .excursionesPage-parrafoTexto{
+                    }
+
+.excursionesPage-lineaDivisora{
+    width: 0.7rem;
+    margin-top: 10px;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.excursionesPage-imagen-container{
+}
+
+    .excursionesPage-imagen{
+        width: 374px;
+        height: 193px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.excursionesPage-volverAinicio-container{
+    font-size: 11px;
+}
+
+
+        .excursionesPage-volverAinicio-subContainer{
+            padding: 6px;
+            border-radius: 10px;
+        }
+        .excursionesPage-volverAinicio-subContainer:hover{
+            padding: 6px;
+            border-radius: 10px;
+        }
+
+
+.excursionesPage-subContainer{
+    gap: 2rem;
+}
+
+
+.excursionesPage-excursionesLogo-container{
+}
+
+
+        .excursionesPage-excursionesLogo{
+            border-radius: 40px;
+            width: 80px;
+            height: 80px;
+        }
+
+.excursionesPage-parrafo-container{
+    font-size: 11px;
+    line-height: 18px;
+}
+
+    .excursionesPage-parragoLado{
+        gap: 2.2rem;
+    }
+
+            .excursionesPage-subParrafo{
+                height: 11rem;
+                gap: 1.4rem;
+            }   
+        
+                    .excursionesPage-parrafoTitulo{
+                        font-size: 25px;
+                    } 
+                    
+                    .excursionesPage-parrafoTexto{
+                    }
+
+.excursionesPage-lineaDivisora{
+    width: 0.7rem;
+    margin-top: 10px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.excursionesPage-imagen-container{
+}
+
+    .excursionesPage-imagen{
+        width: 597px;
+        height: 310px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+.excursionesPage-volverAinicio-container{
+    font-size: 15px;
+}
+
+
+        .excursionesPage-volverAinicio-subContainer{
+            padding: 8px;
+            border-radius: 12px;
+        }
+        .excursionesPage-volverAinicio-subContainer:hover{
+            padding: 8px;
+            border-radius: 12px;
+        }
+
+
+.excursionesPage-subContainer{
+    gap: 2.5rem;
+}
+
+
+.excursionesPage-excursionesLogo-container{
+}
+
+
+        .excursionesPage-excursionesLogo{
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+.excursionesPage-parrafo-container{
+    font-size: 15px;
+    line-height: 23px;
+}
+
+    .excursionesPage-parragoLado{
+        gap: 2.7rem;
+    }
+
+            .excursionesPage-subParrafo{
+                height: 13rem;
+                gap: 1.7rem;
+            }   
+        
+                    .excursionesPage-parrafoTitulo{
+                        font-size: 32px;
+                    } 
+                    
+                    .excursionesPage-parrafoTexto{
+                    }
+
+.excursionesPage-lineaDivisora{
+    width: 1rem;
+    margin-top: 10px;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+}
+
+.excursionesPage-imagen-container{
+}
+
+    .excursionesPage-imagen{
+        width: 747px;
+        height: 387px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+.excursionesPage-volverAinicio-container{
+    font-size: 18px;
+}
+
+
+        .excursionesPage-volverAinicio-subContainer{
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .excursionesPage-volverAinicio-subContainer:hover{
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+
+.excursionesPage-subContainer{
+    gap: 2.5rem;
+}
+
+
+.excursionesPage-excursionesLogo-container{
+}
+
+
+        .excursionesPage-excursionesLogo{
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+.excursionesPage-parrafo-container{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+    .excursionesPage-parragoLado{
+        gap: 3.5rem;
+    }
+
+            .excursionesPage-subParrafo{
+                height: 15rem;
+                gap: 2.2rem;
+            }   
+        
+                    .excursionesPage-parrafoTitulo{
+                        font-size: 40px;
+                    } 
+                    
+                    .excursionesPage-parrafoTexto{
+                    }
+
+.excursionesPage-lineaDivisora{
+    width: 1rem;
+    margin-top: 10px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.excursionesPage-imagen-container{
+}
+
+    .excursionesPage-imagen{
+        width: 934px;
+        height: 484px;
+    }
+
+}
+            
