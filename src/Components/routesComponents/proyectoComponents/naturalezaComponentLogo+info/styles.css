@@ -1,0 +1,202 @@
+.NaturalezaComponentLogoInfo-diplay-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.NaturalezaComponentLogoInfo-imagenRepeatPositionSize{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.NaturalezaComponentLogoInfo-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+        .NaturalezaComponentLogoInfo-nube-Container{
+            background-color: rgb(240, 198, 143, 0.5);
+        }
+        
+        .NaturalezaComponentLogoInfo-nube{
+            background-image: url('../../../../Images/proyecto/aulasNube.png');
+            z-index: 1;
+            top: 0px;
+        }
+
+        .NaturalezaComponentLogoInfo-titulo{
+            background-image: url('../../../../Images/proyecto/naturaleza/naturaleza.png');
+            position: absolute;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .NaturalezaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .NaturalezaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .NaturalezaComponentLogoInfo-Principal-Container{
+        width: 130px;
+        height: 84.5px;
+    }
+    
+            .NaturalezaComponentLogoInfo-nube-Container{
+                margin-top: 7px;
+            }
+            
+            .NaturalezaComponentLogoInfo-nube{
+                width: 107px;
+                height: 61px;
+            }
+    
+            .NaturalezaComponentLogoInfo-titulo{
+                width: 107px;
+                height: 42px;
+                top: 17px;
+            }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .NaturalezaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .NaturalezaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .NaturalezaComponentLogoInfo-Principal-Container{
+        width: 194px;
+        height: 122.5px;
+    }
+    
+            .NaturalezaComponentLogoInfo-nube-Container{
+                margin-top: 10px;
+            }
+
+            .NaturalezaComponentLogoInfo-nube{
+                width: 160px;
+                height: 91px;
+            }
+    
+            .NaturalezaComponentLogoInfo-titulo{
+                width: 161px;
+                height: 64px;
+                top: 22px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .NaturalezaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .NaturalezaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .NaturalezaComponentLogoInfo-Principal-Container{
+        width: 308px;
+        height: 194px;
+    }
+    
+            .NaturalezaComponentLogoInfo-nube-Container{
+                margin-top: 17px;
+            }
+
+            .NaturalezaComponentLogoInfo-nube{
+                width: 257px;
+                height: 146px;
+            }
+    
+            .NaturalezaComponentLogoInfo-titulo{
+                width: 258px;
+                height: 102px;
+                top: 37px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .NaturalezaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .NaturalezaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .NaturalezaComponentLogoInfo-Principal-Container{
+        width: 385px;
+        height: 244px;
+    }
+    
+            .NaturalezaComponentLogoInfo-nube-Container{
+                margin-top: 22px;
+            }
+
+            .NaturalezaComponentLogoInfo-nube{
+                width: 322px;
+                height: 183px;
+            }
+    
+            .NaturalezaComponentLogoInfo-titulo{
+                width: 323px;
+                height: 128px;
+                top: 45px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .NaturalezaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .NaturalezaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .NaturalezaComponentLogoInfo-Principal-Container{
+        width: 480px;
+        height: 304px;
+    }
+    
+            .NaturalezaComponentLogoInfo-nube-Container{
+                margin-top: 30px;
+            }
+
+            .NaturalezaComponentLogoInfo-nube{
+                width: 401px;
+                height: 228px;
+            }
+    
+            .NaturalezaComponentLogoInfo-titulo{
+                width: 404px;
+                height: 160px;
+                top: 58px;
+            }
+
+}

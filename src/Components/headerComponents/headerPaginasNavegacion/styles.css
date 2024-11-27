@@ -65,7 +65,7 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    /* z-index: 999; */
     opacity: 0; /* Inicialmente invisible */
     transition: opacity 0.8s ease; /* Transición de opacidad */
     pointer-events: none; /* Evita que el menú interactúe cuando está oculto */

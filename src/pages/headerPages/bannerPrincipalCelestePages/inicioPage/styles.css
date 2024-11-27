@@ -6,12 +6,7 @@
     width: 100%;
 }
 
-.inicioPage-parte1-enlacesRedondos-e-imagenes{
-    /* background-color: blueviolet; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 
 
@@ -19,11 +14,7 @@
 @media (max-width: 480px) {
 
     .InicioPage-Principal-Container{
-    }
-    
-    .inicioPage-parte1-enlacesRedondos-e-imagenes{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
   
 }
@@ -34,11 +25,7 @@
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     .InicioPage-Principal-Container{
-    }
-    
-    .inicioPage-parte1-enlacesRedondos-e-imagenes{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0rem;
     }
 
 }
@@ -49,11 +36,7 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .InicioPage-Principal-Container{
-    }
-    
-    .inicioPage-parte1-enlacesRedondos-e-imagenes{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 
 }
@@ -64,11 +47,7 @@
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .InicioPage-Principal-Container{
-    }
-    
-    .inicioPage-parte1-enlacesRedondos-e-imagenes{
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 5rem;
     }
 
 }
@@ -79,11 +58,7 @@
 @media only screen and (min-width: 1200px) {
 
     .InicioPage-Principal-Container{
-    }
-    
-    .inicioPage-parte1-enlacesRedondos-e-imagenes{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 
 }

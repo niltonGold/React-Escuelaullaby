@@ -1,32 +1,3 @@
-.nutricionPage-volverAinicio-container{
-    color: #b58900;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-    background-color: initial;
-    letter-spacing: normal;
-    text-shadow: none;
-    text-align: justify;
-    cursor: pointer;
-    display: flex;
-    /* background-color: rgb(125, 111, 91); */
-
-    /* font-size: 5px; */
-}
-
-        .nutricionPage-volverAinicio-subContainer{
-
-            /* padding: 3px;
-            border-radius: 5px; */
-        }
-        .nutricionPage-volverAinicio-subContainer:hover{
-            background-color: rgba(176, 213, 235, 0.5);
- 
-            /* padding: 3px;
-            border-radius: 5px; */
-        }
-
 .nutricionPage-subContainer{
         /* background-color: rgb(114, 114, 223); */
         display: flex;
@@ -62,7 +33,6 @@
                 }
 
         .nutricionPage-parrafo{
-
         }
 
         .nutricionPage-parrafo-conSangria-container{
@@ -111,19 +81,6 @@
 
 @media (max-width: 480px) {
 
-.nutricionPage-volverAinicio-container{
-    font-size: 5px;
-}
-
-        .nutricionPage-volverAinicio-subContainer{
-            padding: 3px;
-            border-radius: 5px;
-        }
-        .nutricionPage-volverAinicio-subContainer:hover{
-            padding: 3px;
-            border-radius: 5px;
-        }
-
 .nutricionPage-subContainer{
         gap: 1rem;
         font-size: 5px;
@@ -159,10 +116,8 @@
 
                 .nutricionImages{
                 }
-
                 .nutricion-fade-in {
                 }
-                
                 .nutricion-fade-out {
                 }
     
@@ -172,19 +127,6 @@
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-
-.nutricionPage-volverAinicio-container{
-    font-size: 7px;
-}
-
-        .nutricionPage-volverAinicio-subContainer{
-            padding: 4px;
-            border-radius: 7px;
-        }
-        .nutricionPage-volverAinicio-subContainer:hover{
-            padding: 4px;
-            border-radius: 7px;
-        }
 
 .nutricionPage-subContainer{
         gap: 1.5rem;
@@ -221,10 +163,8 @@
 
                 .nutricionImages{
                 }
-
                 .nutricion-fade-in {
                 }
-                
                 .nutricion-fade-out {
                 }
 
@@ -234,19 +174,6 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-
-.nutricionPage-volverAinicio-container{
-    font-size: 11px;
-}
-
-        .nutricionPage-volverAinicio-subContainer{
-            padding: 6px;
-            border-radius: 10px;
-        }
-        .nutricionPage-volverAinicio-subContainer:hover{
-            padding: 6px;
-            border-radius: 10px;
-        }
 
 .nutricionPage-subContainer{
         gap: 2rem;
@@ -283,10 +210,8 @@
 
                 .nutricionImages{
                 }
-
                 .nutricion-fade-in {
                 }
-                
                 .nutricion-fade-out {
                 }
 
@@ -296,19 +221,6 @@
 
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
-
-.nutricionPage-volverAinicio-container{
-    font-size: 15px;
-}
-
-        .nutricionPage-volverAinicio-subContainer{
-            padding: 8px;
-            border-radius: 12px;
-        }
-        .nutricionPage-volverAinicio-subContainer:hover{
-            padding: 8px;
-            border-radius: 12px;
-        }
 
 .nutricionPage-subContainer{
         gap: 2.5rem;
@@ -345,10 +257,8 @@
 
                 .nutricionImages{
                 }
-
                 .nutricion-fade-in {
                 }
-                
                 .nutricion-fade-out {
                 }
 
@@ -358,19 +268,6 @@
 
 
 @media only screen and (min-width: 1200px) {
-
-.nutricionPage-volverAinicio-container{
-    font-size: 18px;
-}
-
-        .nutricionPage-volverAinicio-subContainer{
-            padding: 10px;
-            border-radius: 15px;
-        }
-        .nutricionPage-volverAinicio-subContainer:hover{
-            padding: 10px;
-            border-radius: 15px;
-        }
 
 .nutricionPage-subContainer{
         gap: 3rem;
@@ -407,10 +304,8 @@
 
                 .nutricionImages{
                 }
-
                 .nutricion-fade-in {
                 }
-                
                 .nutricion-fade-out {
                 }
 

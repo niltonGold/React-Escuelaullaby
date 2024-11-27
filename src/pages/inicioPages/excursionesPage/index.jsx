@@ -1,15 +1,9 @@
 import React from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
 export const ExcursionesPage = ( props ) => {
-
-      const navigate = useNavigate();
-
-      const handleVolverAinicioClick = () => {
-            navigate('/inicioPage');
-      };
 
   return (
     <>
@@ -44,11 +38,7 @@ export const ExcursionesPage = ( props ) => {
 
 
 
-                  <div className='excursionesPage-volverAinicio-container' onClick={handleVolverAinicioClick}>
-                        <div className='excursionesPage-volverAinicio-subContainer'>
-                              &lt;&lt; Volver a Inicio
-                        </div>
-                  </div>
+                  <VolverAinicio />
 
 
                   <div className='excursionesPage-subContainer'>

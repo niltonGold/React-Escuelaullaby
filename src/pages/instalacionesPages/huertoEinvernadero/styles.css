@@ -1,81 +1,25 @@
-.huertoEinvernadero-volverYsiguiente{
-    background-color: rgba(102, 250, 208, 0.5);
-    display: flex;
-    justify-content: space-between;
-}
-
-        .huertoEinvernadero-volverAinstalaciones-container,
-        .huertoEinvernadero-siguiente-container{
-            color: #b58900;
-            font-weight: 700;
-            font-style: normal;
-            text-decoration: none;
-            text-transform: none;
-            background-color: initial;
-            letter-spacing: normal;
-            text-shadow: none;
-            text-align: justify;
-            cursor: pointer;
-            display: flex;
-            /* background-color: rgb(125, 111, 91); */
-
-            /* font-size: 5px; */
-        }
-
-
-                .huertoEinvernadero-volverAinstalaciones-subContainer,
-                .huertoEinvernadero-siguiente-subContainer{
-
-                    /* padding: 3px;
-                    border-radius: 5px; */
-                }
-                .huertoEinvernadero-volverAinstalaciones-subContainer:hover,
-                .huertoEinvernadero-siguiente-subContainer:hover{
-                    background-color: rgba(176, 213, 235, 0.5);
-
-                    /* padding: 3px;
-                    border-radius: 5px; */
-                }
-
-
 .huertoEinvernadero-subContainer{
-    background-color: rgb(114, 114, 223);
-/* 
-    font-size: 5px;
-    line-height: 8px; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
-
+.huertoEinvernadero-titulo_parrafo-container{
+ 
+}
 
 
 
 @media (max-width: 480px) {
 
-    .huertoEinvernadero-volverYsiguiente{
-    }
-
-            .huertoEinvernadero-volverAinstalaciones-container,
-            .huertoEinvernadero-siguiente-container{
-                font-size: 5px;
-            }
-
-
-                    .huertoEinvernadero-volverAinstalaciones-subContainer,
-                    .huertoEinvernadero-siguiente-subContainer{
-                        padding: 3px;
-                        border-radius: 5px;
-                    }
-                    .huertoEinvernadero-volverAinstalaciones-subContainer:hover,
-                    .huertoEinvernadero-siguiente-subContainer:hover{
-                        padding: 3px;
-                        border-radius: 5px;
-                    }
-
-
     .huertoEinvernadero-subContainer{
         gap: 1rem;
         font-size: 5px;
         line-height: 8px;
+    }
+
+    .huertoEinvernadero-titulo_parrafo-container{
+        
     }
     
 }
@@ -85,31 +29,14 @@
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
-    .huertoEinvernadero-volverYsiguiente{
-    }
-
-            .huertoEinvernadero-volverAinstalaciones-container,
-            .huertoEinvernadero-siguiente-container{
-                font-size: 7px;
-            }
-
-
-                    .huertoEinvernadero-volverAinstalaciones-subContainer,
-                    .huertoEinvernadero-siguiente-subContainer{
-                        padding: 4px;
-                        border-radius: 7px;
-                    }
-                    .huertoEinvernadero-volverAinstalaciones-subContainer:hover,
-                    .huertoEinvernadero-siguiente-subContainer:hover{
-                        padding: 4px;
-                        border-radius: 7px;
-                    }
-
-
     .huertoEinvernadero-subContainer{
         gap: 1.5rem;
         font-size: 7px;
         line-height: 10px;
+    }
+
+    .huertoEinvernadero-titulo_parrafo-container{
+        
     }
 
 }
@@ -119,31 +46,14 @@
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-    .huertoEinvernadero-volverYsiguiente{
-    }
-
-            .huertoEinvernadero-volverAinstalaciones-container,
-            .huertoEinvernadero-siguiente-container{
-                font-size: 11px;
-            }
-
-
-                    .huertoEinvernadero-volverAinstalaciones-subContainer,
-                    .huertoEinvernadero-siguiente-subContainer{
-                        padding: 6px;
-                        border-radius: 10px;
-                    }
-                    .huertoEinvernadero-volverAinstalaciones-subContainer:hover,
-                    .huertoEinvernadero-siguiente-subContainer:hover{
-                        padding: 6px;
-                        border-radius: 10px;
-                    }
-
-
     .huertoEinvernadero-subContainer{
         gap: 2rem;
         font-size: 11px;
         line-height: 18px;
+    }
+
+    .huertoEinvernadero-titulo_parrafo-container{
+     
     }
 
 }
@@ -153,31 +63,14 @@
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
-    .huertoEinvernadero-volverYsiguiente{
-    }
-
-            .huertoEinvernadero-volverAinstalaciones-container,
-            .huertoEinvernadero-siguiente-container{
-                font-size: 15px;
-            }
-
-
-                    .huertoEinvernadero-volverAinstalaciones-subContainer,
-                    .huertoEinvernadero-siguiente-subContainer{
-                        padding: 8px;
-                        border-radius: 12px;
-                    }
-                    .huertoEinvernadero-volverAinstalaciones-subContainer:hover,
-                    .huertoEinvernadero-siguiente-subContainer:hover{
-                        padding: 8px;
-                        border-radius: 12px;
-                    }
-
-
     .huertoEinvernadero-subContainer{
         gap: 2.5rem;
         font-size: 15px;
         line-height: 23px;
+    }
+
+    .huertoEinvernadero-titulo_parrafo-container{
+        
     }
 
 }
@@ -187,31 +80,15 @@
 
 @media only screen and (min-width: 1200px) {
 
-    .huertoEinvernadero-volverYsiguiente{
-    }
-
-            .huertoEinvernadero-volverAinstalaciones-container,
-            .huertoEinvernadero-siguiente-container{
-                font-size: 18px;
-            }
-
-
-                    .huertoEinvernadero-volverAinstalaciones-subContainer,
-                    .huertoEinvernadero-siguiente-subContainer{
-                        padding: 10px;
-                        border-radius: 15px;
-                    }
-                    .huertoEinvernadero-volverAinstalaciones-subContainer:hover,
-                    .huertoEinvernadero-siguiente-subContainer:hover{
-                        padding: 10px;
-                        border-radius: 15px;
-                    }
-
-
     .huertoEinvernadero-subContainer{
         gap: 3rem;
         font-size: 18px;
         line-height: 28px;
+    }
+
+    .huertoEinvernadero-titulo_parrafo-container{
+        /* gap: 1.2rem; */
+
     }
 
 }

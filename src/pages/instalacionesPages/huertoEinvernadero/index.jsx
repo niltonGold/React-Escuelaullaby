@@ -1,19 +1,67 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { VolverAinstalacionesYsiguiente } from '../../../Components/componentsConstantes/volverAInstalacionesYSiguiente';
+import { Siguiente } from '../../../Components/componentsConstantes/siguiente';
+import HuertoEinvernaderoTitulo from '../../../Images/instalaciones/huertoEInvernadero/huertoeinvernaderoTitulo.png';
+import { TituloCabecera } from '../../../Components/componentsConstantes/tituloCabecera';
+import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
+import { HuertoEinvernaderoImagenesCambiantes } from '../../../Components/routesComponents/instalacionesComponents/huertoEinvernadero/huertoEinvernaderoImagenesCambiantes';
 
 export const HuertoEinvernadero = ( props ) => {
 
-      const navigate = useNavigate();
-      
-      const handleVolverAinstalacionesClick = () => {
-            navigate('/instalacionesPage');
+      const IrAsalonDeActos = 'instalacionesPage/salonDeActos';
+
+      const HuertoEinvernaderoImagen = HuertoEinvernaderoTitulo;
+
+      const [HuertoEinvernaderoImagenAnchura, setHuertoEinvernaderoImagenAnchura] = useState(0);
+
+      const [HuertoEinvernaderoImagenAltura, setHuertoEinvernaderoImagenAltura] = useState(0);
+
+      const HuertoEinvernaderoTexto = `Se encuentran en el patio de actividades dirigidas. 
+                                       Se trata de una zona espaciosa donde los niños aprenden 
+                                       a cultivar las plantas, así como a acercarse al concepto 
+                                       de preservar y cuidar el medio ambiente y el ecosistema.`
+
+
+      useEffect(() => {
+      // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
+      const updateDimensions = () => {
+            const width = window.innerWidth;
+            if (width <= 480) {
+
+                  setHuertoEinvernaderoImagenAnchura(198); // Ancho y alto para pantallas pequeñas
+                  setHuertoEinvernaderoImagenAltura(28);
+
+            } else if (width >= 481 && width <= 767) {
+
+                  setHuertoEinvernaderoImagenAnchura(297); // Ancho y alto para pantallas medianas
+                  setHuertoEinvernaderoImagenAltura(43);
+
+            } else if (width >= 768 && width <= 959) {
+
+                  setHuertoEinvernaderoImagenAnchura(475); // Ancho y alto para pantallas grandes
+                  setHuertoEinvernaderoImagenAltura(68);
+
+            } else if (width >= 960 && width <= 1199) {
+
+                  setHuertoEinvernaderoImagenAnchura(594); // Ancho y alto para pantallas extra grandes
+                  setHuertoEinvernaderoImagenAltura(85);
+
+            } else {
+                  setHuertoEinvernaderoImagenAnchura(741); // Ancho y alto para pantallas muy grandes
+                  setHuertoEinvernaderoImagenAltura(106);
+            }
       };
 
-      const handleSiguienteClick = () => {
-            navigate('/salonDeActos');
-      };
+            // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
+            updateDimensions();
+            window.addEventListener('resize', updateDimensions);
+
+            // Limpia el evento al desmontar el componente
+            return () => window.removeEventListener('resize', updateDimensions);
+
+      }, []);
 
   return (
     <>
@@ -46,33 +94,23 @@ export const HuertoEinvernadero = ( props ) => {
           }}>
           
 
-                  <div className='huertoEinvernadero-volverYsiguiente'>
-                        <div className='huertoEinvernadero-volverAinstalaciones-container' onClick={handleVolverAinstalacionesClick}>
-                              <div className='huertoEinvernadero-volverAinstalaciones-subContainer'>
-                                    &lt;&lt; Volver a Instalaciones
-                              </div>
-                        </div>
-
-                        <div className='huertoEinvernadero-siguiente-container' onClick={handleSiguienteClick}>
-                              <div className='huertoEinvernadero-siguiente-subContainer'>
-                                    Siguiente &gt;&gt;
-                              </div>
-                        </div>
-                  </div>
+                  <VolverAinstalacionesYsiguiente enlace={IrAsalonDeActos} />
 
                   <div  className='huertoEinvernadero-subContainer'>
-                              huertoEinvernadero
-                              <div className='huertoEinvernadero-volverYsiguiente'>
-                                    
-                                    <div />
 
-                                    <div className='huertoEinvernadero-siguiente-container' onClick={handleSiguienteClick}>
-                                          <div className='huertoEinvernadero-siguiente-subContainer'>
-                                                Siguiente &gt;&gt;
-                                          </div>
-                                    </div>
-                                    
-                              </div>
+                        <div className='huertoEinvernadero-titulo_parrafo-container'>
+                              
+                              <TituloCabecera imagenBackgroundUbicacion={HuertoEinvernaderoImagen}
+                                                      anchuraTitulo={HuertoEinvernaderoImagenAnchura}
+                                                      alturaTitulo={HuertoEinvernaderoImagenAltura} />
+
+                              <Parrafo parrafoTexto={HuertoEinvernaderoTexto} />
+
+                        </div>
+
+                              <HuertoEinvernaderoImagenesCambiantes />
+                              
+                              <Siguiente enlace={IrAsalonDeActos} />
                   </div>
           
 

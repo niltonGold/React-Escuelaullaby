@@ -34,7 +34,7 @@ export const InstalacionesPage = ( props ) => {
                         '@media (min-width: 1200px)': {
                               width: `${props.anchuraInstalacionesPage1200px}rem`,
                               marginTop: '3rem',
-                               marginBottom: '5rem',
+                              marginBottom: '5rem',
                         }  
         }}>
 

@@ -1,0 +1,139 @@
+.HuertoEinvernaderoImagenesCambiantes-image-container {
+    /* position: relative;
+    overflow: hidden; */
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.HuertoEinvernaderoImagenesCambiantes-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.HuertoEinvernaderoImagenesCambiantes-fade-in {
+    opacity: 1;
+}
+
+.HuertoEinvernaderoImagenesCambiantes-fade-out {
+    opacity: 0;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .HuertoEinvernaderoImagenesCambiantes-image-container {
+        /* width: 218px;
+        height: 260px; */
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-image {
+        width: 218px;
+        height: 260px;
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-in {
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-out {
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .HuertoEinvernaderoImagenesCambiantes-image-container {
+        /* width: 327px;
+        height: 390px; */
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-image {
+        width: 327px;
+        height: 390px;
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-in {
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .HuertoEinvernaderoImagenesCambiantes-image-container {
+        /* width: 524px;
+        height: 623px; */
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-image {
+        width: 524px;
+        height: 623px;
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-in {
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .HuertoEinvernaderoImagenesCambiantes-image-container {
+        /* width: 655px;
+        height: 779px; */
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-image {
+        width: 655px;
+        height: 779px;
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-in {
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .HuertoEinvernaderoImagenesCambiantes-image-container {
+        /* width: 819px;
+        height: 974px; */
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-image {
+        width: 819px;
+        height: 974px;
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-in {
+    }
+    
+    .HuertoEinvernaderoImagenesCambiantes-fade-out {
+    }
+
+}

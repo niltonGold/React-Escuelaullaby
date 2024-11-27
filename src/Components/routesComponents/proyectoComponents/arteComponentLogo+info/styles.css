@@ -1,0 +1,202 @@
+.ArteComponentLogoInfo-diplay-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.ArteComponentLogoInfo-imagenRepeatPositionSize{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.ArteComponentLogoInfo-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+        .ArteComponentLogoInfo-nube-Container{
+            background-color: rgb(240, 198, 143, 0.5);
+        }
+
+        .ArteComponentLogoInfo-nube{
+            background-image: url('../../../../Images/proyecto/aulasNube.png');
+            z-index: 1;
+            top: 0px;
+        }
+
+        .ArteComponentLogoInfo-titulo{
+            background-image: url('../../../../Images/proyecto/arte/arte.png');
+            position: absolute;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .ArteComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .ArteComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .ArteComponentLogoInfo-Principal-Container{
+        width: 130px;
+        height: 84.5px;
+    }
+    
+            .ArteComponentLogoInfo-nube-Container{
+                margin-top: 7px;
+            }
+
+            .ArteComponentLogoInfo-nube{
+                width: 107px;
+                height: 61px;
+            }
+    
+            .ArteComponentLogoInfo-titulo{
+                width: 46px;
+                height: 34px;
+                top: 24px;
+            }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .ArteComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .ArteComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .ArteComponentLogoInfo-Principal-Container{
+        width: 194px;
+        height: 122.5px;
+    }
+    
+            .ArteComponentLogoInfo-nube-Container{
+                margin-top: 10px;
+            }
+
+            .ArteComponentLogoInfo-nube{
+                width: 160px;
+                height: 91px;
+            }
+    
+            .ArteComponentLogoInfo-titulo{
+                width: 69px;
+                height: 51px;
+                top: 35px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .ArteComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .ArteComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .ArteComponentLogoInfo-Principal-Container{
+        width: 308px;
+        height: 194px;
+    }
+    
+            .ArteComponentLogoInfo-nube-Container{
+                margin-top: 17px;
+            }
+
+            .ArteComponentLogoInfo-nube{
+                width: 257px;
+                height: 146px;
+            }
+    
+            .ArteComponentLogoInfo-titulo{
+                width: 112px;
+                height: 83px;
+                top: 57px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .ArteComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .ArteComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .ArteComponentLogoInfo-Principal-Container{
+        width: 385px;
+        height: 244px;
+    }
+    
+            .ArteComponentLogoInfo-nube-Container{
+                margin-top: 22px;
+            }
+
+            .ArteComponentLogoInfo-nube{
+                width: 322px;
+                height: 183px;
+            }
+    
+            .ArteComponentLogoInfo-titulo{
+                width: 141px;
+                height: 104px;
+                top: 70px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .ArteComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .ArteComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .ArteComponentLogoInfo-Principal-Container{
+        width: 480px;
+        height: 304px;
+    }
+    
+            .ArteComponentLogoInfo-nube-Container{
+                margin-top: 30px;
+            }
+
+            .ArteComponentLogoInfo-nube{
+                width: 401px;
+                height: 228px;
+            }
+    
+            .ArteComponentLogoInfo-titulo{
+                width: 176px;
+                height: 130px;
+                top: 93px;
+            }
+
+}

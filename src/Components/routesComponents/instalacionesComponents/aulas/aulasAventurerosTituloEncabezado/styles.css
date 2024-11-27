@@ -1,0 +1,159 @@
+.AulasAventurerosTituloEncabezado-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.AulasAventurerosTituloEncabezado-subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+}
+
+    .AulasAventurerosTituloEncabezado-titulo{
+        background-image: url('../../../../../Images/instalaciones/aulas/aventureros/aventurerosTitulo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .AulasAventurerosTituloEncabezado-imagen{
+        background-image: url('../../../../../Images/instalaciones/aulas/aventureros/aventurerosImagen.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+
+@media (max-width: 480px) {
+
+    .AulasAventurerosTituloEncabezado-Principal-Container{
+    }
+
+    .AulasAventurerosTituloEncabezado-subContainer{
+        height: 134px;
+    }
+
+        .AulasAventurerosTituloEncabezado-titulo{
+            width: 79px;
+            height: 23px;
+            top: 0px;
+        }
+
+        .AulasAventurerosTituloEncabezado-imagen{
+            width: 117px;
+            height: 102px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .AulasAventurerosTituloEncabezado-Principal-Container{
+    }
+
+    .AulasAventurerosTituloEncabezado-subContainer{
+        height: 195px;
+    }
+
+        .AulasAventurerosTituloEncabezado-titulo{
+            width: 118px;
+            height: 34px;
+            top: 0px;
+        }
+
+        .AulasAventurerosTituloEncabezado-imagen{
+            width: 176px;
+            height: 153px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .AulasAventurerosTituloEncabezado-Principal-Container{
+    }
+
+    .AulasAventurerosTituloEncabezado-subContainer{
+        height: 325px;
+    }
+
+        .AulasAventurerosTituloEncabezado-titulo{
+            width: 188px;
+            height: 54px;
+            top: 0px;
+        }
+
+        .AulasAventurerosTituloEncabezado-imagen{
+            width: 282px;
+            height: 246px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .AulasAventurerosTituloEncabezado-Principal-Container{
+    }
+
+    .AulasAventurerosTituloEncabezado-subContainer{
+        height: 400px;
+    }
+        .AulasAventurerosTituloEncabezado-titulo{
+            width: 235px;
+            height: 67px;
+            top: 0px;
+        }
+
+        .AulasAventurerosTituloEncabezado-imagen{
+            width: 353px;
+            height: 308px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .AulasAventurerosTituloEncabezado-Principal-Container{
+    }
+
+    .AulasAventurerosTituloEncabezado-subContainer{
+        height: 500px;
+    }
+        .AulasAventurerosTituloEncabezado-titulo{
+            width: 294px;
+            height: 84px;
+            top: 0px;
+        }
+
+        .AulasAventurerosTituloEncabezado-imagen{
+            width: 442px;
+            height: 385px;
+            top: 0px;
+        }
+
+}

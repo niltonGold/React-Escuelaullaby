@@ -1,0 +1,127 @@
+.ComedorImagenesCambiantes-image-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ComedorImagenesCambiantes-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.ComedorImagenesCambiantes-fade-in {
+    opacity: 1;
+}
+
+.ComedorImagenesCambiantes-fade-out {
+    opacity: 0;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .ComedorImagenesCambiantes-image-container {
+        /* width: 194px; */
+        height: 159px;
+    }
+    
+    .ComedorImagenesCambiantes-image {
+    }
+    
+    .ComedorImagenesCambiantes-fade-in {
+    }
+    
+    .ComedorImagenesCambiantes-fade-out {
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .ComedorImagenesCambiantes-image-container {
+        /* width: 300px; */
+        height: 239px;
+    }
+    
+    .ComedorImagenesCambiantes-image {
+    }
+    
+    .ComedorImagenesCambiantes-fade-in {
+    }
+    
+    .ComedorImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .ComedorImagenesCambiantes-image-container {
+        /* width: 490px; */
+        height: 382px;
+    }
+    
+    .ComedorImagenesCambiantes-image {
+    }
+    
+    .ComedorImagenesCambiantes-fade-in {
+    }
+    
+    .ComedorImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .ComedorImagenesCambiantes-image-container {
+        /* width: 580px; */
+        height: 478px;
+    }
+    
+    .ComedorImagenesCambiantes-image {
+    }
+    
+    .ComedorImagenesCambiantes-fade-in {
+    }
+    
+    .ComedorImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .ComedorImagenesCambiantes-image-container {
+        /* width: 725px; */
+        height: 598px;
+    }
+    
+    .ComedorImagenesCambiantes-image {
+    }
+    
+    .ComedorImagenesCambiantes-fade-in {
+    }
+    
+    .ComedorImagenesCambiantes-fade-out {
+    }
+
+}

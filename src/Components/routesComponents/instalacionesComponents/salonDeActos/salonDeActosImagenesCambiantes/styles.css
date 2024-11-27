@@ -1,0 +1,138 @@
+.SalonDeActosImagenesCambiantes-image-container {
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.SalonDeActosImagenesCambiantes-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.SalonDeActosImagenesCambiantes-fade-in {
+    opacity: 1;
+}
+
+.SalonDeActosImagenesCambiantes-fade-out {
+    opacity: 0;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .SalonDeActosImagenesCambiantes-image-container {
+        /* width: 218px;
+        height: 260px; */
+    }
+    
+    .SalonDeActosImagenesCambiantes-image {
+        /* width: 218px; */
+        height: 145px;
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-in {
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-out {
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .SalonDeActosImagenesCambiantes-image-container {
+        /* width: 327px;
+        height: 390px; */
+    }
+    
+    .SalonDeActosImagenesCambiantes-image {
+        /* width: 327px; */
+        height: 218px;
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-in {
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .SalonDeActosImagenesCambiantes-image-container {
+        /* width: 524px;
+        height: 623px; */
+    }
+    
+    .SalonDeActosImagenesCambiantes-image {
+        /* width: 524px; */
+        height: 348px;
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-in {
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .SalonDeActosImagenesCambiantes-image-container {
+        /* width: 655px;
+        height: 779px; */
+    }
+    
+    .SalonDeActosImagenesCambiantes-image {
+        /* width: 655px; */
+        height: 435px;
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-in {
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .SalonDeActosImagenesCambiantes-image-container {
+        /* width: 819px;
+        height: 974px; */
+    }
+    
+    .SalonDeActosImagenesCambiantes-image {
+        /* width: 819px; */
+        height: 544px;
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-in {
+    }
+    
+    .SalonDeActosImagenesCambiantes-fade-out {
+    }
+
+}

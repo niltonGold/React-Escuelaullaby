@@ -1,0 +1,144 @@
+.ProyectoPage-subContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProyectoPage-titulo_parrafo-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProyectoPage-Enlaces-Big-Container{
+    background-color: rgb(185, 139, 228, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProyectoPage-Enlaces-Sub-Container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 480px) {
+
+    .ProyectoPage-subContainer{
+        gap: 1rem;
+        font-size: 5px;
+        line-height: 8px;
+    }
+
+    .ProyectoPage-titulo_parrafo-container{
+        gap: 0.5rem;
+    }  
+    
+    .ProyectoPage-Enlaces-Big-Container{
+        gap: 0.5rem;
+    }
+    
+    .ProyectoPage-Enlaces-Sub-Container{
+        gap: 0.5rem;
+    }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .ProyectoPage-subContainer{
+        gap: 1.5rem;
+        font-size: 7px;
+        line-height: 10px;
+    }
+
+    .ProyectoPage-titulo_parrafo-container{
+        gap: 0.7rem;
+    }    
+
+    .ProyectoPage-Enlaces-Big-Container{
+        gap: 0.7rem;
+    }
+    
+    .ProyectoPage-Enlaces-Sub-Container{
+        gap: 0.7rem;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .ProyectoPage-subContainer{
+        gap: 2rem;
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .ProyectoPage-titulo_parrafo-container{
+        gap: 1rem;
+    } 
+
+    .ProyectoPage-Enlaces-Big-Container{
+        gap: 1rem;
+    }
+    
+    .ProyectoPage-Enlaces-Sub-Container{
+        gap: 1rem;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .ProyectoPage-subContainer{
+        gap: 2.5rem;
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .ProyectoPage-titulo_parrafo-container{
+        gap: 1.4rem;
+    } 
+
+    .ProyectoPage-Enlaces-Big-Container{
+        gap: 1.4rem;
+    }
+    
+    .ProyectoPage-Enlaces-Sub-Container{
+        gap: 1.4rem;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .ProyectoPage-subContainer{
+        gap: 3rem;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .ProyectoPage-titulo_parrafo-container{
+        gap: 1.7rem;
+    } 
+
+    .ProyectoPage-Enlaces-Big-Container{
+        gap: 1.7rem;
+    }
+    
+    .ProyectoPage-Enlaces-Sub-Container{
+        gap: 1.7rem;
+    }
+
+}

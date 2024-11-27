@@ -57,53 +57,61 @@ export const HeaderPaginasNavegacion = () => {
                     </div>
                 </div>
 
-                <div>
+                {/* <div>
                     <div className='headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide' />
                     <div
                         className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
                                      headerPaginasNavegacion-texto   
-                                     ${active === '/instalacionesPage' ? 'headerPaginasNavegacion-active' : ''}`}
+                                     ${active.startsWith === ('/instalacionesPage') ? 'headerPaginasNavegacion-active' : ''}`}
+                        onClick={() => handleClick('/instalacionesPage')}>
+                        Instalaciones
+                    </div>
+                </div>  */}
+
+                <div>
+                    <div className='headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide' />
+                    <div
+                        className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
+                                    headerPaginasNavegacion-texto   
+                                    ${active.startsWith('/instalacionesPage') ? 'headerPaginasNavegacion-active' : ''}`}
                         onClick={() => handleClick('/instalacionesPage')}>
                         Instalaciones
                     </div>
                 </div>
 
-
-
-
-
-
-
                 <div>
                     <div className='headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide' />
-                    <div className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
-                                     headerPaginasNavegacion-texto
-                                     headerPaginasNavegacion_MenuDesplegable 
-                                     ${active === '/proyectoPage' ? 'headerPaginasNavegacion-active' : ''}`}
-                         onClick={() => handleClick('/proyectoPage')}
-                         onMouseEnter={handleMouseEnter}
-                         onMouseLeave={handleMouseLeave}>
+                    
 
-                            Proyecto
+                    <div onMouseLeave={handleMouseLeave}>
+                            
+                            <div className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
+                                            headerPaginasNavegacion-texto
+                                            ${active === '/proyectoPage' ? 'headerPaginasNavegacion-active' : ''}`}
+                                onClick={() => handleClick('/proyectoPage')}
+                                onMouseEnter={handleMouseEnter} >
 
-                            {/* Menú desplegable */}
-                            <div className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}>
-                                <div className='subpagina' onClick={() => handleClick('/subpagina1')}>Arte</div>
-                                <div className='subpagina' onClick={() => handleClick('/subpagina2')}>Música</div>
-                                <div className='subpagina' onClick={() => handleClick('/subpagina3')}>Psicomotricidad</div>
-                                <div className='subpagina' onClick={() => handleClick('/subpagina1')}>Juego</div>
-                                <div className='subpagina' onClick={() => handleClick('/subpagina2')}>Yoga</div>
-                                <div className='subpagina' onClick={() => handleClick('/subpagina3')}>Naturaleza</div>
+                                    Proyecto
+
                             </div>
+                                    
+                            <div className=' headerPaginasNavegacion_MenuDesplegable '>
+                                    
+                                    {/* Menú desplegable */}
+                                    <div className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}>
+                                        <div className='subpagina' onClick={() => handleClick('/arte')}>Arte</div>
+                                        <div className='subpagina' onClick={() => handleClick('/musica')}>Música</div>
+                                        <div className='subpagina' onClick={() => handleClick('/psicomotricidad')}>Psicomotricidad</div>
+                                        <div className='subpagina' onClick={() => handleClick('/juego')}>Juego</div>
+                                        <div className='subpagina' onClick={() => handleClick('/yoga')}>Yoga</div>
+                                        <div className='subpagina' onClick={() => handleClick('/naturaleza')}>Naturaleza</div>
+                                    </div>
+                            </div>
+                            
                     </div>
+
+
                 </div>
-
-
-
-
-
-
-
 
                 <div>
                     <div className='headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide' />

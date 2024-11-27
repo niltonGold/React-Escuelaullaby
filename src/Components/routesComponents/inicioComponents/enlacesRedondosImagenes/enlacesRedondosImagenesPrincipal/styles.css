@@ -1,0 +1,58 @@
+
+
+.EnlacesRedondosImagenesPrincipal-enlacesRedondos-e-imagenes-container{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 480px) {
+    
+    .EnlacesRedondosImagenesPrincipal-enlacesRedondos-e-imagenes-container{
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+    .EnlacesRedondosImagenesPrincipal-enlacesRedondos-e-imagenes-container{
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    
+    .EnlacesRedondosImagenesPrincipal-enlacesRedondos-e-imagenes-container{
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+    
+    .EnlacesRedondosImagenesPrincipal-enlacesRedondos-e-imagenes-container{
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    
+    .EnlacesRedondosImagenesPrincipal-enlacesRedondos-e-imagenes-container{
+    }
+
+}

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 import imagenCambianteNoticias1 from '../../../Images/inicio/noticia/noticias_1.jpg';
 import imagenCambianteNoticias2 from '../../../Images/inicio/noticia/noticias_2.jpg';
 import imagenCambianteNoticias3 from '../../../Images/inicio/noticia/noticias_3.jpg';
 import imagenCambianteNoticias4 from '../../../Images/inicio/noticia/noticias_4.jpg';
+import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
 
 export const NoticiasPage = ( props ) => {
@@ -20,13 +20,6 @@ export const NoticiasPage = ( props ) => {
       const [currentImage, setCurrentImage] = useState(0);
 
       const [isFading, setIsFading] = useState(true);
-
-      const navigate = useNavigate();
-      
-      const handleVolverAinicioClick = () => {
-            navigate('/inicioPage');
-      };
-
 
       useEffect(() => {
             const intervalId = setInterval(() => {
@@ -73,11 +66,7 @@ export const NoticiasPage = ( props ) => {
         }}>
 
 
-                  <div className='noticiasPage-volverAinicio-container' onClick={handleVolverAinicioClick}>
-                        <div className='noticiasPage-volverAinicio-subContainer'>
-                              &lt;&lt; Volver a Inicio
-                        </div>
-                  </div>
+                  <VolverAinicio />
 
 
                   <div className='noticiasPage-subContainer'>

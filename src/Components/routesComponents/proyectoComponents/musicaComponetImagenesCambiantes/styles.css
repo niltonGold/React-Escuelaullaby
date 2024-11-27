@@ -1,0 +1,127 @@
+.MusicaComponentImagenesCambiantes-image-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.MusicaComponentImagenesCambiantes-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.MusicaComponentImagenesCambiantes-fade-in {
+    opacity: 1;
+}
+
+.MusicaComponentImagenesCambiantes-fade-out {
+    opacity: 0;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .MusicaComponentImagenesCambiantes-image-container {
+        /* width: 194px; */
+        height: 153px;
+    }
+    
+    .MusicaComponentImagenesCambiantes-image {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-in {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-out {
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .MusicaComponentImagenesCambiantes-image-container {
+        /* width: 300px; */
+        height: 229px;
+    }
+    
+    .MusicaComponentImagenesCambiantes-image {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-in {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .MusicaComponentImagenesCambiantes-image-container {
+        /* width: 490px; */
+        height: 368px;
+    }
+    
+    .MusicaComponentImagenesCambiantes-image {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-in {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .MusicaComponentImagenesCambiantes-image-container {
+        /* width: 580px; */
+        height: 460px;
+    }
+    
+    .MusicaComponentImagenesCambiantes-image {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-in {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .MusicaComponentImagenesCambiantes-image-container {
+        /* width: 725px; */
+        height: 575px;
+    }
+    
+    .MusicaComponentImagenesCambiantes-image {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-in {
+    }
+    
+    .MusicaComponentImagenesCambiantes-fade-out {
+    }
+
+}

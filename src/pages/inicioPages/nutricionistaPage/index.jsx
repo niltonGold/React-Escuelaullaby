@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 import imagenCambianteNoticia1 from '../../../Images/inicio/noticia/noticias_1.jpg';
 import imagenCambianteNoticia2 from '../../../Images/inicio/noticia/noticias_2.jpg';
 import imagenCambianteNoticia3 from '../../../Images/inicio/noticia/noticias_3.jpg';
 import imagenCambianteNoticia4 from '../../../Images/inicio/noticia/noticias_4.jpg';
+import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
 export const NutricionistaPage = ( props ) => {
 
@@ -19,13 +19,6 @@ export const NutricionistaPage = ( props ) => {
       const [currentImage, setCurrentImage] = useState(0);
 
       const [isFading, setIsFading] = useState(true);
-
-      const navigate = useNavigate();
-      
-      const handleVolverAinicioClick = () => {
-            navigate('/inicioPage');
-      };
-
 
       useEffect(() => {
             const intervalId = setInterval(() => {
@@ -71,13 +64,7 @@ export const NutricionistaPage = ( props ) => {
         }}>
 
 
-                  <div className='nutricionPage-volverAinicio-container' onClick={handleVolverAinicioClick}>
-                        
-                        <div className='nutricionPage-volverAinicio-subContainer'>
-                              &lt;&lt; Volver a Inicio
-                        </div>
-
-                  </div>
+                  <VolverAinicio />
 
                   <div className='nutricionPage-subContainer'>
                         

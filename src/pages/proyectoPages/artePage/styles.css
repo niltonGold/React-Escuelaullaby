@@ -1,0 +1,119 @@
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ArteLogoTituloEfecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounceIn 0.8s ease-out;
+}
+
+.ArtePage-parrafos-imagenes-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.ArtePage-parrafos-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .ArteLogoTituloEfecto {
+    }
+
+    .ArtePage-parrafos-imagenes-container{
+        gap: 1rem;
+    }
+
+    .ArtePage-parrafos-container{
+        gap: 0.5rem;
+    }  
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .ArteLogoTituloEfecto {
+    }
+
+    .ArtePage-parrafos-imagenes-container{
+        gap: 1.5rem;
+    }
+
+    .ArtePage-parrafos-container{
+        gap: 0.7rem;
+    }    
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .ArteLogoTituloEfecto {
+    }
+    
+    .ArtePage-parrafos-imagenes-container{
+        gap: 2rem;
+    }
+
+    .ArtePage-parrafos-container{
+        gap: 1rem;
+    } 
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .ArteLogoTituloEfecto {
+    }
+
+    .ArtePage-parrafos-imagenes-container{
+        gap: 2.5rem;
+    }
+
+    .ArtePage-parrafos-container{
+        gap: 1.4rem;
+    } 
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .ArteLogoTituloEfecto {
+    }
+
+    .ArtePage-parrafos-imagenes-container{
+        gap: 3rem;
+    }
+
+    .ArtePage-parrafos-container{
+        gap: 1.7rem;
+    } 
+
+}

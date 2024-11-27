@@ -1,0 +1,165 @@
+.VolverAProyectoYsiguiente-volverYsiguiente{
+    background-color: rgba(181, 181, 181, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+        .VolverAProyectoYsiguiente-volverAProyectos-container,
+        .VolverAProyectoYsiguiente-siguiente-container{
+            color: #b58900;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            background-color: initial;
+            letter-spacing: normal;
+            text-shadow: none;
+            text-align: justify;
+            cursor: pointer;
+            display: flex;
+        }
+
+                .VolverAProyectoYsiguiente-volverAProyectos-subContainer,
+                .VolverAProyectoYsiguiente-siguiente-subContainer{
+                }
+                .VolverAProyectoYsiguiente-volverAProyectos-subContainer:hover,
+                .VolverAProyectoYsiguiente-siguiente-subContainer:hover{
+                    background-color: rgba(176, 213, 235, 0.5);
+                }
+
+                .VolverAProyectoYsiguiente-volverAProyectos-subContainer:active,
+                .VolverAProyectoYsiguiente-siguiente-subContainer:active{
+                    background-color: rgba(136, 147, 158);
+                    color: rgb(255, 255, 255);
+                }
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .VolverAProyectoYsiguiente-volverYsiguiente{
+    }
+
+            .VolverAProyectoYsiguiente-volverAProyectos-container,
+            .VolverAProyectoYsiguiente-siguiente-container{
+                font-size: 5px;
+            }
+
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer{
+                        padding: 3px;
+                        border-radius: 5px;
+                    }
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer:hover,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer:hover{
+                        padding: 3px;
+                        border-radius: 5px;
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .VolverAProyectoYsiguiente-volverYsiguiente{
+    }
+
+            .VolverAProyectoYsiguiente-volverAProyectos-container,
+            .VolverAProyectoYsiguiente-siguiente-container{
+                font-size: 7px;
+            }
+
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer{
+                        padding: 4px;
+                        border-radius: 7px;
+                    }
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer:hover,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer:hover{
+                        padding: 4px;
+                        border-radius: 7px;
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .VolverAProyectoYsiguiente-volverYsiguiente{
+    }
+
+            .VolverAProyectoYsiguiente-volverAProyectos-container,
+            .VolverAProyectoYsiguiente-siguiente-container{
+                font-size: 11px;
+            }
+
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer{
+                        padding: 6px;
+                        border-radius: 10px;
+                    }
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer:hover,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer:hover{
+                        padding: 6px;
+                        border-radius: 10px;
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .VolverAProyectoYsiguiente-volverYsiguiente{
+    }
+
+            .VolverAProyectoYsiguiente-volverAProyectos-container,
+            .VolverAProyectoYsiguiente-siguiente-container{
+                font-size: 15px;
+            }
+
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer{
+                        padding: 8px;
+                        border-radius: 12px;
+                    }
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer:hover,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer:hover{
+                        padding: 8px;
+                        border-radius: 12px;
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .VolverAProyectoYsiguiente-volverYsiguiente{
+    }
+
+            .VolverAProyectoYsiguiente-volverAProyectos-container,
+            .VolverAProyectoYsiguiente-siguiente-container{
+                font-size: 18px;
+            }
+
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer{
+                        padding: 10px;
+                        border-radius: 15px;
+                    }
+                    .VolverAProyectoYsiguiente-volverAProyectos-subContainer:hover,
+                    .VolverAProyectoYsiguiente-siguiente-subContainer:hover{
+                        padding: 10px;
+                        border-radius: 15px;
+                    }
+
+}

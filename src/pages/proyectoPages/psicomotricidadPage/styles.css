@@ -1,0 +1,119 @@
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.PsicomotricidadPageLogoTituloEfecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounceIn 0.8s ease-out;
+}
+
+.PsicomotricidadPage-parrafos-imagenes-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.PsicomotricidadPage-parrafos-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .PsicomotricidadPageLogoTituloEfecto {
+    }
+
+    .PsicomotricidadPage-parrafos-imagenes-container{
+        gap: 1rem;
+    }
+
+    .PsicomotricidadPage-parrafos-container{
+        gap: 0.5rem;
+    }  
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .PsicomotricidadPageLogoTituloEfecto {
+    }
+
+    .PsicomotricidadPage-parrafos-imagenes-container{
+        gap: 1.5rem;
+    }
+
+    .PsicomotricidadPage-parrafos-container{
+        gap: 0.7rem;
+    }    
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .PsicomotricidadPageLogoTituloEfecto {
+    }
+    
+    .PsicomotricidadPage-parrafos-imagenes-container{
+        gap: 2rem;
+    }
+
+    .PsicomotricidadPage-parrafos-container{
+        gap: 1rem;
+    } 
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .PsicomotricidadPageLogoTituloEfecto {
+    }
+
+    .PsicomotricidadPage-parrafos-imagenes-container{
+        gap: 2.5rem;
+    }
+
+    .PsicomotricidadPage-parrafos-container{
+        gap: 1.4rem;
+    } 
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .PsicomotricidadPageLogoTituloEfecto {
+    }
+
+    .PsicomotricidadPage-parrafos-imagenes-container{
+        gap: 3rem;
+    }
+
+    .PsicomotricidadPage-parrafos-container{
+        gap: 1.7rem;
+    } 
+
+}

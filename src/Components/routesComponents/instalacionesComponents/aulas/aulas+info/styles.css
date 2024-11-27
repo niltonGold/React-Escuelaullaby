@@ -1,0 +1,119 @@
+.Info-Container{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: rgb(203, 75, 22);
+    width: fit-content;
+    cursor: pointer;
+}
+.Info-Container:hover{
+    color: rgb(38, 139, 210);
+    background-color: rgb(205, 222, 232);
+}
+
+
+@media (max-width: 480px) {
+
+    .Info-Container{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 9px;
+        padding-right: 9px;
+        border-radius: 10px;
+    }
+    .Info-Container:hover{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 9px;
+        padding-right: 9px;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .Info-Container{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        padding-right: 11px;
+        border-radius: 11px;
+    }
+    .Info-Container:hover{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        padding-right: 11px;
+        border-radius: 11px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .Info-Container{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 13px;
+        padding-right: 13px;
+        border-radius: 14px;
+    }
+    .Info-Container:hover{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 13px;
+        padding-right: 13px;
+        border-radius: 14px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .Info-Container{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 16px;
+    }
+    .Info-Container:hover{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 16px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .Info-Container{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 17px;
+        padding-right: 17px;
+        border-radius: 18px;
+    }
+    .Info-Container:hover{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 17px;
+        padding-right: 17px;
+        border-radius: 18px;
+    }
+
+}

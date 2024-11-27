@@ -1,0 +1,159 @@
+.DarwinTituloEncabezado-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.DarwinTituloEncabezado-subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+}
+
+    .DarwinTituloEncabezado-titulo{
+        background-image: url('../../../../../Images/instalaciones/aulas/darwin/darwinTitulo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .DarwinTituloEncabezado-imagen{
+        background-image: url('../../../../../Images/instalaciones/aulas/darwin/darwinImagen.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+
+@media (max-width: 480px) {
+
+    .DarwinTituloEncabezado-Principal-Container{
+    }
+
+    .DarwinTituloEncabezado-subContainer{
+        height: 95px;
+    }
+
+        .DarwinTituloEncabezado-titulo{
+            width: 60px;
+            height: 26px;
+            top: 0px;
+        }
+
+        .DarwinTituloEncabezado-imagen{
+            width: 64px;
+            height: 62px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .DarwinTituloEncabezado-Principal-Container{
+    }
+
+    .DarwinTituloEncabezado-subContainer{
+        height: 145px;
+    }
+
+        .DarwinTituloEncabezado-titulo{
+            width: 90px;
+            height: 39px;
+            top: 0px;
+        }
+
+        .DarwinTituloEncabezado-imagen{
+            width: 95px;
+            height: 93px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .DarwinTituloEncabezado-Principal-Container{
+    }
+
+    .DarwinTituloEncabezado-subContainer{
+        height: 233px;
+    }
+
+        .DarwinTituloEncabezado-titulo{
+            width: 142px;
+            height: 62px;
+            top: 0px;
+        }
+
+        .DarwinTituloEncabezado-imagen{
+            width: 153px;
+            height: 149px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .DarwinTituloEncabezado-Principal-Container{
+    }
+
+    .DarwinTituloEncabezado-subContainer{
+        height: 290px;
+    }
+        .DarwinTituloEncabezado-titulo{
+            width: 177px;
+            height: 77px;
+            top: 0px;
+        }
+
+        .DarwinTituloEncabezado-imagen{
+            width: 191px;
+            height: 186px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .DarwinTituloEncabezado-Principal-Container{
+    }
+
+    .DarwinTituloEncabezado-subContainer{
+        height: 360px;
+    }
+        .DarwinTituloEncabezado-titulo{
+            width: 221px;
+            height: 96px;
+            top: 0px;
+        }
+
+        .DarwinTituloEncabezado-imagen{
+            width: 238px;
+            height: 232px;
+            top: 0px;
+        }
+
+}

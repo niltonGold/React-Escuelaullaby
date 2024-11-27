@@ -1,0 +1,202 @@
+.PsicomotricidadComponentLogoInfo-diplay-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.PsicomotricidadComponentLogoInfo-imagenRepeatPositionSize{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.PsicomotricidadComponentLogoInfo-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+        .PsicomotricidadComponentLogoInfo-nube-Container{
+            background-color: rgb(240, 198, 143, 0.5);
+        }
+        
+        .PsicomotricidadComponentLogoInfo-nube{
+            background-image: url('../../../../Images/proyecto/aulasNube.png');
+            z-index: 1;
+            top: 0px;
+        }
+
+        .PsicomotricidadComponentLogoInfo-titulo{
+            background-image: url('../../../../Images/proyecto/psicomotricidad/psicomotricidad.png');
+            position: absolute;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .PsicomotricidadComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-Principal-Container{
+        width: 130px;
+        height: 84.5px;
+    }
+    
+            .PsicomotricidadComponentLogoInfo-nube-Container{
+                margin-top: 7px;
+            }
+            
+            .PsicomotricidadComponentLogoInfo-nube{
+                width: 107px;
+                height: 61px;
+            }
+    
+            .PsicomotricidadComponentLogoInfo-titulo{
+                width: 126px;
+                height: 52px;
+                top: 5px;
+            }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .PsicomotricidadComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-Principal-Container{
+        width: 194px;
+        height: 122.5px;
+    }
+    
+            .PsicomotricidadComponentLogoInfo-nube-Container{
+                margin-top: 10px;
+            }
+
+            .PsicomotricidadComponentLogoInfo-nube{
+                width: 160px;
+                height: 91px;
+            }
+    
+            .PsicomotricidadComponentLogoInfo-titulo{
+                width: 189px;
+                height: 78px;
+                top: 7px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .PsicomotricidadComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-Principal-Container{
+        width: 308px;
+        height: 194px;
+    }
+    
+            .PsicomotricidadComponentLogoInfo-nube-Container{
+                margin-top: 17px;
+            }
+
+            .PsicomotricidadComponentLogoInfo-nube{
+                width: 257px;
+                height: 146px;
+            }
+    
+            .PsicomotricidadComponentLogoInfo-titulo{
+                width: 300px;
+                height: 124px;
+                top: 12px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .PsicomotricidadComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-Principal-Container{
+        width: 385px;
+        height: 244px;
+    }
+    
+            .PsicomotricidadComponentLogoInfo-nube-Container{
+                margin-top: 22px;
+            }
+
+            .PsicomotricidadComponentLogoInfo-nube{
+                width: 322px;
+                height: 183px;
+            }
+    
+            .PsicomotricidadComponentLogoInfo-titulo{
+                width: 378px;
+                height: 156px;
+                top: 16px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .PsicomotricidadComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .PsicomotricidadComponentLogoInfo-Principal-Container{
+        width: 480px;
+        height: 304px;
+    }
+    
+            .PsicomotricidadComponentLogoInfo-nube-Container{
+                margin-top: 30px;
+            }
+
+            .PsicomotricidadComponentLogoInfo-nube{
+                width: 401px;
+                height: 228px;
+            }
+    
+            .PsicomotricidadComponentLogoInfo-titulo{
+                width: 473px;
+                height: 195px;
+                top: 22px;
+            }
+
+}

@@ -1,0 +1,87 @@
+.HallYdespachoImagen-image-container {
+    width: 100%;
+}
+
+.HallYdespachoImagen-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .HallYdespachoImagen-image-container {
+        /* width: 194px; */
+        height: 164px;
+    }
+    
+    .HallYdespachoImagen-image {
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .HallYdespachoImagen-image-container {
+        /* width: 300px; */
+        height: 309px;
+    }
+    
+    .HallYdespachoImagen-image {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .HallYdespachoImagen-image-container {
+        /* width: 490px; */
+        height: 394px;
+    }
+    
+    .HallYdespachoImagen-image {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .HallYdespachoImagen-image-container {
+        /* width: 580px; */
+        height: 493px;
+    }
+    
+    .HallYdespachoImagen-image {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .HallYdespachoImagen-image-container {
+        /* width: 725px; */
+        height: 616px;
+    }
+    
+    .HallYdespachoImagen-image {
+    }
+
+}

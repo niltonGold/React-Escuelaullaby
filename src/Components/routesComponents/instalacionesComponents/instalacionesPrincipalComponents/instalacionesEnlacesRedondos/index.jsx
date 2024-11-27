@@ -7,31 +7,31 @@ export const InstalacionesEnlacesRedondos = ( props ) => {
   const navigate = useNavigate();
 
   const handleAulasPage = () => {
-    navigate('/aulas');
+    navigate('/instalacionesPage/aulas');
   };
 
   const handleHallYdespachoPage = () => {
-    navigate('/hallYdespacho');
+    navigate('/instalacionesPage/hallYdespacho');
   };
 
   const handleComedorPage = () => {
-    navigate('/comedor');
+    navigate('/instalacionesPage/comedor');
   };
 
   const handleCocinaYlavanderiaPage = () => {
-    navigate('/cocinaYlavanderia');
+    navigate('/instalacionesPage/cocinaYlavanderia');
   };
 
   const handlePatiosPage = () => {
-    navigate('/patios');
+    navigate('/instalacionesPage/patios');
   };
 
   const handleHuertoEinvernaderoPage = () => {
-    navigate('/huertoEinvernadero');
+    navigate('/instalacionesPage/huertoEinvernadero');
   };
 
   const handleSalonDeActosPage = () => {
-    navigate('/salonDeActos');
+    navigate('/instalacionesPage/salonDeActos');
   };
   
   return (

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 import imagenCambiantePediatra1 from '../../../Images/inicio/pediatra/pediatra_1.jpg';
 import imagenCambiantePediatra2 from '../../../Images/inicio/pediatra/pediatra_2.jpg';
+import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
 export const PediatraPage = ( props ) => {
 
@@ -15,13 +15,6 @@ export const PediatraPage = ( props ) => {
       const [currentImage, setCurrentImage] = useState(0);
 
       const [isFading, setIsFading] = useState(true);
-
-      const navigate = useNavigate();
-      
-      const handleVolverAinicioClick = () => {
-            navigate('/inicioPage');
-      };
-
 
    useEffect(() => {
         const intervalId = setInterval(() => {
@@ -68,11 +61,7 @@ export const PediatraPage = ( props ) => {
         }}>
 
 
-                  <div className='pediatraPage-volverAinicio-container' onClick={handleVolverAinicioClick}>
-                        <div className='pediatraPage-volverAinicio-subContainer'>
-                              &lt;&lt; Volver a Inicio
-                        </div>
-                  </div>
+                  <VolverAinicio />
 
 
                   <div className='pediatraPage-subContainer'>

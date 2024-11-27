@@ -1,0 +1,307 @@
+.AulasExploradores-diplay-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.AulasExploradores-imagenRepeatPositionSize{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.AulasExploradores-positionAbsolute{
+    position: absolute;
+}
+
+.AulasExploradores-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+        .AulasExploradores-nube{
+            background-image: url('../../../../../Images/instalaciones/aulas/aulasImagenesPrincipales/aulasNube.png');
+            z-index: 1;
+            top: 0px;
+        }
+
+        .AulasExploradores-titulo{
+            background-image: url('../../../../../Images/instalaciones/aulas/aulasImagenesPrincipales/exploradores/exploradoresTitulo.png');
+            z-index: 2;
+        }
+
+        .AulasExploradores-edad{
+            font-size: 400;
+            z-index: 3;
+        }
+
+
+        .AulasExploradores-imagen-info{
+            align-items: center;
+            z-index: 2;
+        }
+
+
+                .AulasExploradores-imagen{
+                    background-image: url('../../../../../Images/instalaciones/aulas/aulasImagenesPrincipales/exploradores/exploradoresImagen.png');
+                    cursor: pointer;
+                }
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .AulasExploradores-diplay-flex-column{
+        font-size: 5px;
+    }
+    
+    .AulasExploradores-imagenRepeatPositionSize{
+    }
+    
+    .AulasExploradores-positionAbsolute{
+    }
+    
+    
+    
+    .AulasExploradores-Principal-Container{
+        width: 104px;
+        height: 145px;
+    }
+    
+            .AulasExploradores-nube{
+                width: 104px;
+                height: 59px;
+
+            }
+    
+            .AulasExploradores-titulo{
+                width: 91px;
+                height: 24px;
+                top: 7px;               
+            }
+    
+            .AulasExploradores-edad{
+                top: 25px;                
+            }
+    
+    
+            .AulasExploradores-imagen-info{
+                top: 25px;
+                gap: 0.2rem;                
+            }
+    
+    
+                    .AulasExploradores-imagen{
+                        width: 65px;
+                        height: 60px;                        
+                    }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .AulasExploradores-diplay-flex-column{
+        font-size: 7px;
+    }
+    
+    .AulasExploradores-imagenRepeatPositionSize{
+    }
+    
+    .AulasExploradores-positionAbsolute{
+    }
+    
+    
+    
+    .AulasExploradores-Principal-Container{
+        width: 155px;
+        height: 215px;
+    }
+    
+            .AulasExploradores-nube{
+                width: 155px;
+                height: 88px;
+            }
+    
+            .AulasExploradores-titulo{
+                width: 137px;
+                height: 36px;
+                top: 12px;
+            }
+    
+            .AulasExploradores-edad{
+                top: 38px;                
+            }
+    
+    
+            .AulasExploradores-imagen-info{
+                top: 38px;
+                gap: 0.4rem;
+            }
+            
+    
+    
+                    .AulasExploradores-imagen{
+                        width: 97px;
+                        height: 90px;                        
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .AulasExploradores-diplay-flex-column{
+        font-size: 11px;
+    }
+    
+    .AulasExploradores-imagenRepeatPositionSize{
+    }
+    
+    .AulasExploradores-positionAbsolute{
+    }
+    
+    
+    
+    .AulasExploradores-Principal-Container{
+        width: 250px;
+        height: 345px;
+    }
+    
+            .AulasExploradores-nube{
+                width: 250px;
+                height: 142px;
+            }
+    
+            .AulasExploradores-titulo{
+                width: 224px;
+                height: 59px;
+                top: 20px;                
+            }
+    
+            .AulasExploradores-edad{
+                top: 64px;                
+            }
+    
+    
+            .AulasExploradores-imagen-info{
+                top: 61px;
+                gap: 0.8rem;                
+            }
+    
+    
+                    .AulasExploradores-imagen{
+                        width: 154px;
+                        height: 143px;                        
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .AulasExploradores-diplay-flex-column{
+        font-size: 15px;
+    }
+    
+    .AulasExploradores-imagenRepeatPositionSize{
+    }
+    
+    .AulasExploradores-positionAbsolute{
+    }
+    
+    
+    
+    .AulasExploradores-Principal-Container{
+        width: 313px;
+        height: 425px;
+    }
+    
+            .AulasExploradores-nube{
+                width: 313px;
+                height: 178px;
+            }
+    
+            .AulasExploradores-titulo{
+                width: 281px;
+                height: 74px;
+                top: 25px;                
+            }
+    
+            .AulasExploradores-edad{
+                top: 78px;                
+            }
+    
+    
+            .AulasExploradores-imagen-info{
+                top: 75px;
+                gap: 0.9rem;               
+            }
+    
+    
+                    .AulasExploradores-imagen{
+                        width: 193px;
+                        height: 179px;                        
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .AulasExploradores-diplay-flex-column{
+        font-size: 18px;
+    }
+    
+    .AulasExploradores-imagenRepeatPositionSize{
+    }
+    
+    .AulasExploradores-positionAbsolute{
+    }
+    
+    
+    
+    .AulasExploradores-Principal-Container{
+        width: 390px;
+        height: 530px;
+    }
+    
+            .AulasExploradores-nube{
+                width: 390px;
+                height: 222px;
+            }
+    
+            .AulasExploradores-titulo{
+                width: 350px;
+                height: 92px;
+                top: 30px;                
+            }
+    
+            .AulasExploradores-edad{
+                top: 95px;                
+            }
+    
+    
+            .AulasExploradores-imagen-info{
+                top: 95px;
+                gap: 1rem;              
+            }
+    
+    
+                    .AulasExploradores-imagen{
+                        width: 241px;
+                        height: 224px;                        
+                    }
+
+}

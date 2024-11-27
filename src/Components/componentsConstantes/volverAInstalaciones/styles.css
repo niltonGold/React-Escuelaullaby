@@ -1,0 +1,155 @@
+.VolverAinstalaciones-container{
+    background-color: rgba(181, 181, 181, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+        .VolverAinstalaciones-volver-container{
+            color: #b58900;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            background-color: initial;
+            letter-spacing: normal;
+            text-shadow: none;
+            text-align: justify;
+            cursor: pointer;
+            display: flex;
+        }
+
+                .VolverAinstalaciones-volver-subContainer{
+                }
+                .VolverAinstalaciones-volver-subContainer:hover{
+                    background-color: rgba(176, 213, 235, 0.5);
+                }
+                .VolverAinstalaciones-volver-subContainer:active{
+                    background-color: rgba(136, 147, 158);
+                    color: rgb(255, 255, 255);
+                }
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .VolverAinstalaciones-container{
+    }
+
+            .VolverAinstalaciones-volver-container{
+                font-size: 5px;
+            }
+
+                    .VolverAinstalaciones-volver-subContainer{
+                        padding: 3px;
+                        border-radius: 5px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:hover{
+                        padding: 3px;
+                        border-radius: 5px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:active{
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .VolverAinstalaciones-container{
+    }
+
+            .VolverAinstalaciones-volver-container{
+                font-size: 7px;
+            }
+
+                    .VolverAinstalaciones-volver-subContainer{
+                        padding: 4px;
+                        border-radius: 7px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:hover{
+                        padding: 4px;
+                        border-radius: 7px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:active{
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .VolverAinstalaciones-container{
+    }
+
+            .VolverAinstalaciones-volver-container{
+                font-size: 11px;
+            }
+
+                    .VolverAinstalaciones-volver-subContainer{
+                        padding: 6px;
+                        border-radius: 10px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:hover{
+                        padding: 6px;
+                        border-radius: 10px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:active{
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .VolverAinstalaciones-container{
+    }
+
+            .VolverAinstalaciones-volver-container{
+                font-size: 15px;
+            }
+
+                    .VolverAinstalaciones-volver-subContainer{
+                        padding: 8px;
+                        border-radius: 12px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:hover{
+                        padding: 8px;
+                        border-radius: 12px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:active{
+                    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .VolverAinstalaciones-container{
+    }
+
+            .VolverAinstalaciones-volver-container{
+                font-size: 18px;
+            }
+
+                    .VolverAinstalaciones-volver-subContainer{
+                        padding: 10px;
+                        border-radius: 15px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:hover{
+                        padding: 10px;
+                        border-radius: 15px;
+                    }
+                    .VolverAinstalaciones-volver-subContainer:active{
+                    }
+
+}

@@ -1,76 +1,17 @@
-.hallYdespacho-volverYsiguiente{
-    background-color: rgba(102, 250, 208, 0.5);
-    display: flex;
-    justify-content: space-between;
-}
-
-        .hallYdespacho-volverAinstalaciones-container,
-        .hallYdespacho-siguiente-container{
-            color: #b58900;
-            font-weight: 700;
-            font-style: normal;
-            text-decoration: none;
-            text-transform: none;
-            background-color: initial;
-            letter-spacing: normal;
-            text-shadow: none;
-            text-align: justify;
-            cursor: pointer;
-            display: flex;
-            /* background-color: rgb(125, 111, 91); */
-
-            /* font-size: 5px; */
-        }
-
-
-                .hallYdespacho-volverAinstalaciones-subContainer,
-                .hallYdespacho-siguiente-subContainer{
-
-                    /* padding: 3px;
-                    border-radius: 5px; */
-                }
-                .hallYdespacho-volverAinstalaciones-subContainer:hover,
-                .hallYdespacho-siguiente-subContainer:hover{
-                    background-color: rgba(176, 213, 235, 0.5);
-
-                    /* padding: 3px;
-                    border-radius: 5px; */
-                }
-
-
 .hallYdespacho-subContainer{
-    background-color: rgb(114, 114, 223);
-/* 
-    font-size: 5px;
-    line-height: 8px; */
+    /* background-color: rgb(114, 114, 223); */
+    display: flex;
+    flex-direction: column;
 }
 
-
+.hallYdespacho-titulo_parrafo-container{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 @media (max-width: 480px) {
-
-    .hallYdespacho-volverYsiguiente{
-    }
-
-            .hallYdespacho-volverAinstalaciones-container,
-            .hallYdespacho-siguiente-container{
-                font-size: 5px;
-            }
-
-
-                    .hallYdespacho-volverAinstalaciones-subContainer,
-                    .hallYdespacho-siguiente-subContainer{
-                        padding: 3px;
-                        border-radius: 5px;
-                    }
-                    .hallYdespacho-volverAinstalaciones-subContainer:hover,
-                    .hallYdespacho-siguiente-subContainer:hover{
-                        padding: 3px;
-                        border-radius: 5px;
-                    }
-
 
     .hallYdespacho-subContainer{
         gap: 1rem;
@@ -78,33 +19,15 @@
         line-height: 8px;
     }
     
+    .hallYdespacho-titulo_parrafo-container{
+        gap: 0.3rem;
+    }
+
 }
 
 
 
-
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-
-    .hallYdespacho-volverYsiguiente{
-    }
-
-            .hallYdespacho-volverAinstalaciones-container,
-            .hallYdespacho-siguiente-container{
-                font-size: 7px;
-            }
-
-
-                    .hallYdespacho-volverAinstalaciones-subContainer,
-                    .hallYdespacho-siguiente-subContainer{
-                        padding: 4px;
-                        border-radius: 7px;
-                    }
-                    .hallYdespacho-volverAinstalaciones-subContainer:hover,
-                    .hallYdespacho-siguiente-subContainer:hover{
-                        padding: 4px;
-                        border-radius: 7px;
-                    }
-
 
     .hallYdespacho-subContainer{
         gap: 1.5rem;
@@ -112,33 +35,15 @@
         line-height: 10px;
     }
 
+    .hallYdespacho-titulo_parrafo-container{
+        gap: 0.5rem;
+    }
+
 }
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-
-    .hallYdespacho-volverYsiguiente{
-    }
-
-            .hallYdespacho-volverAinstalaciones-container,
-            .hallYdespacho-siguiente-container{
-                font-size: 11px;
-            }
-
-
-                    .hallYdespacho-volverAinstalaciones-subContainer,
-                    .hallYdespacho-siguiente-subContainer{
-                        padding: 6px;
-                        border-radius: 10px;
-                    }
-                    .hallYdespacho-volverAinstalaciones-subContainer:hover,
-                    .hallYdespacho-siguiente-subContainer:hover{
-                        padding: 6px;
-                        border-radius: 10px;
-                    }
-
 
     .hallYdespacho-subContainer{
         gap: 2rem;
@@ -146,33 +51,15 @@
         line-height: 18px;
     }
 
+    .hallYdespacho-titulo_parrafo-container{
+        gap: 0.8rem;
+    }
+
 }
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
-
-    .hallYdespacho-volverYsiguiente{
-    }
-
-            .hallYdespacho-volverAinstalaciones-container,
-            .hallYdespacho-siguiente-container{
-                font-size: 15px;
-            }
-
-
-                    .hallYdespacho-volverAinstalaciones-subContainer,
-                    .hallYdespacho-siguiente-subContainer{
-                        padding: 8px;
-                        border-radius: 12px;
-                    }
-                    .hallYdespacho-volverAinstalaciones-subContainer:hover,
-                    .hallYdespacho-siguiente-subContainer:hover{
-                        padding: 8px;
-                        border-radius: 12px;
-                    }
-
 
     .hallYdespacho-subContainer{
         gap: 2.5rem;
@@ -180,38 +67,24 @@
         line-height: 23px;
     }
 
-}
+    .hallYdespacho-titulo_parrafo-container{
+        gap: 0.8rem;
+    }
 
+}
 
 
 
 @media only screen and (min-width: 1200px) {
 
-    .hallYdespacho-volverYsiguiente{
-    }
-
-            .hallYdespacho-volverAinstalaciones-container,
-            .hallYdespacho-siguiente-container{
-                font-size: 18px;
-            }
-
-
-                    .hallYdespacho-volverAinstalaciones-subContainer,
-                    .hallYdespacho-siguiente-subContainer{
-                        padding: 10px;
-                        border-radius: 15px;
-                    }
-                    .hallYdespacho-volverAinstalaciones-subContainer:hover,
-                    .hallYdespacho-siguiente-subContainer:hover{
-                        padding: 10px,;
-                        border-radius: 15px;
-                    }
-
-
     .hallYdespacho-subContainer{
         gap: 3rem;
         font-size: 18px;
         line-height: 28px;
+    }
+
+    .hallYdespacho-titulo_parrafo-container{
+        gap: 1.2rem;
     }
 
 }

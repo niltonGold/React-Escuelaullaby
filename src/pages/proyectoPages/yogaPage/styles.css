@@ -1,0 +1,125 @@
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.YogaLogoTituloEfecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounceIn 0.8s ease-out;
+}
+
+
+
+.YogaPage-parrafos-imagenes-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.YogaPage-parrafos-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 480px) {
+    .YogaLogoTituloEfecto {
+        margin-bottom: 0.5rem;
+    }
+
+    .YogaPage-parrafos-imagenes-container{
+        gap: 1rem;
+    }
+
+    .YogaPage-parrafos-container{
+        gap: 0.5rem;
+    }  
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .YogaLogoTituloEfecto {
+        margin-bottom: 0.7rem;
+    }
+
+    .YogaPage-parrafos-imagenes-container{
+        gap: 1.5rem;
+    }
+
+    .YogaPage-parrafos-container{
+        gap: 0.7rem;
+    }    
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .YogaLogoTituloEfecto {
+        margin-bottom: 1rem;
+    }
+    
+    .YogaPage-parrafos-imagenes-container{
+        gap: 2rem;
+    }
+
+    .YogaPage-parrafos-container{
+        gap: 1rem;
+    } 
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .YogaLogoTituloEfecto {
+        margin-bottom: 1.4rem;
+    }
+
+    .YogaPage-parrafos-imagenes-container{
+        gap: 2.5rem;
+    }
+
+    .YogaPage-parrafos-container{
+        gap: 1.4rem;
+    } 
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .YogaLogoTituloEfecto {
+        margin-bottom: 1.6rem;
+    }
+
+    .YogaPage-parrafos-imagenes-container{
+        gap: 3rem;
+    }
+
+    .YogaPage-parrafos-container{
+        gap: 1.7rem;
+    } 
+
+}

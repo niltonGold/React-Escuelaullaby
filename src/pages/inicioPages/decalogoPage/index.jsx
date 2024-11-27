@@ -1,15 +1,10 @@
 import React from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
+
 
 export const DecalogoPage = ( props ) => {
-
-      const navigate = useNavigate();
-
-      const handleVolverAinicioClick = () => {
-            navigate('/inicioPage');
-      };
 
   return (
     <>
@@ -41,13 +36,7 @@ export const DecalogoPage = ( props ) => {
                     marginBottom: '5rem',
               }  
         }}>
-                  <div className='decalogoPage-volverAinicio-container' onClick={handleVolverAinicioClick}>
-                        
-                        <div className='pediatraPage-volverAinicio-subContainer'>
-                              &lt;&lt; Volver a Inicio
-                        </div>
-
-                  </div>
+                  <VolverAinicio />
 
 
                   <div className='decalogoPage-subContainer'>

@@ -1,0 +1,202 @@
+.JuegoComponentLogoInfo-diplay-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.JuegoComponentLogoInfo-imagenRepeatPositionSize{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.JuegoComponentLogoInfo-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+        .JuegoComponentLogoInfo-nube-Container{
+            background-color: rgb(240, 198, 143, 0.5);
+        }
+        
+        .JuegoComponentLogoInfo-nube{
+            background-image: url('../../../../Images/proyecto/aulasNube.png');
+            z-index: 1;
+            top: 0px;
+        }
+
+        .JuegoComponentLogoInfo-titulo{
+            background-image: url('../../../../Images/proyecto/juego/juego.png');
+            position: absolute;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .JuegoComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .JuegoComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .JuegoComponentLogoInfo-Principal-Container{
+        width: 130px;
+        height: 84.5px;
+    }
+    
+            .JuegoComponentLogoInfo-nube-Container{
+                margin-top: 7px;
+            }
+            
+            .JuegoComponentLogoInfo-nube{
+                width: 107px;
+                height: 61px;
+            }
+    
+            .JuegoComponentLogoInfo-titulo{
+                width: 67px;
+                height: 48px;
+                top: 14px;
+            }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .JuegoComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .JuegoComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .JuegoComponentLogoInfo-Principal-Container{
+        width: 194px;
+        height: 122.5px;
+    }
+    
+            .JuegoComponentLogoInfo-nube-Container{
+                margin-top: 10px;
+            }
+
+            .JuegoComponentLogoInfo-nube{
+                width: 160px;
+                height: 91px;
+            }
+    
+            .JuegoComponentLogoInfo-titulo{
+                width: 100px;
+                height: 72px;
+                top: 21px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .JuegoComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .JuegoComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .JuegoComponentLogoInfo-Principal-Container{
+        width: 308px;
+        height: 194px;
+    }
+    
+            .JuegoComponentLogoInfo-nube-Container{
+                margin-top: 17px;
+            }
+
+            .JuegoComponentLogoInfo-nube{
+                width: 257px;
+                height: 146px;
+            }
+    
+            .JuegoComponentLogoInfo-titulo{
+                width: 162px;
+                height: 116px;
+                top: 35px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .JuegoComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .JuegoComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .JuegoComponentLogoInfo-Principal-Container{
+        width: 385px;
+        height: 244px;
+    }
+    
+            .JuegoComponentLogoInfo-nube-Container{
+                margin-top: 22px;
+            }
+
+            .JuegoComponentLogoInfo-nube{
+                width: 322px;
+                height: 183px;
+            }
+    
+            .JuegoComponentLogoInfo-titulo{
+                width: 202px;
+                height: 145px;
+                top: 45px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .JuegoComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .JuegoComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .JuegoComponentLogoInfo-Principal-Container{
+        width: 480px;
+        height: 304px;
+    }
+    
+            .JuegoComponentLogoInfo-nube-Container{
+                margin-top: 30px;
+            }
+
+            .JuegoComponentLogoInfo-nube{
+                width: 401px;
+                height: 228px;
+            }
+    
+            .JuegoComponentLogoInfo-titulo{
+                width: 252px;
+                height: 181px;
+                top: 60px;
+            }
+
+}

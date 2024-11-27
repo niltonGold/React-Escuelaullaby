@@ -1,0 +1,126 @@
+.VolverAinicio-container{
+    color: #b58900;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    background-color: initial;
+    letter-spacing: normal;
+    text-shadow: none;
+    text-align: justify;
+    cursor: pointer;
+    display: flex;
+    /* background-color: rgb(224, 188, 138); */
+}
+
+        .VolverAinicio-subContainer{
+        }
+        .VolverAinicio-subContainer:hover{
+            background-color: rgba(176, 213, 235, 0.5);
+        }
+        .VolverAinicio-subContainer:active{
+            background-color: rgba(136, 147, 158);
+            color: rgb(255, 255, 255);
+        }
+
+
+
+
+@media (max-width: 480px) {
+
+    .VolverAinicio-container{
+        font-size: 5px;
+    }
+
+            .VolverAinicio-subContainer{
+                padding: 3px;
+                border-radius: 5px;
+            }
+            .VolverAinicio-subContainer:hover{
+                padding: 3px;
+                border-radius: 5px;   
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .VolverAinicio-container{
+        font-size: 7px;
+    }
+    
+            .VolverAinicio-subContainer{
+                padding: 4px;
+                border-radius: 7px;
+            }
+            .VolverAinicio-subContainer:hover{
+                padding: 4px;
+                border-radius: 7px;   
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .VolverAinicio-container{
+        font-size: 11px;
+    }
+    
+            .VolverAinicio-subContainer{
+                padding: 6px;
+                border-radius: 10px;
+            }
+            .VolverAinicio-subContainer:hover{
+                padding: 6px;
+                border-radius: 10px;   
+            }
+    
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .VolverAinicio-container{
+        font-size: 15px;
+    }
+    
+            .VolverAinicio-subContainer{
+                padding: 8px;
+                border-radius: 12px;
+            }
+            .VolverAinicio-subContainer:hover{
+                padding: 8px;
+                border-radius: 12px;   
+            }
+    
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .VolverAinicio-container{
+        font-size: 18px;
+    }
+    
+            .VolverAinicio-subContainer{
+                padding: 10px;
+                border-radius: 15px;
+            }
+            .VolverAinicio-subContainer:hover{
+                padding: 10px;
+                border-radius: 15px;   
+            }
+    
+}
+                                      
+

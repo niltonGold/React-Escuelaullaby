@@ -1,23 +1,72 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { VolverAinstalacionesYsiguiente } from '../../../Components/componentsConstantes/volverAInstalacionesYSiguiente';
+import { Siguiente } from '../../../Components/componentsConstantes/siguiente';
+import { TituloCabecera } from '../../../Components/componentsConstantes/tituloCabecera';
+import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
+import ComedorTitulo from '../../../Images/instalaciones/comedor/comedorTitulo.png'
+import { ComedorImagenesCambiantes } from '../../../Components/routesComponents/instalacionesComponents/comedor/comedorImagenesCambiantes';
 
 export const Comedor = ( props ) => {
 
-      const navigate = useNavigate();
+      const IrAcocinaYlavanderia = 'instalacionesPage/cocinaYlavanderia';
       
-      const handleVolverAinstalacionesClick = () => {
-            navigate('/instalacionesPage');
-      };
+      const ComedorTituloImagen = ComedorTitulo;
 
-      const handleSiguienteClick = () => {
-            navigate('/cocinaYlavanderia');
-      };
+      const [ComedorTituloImagenAnchura, setComedorTituloImagenAnchura] = useState(0);
 
+      const [ComedorTituloImagenAltura, setComedorTituloImagenAltura] = useState(0);
+
+      const ComedorTexto = `Lullaby es una de las pocas escuelas infantiles de la zona 
+                            que ofrece un espacio exclusivamente destinado a la alimentación, 
+                            consiguiendo así que las aulas no tengan más función que la propia 
+                            educación de los niños, manteniéndolas como espacios agradables, 
+                            limpios y ausente olores. El comedor cuenta con un sistema de 
+                            filtración de olores y renovación de aire específico para la 
+                            actividad que se desarrolla en este espacio: la alimentación.`
+
+      useEffect(() => {
+            // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
+            const updateDimensions = () => {
+                  const width = window.innerWidth;
+                  if (width <= 480) {
+
+                        setComedorTituloImagenAnchura(160); // Ancho y alto para pantallas pequeñas
+                        setComedorTituloImagenAltura(70);
+
+                  } else if (width >= 481 && width <= 767) {
+
+                        setComedorTituloImagenAnchura(240); // Ancho y alto para pantallas medianas
+                        setComedorTituloImagenAltura(105);
+
+                  } else if (width >= 768 && width <= 959) {
+
+                        setComedorTituloImagenAnchura(384); // Ancho y alto para pantallas grandes
+                        setComedorTituloImagenAltura(168);
+
+                  } else if (width >= 960 && width <= 1199) {
+
+                        setComedorTituloImagenAnchura(479); // Ancho y alto para pantallas extra grandes
+                        setComedorTituloImagenAltura(209);
+
+                  } else {
+                        setComedorTituloImagenAnchura(598); // Ancho y alto para pantallas muy grandes
+                        setComedorTituloImagenAltura(261);
+                  }
+            };
+
+            // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
+            updateDimensions();
+            window.addEventListener('resize', updateDimensions);
+
+            // Limpia el evento al desmontar el componente
+            return () => window.removeEventListener('resize', updateDimensions);
+    }, []);
   return (
     <>
-        <Box  sx={{     backgroundColor: 'rgb(242, 186, 100)',
+        <Box  sx={{     
+            backgroundColor: 'rgb(242, 186, 100)',
                   '@media (max-width: 480px)': {
                         width: `${props.anchuraComedor480px}rem`,
                         marginTop: '1rem',
@@ -45,33 +94,21 @@ export const Comedor = ( props ) => {
                   }  
           }}>
           
-                  <div className='comedor-volverYsiguiente'>
-                        <div className='comedor-volverAinstalaciones-container' onClick={handleVolverAinstalacionesClick}>
-                              <div className='comedor-volverAinstalaciones-subContainer'>
-                                    &lt;&lt; Volver a Instalaciones
-                              </div>
-                        </div>
-
-                        <div className='comedor-siguiente-container' onClick={handleSiguienteClick}>
-                              <div className='comedor-siguiente-subContainer'>
-                                    Siguiente &gt;&gt;
-                              </div>
-                        </div>
-                  </div>
+                  <VolverAinstalacionesYsiguiente enlace={IrAcocinaYlavanderia} />
 
                   <div  className='comedor-subContainer'>
-                              comedor
-                              <div className='comedor-volverYsiguiente'>
-                                    
-                                    <div />
+                              
+                              <div className='comedor-titulo_parrafo-container'>
+                                    <TituloCabecera imagenBackgroundUbicacion={ComedorTituloImagen}
+                                                    anchuraTitulo={ComedorTituloImagenAnchura}
+                                                    alturaTitulo={ComedorTituloImagenAltura} />
 
-                                    <div className='comedor-siguiente-container' onClick={handleSiguienteClick}>
-                                          <div className='comedor-siguiente-subContainer'>
-                                                Siguiente &gt;&gt;
-                                          </div>
-                                    </div>
-                                    
+                                    <Parrafo parrafoTexto={ComedorTexto} />
                               </div>
+
+                              <ComedorImagenesCambiantes />
+
+                              <Siguiente enlace={IrAcocinaYlavanderia} />
                   </div>
           
           </Box>

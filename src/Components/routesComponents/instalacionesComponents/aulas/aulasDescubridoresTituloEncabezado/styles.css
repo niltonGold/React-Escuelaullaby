@@ -1,0 +1,159 @@
+.DescubridoresTituloEncabezado-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.DescubridoresTituloEncabezado-subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+}
+
+    .DescubridoresTituloEncabezado-titulo{
+        background-image: url('../../../../../Images/instalaciones/aulas/descubridores/descubridoresTitulo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .DescubridoresTituloEncabezado-imagen{
+        background-image: url('../../../../../Images/instalaciones/aulas/descubridores/descubridoresImagen.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+
+@media (max-width: 480px) {
+
+    .DescubridoresTituloEncabezado-Principal-Container{
+    }
+
+    .DescubridoresTituloEncabezado-subContainer{
+        height: 137px;
+    }
+
+        .DescubridoresTituloEncabezado-titulo{
+            width: 87px;
+            height: 22px;
+            top: 0px;
+        }
+
+        .DescubridoresTituloEncabezado-imagen{
+            width: 129px;
+            height: 109px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .DescubridoresTituloEncabezado-Principal-Container{
+    }
+
+    .DescubridoresTituloEncabezado-subContainer{
+        height: 207px;
+    }
+
+        .DescubridoresTituloEncabezado-titulo{
+            width: 131px;
+            height: 33px;
+            top: 0px;
+        }
+
+        .DescubridoresTituloEncabezado-imagen{
+            width: 194px;
+            height: 164px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .DescubridoresTituloEncabezado-Principal-Container{
+    }
+
+    .DescubridoresTituloEncabezado-subContainer{
+        height: 335px;
+    }
+
+        .DescubridoresTituloEncabezado-titulo{
+            width: 202px;
+            height: 51px;
+            top: 0px;
+        }
+
+        .DescubridoresTituloEncabezado-imagen{
+            width: 311px;
+            height: 263px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .DescubridoresTituloEncabezado-Principal-Container{
+    }
+
+    .DescubridoresTituloEncabezado-subContainer{
+        height: 420px;
+    }
+        .DescubridoresTituloEncabezado-titulo{
+            width: 254px;
+            height: 64px;
+            top: 0px;
+        }
+
+        .DescubridoresTituloEncabezado-imagen{
+            width: 389px;
+            height: 329px;
+            top: 0px;
+        }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .DescubridoresTituloEncabezado-Principal-Container{
+    }
+
+    .DescubridoresTituloEncabezado-subContainer{
+        height: 520px;
+    }
+        .DescubridoresTituloEncabezado-titulo{
+            width: 317px;
+            height: 80px;
+            top: 0px;
+        }
+
+        .DescubridoresTituloEncabezado-imagen{
+            width: 486px;
+            height: 411px;
+            top: 0px;
+        }
+
+}

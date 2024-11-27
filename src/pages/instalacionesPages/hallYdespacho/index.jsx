@@ -1,19 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { VolverAinstalacionesYsiguiente } from '../../../Components/componentsConstantes/volverAInstalacionesYSiguiente';
+import { Siguiente } from '../../../Components/componentsConstantes/siguiente';
+import { TituloCabecera } from '../../../Components/componentsConstantes/tituloCabecera';
+import HallYdespachoTitulo from '../../../Images/instalaciones/hallYDespacho/hallydespachoTitulo.png';
+import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
+import { HallYdespachoImagen } from '../../../Components/routesComponents/instalacionesComponents/hallYdespacho/HallYdespachoHallyDespachoImagen';
 
 export const HallYdespacho = ( props ) => {
 
-      const navigate = useNavigate();
-      
-      const handleVolverAinstalacionesClick = () => {
-            navigate('/instalacionesPage');
-      };
+      const IrComedor = 'instalacionesPage/comedor';
 
-      const handleSiguienteClick = () => {
-            navigate('/comedor');
-      };
+      const HallYdespachoTituloImagen = HallYdespachoTitulo;
+
+      const [HallYdespachoTituloImagenAnchura, setHallYdespachoTituloImagenAnchura] = useState(0);
+
+      const [HallYdespachoTituloImagenAltura, setHallYdespachoTituloImagenAltura] = useState(0);
+
+      const HallYdespachoTexto = `El hall es la zona de recepción de los niños y padres, el lugar de 
+                                  bienvenida a Lullaby. El despacho es uno de los puntos de reunión 
+                                  de la dirección y tutores con las familias de los niños, separado 
+                                  del hall con una cristalera para ofrecer la máxima transparencia 
+                                  y, a la vez, privacidad.`
+
+      useEffect(() => {
+            // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
+            const updateDimensions = () => {
+                  const width = window.innerWidth;
+                  if (width <= 480) {
+
+                        setHallYdespachoTituloImagenAnchura(151); // Ancho y alto para pantallas pequeñas
+                        setHallYdespachoTituloImagenAltura(28);
+
+                  } else if (width >= 481 && width <= 767) {
+
+                        setHallYdespachoTituloImagenAnchura(226); // Ancho y alto para pantallas medianas
+                        setHallYdespachoTituloImagenAltura(42);
+
+                  } else if (width >= 768 && width <= 959) {
+
+                        setHallYdespachoTituloImagenAnchura(366); // Ancho y alto para pantallas grandes
+                        setHallYdespachoTituloImagenAltura(68);
+
+                  } else if (width >= 960 && width <= 1199) {
+
+                        setHallYdespachoTituloImagenAnchura(458); // Ancho y alto para pantallas extra grandes
+                        setHallYdespachoTituloImagenAltura(85);
+
+                  } else {
+                        setHallYdespachoTituloImagenAnchura(571); // Ancho y alto para pantallas muy grandes
+                        setHallYdespachoTituloImagenAltura(107);
+                  }
+            };
+
+            // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
+            updateDimensions();
+            window.addEventListener('resize', updateDimensions);
+
+            // Limpia el evento al desmontar el componente
+            return () => window.removeEventListener('resize', updateDimensions);
+    }, []);
 
   return (
     <>
@@ -46,33 +93,24 @@ export const HallYdespacho = ( props ) => {
           }}>
           
                  
-                  <div className='hallYdespacho-volverYsiguiente'>
-                        <div className='hallYdespacho-volverAinstalaciones-container' onClick={handleVolverAinstalacionesClick}>
-                              <div className='hallYdespacho-volverAinstalaciones-subContainer'>
-                                    &lt;&lt; Volver a Instalaciones
-                              </div>
-                        </div>
-
-                        <div className='hallYdespacho-siguiente-container' onClick={handleSiguienteClick}>
-                              <div className='hallYdespacho-siguiente-subContainer'>
-                                    Siguiente &gt;&gt;
-                              </div>
-                        </div>
-                  </div>
+                  <VolverAinstalacionesYsiguiente enlace={IrComedor} />
 
                   <div  className='hallYdespacho-subContainer'>
-                              HallYdespacho
-                              <div className='hallYdespacho-volverYsiguiente'>
-                                    
-                                    <div />
+                              
+                              <div className='hallYdespacho-titulo_parrafo-container'>
+                                          
+                                          <TituloCabecera imagenBackgroundUbicacion={HallYdespachoTituloImagen}
+                                                      anchuraTitulo={HallYdespachoTituloImagenAnchura}
+                                                      alturaTitulo={HallYdespachoTituloImagenAltura} />
 
-                                    <div className='hallYdespacho-siguiente-container' onClick={handleSiguienteClick}>
-                                          <div className='hallYdespacho-siguiente-subContainer'>
-                                                Siguiente &gt;&gt;
-                                          </div>
-                                    </div>
-                                    
+                                          <Parrafo parrafoTexto={HallYdespachoTexto} />
+
                               </div>
+
+                              <HallYdespachoImagen />
+                              
+                              <Siguiente enlace={IrComedor} />
+
                   </div>
 
                  

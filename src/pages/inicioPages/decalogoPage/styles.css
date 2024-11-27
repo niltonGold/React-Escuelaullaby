@@ -1,33 +1,3 @@
-.decalogoPage-volverAinicio-container{
-    color: #b58900;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-    background-color: initial;
-    letter-spacing: normal;
-    text-shadow: none;
-    text-align: justify;
-    cursor: pointer;
-    display: flex;
-    /* background-color: rgb(125, 111, 91); */
-
-    /* font-size: 5px; */
-}
-
-
-        .decalogoPage-volverAinicio-subContainer{
-
-            /* padding: 3px;
-            border-radius: 5px; */
-        }
-        .decalogoPage-volverAinicio-subContainer:hover{
-            background-color: rgba(176, 213, 235, 0.5);
-
-            /* padding: 3px;
-            border-radius: 5px;  */
-        }
-
 .decalogoPage-subContainer{
     /* background-color: rgb(114, 114, 223); */
     display: flex;
@@ -140,82 +110,58 @@
 
 @media (max-width: 480px) {
 
-.decalogoPage-volverAinicio-container{
-    font-size: 5px;
-}
-
-
-        .decalogoPage-volverAinicio-subContainer{
-            padding: 3px;
-            border-radius: 5px;
-        }
-        .decalogoPage-volverAinicio-subContainer:hover{
-            padding: 3px;
-            border-radius: 5px; 
-        }
-
-.decalogoPage-subContainer{
-    gap: 1rem;
-    font-size: 5px;
-    line-height: 8px;
-}
-
-
-    .decalogoPage-decalogoPage-container{
+    .decalogoPage-subContainer{
+        gap: 1rem;
+        font-size: 5px;
+        line-height: 8px;
     }
 
 
-            .decalogoPage-decalogoLogo{
-                border-radius: 18px;
-                width: 33px;
-                height: 33px;
-            }
+        .decalogoPage-decalogoPage-container{
+        }
 
 
-                .decalogoPage-parrafo {
-                padding-left: 0.4rem;
+                .decalogoPage-decalogoLogo{
+                    border-radius: 18px;
+                    width: 33px;
+                    height: 33px;
                 }
-                
 
-                    .decalogoPage-parrafo::before {
+
+                    .decalogoPage-parrafo {
+                    padding-left: 0.4rem;
                     }
+                    
 
-                    .decalogoPage-parrafo_1::before {
-                    }
-
-                    .decalogoPage-parrafo_2::before {
-                    }
-
-                    .decalogoPage-parrafo_3::before {
-                    }
-
-                    .decalogoPage-parrafo_4::before {
-                    }
-
-                    .decalogoPage-parrafo_5::before {
-                    }
-
-                    .decalogoPage-parrafo_6::before {
-                    }
-
-                    .decalogoPage-parrafo_7::before {
-                    }
-
-                    .decalogoPage-parrafo_8::before {
-                    }
-
-                    .decalogoPage-parrafo_9::before {
-                    }
-
-                    .decalogoPage-parrafo_10 {
-                        padding-left: 0.6rem;
-                    }
-
-                        .decalogoPage-parrafo_10::before {
+                        .decalogoPage-parrafo::before {
+                        }
+                        .decalogoPage-parrafo_1::before {
+                        }
+                        .decalogoPage-parrafo_2::before {
+                        }
+                        .decalogoPage-parrafo_3::before {
+                        }
+                        .decalogoPage-parrafo_4::before {
+                        }
+                        .decalogoPage-parrafo_5::before {
+                        }
+                        .decalogoPage-parrafo_6::before {
+                        }
+                        .decalogoPage-parrafo_7::before {
+                        }
+                        .decalogoPage-parrafo_8::before {
+                        }
+                        .decalogoPage-parrafo_9::before {
+                        }
+                        .decalogoPage-parrafo_10 {
+                            padding-left: 0.6rem;
                         }
 
-            .decalogo-letraResaltada{
-            }
+                            .decalogoPage-parrafo_10::before {
+                            }
+
+                .decalogo-letraResaltada{
+                }
     
 }
 
@@ -223,82 +169,59 @@
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
-.decalogoPage-volverAinicio-container{
-    font-size: 7px;
-}
-
-
-        .decalogoPage-volverAinicio-subContainer{
-            padding: 4px;
-            border-radius: 7px;
-        }
-        .decalogoPage-volverAinicio-subContainer:hover{
-            padding: 4px;
-            border-radius: 7px; 
-        }
-
-.decalogoPage-subContainer{
-    gap: 1.5rem;
-    font-size: 7px;
-    line-height: 10px;
-}
-
-
-    .decalogoPage-decalogoPage-container{
+    .decalogoPage-subContainer{
+        gap: 1.5rem;
+        font-size: 7px;
+        line-height: 10px;
     }
 
 
-            .decalogoPage-decalogoLogo{
-                border-radius: 25px;
-                width: 49px;
-                height: 49px;
-            }
+        .decalogoPage-decalogoPage-container{
+        }
 
 
-                .decalogoPage-parrafo {
-                padding-left: 0.5rem;
+                .decalogoPage-decalogoLogo{
+                    border-radius: 25px;
+                    width: 49px;
+                    height: 49px;
                 }
-                
 
-                    .decalogoPage-parrafo::before {
+
+                    .decalogoPage-parrafo {
+                    padding-left: 0.5rem;
                     }
+                    
 
-                    .decalogoPage-parrafo_1::before {
-                    }
-
-                    .decalogoPage-parrafo_2::before {
-                    }
-
-                    .decalogoPage-parrafo_3::before {
-                    }
-
-                    .decalogoPage-parrafo_4::before {
-                    }
-
-                    .decalogoPage-parrafo_5::before {
-                    }
-
-                    .decalogoPage-parrafo_6::before {
-                    }
-
-                    .decalogoPage-parrafo_7::before {
-                    }
-
-                    .decalogoPage-parrafo_8::before {
-                    }
-
-                    .decalogoPage-parrafo_9::before {
-                    }
-
-                    .decalogoPage-parrafo_10 {
-                        padding-left: 0.7rem;
-                    }
-
-                        .decalogoPage-parrafo_10::before {
+                        .decalogoPage-parrafo::before {
+                        }
+                        .decalogoPage-parrafo_1::before {
+                        }
+                        .decalogoPage-parrafo_2::before {
+                        }
+                        .decalogoPage-parrafo_3::before {
+                        }
+                        .decalogoPage-parrafo_4::before {
+                        }
+                        .decalogoPage-parrafo_5::before {
+                        }
+                        .decalogoPage-parrafo_6::before {
+                        }
+                        .decalogoPage-parrafo_7::before {
+                        }
+                        .decalogoPage-parrafo_8::before {
+                        }
+                        .decalogoPage-parrafo_9::before {
                         }
 
-            .decalogo-letraResaltada{
-            }
+                        .decalogoPage-parrafo_10 {
+                            padding-left: 0.7rem;
+                        }
+
+                            .decalogoPage-parrafo_10::before {
+                            }
+
+                .decalogo-letraResaltada{
+                }
 
 }
 
@@ -306,82 +229,59 @@
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-.decalogoPage-volverAinicio-container{
-    font-size: 11px;
-}
-
-
-        .decalogoPage-volverAinicio-subContainer{
-            padding: 6px;
-            border-radius: 10px;
-        }
-        .decalogoPage-volverAinicio-subContainer:hover{
-            padding: 6px;
-            border-radius: 10px;
-        }
-
-.decalogoPage-subContainer{
-    gap: 2rem;
-    font-size: 11px;
-    line-height: 18px;
-}
-
-
-    .decalogoPage-decalogoPage-container{
+    .decalogoPage-subContainer{
+        gap: 2rem;
+        font-size: 11px;
+        line-height: 18px;
     }
 
 
-            .decalogoPage-decalogoLogo{
-                border-radius: 40px;
-                width: 80px;
-                height: 80px;
-            }
+        .decalogoPage-decalogoPage-container{
+        }
 
 
-                .decalogoPage-parrafo {
-                padding-left: 0.8rem;
+                .decalogoPage-decalogoLogo{
+                    border-radius: 40px;
+                    width: 80px;
+                    height: 80px;
                 }
-                
 
-                    .decalogoPage-parrafo::before {
+
+                    .decalogoPage-parrafo {
+                    padding-left: 0.8rem;
                     }
+                    
 
-                    .decalogoPage-parrafo_1::before {
-                    }
-
-                    .decalogoPage-parrafo_2::before {
-                    }
-
-                    .decalogoPage-parrafo_3::before {
-                    }
-
-                    .decalogoPage-parrafo_4::before {
-                    }
-
-                    .decalogoPage-parrafo_5::before {
-                    }
-
-                    .decalogoPage-parrafo_6::before {
-                    }
-
-                    .decalogoPage-parrafo_7::before {
-                    }
-
-                    .decalogoPage-parrafo_8::before {
-                    }
-
-                    .decalogoPage-parrafo_9::before {
-                    }
-
-                    .decalogoPage-parrafo_10 {
-                        padding-left: 1.2rem;
-                    }
-
-                        .decalogoPage-parrafo_10::before {
+                        .decalogoPage-parrafo::before {
+                        }
+                        .decalogoPage-parrafo_1::before {
+                        }
+                        .decalogoPage-parrafo_2::before {
+                        }
+                        .decalogoPage-parrafo_3::before {
+                        }
+                        .decalogoPage-parrafo_4::before {
+                        }
+                        .decalogoPage-parrafo_5::before {
+                        }
+                        .decalogoPage-parrafo_6::before {
+                        }
+                        .decalogoPage-parrafo_7::before {
+                        }
+                        .decalogoPage-parrafo_8::before {
+                        }
+                        .decalogoPage-parrafo_9::before {
                         }
 
-            .decalogo-letraResaltada{
-            }
+                        .decalogoPage-parrafo_10 {
+                            padding-left: 1.2rem;
+                        }
+
+                            .decalogoPage-parrafo_10::before {
+                            }
+
+                .decalogo-letraResaltada{
+                }
 
 }
 
@@ -389,82 +289,59 @@
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
-.decalogoPage-volverAinicio-container{
-    font-size: 15px;
-}
-
-
-        .decalogoPage-volverAinicio-subContainer{
-            padding: 8px;
-            border-radius: 12px;
-        }
-        .decalogoPage-volverAinicio-subContainer:hover{
-            padding: 8px;
-            border-radius: 12px;
-        }
-
-.decalogoPage-subContainer{
-    gap: 2.5rem;
-    font-size: 15px;
-    line-height: 23px;
-}
-
-
-    .decalogoPage-decalogoPage-container{
+    .decalogoPage-subContainer{
+        gap: 2.5rem;
+        font-size: 15px;
+        line-height: 23px;
     }
 
 
-            .decalogoPage-decalogoLogo{
-                border-radius: 50px;
-                width: 100px;
-                height: 100px;
-            }
+        .decalogoPage-decalogoPage-container{
+        }
 
 
-                .decalogoPage-parrafo {
-                padding-left: 1.1rem;
+                .decalogoPage-decalogoLogo{
+                    border-radius: 50px;
+                    width: 100px;
+                    height: 100px;
                 }
-                
 
-                    .decalogoPage-parrafo::before {
+
+                    .decalogoPage-parrafo {
+                    padding-left: 1.1rem;
                     }
+                    
 
-                    .decalogoPage-parrafo_1::before {
-                    }
-
-                    .decalogoPage-parrafo_2::before {
-                    }
-
-                    .decalogoPage-parrafo_3::before {
-                    }
-
-                    .decalogoPage-parrafo_4::before {
-                    }
-
-                    .decalogoPage-parrafo_5::before {
-                    }
-
-                    .decalogoPage-parrafo_6::before {
-                    }
-
-                    .decalogoPage-parrafo_7::before {
-                    }
-
-                    .decalogoPage-parrafo_8::before {
-                    }
-
-                    .decalogoPage-parrafo_9::before {
-                    }
-
-                    .decalogoPage-parrafo_10 {
-                        padding-left: 1.6rem;
-                    }
-
-                        .decalogoPage-parrafo_10::before {
+                        .decalogoPage-parrafo::before {
+                        }
+                        .decalogoPage-parrafo_1::before {
+                        }
+                        .decalogoPage-parrafo_2::before {
+                        }
+                        .decalogoPage-parrafo_3::before {
+                        }
+                        .decalogoPage-parrafo_4::before {
+                        }
+                        .decalogoPage-parrafo_5::before {
+                        }
+                        .decalogoPage-parrafo_6::before {
+                        }
+                        .decalogoPage-parrafo_7::before {
+                        }
+                        .decalogoPage-parrafo_8::before {
+                        }
+                        .decalogoPage-parrafo_9::before {
                         }
 
-            .decalogo-letraResaltada{
-            }
+                        .decalogoPage-parrafo_10 {
+                            padding-left: 1.6rem;
+                        }
+
+                            .decalogoPage-parrafo_10::before {
+                            }
+
+                .decalogo-letraResaltada{
+                }
 
 }
 
@@ -472,81 +349,58 @@
 
 @media only screen and (min-width: 1200px) {
 
-.decalogoPage-volverAinicio-container{
-    font-size: 18px;
-}
-
-
-        .decalogoPage-volverAinicio-subContainer{
-            padding: 10px;
-            border-radius: 15px;
-        }
-        .decalogoPage-volverAinicio-subContainer:hover{
-            padding: 10px;
-            border-radius: 15px;
-        }
-
-.decalogoPage-subContainer{
-    gap: 3rem;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-
-    .decalogoPage-decalogoPage-container{
+    .decalogoPage-subContainer{
+        gap: 3rem;
+        font-size: 18px;
+        line-height: 28px;
     }
 
 
-            .decalogoPage-decalogoLogo{
-                border-radius: 60px;
-                width: 125px;
-                height: 125px;
-            }
+        .decalogoPage-decalogoPage-container{
+        }
 
 
-                .decalogoPage-parrafo {
-                padding-left: 1.4rem;
+                .decalogoPage-decalogoLogo{
+                    border-radius: 60px;
+                    width: 125px;
+                    height: 125px;
                 }
-                
 
-                    .decalogoPage-parrafo::before {
+
+                    .decalogoPage-parrafo {
+                    padding-left: 1.4rem;
                     }
+                    
 
-                    .decalogoPage-parrafo_1::before {
-                    }
-
-                    .decalogoPage-parrafo_2::before {
-                    }
-
-                    .decalogoPage-parrafo_3::before {
-                    }
-
-                    .decalogoPage-parrafo_4::before {
-                    }
-
-                    .decalogoPage-parrafo_5::before {
-                    }
-
-                    .decalogoPage-parrafo_6::before {
-                    }
-
-                    .decalogoPage-parrafo_7::before {
-                    }
-
-                    .decalogoPage-parrafo_8::before {
-                    }
-
-                    .decalogoPage-parrafo_9::before {
-                    }
-
-                    .decalogoPage-parrafo_10 {
-                        padding-left: 1.9rem;
-                    }
-
-                        .decalogoPage-parrafo_10::before {
+                        .decalogoPage-parrafo::before {
+                        }
+                        .decalogoPage-parrafo_1::before {
+                        }
+                        .decalogoPage-parrafo_2::before {
+                        }
+                        .decalogoPage-parrafo_3::before {
+                        }
+                        .decalogoPage-parrafo_4::before {
+                        }
+                        .decalogoPage-parrafo_5::before {
+                        }
+                        .decalogoPage-parrafo_6::before {
+                        }
+                        .decalogoPage-parrafo_7::before {
+                        }
+                        .decalogoPage-parrafo_8::before {
+                        }
+                        .decalogoPage-parrafo_9::before {
                         }
 
-            .decalogo-letraResaltada{
-            }
+                        .decalogoPage-parrafo_10 {
+                            padding-left: 1.9rem;
+                        }
+
+                            .decalogoPage-parrafo_10::before {
+                            }
+
+                .decalogo-letraResaltada{
+                }
 
 }

@@ -1,0 +1,58 @@
+.DarwinPage-Subcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .DarwinPage-Subcontainer{
+        gap: 1rem;
+    }  
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .DarwinPage-Subcontainer{
+        gap: 1.5rem;
+    }  
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .DarwinPage-Subcontainer{
+        gap: 2rem;
+    }  
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .DarwinPage-Subcontainer{
+        gap: 2.5rem;
+    }  
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .DarwinPage-Subcontainer{
+        gap: 3rem;
+    }  
+
+}

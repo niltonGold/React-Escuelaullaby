@@ -1,0 +1,202 @@
+.YogaComponentLogoInfo-diplay-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.YogaComponentLogoInfo-imagenRepeatPositionSize{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.YogaComponentLogoInfo-Principal-Container{
+    background-color: rgba(98, 98, 246, 0.5);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+        .YogaComponentLogoInfo-nube-Container{
+            background-color: rgb(240, 198, 143, 0.5);
+        }
+        
+        .YogaComponentLogoInfo-nube{
+            background-image: url('../../../../Images/proyecto/aulasNube.png');
+            z-index: 1;
+            top: 0px;
+        }
+
+        .YogaComponentLogoInfo-titulo{
+            background-image: url('../../../../Images/proyecto/yoga/yoga.png');
+            position: absolute;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .YogaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .YogaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .YogaComponentLogoInfo-Principal-Container{
+        width: 130px;
+        height: 84.5px;
+    }
+    
+            .YogaComponentLogoInfo-nube-Container{
+                margin-top: 7px;
+            }
+            
+            .YogaComponentLogoInfo-nube{
+                width: 107px;
+                height: 61px;
+            }
+    
+            .YogaComponentLogoInfo-titulo{
+                width: 71px;
+                height: 55px;
+                top: 2px;
+            }
+    
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .YogaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .YogaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .YogaComponentLogoInfo-Principal-Container{
+        width: 194px;
+        height: 122.5px;
+    }
+    
+            .YogaComponentLogoInfo-nube-Container{
+                margin-top: 10px;
+            }
+
+            .YogaComponentLogoInfo-nube{
+                width: 160px;
+                height: 91px;
+            }
+    
+            .YogaComponentLogoInfo-titulo{
+                width: 106px;
+                height: 82px;
+                top: 3px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .YogaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .YogaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .YogaComponentLogoInfo-Principal-Container{
+        width: 308px;
+        height: 194px;
+    }
+    
+            .YogaComponentLogoInfo-nube-Container{
+                margin-top: 17px;
+            }
+
+            .YogaComponentLogoInfo-nube{
+                width: 257px;
+                height: 146px;
+            }
+    
+            .YogaComponentLogoInfo-titulo{
+                width: 172px;
+                height: 133px;
+                top: 4px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .YogaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .YogaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .YogaComponentLogoInfo-Principal-Container{
+        width: 385px;
+        height: 244px;
+    }
+    
+            .YogaComponentLogoInfo-nube-Container{
+                margin-top: 22px;
+            }
+
+            .YogaComponentLogoInfo-nube{
+                width: 322px;
+                height: 183px;
+            }
+    
+            .YogaComponentLogoInfo-titulo{
+                width: 215px;
+                height: 166px;
+                top: 7px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .YogaComponentLogoInfo-diplay-flex-column{
+    }
+    
+    .YogaComponentLogoInfo-imagenRepeatPositionSize{
+    }
+    
+    .YogaComponentLogoInfo-Principal-Container{
+        width: 480px;
+        height: 304px;
+    }
+    
+            .YogaComponentLogoInfo-nube-Container{
+                margin-top: 30px;
+            }
+
+            .YogaComponentLogoInfo-nube{
+                width: 401px;
+                height: 228px;
+            }
+    
+            .YogaComponentLogoInfo-titulo{
+                width: 268px;
+                height: 207px;
+                top: 11px;
+            }
+
+}
