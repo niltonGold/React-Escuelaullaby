@@ -14,7 +14,7 @@
 }
 
 .AulasDescubridores-Principal-Container{
-    background-color: rgba(98, 98, 246, 0.5);
+    /* background-color: rgba(98, 98, 246, 0.5); */
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -42,11 +42,12 @@
             z-index: 2;
         }
 
-
                 .AulasDescubridores-imagen{
                     background-image: url('../../../../../Images/instalaciones/aulas/aulasImagenesPrincipales/descubridores/descubridoresImagen.png');
                     cursor: pointer;
                 }
+
+
 
 
 
@@ -63,8 +64,6 @@
     .AulasDescubridores-positionAbsolute{
     }
     
-    
-    
     .AulasDescubridores-Principal-Container{
         width: 104px;
         height: 142px;
@@ -73,7 +72,6 @@
             .AulasDescubridores-nube{
                 width: 104px;
                 height: 59px;
-
             }
     
             .AulasDescubridores-titulo{
@@ -86,12 +84,10 @@
                 top: 22px;                
             }
     
-    
             .AulasDescubridores-imagen-info{
                 top: 40px;
                 gap: 0.2rem;                
             }
-    
     
                     .AulasDescubridores-imagen{
                         width: 95px;
@@ -99,7 +95,6 @@
                     }
     
 }
-
 
 
 
@@ -114,8 +109,6 @@
     
     .AulasDescubridores-positionAbsolute{
     }
-    
-    
     
     .AulasDescubridores-Principal-Container{
         width: 155px;
@@ -137,21 +130,17 @@
                 top: 33px;                
             }
     
-    
             .AulasDescubridores-imagen-info{
                 top: 60px;
                 gap: 0.4rem;
             }
             
-    
-    
                     .AulasDescubridores-imagen{
                         width: 142px;
                         height: 120px;                        
                     }
 
 }
-
 
 
 
@@ -166,8 +155,6 @@
     
     .AulasDescubridores-positionAbsolute{
     }
-    
-    
     
     .AulasDescubridores-Principal-Container{
         width: 250px;
@@ -189,12 +176,10 @@
                 top: 50px;                
             }
     
-    
             .AulasDescubridores-imagen-info{
                 top: 95px;
                 gap: 0.8rem;                
             }
-    
     
                     .AulasDescubridores-imagen{
                         width: 230px;
@@ -202,7 +187,6 @@
                     }
 
 }
-
 
 
 
@@ -217,8 +201,6 @@
     
     .AulasDescubridores-positionAbsolute{
     }
-    
-    
     
     .AulasDescubridores-Principal-Container{
         width: 313px;
@@ -240,12 +222,10 @@
                 top: 65px;                
             }
     
-    
             .AulasDescubridores-imagen-info{
                 top: 120px;
                 gap: 0.9rem;                
             }
-    
     
                     .AulasDescubridores-imagen{
                         width: 288px;
@@ -253,7 +233,6 @@
                     }
 
 }
-
 
 
 
@@ -268,8 +247,6 @@
     
     .AulasDescubridores-positionAbsolute{
     }
-    
-    
     
     .AulasDescubridores-Principal-Container{
         width: 390px;
@@ -291,12 +268,10 @@
                 top: 80px;                
             }
     
-    
             .AulasDescubridores-imagen-info{
                 top: 150px;
                 gap: 1rem;                
             }
-    
     
                     .AulasDescubridores-imagen{
                         width: 360px;

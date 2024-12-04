@@ -5,6 +5,7 @@
     width: fit-content;
     cursor: pointer;
 }
+
 .Info-Container:hover{
     color: rgb(38, 139, 210);
     background-color: rgb(205, 222, 232);
@@ -32,7 +33,6 @@
 
 
 
-
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     .Info-Container{
@@ -51,7 +51,6 @@
     }
 
 }
-
 
 
 
@@ -76,7 +75,6 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .Info-Container{
@@ -95,7 +93,6 @@
     }
 
 }
-
 
 
 

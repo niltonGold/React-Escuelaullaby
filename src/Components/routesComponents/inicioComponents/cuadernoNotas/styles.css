@@ -1,7 +1,5 @@
 .CuadernoNotas-Principal-Container{
-    background-color: bisque;
-    
-
+    /* background-color: bisque; */
     background-image: url('../../../../Images/inicio/cuadernoNotas/cuadernoNotas.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -17,46 +15,24 @@
         .cuadernoNotas-subContainer{
             display: flex;
             flex-direction: row;
-
-            /* font-size: 5px;
-            width: 220px;
-            height: 108px; */
         }
-
-        
 
                 .cuadernoNotas-parrafo-Container{
                     /* background-color: rgba(88, 249, 196, 0.4); */
                     display: flex;
                     flex-direction: column;
-
-                    /* gap: 0.4rem; */
                 }
-
                 
                         .cuadernoNotas-parrafo-titulo{
                             color: rgb(16, 44, 138);
-                            
-                            /* line-height: 11px;
-                            font-size: 10px;
-                            font-weight: 500; */
                         }
 
                         .cuadernoNotas-parrafo{
-
-                            /* line-height: 7px; */
                         }
 
         .cuadernoNotas-lineaDivisora{
             background-color: rgb(184, 200, 210);
-
-            /* width: 7.5px;
-            height: 110px;
-            margin-top: 10px;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem; */
         }
-
 
 
 
@@ -67,7 +43,6 @@
 
     .CuadernoNotas-Principal-Container{
         height: 164px;
-        /* margin-bottom: 0rem; */
     }
 
             .cuadernoNotas-subContainer{
@@ -76,12 +51,9 @@
                 height: 108px;
             }
 
-            
-
                     .cuadernoNotas-parrafo-Container{
                         gap: 0.4rem;
                     }
-
                     
                             .cuadernoNotas-parrafo-titulo{
                                 line-height: 11px;
@@ -101,9 +73,7 @@
                 margin-right: 0.5rem;
             }
 
-
 }
-
 
 
 
@@ -111,7 +81,6 @@
 
     .CuadernoNotas-Principal-Container{
         height: 246px;
-        /* margin-bottom: 0rem; */
     }
 
             .cuadernoNotas-subContainer{
@@ -120,13 +89,10 @@
                 height: 165px;
             }
 
-            
-
                     .cuadernoNotas-parrafo-Container{
                         gap: 0.5rem;
                     }
 
-                    
                             .cuadernoNotas-parrafo-titulo{
                                 line-height: 18px;
                                 font-size: 15px;
@@ -149,12 +115,10 @@
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .CuadernoNotas-Principal-Container{
         height: 393px;
-        /* margin-bottom: 4rem; */
     }
 
             .cuadernoNotas-subContainer{
@@ -163,13 +127,10 @@
                 height: 260px;
             }
 
-            
-
                     .cuadernoNotas-parrafo-Container{
                         gap: 1rem;
                     }
 
-                    
                             .cuadernoNotas-parrafo-titulo{
                                 line-height: 29px;
                                 font-size: 25px;
@@ -192,12 +153,10 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .CuadernoNotas-Principal-Container{
         height: 491px;
-        /* margin-bottom: 5rem; */
     }
 
             .cuadernoNotas-subContainer{
@@ -206,13 +165,10 @@
                 height: 320px;
             }
 
-            
-
                     .cuadernoNotas-parrafo-Container{
                         gap: 1.5rem;
                     }
 
-                    
                             .cuadernoNotas-parrafo-titulo{
                                 line-height: 38px;
                                 font-size: 32px;
@@ -235,12 +191,10 @@
 
 
 
-
 @media only screen and (min-width: 1200px) {
 
     .CuadernoNotas-Principal-Container{
         height: 613px;
-        /* margin-bottom: 5rem; */
     }
 
             .cuadernoNotas-subContainer{
@@ -249,13 +203,10 @@
                 height: 410px;
             }
 
-            
-
                     .cuadernoNotas-parrafo-Container{
                         gap: 2rem;
                     }
 
-                    
                             .cuadernoNotas-parrafo-titulo{
                                 line-height: 43px;
                                 font-size: 35px;

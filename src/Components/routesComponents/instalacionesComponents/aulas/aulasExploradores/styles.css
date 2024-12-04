@@ -14,7 +14,7 @@
 }
 
 .AulasExploradores-Principal-Container{
-    background-color: rgba(98, 98, 246, 0.5);
+    /* background-color: rgba(98, 98, 246, 0.5); */
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -52,6 +52,7 @@
 
 
 
+
 @media (max-width: 480px) {
 
     .AulasExploradores-diplay-flex-column{
@@ -64,8 +65,6 @@
     .AulasExploradores-positionAbsolute{
     }
     
-    
-    
     .AulasExploradores-Principal-Container{
         width: 104px;
         height: 145px;
@@ -74,7 +73,6 @@
             .AulasExploradores-nube{
                 width: 104px;
                 height: 59px;
-
             }
     
             .AulasExploradores-titulo{
@@ -87,12 +85,10 @@
                 top: 25px;                
             }
     
-    
             .AulasExploradores-imagen-info{
                 top: 25px;
                 gap: 0.2rem;                
             }
-    
     
                     .AulasExploradores-imagen{
                         width: 65px;
@@ -100,7 +96,6 @@
                     }
     
 }
-
 
 
 
@@ -115,8 +110,6 @@
     
     .AulasExploradores-positionAbsolute{
     }
-    
-    
     
     .AulasExploradores-Principal-Container{
         width: 155px;
@@ -138,21 +131,17 @@
                 top: 38px;                
             }
     
-    
             .AulasExploradores-imagen-info{
                 top: 38px;
                 gap: 0.4rem;
             }
             
-    
-    
                     .AulasExploradores-imagen{
                         width: 97px;
                         height: 90px;                        
                     }
 
 }
-
 
 
 
@@ -167,8 +156,6 @@
     
     .AulasExploradores-positionAbsolute{
     }
-    
-    
     
     .AulasExploradores-Principal-Container{
         width: 250px;
@@ -190,12 +177,10 @@
                 top: 64px;                
             }
     
-    
             .AulasExploradores-imagen-info{
                 top: 61px;
                 gap: 0.8rem;                
             }
-    
     
                     .AulasExploradores-imagen{
                         width: 154px;
@@ -203,7 +188,6 @@
                     }
 
 }
-
 
 
 
@@ -218,8 +202,6 @@
     
     .AulasExploradores-positionAbsolute{
     }
-    
-    
     
     .AulasExploradores-Principal-Container{
         width: 313px;
@@ -241,12 +223,10 @@
                 top: 78px;                
             }
     
-    
             .AulasExploradores-imagen-info{
                 top: 75px;
                 gap: 0.9rem;               
             }
-    
     
                     .AulasExploradores-imagen{
                         width: 193px;
@@ -254,7 +234,6 @@
                     }
 
 }
-
 
 
 
@@ -269,8 +248,6 @@
     
     .AulasExploradores-positionAbsolute{
     }
-    
-    
     
     .AulasExploradores-Principal-Container{
         width: 390px;
@@ -292,12 +269,10 @@
                 top: 95px;                
             }
     
-    
             .AulasExploradores-imagen-info{
                 top: 95px;
                 gap: 1rem;              
             }
-    
     
                     .AulasExploradores-imagen{
                         width: 241px;

@@ -14,7 +14,7 @@
 }
 
 .AulasAventureros-Principal-Container{
-    background-color: rgba(98, 98, 246, 0.5);
+    /* background-color: rgba(98, 98, 246, 0.5); */
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -36,17 +36,16 @@
             z-index: 3;
         }
 
-
         .AulasAventureros-imagen-info{
             align-items: center;
             z-index: 2;
         }
 
-
                 .AulasAventureros-imagen{
                     background-image: url('../../../../../Images/instalaciones/aulas/aulasImagenesPrincipales/aventureros/aventurerosImagen.png');
                     cursor: pointer;
                 }
+
 
 
 
@@ -64,8 +63,6 @@
     .AulasAventureros-positionAbsolute{
     }
     
-    
-    
     .AulasAventureros-Principal-Container{
         width: 104px;
         height: 145px;
@@ -74,7 +71,6 @@
             .AulasAventureros-nube{
                 width: 104px;
                 height: 59px;
-
             }
     
             .AulasAventureros-titulo{
@@ -87,12 +83,10 @@
                 top: 25px;                
             }
     
-    
             .AulasAventureros-imagen-info{
                 top: 38px;
                 gap: 0.2rem;                
             }
-    
     
                     .AulasAventureros-imagen{
                         width: 98px;
@@ -100,7 +94,6 @@
                     }
     
 }
-
 
 
 
@@ -115,8 +108,6 @@
     
     .AulasAventureros-positionAbsolute{
     }
-    
-    
     
     .AulasAventureros-Principal-Container{
         width: 155px;
@@ -138,21 +129,17 @@
                 top: 37px;                
             }
     
-    
             .AulasAventureros-imagen-info{
                 top: 57px;
                 gap: 0.4rem;
             }
             
-    
-    
                     .AulasAventureros-imagen{
                         width: 147px;
                         height: 128px;                        
                     }
 
 }
-
 
 
 
@@ -167,8 +154,6 @@
     
     .AulasAventureros-positionAbsolute{
     }
-    
-    
     
     .AulasAventureros-Principal-Container{
         width: 250px;
@@ -190,12 +175,10 @@
                 top: 60px;                
             }
     
-    
             .AulasAventureros-imagen-info{
                 top: 92px;
                 gap: 0.8rem;                
             }
-    
     
                     .AulasAventureros-imagen{
                         width: 233px;
@@ -203,7 +186,6 @@
                     }
 
 }
-
 
 
 
@@ -218,8 +200,6 @@
     
     .AulasAventureros-positionAbsolute{
     }
-    
-    
     
     .AulasAventureros-Principal-Container{
         width: 313px;
@@ -241,12 +221,10 @@
                 top: 70px;                
             }
     
-    
             .AulasAventureros-imagen-info{
                 top: 115px;
                 gap: 0.9rem;                
             }
-    
     
                     .AulasAventureros-imagen{
                         width: 291px;
@@ -254,7 +232,6 @@
                     }
 
 }
-
 
 
 
@@ -269,8 +246,6 @@
     
     .AulasAventureros-positionAbsolute{
     }
-    
-    
     
     .AulasAventureros-Principal-Container{
         width: 390px;
@@ -292,12 +267,10 @@
                 top: 90px;                
             }
     
-    
             .AulasAventureros-imagen-info{
                 top: 140px;
                 gap: 1rem;                
             }
-    
     
                     .AulasAventureros-imagen{
                         width: 364px;

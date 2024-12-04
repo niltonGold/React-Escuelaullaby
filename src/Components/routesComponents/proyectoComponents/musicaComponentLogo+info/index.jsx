@@ -3,30 +3,45 @@ import './styles.css';
 import { useNavigate } from 'react-router-dom';
 import { InfoProyecto } from '../proyectos+info';
 
+
+
+
+
 export const MusicaComponentLogoInfo = () => {
 
-        const navigate = useNavigate();
 
-        const handleExploradoresPage = () => {
-                navigate('/proyecto/musica');
-        };
+    const navigate = useNavigate();
 
-  return (
-    <>
-        <div className="MusicaComponentLogoInfo-Principal-Container MusicaComponentLogoInfo-diplay-flex-column">
-                
-                <div className="MusicaComponentLogoInfo-nube-Container">
-                        <div className="MusicaComponentLogoInfo-nube MusicaComponentLogoInfo-imagenRepeatPositionSize" />
-                </div>
+    const handleExploradoresPage = () => {
+        window.scrollTo({ top: 0 });
+        navigate('/proyectoPage/musica');
+    };
 
-                <div onClick={handleExploradoresPage}>
-                        <InfoProyecto />
-                </div>
 
-                <div className="MusicaComponentLogoInfo-titulo MusicaComponentLogoInfo-imagenRepeatPositionSize" onClick={handleExploradoresPage}/>
+    return (
+        <>
 
-        </div>
-    </>
-  );
+
+            <div className="MusicaComponentLogoInfo-Principal-Container MusicaComponentLogoInfo-diplay-flex-column">
+                    
+                    <div className="MusicaComponentLogoInfo-nube-Container">
+
+                            <div className="MusicaComponentLogoInfo-nube MusicaComponentLogoInfo-imagenRepeatPositionSize" />
+
+                    </div>
+
+                    <div onClick={handleExploradoresPage}>
+
+                            <InfoProyecto />
+                            
+                    </div>
+
+                    <div className="MusicaComponentLogoInfo-titulo MusicaComponentLogoInfo-imagenRepeatPositionSize" onClick={handleExploradoresPage}/>
+
+            </div>
+
+
+        </>
+    );
 };
 

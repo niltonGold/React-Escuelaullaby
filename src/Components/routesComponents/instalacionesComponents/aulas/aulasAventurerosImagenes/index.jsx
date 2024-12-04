@@ -8,7 +8,9 @@ import imagen_4 from '../../../../../Images/instalaciones/aulas/aventureros/aven
 
 
 
+
 export const AulasAventurerosImagenes = ( ) => {
+
 
     const images = [
         imagen_1,
@@ -32,7 +34,10 @@ export const AulasAventurerosImagenes = ( ) => {
         return () => clearInterval(intervalId);
     }, [images.length]);
 
+
     return (
+        <>
+        
 
             <div className="AulasAventurerosImagenes-image-container">
                 <div
@@ -41,5 +46,7 @@ export const AulasAventurerosImagenes = ( ) => {
                 />
             </div>
 
+
+        </>
     );
 };

@@ -7,9 +7,14 @@ import PsicomotricidadPageTitulo from '../../../Images/proyecto/psicomotricidad/
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import { PsicomotricidadImagenesCambiantes } from '../../../Components/routesComponents/proyectoComponents/psicomotricidadImagenesCambiantes';
 
+
+
+
+
 export const PsicomotricidadPage = ( props ) => {
 
-  const IrAJuegoPage = 'proyecto/juego';
+
+  const IrAJuegoPage = 'proyectoPage/juego';
 
   const PsicomotricidadPageTituloImagen = PsicomotricidadPageTitulo;
 
@@ -29,7 +34,6 @@ export const PsicomotricidadPage = ( props ) => {
 
   const PsicomotricidadPagesTexto3 = `Los niños de 0-1 año también tendrán sesiones de psicomotricidad, 
                                       adaptadas a su edad, en su propia aula.`;
-
 
   useEffect(() => {
       // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
@@ -64,62 +68,70 @@ export const PsicomotricidadPage = ( props ) => {
       return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
+
   return (
-    <Box  sx={{     backgroundColor: 'rgb(242, 186, 113)',
-                    '@media (max-width: 480px)': {
-                              width: `${props.anchuraPsicomotricidadPage480px}rem`,
-                              marginTop: '1rem',
-                              marginBottom: '0rem', 
-                    },
-                    '@media (min-width: 481px) and (max-width: 767px)': {
-                              width: `${props.anchuraPsicomotricidadPage481px_a_767px}rem`,
-                              marginTop: '1.5rem',
-                              marginBottom: '0rem',   
-                    },
-                    '@media (min-width: 768px) and (max-width: 959px)': {
-                              width: `${props.anchuraPsicomotricidadPage768px_a_959px}rem`, 
-                              marginTop: '2rem',
-                              marginBottom: '5rem',
-                    },
-                    '@media (min-width: 960px) and (max-width: 1199px)': {
-                              width: `${props.anchuraPsicomotricidadPage960px_a_1199px}rem`,
-                              marginTop: '2.5rem',
-                              marginBottom: '5rem', 
-                    },
-                    '@media (min-width: 1200px)': {
-                              width: `${props.anchuraPsicomotricidadPage1200px}rem`,
-                              marginTop: '3rem',
-                              marginBottom: '5rem', 
-                    }  
-    }}>
+    <>
+            <Box  sx={{     
+                            // backgroundColor: 'rgb(242, 186, 113)',
+                            '@media (max-width: 480px)': {
+                                    width: `${props.anchuraPsicomotricidadPage480px}rem`,
+                                    marginTop: '1rem',
+                                    marginBottom: '0rem', 
+                            },
+                            '@media (min-width: 481px) and (max-width: 767px)': {
+                                    width: `${props.anchuraPsicomotricidadPage481px_a_767px}rem`,
+                                    marginTop: '1.5rem',
+                                    marginBottom: '0rem',   
+                            },
+                            '@media (min-width: 768px) and (max-width: 959px)': {
+                                    width: `${props.anchuraPsicomotricidadPage768px_a_959px}rem`, 
+                                    marginTop: '2rem',
+                                    marginBottom: '5rem',
+                            },
+                            '@media (min-width: 960px) and (max-width: 1199px)': {
+                                    width: `${props.anchuraPsicomotricidadPage960px_a_1199px}rem`,
+                                    marginTop: '2.5rem',
+                                    marginBottom: '5rem', 
+                            },
+                            '@media (min-width: 1200px)': {
+                                    width: `${props.anchuraPsicomotricidadPage1200px}rem`,
+                                    marginTop: '3rem',
+                                    marginBottom: '5rem', 
+                            }  
+            }}>
 
-        <VolverAProyectoYsiguiente enlace={IrAJuegoPage} />
-          
-        <div className='PsicomotricidadPageLogoTituloEfecto'>
 
-                  <TituloCabecera imagenBackgroundUbicacion={PsicomotricidadPageTituloImagen}
-                                    anchuraTitulo={PsicomotricidadPageTituloImagenAnchura}
-                                    alturaTitulo={PsicomotricidadPageTituloImagenAltura} 
-                                />
+                    <VolverAProyectoYsiguiente enlace={IrAJuegoPage} />
+                    
 
-        </div>
+                    <div className='PsicomotricidadPageLogoTituloEfecto'>
 
-        <div className='PsicomotricidadPage-parrafos-imagenes-container'>
-
-                    <div className='PsicomotricidadPage-parrafos-container'>
-
-                            <Parrafo parrafoTexto={PsicomotricidadPagesTexto1} />
-
-                            <Parrafo parrafoTexto={PsicomotricidadPagesTexto2} />
-
-                            <Parrafo parrafoTexto={PsicomotricidadPagesTexto3} />
+                            <TituloCabecera imagenBackgroundUbicacion={PsicomotricidadPageTituloImagen}
+                                                anchuraTitulo={PsicomotricidadPageTituloImagenAnchura}
+                                                alturaTitulo={PsicomotricidadPageTituloImagenAltura} 
+                            />
 
                     </div>
 
-                    <PsicomotricidadImagenesCambiantes />
-                    
-        </div>
-        
-    </Box>
+
+                    <div className='PsicomotricidadPage-parrafos-imagenes-container'>
+
+                                <div className='PsicomotricidadPage-parrafos-container'>
+
+                                        <Parrafo parrafoTexto={PsicomotricidadPagesTexto1} />
+
+                                        <Parrafo parrafoTexto={PsicomotricidadPagesTexto2} />
+
+                                        <Parrafo parrafoTexto={PsicomotricidadPagesTexto3} />
+
+                                </div>
+
+                                <PsicomotricidadImagenesCambiantes />
+                                
+                    </div>
+                
+
+            </Box>
+    </>
   )
 }

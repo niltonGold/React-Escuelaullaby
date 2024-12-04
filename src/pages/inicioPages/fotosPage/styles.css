@@ -1,5 +1,5 @@
 .fotosPage-fotosLogo-container{
-    background-color: rgb(98, 188, 188);
+    /* background-color: rgb(98, 188, 188); */
     display: flex;
     justify-content: center;
 }
@@ -10,7 +10,6 @@
             background-position: center;
             background-size: 100% 100%;
             cursor: pointer;
-            background-color: antiquewhite;
         }
 
 
@@ -48,45 +47,45 @@
 
 
 
+
+
 @media (max-width: 480px) {
 
-.fotosPage-fotosLogo-container{
-    margin-bottom: 1rem;
+    .fotosPage-fotosLogo-container{
+        margin-bottom: 1rem;
+    }
+
+            .fotosPage-fotosLogo{
+                border-radius: 18px;
+                width: 33px;
+                height: 33px;
+            }
+
+
+            .fotosPage-imagenes-container{
+                gap: 1rem;
+            }
+
+
+                    .fotosPage-imagenesContainer{
+                        gap: 1rem;
+                    }
+
+                            .fotosPage-imagen{
+                                width: 130px;
+                                height: 90px;
+                            }
+
+                            .fotosPage-imagen1{
+                            }
+                            .fotosPage-imagen2{
+                            }
+                            .fotosPage-imagen3{
+                            }
+                            .fotosPage-imagen4{
+                            }
+
 }
-
-        .fotosPage-fotosLogo{
-            border-radius: 18px;
-            width: 33px;
-            height: 33px;
-        }
-
-
-        .fotosPage-imagenes-container{
-            gap: 1rem;
-        }
-
-
-                .fotosPage-imagenesContainer{
-                    gap: 1rem;
-                }
-
-                        .fotosPage-imagen{
-                            width: 130px;
-                            height: 90px;
-                        }
-
-                        .fotosPage-imagen1{
-                        }
-                        .fotosPage-imagen2{
-                        }
-                        .fotosPage-imagen3{
-                        }
-                        .fotosPage-imagen4{
-                        }
-
-
-}
-
 
 
 
@@ -130,7 +129,6 @@
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     
     .fotosPage-fotosLogo-container{
@@ -143,11 +141,9 @@
                 height: 80px;
             }
     
-    
             .fotosPage-imagenes-container{
                 gap: 3.5rem;
             }
-    
     
                     .fotosPage-imagenesContainer{
                         gap: 3.5rem;
@@ -189,7 +185,6 @@
                 gap: 4.5rem;
             }
     
-    
                     .fotosPage-imagenesContainer{
                         gap: 4.5rem;
                     }
@@ -225,11 +220,9 @@
                 height: 125px;
             }
     
-    
             .fotosPage-imagenes-container{
                 gap: 5.5rem;
             }
-    
     
                     .fotosPage-imagenesContainer{
                         gap: 5.5rem;

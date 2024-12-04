@@ -5,8 +5,10 @@
 }
 
 .huertoEinvernadero-titulo_parrafo-container{
- 
 }
+
+
+
 
 
 
@@ -18,12 +20,10 @@
         line-height: 8px;
     }
 
-    .huertoEinvernadero-titulo_parrafo-container{
-        
+    .huertoEinvernadero-titulo_parrafo-container{ 
     }
     
 }
-
 
 
 
@@ -35,12 +35,10 @@
         line-height: 10px;
     }
 
-    .huertoEinvernadero-titulo_parrafo-container{
-        
+    .huertoEinvernadero-titulo_parrafo-container{ 
     }
 
 }
-
 
 
 
@@ -52,12 +50,10 @@
         line-height: 18px;
     }
 
-    .huertoEinvernadero-titulo_parrafo-container{
-     
+    .huertoEinvernadero-titulo_parrafo-container{ 
     }
 
 }
-
 
 
 
@@ -69,12 +65,10 @@
         line-height: 23px;
     }
 
-    .huertoEinvernadero-titulo_parrafo-container{
-        
+    .huertoEinvernadero-titulo_parrafo-container{  
     }
 
 }
-
 
 
 
@@ -87,8 +81,6 @@
     }
 
     .huertoEinvernadero-titulo_parrafo-container{
-        /* gap: 1.2rem; */
-
     }
 
 }

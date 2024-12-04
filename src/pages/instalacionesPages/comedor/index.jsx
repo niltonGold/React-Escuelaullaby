@@ -8,65 +8,73 @@ import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import ComedorTitulo from '../../../Images/instalaciones/comedor/comedorTitulo.png'
 import { ComedorImagenesCambiantes } from '../../../Components/routesComponents/instalacionesComponents/comedor/comedorImagenesCambiantes';
 
+
+
+
+
 export const Comedor = ( props ) => {
 
-      const IrAcocinaYlavanderia = 'instalacionesPage/cocinaYlavanderia';
-      
-      const ComedorTituloImagen = ComedorTitulo;
 
-      const [ComedorTituloImagenAnchura, setComedorTituloImagenAnchura] = useState(0);
+    const IrAcocinaYlavanderia = 'instalacionesPage/cocinaYlavanderia';
+    
+    const ComedorTituloImagen = ComedorTitulo;
 
-      const [ComedorTituloImagenAltura, setComedorTituloImagenAltura] = useState(0);
+    const [ComedorTituloImagenAnchura, setComedorTituloImagenAnchura] = useState(0);
 
-      const ComedorTexto = `Lullaby es una de las pocas escuelas infantiles de la zona 
-                            que ofrece un espacio exclusivamente destinado a la alimentación, 
-                            consiguiendo así que las aulas no tengan más función que la propia 
-                            educación de los niños, manteniéndolas como espacios agradables, 
-                            limpios y ausente olores. El comedor cuenta con un sistema de 
-                            filtración de olores y renovación de aire específico para la 
-                            actividad que se desarrolla en este espacio: la alimentación.`
+    const [ComedorTituloImagenAltura, setComedorTituloImagenAltura] = useState(0);
 
-      useEffect(() => {
-            // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
-            const updateDimensions = () => {
-                  const width = window.innerWidth;
-                  if (width <= 480) {
+    const ComedorTexto = `Lullaby es una de las pocas escuelas infantiles de la zona 
+                        que ofrece un espacio exclusivamente destinado a la alimentación, 
+                        consiguiendo así que las aulas no tengan más función que la propia 
+                        educación de los niños, manteniéndolas como espacios agradables, 
+                        limpios y ausente olores. El comedor cuenta con un sistema de 
+                        filtración de olores y renovación de aire específico para la 
+                        actividad que se desarrolla en este espacio: la alimentación.`
 
-                        setComedorTituloImagenAnchura(160); // Ancho y alto para pantallas pequeñas
-                        setComedorTituloImagenAltura(70);
+    useEffect(() => {
+        // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
+        const updateDimensions = () => {
+                const width = window.innerWidth;
+                if (width <= 480) {
 
-                  } else if (width >= 481 && width <= 767) {
+                    setComedorTituloImagenAnchura(160); // Ancho y alto para pantallas pequeñas
+                    setComedorTituloImagenAltura(70);
 
-                        setComedorTituloImagenAnchura(240); // Ancho y alto para pantallas medianas
-                        setComedorTituloImagenAltura(105);
+                } else if (width >= 481 && width <= 767) {
 
-                  } else if (width >= 768 && width <= 959) {
+                    setComedorTituloImagenAnchura(240); // Ancho y alto para pantallas medianas
+                    setComedorTituloImagenAltura(105);
 
-                        setComedorTituloImagenAnchura(384); // Ancho y alto para pantallas grandes
-                        setComedorTituloImagenAltura(168);
+                } else if (width >= 768 && width <= 959) {
 
-                  } else if (width >= 960 && width <= 1199) {
+                    setComedorTituloImagenAnchura(384); // Ancho y alto para pantallas grandes
+                    setComedorTituloImagenAltura(168);
 
-                        setComedorTituloImagenAnchura(479); // Ancho y alto para pantallas extra grandes
-                        setComedorTituloImagenAltura(209);
+                } else if (width >= 960 && width <= 1199) {
 
-                  } else {
-                        setComedorTituloImagenAnchura(598); // Ancho y alto para pantallas muy grandes
-                        setComedorTituloImagenAltura(261);
-                  }
-            };
+                    setComedorTituloImagenAnchura(479); // Ancho y alto para pantallas extra grandes
+                    setComedorTituloImagenAltura(209);
 
-            // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
-            updateDimensions();
-            window.addEventListener('resize', updateDimensions);
+                } else {
+                    setComedorTituloImagenAnchura(598); // Ancho y alto para pantallas muy grandes
+                    setComedorTituloImagenAltura(261);
+                }
+        };
 
-            // Limpia el evento al desmontar el componente
-            return () => window.removeEventListener('resize', updateDimensions);
+        // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
+        updateDimensions();
+        window.addEventListener('resize', updateDimensions);
+
+        // Limpia el evento al desmontar el componente
+        return () => window.removeEventListener('resize', updateDimensions);
     }, []);
+
+
   return (
     <>
+
         <Box  sx={{     
-            backgroundColor: 'rgb(242, 186, 100)',
+                //   backgroundColor: 'rgb(242, 186, 100)',
                   '@media (max-width: 480px)': {
                         width: `${props.anchuraComedor480px}rem`,
                         marginTop: '1rem',
@@ -92,9 +100,11 @@ export const Comedor = ( props ) => {
                         marginTop: '3rem',
                         marginBottom: '5rem',
                   }  
-          }}>
+        }}>
           
+
                   <VolverAinstalacionesYsiguiente enlace={IrAcocinaYlavanderia} />
+
 
                   <div  className='comedor-subContainer'>
                               
@@ -109,9 +119,12 @@ export const Comedor = ( props ) => {
                               <ComedorImagenesCambiantes />
 
                               <Siguiente enlace={IrAcocinaYlavanderia} />
+
                   </div>
           
+        
           </Box>
+
     </>
   )
 }

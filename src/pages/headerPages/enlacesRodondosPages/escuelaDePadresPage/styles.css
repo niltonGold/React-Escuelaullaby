@@ -1,0 +1,57 @@
+.EscuelaDePadresPage-Parrafos-Container{
+    display: flex;
+    flex-direction: column;
+} 
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .EscuelaDePadresPage-Parrafos-Container{
+        gap: 0.5rem;
+    }  
+    
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .EscuelaDePadresPage-Parrafos-Container{
+        gap: 0.7rem;
+    }    
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .EscuelaDePadresPage-Parrafos-Container{
+        gap: 1rem;
+    } 
+
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .EscuelaDePadresPage-Parrafos-Container{
+        gap: 1.4rem;
+    } 
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .EscuelaDePadresPage-Parrafos-Container{
+        gap: 1.7rem;
+    } 
+
+}

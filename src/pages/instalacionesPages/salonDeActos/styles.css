@@ -8,6 +8,9 @@
 
 
 
+
+
+
 @media (max-width: 480px) {
 
     .salonDeActos-subContainer{
@@ -20,7 +23,6 @@
     }    
     
 }
-
 
 
 
@@ -39,7 +41,6 @@
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .salonDeActos-subContainer{
@@ -55,7 +56,6 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .salonDeActos-subContainer{
@@ -68,7 +68,6 @@
     } 
 
 }
-
 
 
 

@@ -8,7 +8,10 @@ import { AulasExploradoresImagenes } from '../../../Components/routesComponents/
 
 
 
+
+
 export const ExploradoresPage = ( props ) => {
+
 
     const IrAventureros = 'instalacionesPage/aventureros';
 
@@ -21,11 +24,12 @@ export const ExploradoresPage = ( props ) => {
                       de aula.`
     
 
-
   return (
     <>
+
+
         <Box sx={{
-                backgroundColor: 'yellow',
+                // backgroundColor: 'yellow',
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraExploradoresPage480px}rem`,
                     marginTop: '1rem',
@@ -51,13 +55,17 @@ export const ExploradoresPage = ( props ) => {
                     marginTop: '3rem',
                     marginBottom: '5rem',
                 }
-            }}>
+        }}>
+
 
             <VolverAaulasYsiguiente enlace={IrAventureros} />
             
+
             <AulasExploradoresTituloEncabezado />
 
+
             <div className='ExploradoresPage-Subcontainer'>
+
                 <div>
                         <Parrafo parrafoTexto={parrafo1} />
 
@@ -65,8 +73,13 @@ export const ExploradoresPage = ( props ) => {
                 </div>
 
                 <AulasExploradoresImagenes />
+
             </div>
+
+
         </Box>
+
+
     </>
   )
 }

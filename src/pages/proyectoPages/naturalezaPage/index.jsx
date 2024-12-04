@@ -5,8 +5,14 @@ import { VolverAProyectos } from '../../../Components/componentsConstantes/volve
 import NaturalezaTitulo from '../../../Images/proyecto/naturaleza/naturaleza.png';
 import { TituloCabecera } from '../../../Components/componentsConstantes/tituloCabecera';
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
+import { NaturalezaImagenesCambiantes } from '../../../Components/routesComponents/proyectoComponents/naturalezaImagenesCambiantes';
+
+
+
+
 
 export const NaturalezaPage = ( props ) => {
+
 
   const NaturalezaTituloImagen = NaturalezaTitulo;
 
@@ -56,56 +62,68 @@ export const NaturalezaPage = ( props ) => {
 
 
   return (
-    <Box  sx={{     backgroundColor: 'rgb(242, 186, 113)',
-                    '@media (max-width: 480px)': {
-                              width: `${props.anchuraNaturalezaPage480px}rem`, 
-                              marginTop: '1rem',
-                              marginBottom: '0rem', 
-                    },
-                    '@media (min-width: 481px) and (max-width: 767px)': {
-                              width: `${props.anchuraNaturalezaPage481px_a_767px}rem`,
-                              marginTop: '1.5rem',
-                              marginBottom: '0rem',  
-                    },
-                    '@media (min-width: 768px) and (max-width: 959px)': {
-                              width: `${props.anchuraNaturalezaPage768px_a_959px}rem`,
-                              marginTop: '2rem',
-                              marginBottom: '5rem', 
-                    },
-                    '@media (min-width: 960px) and (max-width: 1199px)': {
-                              width: `${props.anchuraNaturalezaPage960px_a_1199px}rem`, 
-                              marginTop: '2.5rem',
-                              marginBottom: '5rem', 
-                    },
-                    '@media (min-width: 1200px)': {
-                              width: `${props.anchuraNaturalezaPage1200px}rem`,
-                              marginTop: '3rem',
-                              marginBottom: '5rem',  
-                    }  
-    }}>
+    <>
 
-            <VolverAProyectos />
 
-            <div className='NaturalezaLogoTituloEfecto'>
+            <Box  sx={{     
+                        // backgroundColor: 'rgb(242, 186, 113)',
+                        '@media (max-width: 480px)': {
+                                width: `${props.anchuraNaturalezaPage480px}rem`, 
+                                marginTop: '1rem',
+                                marginBottom: '0rem', 
+                        },
+                        '@media (min-width: 481px) and (max-width: 767px)': {
+                                width: `${props.anchuraNaturalezaPage481px_a_767px}rem`,
+                                marginTop: '1.5rem',
+                                marginBottom: '0rem',  
+                        },
+                        '@media (min-width: 768px) and (max-width: 959px)': {
+                                width: `${props.anchuraNaturalezaPage768px_a_959px}rem`,
+                                marginTop: '2rem',
+                                marginBottom: '5rem', 
+                        },
+                        '@media (min-width: 960px) and (max-width: 1199px)': {
+                                width: `${props.anchuraNaturalezaPage960px_a_1199px}rem`, 
+                                marginTop: '2.5rem',
+                                marginBottom: '5rem', 
+                        },
+                        '@media (min-width: 1200px)': {
+                                width: `${props.anchuraNaturalezaPage1200px}rem`,
+                                marginTop: '3rem',
+                                marginBottom: '5rem',  
+                        }  
+            }}>
 
-                    <TituloCabecera imagenBackgroundUbicacion={NaturalezaTituloImagen}
-                                        anchuraTitulo={NaturalezaTituloImagenAnchura}
-                                        alturaTitulo={NaturalezaTituloImagenAltura} 
-                                    />
 
-            </div>
+                    <VolverAProyectos />
 
-            <div className='NaturalezaPage-parrafos-imagenes-container'>
 
-            <div className='NaturalezaPage-parrafos-container'>
+                    <div className='NaturalezaLogoTituloEfecto'>
 
-                    <Parrafo parrafoTexto={NaturalezaTexto1} />
+                            <TituloCabecera imagenBackgroundUbicacion={NaturalezaTituloImagen}
+                                                anchuraTitulo={NaturalezaTituloImagenAnchura}
+                                                alturaTitulo={NaturalezaTituloImagenAltura} 
+                            />
 
-            </div>
+                    </div>
 
-                    <div>imagen</div>
 
-            </div>
-    </Box>
+                    <div className='NaturalezaPage-parrafos-imagenes-container'>
+
+                            <div className='NaturalezaPage-parrafos-container'>
+
+                                    <Parrafo parrafoTexto={NaturalezaTexto1} />
+
+                            </div>
+
+                            <NaturalezaImagenesCambiantes />
+
+                    </div>
+
+
+            </Box>
+
+
+    </>
   )
 }

@@ -3,7 +3,12 @@ import './styles.css';
 import { Info } from '../aulas+info';
 import { useNavigate } from 'react-router-dom';
 
+
+
+
+
 export const AulasExploradores = () => {
+
 
         const navigate = useNavigate();
 
@@ -11,10 +16,14 @@ export const AulasExploradores = () => {
                 navigate('/instalacionesPage/exploradores');
         };
 
+
   return (
     <>
+
+
         <div className="AulasExploradores-Principal-Container AulasExploradores-diplay-flex-column">
                 
+
                 <div className="AulasExploradores-nube AulasExploradores-imagenRepeatPositionSize AulasExploradores-positionAbsolute" />
 
                 <div className="AulasExploradores-titulo AulasExploradores-imagenRepeatPositionSize AulasExploradores-positionAbsolute" />
@@ -28,11 +37,16 @@ export const AulasExploradores = () => {
                         <div className="AulasExploradores-imagen AulasExploradores-imagenRepeatPositionSize" onClick={handleExploradoresPage}/>
                         
                         <div onClick={handleExploradoresPage}>
+
                                 <Info/>
+                                
                         </div>
 
                 </div>
+
         </div>
+
+
     </>
   );
 };

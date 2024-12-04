@@ -1,13 +1,27 @@
 import React from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
+
+
+
 
 
 export const DecalogoPage = ( props ) => {
 
+
+      const navigate = useNavigate();
+
+      const handleReturnInicio = () => {
+            navigate('/inicioPage');
+      }
+
+
   return (
     <>
+
+    
         <Box  sx={{     
             // backgroundColor: 'rgb(242, 186, 113)',
               '@media (max-width: 480px)': {
@@ -36,6 +50,8 @@ export const DecalogoPage = ( props ) => {
                     marginBottom: '5rem',
               }  
         }}>
+
+
                   <VolverAinicio />
 
 
@@ -43,7 +59,9 @@ export const DecalogoPage = ( props ) => {
                         
 
                         <div className='decalogoPage-decalogoLogo-container'>
-                                    <div className='decalogoPage-decalogoLogo' />
+
+                                    <div className='decalogoPage-decalogoLogo' onClick={handleReturnInicio} />
+
                         </div>
                         
                         <div className='decalogoPage-parrafo decalogoPage-parrafo_1'>
@@ -133,6 +151,8 @@ export const DecalogoPage = ( props ) => {
 
 
         </Box>
+
+
     </>
   )
 }

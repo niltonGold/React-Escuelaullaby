@@ -1,26 +1,20 @@
 import React from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
-
-
-// Enlaces redondos de la iquierda
-
-
-// Enlaces redondos de la derecha
 import { BannerCelesteCentral } from '../../../../Components/routesComponents/inicioComponents/bannerCelesteleCentral';
 import { CuadernoNotas } from '../../../../Components/routesComponents/inicioComponents/cuadernoNotas';
 import { EnlacesRedondosImagenesPrincipal } from '../../../../Components/routesComponents/inicioComponents/enlacesRedondosImagenes/enlacesRedondosImagenesPrincipal';
 
 
+
+
+
 export const InicioPage = ( props ) => {
-
-
-      // Enlaces de las imagenes redondas fotos, pediatra, noticias, decalogo, nutricionista, excursiones
-
 
 
   return (
     <>  
+    
             <div className='InicioPage-Principal-Container'>
 
 
@@ -51,8 +45,6 @@ export const InicioPage = ( props ) => {
                                           }  
                         }}>
                               
-                              
-                              
                                     <EnlacesRedondosImagenesPrincipal />
                         
                         </Box>
@@ -60,20 +52,18 @@ export const InicioPage = ( props ) => {
 
 
                         <BannerCelesteCentral anchuraBannerCelesteCentral480px={ props.anchuraInicio480px }
-                                          anchuraBannerCelesteCentral481px_a_767px={ props.anchuraInicio481px_a_767px}
-                                          anchuraBannerCelesteCentral768px_a_959px={ props.anchuraInicio768px_a_959px }
-                                          anchuraBannerCelesteCentral960px_a_1199px={ props.anchuraInicio960px_a_1199px }
-                                          anchuraBannerCelesteCentral1200px={ props.anchuraInicio1200px } />
-                  
-                  
+                                              anchuraBannerCelesteCentral481px_a_767px={ props.anchuraInicio481px_a_767px}
+                                              anchuraBannerCelesteCentral768px_a_959px={ props.anchuraInicio768px_a_959px }
+                                              anchuraBannerCelesteCentral960px_a_1199px={ props.anchuraInicio960px_a_1199px }
+                                              anchuraBannerCelesteCentral1200px={ props.anchuraInicio1200px } />
                   
                         <CuadernoNotas  anchuraCuadernoNotas480px={ props.anchuraInicio480px }
-                                    anchuraCuadernoNotas481px_a_767px={ props.anchuraInicio481px_a_767px }
-                                    anchuraCuadernoNotas768px_a_959px={ props.anchuraInicio768px_a_959px }
-                                    anchuraCuadernoNotas960px_a_1199px={ props.anchuraInicio960px_a_1199px }
-                                    anchuraCuadernoNotas1200px={ props.anchuraInicio1200px } /> 
-                              
-                              
+                                        anchuraCuadernoNotas481px_a_767px={ props.anchuraInicio481px_a_767px }
+                                        anchuraCuadernoNotas768px_a_959px={ props.anchuraInicio768px_a_959px }
+                                        anchuraCuadernoNotas960px_a_1199px={ props.anchuraInicio960px_a_1199px }
+                                        anchuraCuadernoNotas1200px={ props.anchuraInicio1200px } /> 
+
+
         </div>
 
     </>

@@ -6,7 +6,12 @@ import { DescubridoresTituloEncabezado } from '../../../Components/routesCompone
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import { AulasDescubridoresImagenes } from '../../../Components/routesComponents/instalacionesComponents/aulas/aulasDescubridoresImagenes';
 
+
+
+
+
 export const DescubridoresPage = ( props ) => {
+
 
     const IrDarwin = 'instalacionesPage/darwin';
 
@@ -17,10 +22,13 @@ export const DescubridoresPage = ( props ) => {
                       asamblea, juego simbólico, actividades, biblioteca. Dispone de 
                       baño adaptado a los niños con acceso directo desde el aula.`
 
+
   return (
     <>
+
+
         <Box sx={{
-            backgroundColor: 'yellow',
+                // backgroundColor: 'yellow',
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraDescubridoresPage480px}rem`,
                     marginTop: '1rem',
@@ -48,6 +56,7 @@ export const DescubridoresPage = ( props ) => {
                 }
         }}>
 
+
             <VolverAaulasYsiguiente enlace={IrDarwin} />
             
             <DescubridoresTituloEncabezado />
@@ -64,7 +73,10 @@ export const DescubridoresPage = ( props ) => {
 
             </div>
 
+
         </Box>
+
+
     </>
   )
 }

@@ -1,5 +1,5 @@
 .VolverAaulasYsiguiente-volverYsiguiente{
-    background-color: rgba(181, 181, 181, 0.5);
+    /* background-color: rgba(181, 181, 181, 0.5); */
     display: flex;
     justify-content: space-between;
 }
@@ -37,6 +37,7 @@
 
 
 
+
 @media (max-width: 480px) {
 
     .VolverAaulasYsiguiente-volverYsiguiente{
@@ -59,7 +60,6 @@
                     }
 
 }
-
 
 
 
@@ -88,7 +88,6 @@
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .VolverAaulasYsiguiente-volverYsiguiente{
@@ -114,7 +113,6 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .VolverAaulasYsiguiente-volverYsiguiente{
@@ -137,7 +135,6 @@
                     }
 
 }
-
 
 
 

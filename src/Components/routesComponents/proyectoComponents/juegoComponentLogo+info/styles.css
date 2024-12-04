@@ -10,14 +10,14 @@
 }
 
 .JuegoComponentLogoInfo-Principal-Container{
-    background-color: rgba(98, 98, 246, 0.5);
+    /* background-color: rgba(98, 98, 246, 0.5); */
     align-items: center;
     position: relative;
     overflow: hidden;
 }
 
         .JuegoComponentLogoInfo-nube-Container{
-            background-color: rgb(240, 198, 143, 0.5);
+            /* background-color: rgb(240, 198, 143, 0.5); */
         }
         
         .JuegoComponentLogoInfo-nube{
@@ -32,7 +32,6 @@
             z-index: 2;
             cursor: pointer;
         }
-
 
 
 
@@ -71,7 +70,6 @@
 
 
 
-
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     .JuegoComponentLogoInfo-diplay-flex-column{
@@ -101,7 +99,6 @@
             }
 
 }
-
 
 
 
@@ -137,7 +134,6 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .JuegoComponentLogoInfo-diplay-flex-column{
@@ -167,7 +163,6 @@
             }
 
 }
-
 
 
 

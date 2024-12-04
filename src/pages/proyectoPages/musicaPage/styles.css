@@ -31,6 +31,9 @@
 
 
 
+
+
+
 @media (max-width: 480px) {
 
     .MusicaLogoTituloEfecto {
@@ -45,7 +48,6 @@
     }  
     
 }
-
 
 
 
@@ -66,7 +68,6 @@
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .MusicaLogoTituloEfecto {
@@ -84,7 +85,6 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .MusicaLogoTituloEfecto {
@@ -99,7 +99,6 @@
     } 
 
 }
-
 
 
 

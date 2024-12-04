@@ -15,15 +15,20 @@ import excursiones from '../../../../../Images/inicio/enlacesRedondos/excursione
 
 
 
-export const EnlacesRedondosImagenesPrincipal = ( props ) => {
 
-      const FotosEnlace = 'fotos';
-      const PediatraEnlace = 'pediatra';
-      const NoticiasEnlace = 'noticias';
 
-      const DecalogoEnlace = 'decalogo';
-      const NutricionistaEnlace = 'nutricionista';
-      const ExcursionesEnlace = 'excursiones';
+export const EnlacesRedondosImagenesPrincipal = ( ) => {
+
+
+
+  const FotosEnlace = 'fotos';
+  const PediatraEnlace = 'pediatra';
+  const NoticiasEnlace = 'noticias';
+
+  const DecalogoEnlace = 'decalogo';
+  const NutricionistaEnlace = 'nutricionista';
+  const ExcursionesEnlace = 'excursiones';
+
 
 
   return (
@@ -31,31 +36,32 @@ export const EnlacesRedondosImagenesPrincipal = ( props ) => {
 
         <div className='EnlacesRedondosImagenesPrincipal-enlacesRedondos-e-imagenes-container' >
         
-            <EnlacesRedondos imgBarckGround1={fotos} 
-                                enlaceDeImagenRedonda1={FotosEnlace}
-                
-                                imgBarckGround2={pediatra} 
-                                enlaceDeImagenRedonda2={PediatraEnlace}
-                                
-                                imgBarckGround3={noticias} 
-                                enlaceDeImagenRedonda3={NoticiasEnlace}
-            />
+
+                <EnlacesRedondos imgBarckGround1={fotos} 
+                                 enlaceDeImagenRedonda1={FotosEnlace}
+                    
+                                 imgBarckGround2={pediatra} 
+                                 enlaceDeImagenRedonda2={PediatraEnlace}
+                                    
+                                 imgBarckGround3={noticias} 
+                                 enlaceDeImagenRedonda3={NoticiasEnlace}
+                />
 
 
 
-            <ImagenesCambiantes />
+                <ImagenesCambiantes />
 
 
 
-            <EnlacesRedondos imgBarckGround1={decalogo} 
-                                enlaceDeImagenRedonda1={DecalogoEnlace}
-                                
-                                imgBarckGround2={nutricionista} 
-                                enlaceDeImagenRedonda2={NutricionistaEnlace}
-                                
-                                imgBarckGround3={excursiones}
-                                enlaceDeImagenRedonda3={ExcursionesEnlace} 
-            />
+                <EnlacesRedondos imgBarckGround1={decalogo} 
+                                 enlaceDeImagenRedonda1={DecalogoEnlace}
+                                    
+                                 imgBarckGround2={nutricionista} 
+                                 enlaceDeImagenRedonda2={NutricionistaEnlace}
+                                    
+                                 imgBarckGround3={excursiones}
+                                 enlaceDeImagenRedonda3={ExcursionesEnlace} 
+                />
             
         </div>
 

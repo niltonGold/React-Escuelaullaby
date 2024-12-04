@@ -1,9 +1,17 @@
 import React from 'react';
 import './styles.css';
 
+
+
+
+
 export const AulasExploradoresTituloEncabezado = () => {
+
+
   return (
     <>
+
+
         <div className='AulasExploradoresTituloEncabezado-Principal-Container'>
 
                 <div className='AulasExploradoresTituloEncabezado-subContainer'>
@@ -14,6 +22,8 @@ export const AulasExploradoresTituloEncabezado = () => {
                         
                 </div>
         </div>
+
+        
     </>
   )
 }

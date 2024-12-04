@@ -1,13 +1,30 @@
 import React from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+
+
+
+
 
 export const Footer = ( props ) => {
+
+
+    const navigate = useNavigate();
+
+    const handleContactoClick = () => {
+        window.scrollTo({ top: 0 });
+        navigate('/contactoPage');
+    };
+
+
   return (
       <>
+
+
             <div className='Footer-Principal-Container'>
                   
-                  <Box  sx={{   '@media (max-width: 480px)': {
+                    <Box  sx={{   '@media (max-width: 480px)': {
                                         width: `${ props.anchuraHeader480px }rem`, 
                                   },
                                   '@media (min-width: 481px) and (max-width: 767px)': {
@@ -28,16 +45,45 @@ export const Footer = ( props ) => {
                           <div className='footer-subContainer'>
                               
                                   <div className='footer-sub-subContainer'>
-                                      
-                                          <div className='footer-redesSociales footer-instagram' />
-                                          
-                                          <div className='footer-redesSociales footer-facebook' />
 
-                                          <div className='footer-redesSociales footer-x' />
+                                            <a  href="https://www.instagram.com/" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
 
-                                          <div className='footer-contactanos'>Contactanos</div>
+                                                    <div className='footer-redesSociales footer-instagram' />
 
-                                          <div className='footer-comundadDeMadrid'/>
+                                            </a>
+
+                                            <a  href="https://www.facebook.com/" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+
+                                                    <div className='footer-redesSociales footer-facebook' />
+
+                                            </a>
+
+                                            <a  href="https://twitter.com/" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+
+                                                    <div className='footer-redesSociales footer-x' />
+
+                                            </a>
+
+                                            <div className='footer-contactanos' onClick={handleContactoClick} >Contactanos</div>
+
+                                            <a  className='footer-comundadDeMadrid'  
+                                                href="https://www.comunidad.madrid/" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+                                                
+                                                <div className='footer-comundadDeMadrid'/>
+
+                                            </a>
 
                                   </div> 
                                     
@@ -49,6 +95,8 @@ export const Footer = ( props ) => {
                   </Box>
 
             </div>
+
+
       </>
   )
 }

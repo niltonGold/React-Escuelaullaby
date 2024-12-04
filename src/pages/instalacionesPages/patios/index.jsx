@@ -8,71 +8,80 @@ import { TituloCabecera } from '../../../Components/componentsConstantes/tituloC
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import { PatiosImagenesCambiantes } from '../../../Components/routesComponents/instalacionesComponents/patios/patiosImagenesCambiantes';
 
+
+
+
+
 export const Patios = ( props ) => {
 
-      const IrAhuertoEinvernadero = 'instalacionesPage/huertoEinvernadero';
 
-      const PatiosTituloImagen = PatiosTitulo;
+    const IrAhuertoEinvernadero = 'instalacionesPage/huertoEinvernadero';
 
-      const [PatiosTituloImagenAnchura, setPatiosTituloImagenAnchura] = useState(0);
+    const PatiosTituloImagen = PatiosTitulo;
 
-      const [PatiosTituloImagenAltura, setPatiosTituloImagenAltura] = useState(0);
+    const [PatiosTituloImagenAnchura, setPatiosTituloImagenAnchura] = useState(0);
 
-      const PatiosTexto1 = `La escuela cuenta con dos grandes zonas exteriores, 
-                            con acceso directo desde las aulas. `
+    const [PatiosTituloImagenAltura, setPatiosTituloImagenAltura] = useState(0);
 
-      const PatiosTexto2 = `El patio de juegos, con más de 350 metros cuadrados, dispone de césped 
-                            artificial, suelo de caucho, arenero y columpios adaptados a las edades 
-                            de los niños. Los niños de 0 a 1 año juegan y disfrutan al aire libre 
-                            en un área exclusiva dentro de este espacio. `
+    const PatiosTexto1 = `La escuela cuenta con dos grandes zonas exteriores, 
+                        con acceso directo desde las aulas. `
 
-      const PatiosTexto3 = `El patio de actividades, al que se accede desde el aula de psicomotricidad, 
-                            con más de 500 metros cuadrados, es de césped natural destinado a actividades 
-                            dirigidas y donde se sitúa un huerto e invernadero y el Circuito de Educación 
-                            Vial.`
+    const PatiosTexto2 = `El patio de juegos, con más de 350 metros cuadrados, dispone de césped 
+                        artificial, suelo de caucho, arenero y columpios adaptados a las edades 
+                        de los niños. Los niños de 0 a 1 año juegan y disfrutan al aire libre 
+                        en un área exclusiva dentro de este espacio. `
 
-      useEffect(() => {
-      // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
-      const updateDimensions = () => {
-            const width = window.innerWidth;
-            if (width <= 480) {
+    const PatiosTexto3 = `El patio de actividades, al que se accede desde el aula de psicomotricidad, 
+                        con más de 500 metros cuadrados, es de césped natural destinado a actividades 
+                        dirigidas y donde se sitúa un huerto e invernadero y el Circuito de Educación 
+                        Vial.`
 
-                  setPatiosTituloImagenAnchura(49); // Ancho y alto para pantallas pequeñas
-                  setPatiosTituloImagenAltura(28);
+    useEffect(() => {
+    // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
+    const updateDimensions = () => {
+        const width = window.innerWidth;
+        if (width <= 480) {
 
-            } else if (width >= 481 && width <= 767) {
+                setPatiosTituloImagenAnchura(49); // Ancho y alto para pantallas pequeñas
+                setPatiosTituloImagenAltura(28);
 
-                  setPatiosTituloImagenAnchura(74); // Ancho y alto para pantallas medianas
-                  setPatiosTituloImagenAltura(42);
+        } else if (width >= 481 && width <= 767) {
 
-            } else if (width >= 768 && width <= 959) {
+                setPatiosTituloImagenAnchura(74); // Ancho y alto para pantallas medianas
+                setPatiosTituloImagenAltura(42);
 
-                  setPatiosTituloImagenAnchura(120); // Ancho y alto para pantallas grandes
-                  setPatiosTituloImagenAltura(68);
+        } else if (width >= 768 && width <= 959) {
 
-            } else if (width >= 960 && width <= 1199) {
+                setPatiosTituloImagenAnchura(120); // Ancho y alto para pantallas grandes
+                setPatiosTituloImagenAltura(68);
 
-                  setPatiosTituloImagenAnchura(150); // Ancho y alto para pantallas extra grandes
-                  setPatiosTituloImagenAltura(85);
+        } else if (width >= 960 && width <= 1199) {
 
-            } else {
-                  setPatiosTituloImagenAnchura(187); // Ancho y alto para pantallas muy grandes
-                  setPatiosTituloImagenAltura(106);
-            }
-      };
+                setPatiosTituloImagenAnchura(150); // Ancho y alto para pantallas extra grandes
+                setPatiosTituloImagenAltura(85);
 
-            // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
-            updateDimensions();
-            window.addEventListener('resize', updateDimensions);
+        } else {
+                setPatiosTituloImagenAnchura(187); // Ancho y alto para pantallas muy grandes
+                setPatiosTituloImagenAltura(106);
+        }
+    };
 
-            // Limpia el evento al desmontar el componente
-            return () => window.removeEventListener('resize', updateDimensions);
+        // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
+        updateDimensions();
+        window.addEventListener('resize', updateDimensions);
 
-      }, []);
+        // Limpia el evento al desmontar el componente
+        return () => window.removeEventListener('resize', updateDimensions);
+
+    }, []);
+
 
   return (
     <>
-        <Box  sx={{     backgroundColor: 'rgb(242, 186, 100)',
+
+
+        <Box  sx={{     
+                //   backgroundColor: 'rgb(242, 186, 100)',
                   '@media (max-width: 480px)': {
                         width: `${props.anchuraPatios480px}rem`,
                         marginTop: '1rem',
@@ -98,10 +107,11 @@ export const Patios = ( props ) => {
                         marginTop: '3rem',
                         marginBottom: '5rem',
                   }  
-          }}>
+        }}>
           
 
                   <VolverAinstalacionesYsiguiente enlace={IrAhuertoEinvernadero} />
+
 
                   <div  className='patiosPage-subContainer'>
 
@@ -128,6 +138,8 @@ export const Patios = ( props ) => {
           
 
           </Box>
+
+
     </>
   )
 }

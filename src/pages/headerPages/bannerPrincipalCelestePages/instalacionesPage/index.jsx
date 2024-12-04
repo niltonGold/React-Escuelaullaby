@@ -10,7 +10,8 @@ export const InstalacionesPage = ( props ) => {
   return (
       
     <>
-        <Box  sx={{     backgroundColor: 'rgb(242, 186, 113)',
+        <Box  sx={{     
+                        // backgroundColor: 'rgb(242, 186, 113)',
                         '@media (max-width: 480px)': {
                               width: `${props.anchuraInstalacionesPage480px}rem`,
                               marginTop: '1rem',

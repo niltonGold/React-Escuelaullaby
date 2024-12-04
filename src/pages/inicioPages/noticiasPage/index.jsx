@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import imagenCambianteNoticias1 from '../../../Images/inicio/noticia/noticias_1.jpg';
 import imagenCambianteNoticias2 from '../../../Images/inicio/noticia/noticias_2.jpg';
 import imagenCambianteNoticias3 from '../../../Images/inicio/noticia/noticias_3.jpg';
@@ -9,6 +10,12 @@ import { VolverAinicio } from '../../../Components/componentsConstantes/volverAI
 
 
 export const NoticiasPage = ( props ) => {
+
+      const navigate = useNavigate();
+
+      const handleReturnInicio = () => {
+          navigate('/inicioPage');
+      }
 
       const images = [
             imagenCambianteNoticias1,
@@ -36,6 +43,8 @@ export const NoticiasPage = ( props ) => {
 
   return (
     <>
+
+    
         <Box  sx={{     
             // backgroundColor: 'rgb(242, 186, 113)',
               '@media (max-width: 480px)': {
@@ -73,7 +82,9 @@ export const NoticiasPage = ( props ) => {
 
 
                               <div className='noticiasPage-noticiasLogo-container'>
-                                    <div className='noticiasPage-noticiasLogo' />
+
+                                    <div className='noticiasPage-noticiasLogo' onClick={handleReturnInicio}/>
+
                               </div>
 
 
@@ -115,7 +126,9 @@ export const NoticiasPage = ( props ) => {
 
                                           </div>
                                           
+
                                                 <div className='noticiasPage-lineaDivisora'/>
+
 
                                           <div className='noticiasPage-parrafo'>
                                                 
@@ -166,6 +179,8 @@ export const NoticiasPage = ( props ) => {
 
 
         </Box>
+
+
     </>
   )
 }

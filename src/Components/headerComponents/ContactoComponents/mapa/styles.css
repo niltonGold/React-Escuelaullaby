@@ -1,0 +1,56 @@
+.Mapa-Container{
+    width: 100%;
+}
+
+
+@media (max-width: 480px) {
+
+    .Mapa-Container{
+        height: 135px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .Mapa-Container{
+        height: 203px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .Mapa-Container{
+        height: 324px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .Mapa-Container{
+        height: 405px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .Mapa-Container{
+        height: 506px;
+    }
+
+}

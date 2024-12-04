@@ -6,6 +6,10 @@ import { DarwinTituloEncabezado } from '../../../Components/routesComponents/ins
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import { AulasDarwinImagenes } from '../../../Components/routesComponents/instalacionesComponents/aulas/aulasDarwinImagenes';
 
+
+
+
+
 export const DarwinPage = ( props ) => {
 
 
@@ -17,10 +21,13 @@ export const DarwinPage = ( props ) => {
                       adaptados para fomentar dicha actividad. Este espacio además 
                       se convierte en aula de audiovisuales y nuevas tecnologías.`
 
+
   return (
     <>
+
+
         <Box sx={{
-            backgroundColor: 'yellow',
+                // backgroundColor: 'yellow',
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraDarwinPage480px}rem`,
                     marginTop: '1rem',
@@ -47,6 +54,8 @@ export const DarwinPage = ( props ) => {
                     marginBottom: '5rem',
                 }
         }}>
+
+
             <VolverAaulas />
 
             <DarwinTituloEncabezado />
@@ -63,7 +72,10 @@ export const DarwinPage = ( props ) => {
                     
             </div>
 
+
         </Box>
+
+
     </>
   )
 }

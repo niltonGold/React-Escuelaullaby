@@ -3,30 +3,47 @@ import './styles.css';
 import { useNavigate } from 'react-router-dom';
 import { InfoProyecto } from '../proyectos+info';
 
+
+
+
+
 export const ArteComponentLogoInfo = () => {
 
-        const navigate = useNavigate();
 
-        const handleExploradoresPage = () => {
-                navigate('/proyecto/arte');
-        };
+    const navigate = useNavigate();
 
-  return (
-    <>
-        <div className="ArteComponentLogoInfo-Principal-Container ArteComponentLogoInfo-diplay-flex-column">
-                
-                <div className="ArteComponentLogoInfo-nube-Container">
-                        <div className="ArteComponentLogoInfo-nube ArteComponentLogoInfo-imagenRepeatPositionSize" />
-                </div>
+    const handleExploradoresPage = () => {
+        window.scrollTo({ top: 0 });
+        navigate('/proyectoPage/arte');
+    };
 
-                <div onClick={handleExploradoresPage}>
-                        <InfoProyecto />
-                </div>
 
-                <div className="ArteComponentLogoInfo-titulo ArteComponentLogoInfo-imagenRepeatPositionSize" onClick={handleExploradoresPage}/>
+    return (
+        <>
 
-        </div>
-    </>
+
+            <div className="ArteComponentLogoInfo-Principal-Container ArteComponentLogoInfo-diplay-flex-column">
+                    
+
+                    <div className="ArteComponentLogoInfo-nube-Container">
+
+                            <div className="ArteComponentLogoInfo-nube ArteComponentLogoInfo-imagenRepeatPositionSize" />
+
+                    </div>
+
+                    <div onClick={handleExploradoresPage}>
+
+                            <InfoProyecto />
+                            
+                    </div>
+
+                    <div className="ArteComponentLogoInfo-titulo ArteComponentLogoInfo-imagenRepeatPositionSize" onClick={handleExploradoresPage}/>
+
+
+            </div>
+
+
+        </>
   );
 };
 

@@ -1,7 +1,5 @@
 .HuertoEinvernaderoImagenesCambiantes-image-container {
-    /* position: relative;
-    overflow: hidden; */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     justify-content: center;
 }
@@ -26,11 +24,11 @@
 
 
 
+
+
 @media (max-width: 480px) {
 
     .HuertoEinvernaderoImagenesCambiantes-image-container {
-        /* width: 218px;
-        height: 260px; */
     }
     
     .HuertoEinvernaderoImagenesCambiantes-image {
@@ -48,12 +46,9 @@
   
   
   
-  
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     .HuertoEinvernaderoImagenesCambiantes-image-container {
-        /* width: 327px;
-        height: 390px; */
     }
     
     .HuertoEinvernaderoImagenesCambiantes-image {
@@ -71,12 +66,9 @@
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .HuertoEinvernaderoImagenesCambiantes-image-container {
-        /* width: 524px;
-        height: 623px; */
     }
     
     .HuertoEinvernaderoImagenesCambiantes-image {
@@ -94,12 +86,9 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .HuertoEinvernaderoImagenesCambiantes-image-container {
-        /* width: 655px;
-        height: 779px; */
     }
     
     .HuertoEinvernaderoImagenesCambiantes-image {
@@ -117,12 +106,9 @@
 
 
 
-
 @media only screen and (min-width: 1200px) {
 
     .HuertoEinvernaderoImagenesCambiantes-image-container {
-        /* width: 819px;
-        height: 974px; */
     }
     
     .HuertoEinvernaderoImagenesCambiantes-image {

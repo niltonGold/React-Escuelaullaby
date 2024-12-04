@@ -1,0 +1,613 @@
+.Formulario-Principal-Container{
+    /* background-color: rgb(244, 204, 204); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+        .formulario-Titulo{
+            text-align: center;
+            font-weight: 500;
+            color: rgb(16, 44, 138);
+        }
+
+        .form-container {
+            background-color: rgb(221, 237, 247);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+        }
+
+            .form-group {
+                display: flex;
+                flex-direction: row;
+            }
+
+                    .form-label-dosPuntos-container{
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    label{
+                        /* background-color: aqua; */
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .form-input{
+                        outline: none;
+                        transition: border-color 0.3s ease;
+                    }
+
+                    .form-input:focus {
+                        border-color: rgb(0, 0, 0);
+                    }
+
+                    textarea{
+                        outline: none;
+                        transition: border-color 0.3s ease;
+                    }
+
+                    .form-dos-puntos{
+                        /* background-color: azure; */
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .form-label-mensaje{
+                        display: flex;
+                        flex-direction: row;
+                        align-self: start;
+                    }
+
+            .form-button-container{
+                /* background-color: bisque; */
+                display: flex;
+                justify-content: flex-end;
+                cursor: pointer;
+            } 
+                
+                button{
+                    all: unset;
+                    background-color:rgba(249, 250, 251);
+                }
+
+                button:hover{
+                    all: unset;
+                    background-color:rgba(131, 149, 159, 0.8);
+                }
+
+                button:active{
+                    all: unset;
+                    color: rgb(255, 255, 255);
+                    background-color:rgba(84, 102, 113, 0.8);
+                }
+
+
+
+
+                   
+  
+@media (max-width: 480px) {
+
+    .Formulario-Principal-Container{
+        width: 125px;
+    }
+    
+            .formulario-Titulo{
+                font-size: 10px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+    
+            .form-container {
+                font-size: 5px;
+                gap: 5px;
+                width: 125px;
+                height: 130px;
+                border: 1.4px solid rgb(158, 175, 185);
+                border-radius: 18px;
+            }
+    
+                .form-group {
+                    gap: 1px;
+                }
+    
+                        .form-label-dosPuntos-container{
+                        }
+    
+                        label{
+                            width: 25px;
+                        }
+    
+                        .form-input{
+                            box-shadow: 2px 2px 5px rgba(132, 129, 129, 0.6);
+                            width: 70px;
+                            height: 4px;
+                            padding-top: 3px;
+                            padding-left: 7px;
+                            padding-bottom: 4px;
+                            border-radius: 10px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 4px;
+                        }
+    
+                        .form-input:focus {
+                            box-shadow: 0 0 4px rgba(42, 161, 152, 0.5);
+                        }
+    
+                        textarea{
+                            width: 70px;
+                            height: 55px;
+                            padding-top: 3px;
+                            padding-left: 7px;
+                            padding-bottom: 4px;
+                            border-radius: 5px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 4px;
+                            box-shadow: 2px 2px 5px rgba(132, 129, 129, 0.8);
+                        }
+    
+                        .form-dos-puntos{
+                            width: 3px;
+                        }
+    
+                        .form-label-mensaje{
+                            padding-top: 3px;
+                        }
+    
+                .form-button-container{
+                    width: 110px;
+                } 
+                    
+                    button{
+                        border: 2px solid rgb(158, 175, 185);
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        padding-left: 9px;
+                        padding-right: 9px;
+                        border-radius: 8px;
+                    }
+    
+                    button:hover{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        padding-left: 9px;
+                        padding-right: 9px;
+                        border-radius: 8px;
+                    }
+    
+                    button:active{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        padding-left: 9px;
+                        padding-right: 9px;
+                        border-radius: 8px;
+                    }
+
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .Formulario-Principal-Container{
+        width: 180px;
+    }
+    
+            .formulario-Titulo{
+                font-size: 15px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+    
+            .form-container {
+                font-size: 7px;
+                gap: 9px;
+                width: 180px;
+                height: 185px;
+                border: 1.4px solid rgb(158, 175, 185);
+                border-radius: 20px;
+            }
+    
+                .form-group {
+                    gap: 2px;
+                }
+    
+                        .form-label-dosPuntos-container{
+                        }
+    
+                        label{
+                            width: 36px;
+                        }
+    
+                        .form-input{
+                            box-shadow: 3px 3px 6px rgba(132, 129, 129, 0.6);
+                            width: 110px;
+                            height: 4px;
+                            padding-top: 5px;
+                            padding-left: 8px;
+                            padding-bottom: 5px;
+                            border-radius: 10px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 6px;
+                        }
+    
+                        .form-input:focus {
+                            box-shadow: 0 0 4px rgba(42, 161, 152, 0.5);
+                        }
+    
+                        textarea{
+                            width: 110px;
+                            height: 80px;
+                            padding-top: 3px;
+                            padding-left: 7px;
+                            padding-bottom: 4px;
+                            border-radius: 5px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 6px;
+                            box-shadow: 3px 3px 6px rgba(132, 129, 129, 0.8);
+                        }
+    
+                        .form-dos-puntos{
+                            width: 4px;
+                        }
+    
+                        .form-label-mensaje{
+                            padding-top: 4px;
+                        }
+    
+                .form-button-container{
+                    width: 160px;
+                } 
+                    
+                    button{
+                        border: 2px solid rgb(158, 175, 185);
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        padding-left: 14px;
+                        padding-right: 14px;
+                        border-radius: 10px;
+                    }
+    
+                    button:hover{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        padding-left: 14px;
+                        padding-right: 14px;
+                        border-radius: 10px;
+                    }
+    
+                    button:active{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        padding-left: 14px;
+                        padding-right: 14px;
+                        border-radius: 10px;
+                    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .Formulario-Principal-Container{
+        width: 290px;
+    }
+    
+            .formulario-Titulo{
+                font-size: 25px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+    
+            .form-container {
+                font-size: 13px;
+                gap: 12px;
+                width: 290px;
+                height: 290px;
+                border: 1.4px solid rgb(158, 175, 185);
+                border-radius: 25px;
+            }
+    
+                .form-group {
+                    gap: 3px;
+                }
+    
+                        .form-label-dosPuntos-container{
+                        }
+    
+                        label{
+                            width: 75px;
+                        }
+    
+                        .form-input{
+                            box-shadow: 5px 5px 8px rgba(132, 129, 129, 0.6);
+                            width: 160px;
+                            height: 6px;
+                            padding-top: 7px;
+                            padding-left: 10px;
+                            padding-bottom: 7px;
+                            border-radius: 10px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 9px;
+                        }
+    
+                        .form-input:focus {
+                            box-shadow: 0 0 4px rgba(42, 161, 152, 0.5);
+                        }
+    
+                        textarea{
+                            width: 160px;
+                            height: 140px;
+                            padding-top: 7px;
+                            padding-left: 10px;
+                            padding-bottom: 7px;
+                            border-radius: 8px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 9px;
+                            box-shadow: 5px 5px 8px rgba(132, 129, 129, 0.8);
+                        }
+    
+                        .form-dos-puntos{
+                            width: 7px;
+                        }
+    
+                        .form-label-mensaje{
+                            padding-top: 6px;
+                        }
+    
+                .form-button-container{
+                    width: 260px;
+                } 
+                    
+                    button{
+                        border: 2px solid rgb(158, 175, 185);
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        padding-left: 22px;
+                        padding-right: 22px;
+                        border-radius: 15px;
+                    }
+    
+                    button:hover{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        padding-left: 22px;
+                        padding-right: 22px;
+                        border-radius: 15px;
+                    }
+    
+                    button:active{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        padding-left: 22px;
+                        padding-right: 22px;
+                        border-radius: 15px;
+                    }
+
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .Formulario-Principal-Container{
+        width: 355px;
+    }
+    
+            .formulario-Titulo{
+                font-size: 32px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+    
+            .form-container {
+                font-size: 16px;
+                gap: 20px;
+                width: 355px;
+                height: 370px;
+                border: 1.4px solid rgb(158, 175, 185);
+                border-radius: 25px;
+            }
+    
+                .form-group {
+                    gap: 4px;
+                }
+    
+                        .form-label-dosPuntos-container{
+                        }
+    
+                        label{
+                            width: 85px;
+                        }
+    
+                        .form-input{
+                            box-shadow: 7px 7px 10px rgba(132, 129, 129, 0.6);
+                            width: 210px;
+                            height: 12px;
+                            padding-top: 9px;
+                            padding-left: 12px;
+                            padding-bottom: 9px;
+                            border-radius: 12px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 12px;
+                        }
+    
+                        .form-input:focus {
+                            box-shadow: 0 0 4px rgba(42, 161, 152, 0.5);
+                        }
+    
+                        textarea{
+                            width: 210px;
+                            height: 150px;
+                            padding-top: 9px;
+                            padding-left: 12px;
+                            padding-bottom: 9px;
+                            border-radius: 10px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 12px;
+                            box-shadow: 7px 7px 10px rgba(132, 129, 129, 0.8);
+                        }
+    
+                        .form-dos-puntos{
+                            width: 8px;
+                        }
+    
+                        .form-label-mensaje{
+                            padding-top: 6px;
+                        }
+    
+                .form-button-container{
+                    width: 315px;
+                } 
+                    
+                    button{
+                        border: 2px solid rgb(158, 175, 185);
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        border-radius: 16px;
+                    }
+    
+                    button:hover{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        border-radius: 16px;
+                    }
+    
+                    button:active{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        border-radius: 16px;
+                    }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .Formulario-Principal-Container{
+        width: 455px;
+    }
+    
+            .formulario-Titulo{
+                font-size: 40px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+    
+            .form-container {
+                font-size: 20px;
+                gap: 23px;
+                width: 455px;
+                height: 455px;
+                border: 1.4px solid rgb(158, 175, 185);
+                border-radius: 25px;
+            }
+    
+                .form-group {
+                    gap: 4px;
+                }
+    
+                        .form-label-dosPuntos-container{
+                        }
+    
+                        label{
+                            width: 100px;
+                        }
+    
+                        .form-input{
+                            box-shadow: 8px 8px 11px rgba(132, 129, 129, 0.6);
+                            width: 285px;
+                            height: 17px;
+                            padding-top: 11px;
+                            padding-left: 14px;
+                            padding-bottom: 11px;
+                            border-radius: 14px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 16px;
+                        }
+    
+                        .form-input:focus {
+                            box-shadow: 0 0 4px rgba(42, 161, 152, 0.5);
+                        }
+    
+                        textarea{
+                            width: 285px;
+                            height: 190px;
+                            padding-top: 11px;
+                            padding-left: 14px;
+                            padding-bottom: 11px;
+                            border-radius: 12px;
+                            border: 1.4px solid rgb(192, 192, 192);
+                            font-size: 16px;
+                            box-shadow: 8px 8px 11px rgba(132, 129, 129, 0.8);
+                        }
+    
+                        .form-dos-puntos{
+                            width: 8px;
+                        }
+    
+                        .form-label-mensaje{
+                            padding-top: 10px;
+                        }
+    
+                .form-button-container{
+                    width: 415px;
+                } 
+                    
+                    button{
+                        border: 2px solid rgb(158, 175, 185);
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        padding-left: 28px;
+                        padding-right: 29px;
+                        border-radius: 18px;
+                    }
+    
+                    button:hover{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        padding-left: 28px;
+                        padding-right: 29px;
+                        border-radius: 18px;
+                    }
+    
+                    button:active{
+                        border: 2px solid rgb(73, 79, 83);
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        padding-left: 28px;
+                        padding-right: 29px;
+                        border-radius: 18px;
+                    }
+
+}
+
+
+
+
+
+
+  

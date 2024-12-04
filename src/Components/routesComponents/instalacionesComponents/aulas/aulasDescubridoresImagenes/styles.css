@@ -24,10 +24,11 @@
 
 
 
+
+
 @media (max-width: 480px) {
 
     .AulasDescubridoresImagenes-image-container {
-        /* width: 194px; */
         height: 206px;
     }
     
@@ -44,11 +45,9 @@
   
   
   
-  
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     .AulasDescubridoresImagenes-image-container {
-        /* width: 300px; */
         height: 309px;
     }
     
@@ -65,11 +64,9 @@
 
 
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .AulasDescubridoresImagenes-image-container {
-        /* width: 490px; */
         height: 495px;
     }
     
@@ -86,11 +83,9 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .AulasDescubridoresImagenes-image-container {
-        /* width: 580px; */
         height: 618px;
     }
     
@@ -107,11 +102,9 @@
 
 
 
-
 @media only screen and (min-width: 1200px) {
 
     .AulasDescubridoresImagenes-image-container {
-        /* width: 725px; */
         height: 772px;
     }
     

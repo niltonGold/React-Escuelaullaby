@@ -1,14 +1,23 @@
 import React from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
 export const ExcursionesPage = ( props ) => {
 
+      const navigate = useNavigate();
+
+      const handleReturnInicio = () => {
+          navigate('/inicioPage');
+      }
+
   return (
     <>
+
+    
         <Box  sx={{     
-                  // backgroundColor: 'rgb(242, 186, 113)',
+               // backgroundColor: 'rgb(242, 186, 113)',
               '@media (max-width: 480px)': {
                     width: `${props.anchuraExcursionesPage480px}rem`,
                     marginTop: '1rem',
@@ -37,14 +46,15 @@ export const ExcursionesPage = ( props ) => {
         }}>
 
 
-
                   <VolverAinicio />
 
 
                   <div className='excursionesPage-subContainer'>
 
                               <div className='excursionesPage-excursionesLogo-container'>
-                                    <div className='excursionesPage-excursionesLogo' />
+
+                                    <div className='excursionesPage-excursionesLogo' onClick={handleReturnInicio} />
+
                               </div>
 
                               <div className='excursionesPage-parrafo-container'>
@@ -78,8 +88,10 @@ export const ExcursionesPage = ( props ) => {
 
                                     </div>
 
+
                                                 <div className='excursionesPage-lineaDivisora'/>
                                     
+
                                     <div className='excursionesPage-parragoLado'>
 
                                           <div className='excursionesPage-subParrafo'>
@@ -112,13 +124,17 @@ export const ExcursionesPage = ( props ) => {
                               </div>
 
                               <div className='excursionesPage-imagen-container'>
+
                                     <div className='excursionesPage-imagen'/>
+
                               </div>
 
                   </div>
 
 
         </Box>
+
+
     </>
   )
 }

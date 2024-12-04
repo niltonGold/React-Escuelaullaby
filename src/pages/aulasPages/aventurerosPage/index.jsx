@@ -6,7 +6,12 @@ import { AulasAventurerosTituloEncabezado } from '../../../Components/routesComp
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import { AulasAventurerosImagenes } from '../../../Components/routesComponents/instalacionesComponents/aulas/aulasAventurerosImagenes';
 
+
+
+
+
 export const AventurerosPage = ( props ) => {
+
 
     const IrDescubridores = 'instalacionesPage/descubridores';
 
@@ -16,10 +21,13 @@ export const AventurerosPage = ( props ) => {
                       a los niños aventureros con acceso desde el aula. Se distribuye por 
                       rincones: juego simbólico, actividades, asamblea, biblioteca.`
 
+
   return (
     <>
+
+
         <Box sx={{
-            backgroundColor: 'yellow',
+                // backgroundColor: 'yellow',
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraAventurerosPage480px}rem`,
                     marginTop: '1rem',
@@ -47,9 +55,12 @@ export const AventurerosPage = ( props ) => {
                 }
         }}>
 
+
             <VolverAaulasYsiguiente enlace={IrDescubridores} />
             
+
             <AulasAventurerosTituloEncabezado />
+
 
             <div className='AventurerosPage-Subcontainer'>
 
@@ -62,7 +73,11 @@ export const AventurerosPage = ( props ) => {
                     <AulasAventurerosImagenes />
 
             </div>
+
+            
         </Box>
+
+
     </>
   )
 }

@@ -1,0 +1,76 @@
+.EquipoPage-Parrafo{
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.EquipoPage-textoResaltado{
+    color: #268bd2;
+}
+
+
+@media (max-width: 480px) {
+
+    .EquipoPage-Parrafo{
+        font-size: 5px;
+    }
+
+    .EquipoPage-textoResaltado{
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .EquipoPage-Parrafo{
+        font-size: 7px;
+    }
+
+    .EquipoPage-textoResaltado{
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .EquipoPage-Parrafo{
+        font-size: 11px;
+    }
+
+    .EquipoPage-textoResaltado{
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .EquipoPage-Parrafo{
+        font-size: 15px;
+    }
+
+    .EquipoPage-textoResaltado{
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .EquipoPage-Parrafo{
+        font-size: 18px;
+    }
+
+    .EquipoPage-textoResaltado{
+    }
+
+}

@@ -1,3 +1,243 @@
-.QuienesSomosPage-Principal-Container{
-    /* background-color: rgb(242, 186, 113); */
+.QuienesSomosPage-Parrafos-Container{
+    display: flex;
+    flex-direction: column;
 }
+
+.QuienesSomosPage-Parrafo,
+.QuienesSomosPage-Parrafo1{
+    font-weight: 400;
+    text-align: justify;
+}
+
+.QuienesSomosPage-Enlace-Comunidad,
+.QuienesSomosPage-Enlace-Ayuntamiento{
+    color: #268bd2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.QuienesSomosPage-Parrafo3-Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.QuienesSomosPage-parrafo3{
+    position: relative;
+}
+
+.QuienesSomosPage-parrafo3::before{
+    font-weight: 900;
+    position: absolute;
+    content: '.';
+}
+
+.QuienesSomosPage-parrafo3-final::before{
+}
+
+.QuienesSomosPage-Imagenes-Container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .QuienesSomosPage-Parrafos-Container{
+        gap: 0.5rem;
+    }  
+
+    .QuienesSomosPage-Parrafo,
+    .QuienesSomosPage-Parrafo1{
+        font-size: 5px;
+        line-height: 8px;
+    }
+    
+    .QuienesSomosPage-Enlace-Comunidad,
+    .QuienesSomosPage-Enlace-Ayuntamiento{
+    }
+
+    .QuienesSomosPage-Parrafo3-Container{
+        gap: 0.2rem;
+    }
+
+    .QuienesSomosPage-parrafo3{
+        padding-left: 0.5rem;
+    }
+    
+    .QuienesSomosPage-parrafo3::before{
+        left: 3px;
+        bottom: 9.2px;
+    }
+
+    .QuienesSomosPage-parrafo3-final::before{
+        bottom: 1.3px;
+    }
+ 
+    .QuienesSomosPage-Imagenes-Container{
+    }
+
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .QuienesSomosPage-Parrafos-Container{
+        gap: 0.7rem;
+    }  
+    
+    .QuienesSomosPage-Parrafo,
+    .QuienesSomosPage-Parrafo1{
+        font-size: 7px;
+        line-height: 10px;
+    }
+
+    .QuienesSomosPage-Enlace-Comunidad,
+    .QuienesSomosPage-Enlace-Ayuntamiento{
+    }
+
+    .QuienesSomosPage-Parrafo3-Container{
+        gap: 0.3rem;
+    }
+    
+    .QuienesSomosPage-parrafo3{
+        padding-left: 0.7rem;
+    }
+    
+    .QuienesSomosPage-parrafo3::before{
+        left: 4.5px;
+        bottom: 11.5px;
+    }
+
+    .QuienesSomosPage-parrafo3-final::before{
+        bottom: 1.5px;
+    }
+
+    .QuienesSomosPage-Imagenes-Container{
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .QuienesSomosPage-Parrafos-Container{
+        gap: 1rem;
+    } 
+
+    .QuienesSomosPage-Parrafo,
+    .QuienesSomosPage-Parrafo1{
+        font-size: 11px;
+        line-height: 18px;
+    }
+    
+    .QuienesSomosPage-Enlace-Comunidad,
+    .QuienesSomosPage-Enlace-Ayuntamiento{
+    }
+
+    .QuienesSomosPage-Parrafo3-Container{
+        gap: 0.4rem;
+    }
+
+    .QuienesSomosPage-parrafo3{
+        padding-left: 1rem;
+    }
+    
+    .QuienesSomosPage-parrafo3::before{
+        left: 6px;
+        bottom: 20.5px;
+    }
+
+    .QuienesSomosPage-parrafo3-final::before{
+        bottom: 3px;
+    }
+
+    .QuienesSomosPage-Imagenes-Container{
+    }
+
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .QuienesSomosPage-Parrafos-Container{
+        gap: 1.4rem;
+    } 
+
+    .QuienesSomosPage-Parrafo,
+    .QuienesSomosPage-Parrafo1{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    
+    .QuienesSomosPage-Enlace-Comunidad,
+    .QuienesSomosPage-Enlace-Ayuntamiento{
+    }
+
+    .QuienesSomosPage-Parrafo3-Container{
+        gap: 0.5rem;
+    }
+
+    .QuienesSomosPage-parrafo3{
+        padding-left: 1.5rem;
+    }
+    
+    .QuienesSomosPage-parrafo3::before{
+        left: 9.5px;
+        bottom: 26px;
+    }
+
+    .QuienesSomosPage-parrafo3-final::before{
+        bottom: 3px;
+    }
+
+    .QuienesSomosPage-Imagenes-Container{
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .QuienesSomosPage-Parrafos-Container{
+        gap: 1.7rem;
+    } 
+
+    .QuienesSomosPage-Parrafo,
+    .QuienesSomosPage-Parrafo1{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .QuienesSomosPage-Enlace-Comunidad,
+    .QuienesSomosPage-Enlace-Ayuntamiento{
+    }
+
+    .QuienesSomosPage-Parrafo3-Container{
+        gap: 0.6rem;
+    }
+
+    .QuienesSomosPage-parrafo3{
+        padding-left: 1.7rem;
+    }
+    
+    .QuienesSomosPage-parrafo3::before{
+        left: 11px;
+        bottom: 32.5px;
+    }
+
+    .QuienesSomosPage-parrafo3-final::before{
+        bottom: 4px;
+    }
+
+    .QuienesSomosPage-Imagenes-Container{
+    }
+    
+}
+

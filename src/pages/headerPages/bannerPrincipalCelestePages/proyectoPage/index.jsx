@@ -10,7 +10,11 @@ import { YogaComponentLogoInfo } from '../../../../Components/routesComponents/p
 import { NaturalezaComponentLogoInfo } from '../../../../Components/routesComponents/proyectoComponents/naturalezaComponentLogo+info';
 
 
+
+
+
 export const ProyectoPage = ( props ) => {
+
 
   const ProyectoPageTexto1 = `El PROYECTO EDUCATIVO Lullaby plantea un sistema 
                               pedagógico moderno y de calidad diseñado y creado 
@@ -29,79 +33,89 @@ export const ProyectoPage = ( props ) => {
                               El aprendizaje a través del juego se convierte en la 
                               metodología básica y esencial para su desarrollo.`
 
+
   return (
-    <Box  sx={{     backgroundColor: 'rgb(242, 186, 113)',
-                    '@media (max-width: 480px)': {
-                              width: `${props.anchuraProyectoPage480px}rem`, 
-                              marginTop: '1rem',
-                              marginBottom: '0rem', 
-                    },
-                    '@media (min-width: 481px) and (max-width: 767px)': {
-                              width: `${props.anchuraProyectoPage481px_a_767px}rem`,
-                              marginTop: '1.5rem',
-                              marginBottom: '0rem',   
-                    },
-                    '@media (min-width: 768px) and (max-width: 959px)': {
-                              width: `${props.anchuraProyectoPage768px_a_959px}rem`,
-                              marginTop: '2rem',
-                              marginBottom: '5rem', 
-                    },
-                    '@media (min-width: 960px) and (max-width: 1199px)': {
-                              width: `${props.anchuraProyectoPage960px_a_1199px}rem`,
-                              marginTop: '2.5rem',
-                              marginBottom: '5rem',  
-                    },
-                    '@media (min-width: 1200px)': {
-                              width: `${props.anchuraProyectoPage1200px}rem`, 
-                              marginTop: '3rem',
-                              marginBottom: '5rem', 
-                    }  
-    }}>
+    <>
 
 
-              <div  className='ProyectoPage-subContainer'>
+            <Box  sx={{     
+                            // backgroundColor: 'rgb(242, 186, 113)',
+                            '@media (max-width: 480px)': {
+                                    width: `${props.anchuraProyectoPage480px}rem`, 
+                                    marginTop: '1rem',
+                                    marginBottom: '0rem', 
+                            },
+                            '@media (min-width: 481px) and (max-width: 767px)': {
+                                    width: `${props.anchuraProyectoPage481px_a_767px}rem`,
+                                    marginTop: '1.5rem',
+                                    marginBottom: '0rem',   
+                            },
+                            '@media (min-width: 768px) and (max-width: 959px)': {
+                                    width: `${props.anchuraProyectoPage768px_a_959px}rem`,
+                                    marginTop: '2rem',
+                                    marginBottom: '5rem', 
+                            },
+                            '@media (min-width: 960px) and (max-width: 1199px)': {
+                                    width: `${props.anchuraProyectoPage960px_a_1199px}rem`,
+                                    marginTop: '2.5rem',
+                                    marginBottom: '5rem',  
+                            },
+                            '@media (min-width: 1200px)': {
+                                    width: `${props.anchuraProyectoPage1200px}rem`, 
+                                    marginTop: '3rem',
+                                    marginBottom: '5rem', 
+                            }  
+            }}>
 
-                    <div className='ProyectoPage-titulo_parrafo-container'>
-          
-                          <Parrafo parrafoTexto={ProyectoPageTexto1} />
 
-                          <Parrafo parrafoTexto={ProyectoPageTexto2} />
+                    <div  className='ProyectoPage-subContainer'>
 
-                          <Parrafo parrafoTexto={ProyectoPageTexto3} />
+
+                            <div className='ProyectoPage-titulo_parrafo-container'>
+                
+                                    <Parrafo parrafoTexto={ProyectoPageTexto1} />
+
+                                    <Parrafo parrafoTexto={ProyectoPageTexto2} />
+
+                                    <Parrafo parrafoTexto={ProyectoPageTexto3} />
+
+                            </div>
+
+                            <div className='ProyectoPage-Enlaces-Big-Container'>
+                                
+                                    <div className='ProyectoPage-Enlaces-Sub-Container'>
+
+                                            <ArteComponentLogoInfo />
+                                            
+                                            <MusicaComponentLogoInfo />
+
+                                    </div>
+
+                                    <div className='ProyectoPage-Enlaces-Sub-Container'>
+                                        
+                                            <PsicomotricidadComponentLogoInfo />
+
+                                            <JuegoComponentLogoInfo />
+
+                                    </div>
+
+                                    <div className='ProyectoPage-Enlaces-Sub-Container'>
+
+                                            <YogaComponentLogoInfo />
+
+                                            <NaturalezaComponentLogoInfo />
+
+                                    </div>
+
+                            </div>
+
 
                     </div>
 
-                    <div className='ProyectoPage-Enlaces-Big-Container'>
-                          
-                          <div className='ProyectoPage-Enlaces-Sub-Container'>
 
-                                  <ArteComponentLogoInfo />
-                                  
-                                  <MusicaComponentLogoInfo />
-
-                          </div>
-
-                          <div className='ProyectoPage-Enlaces-Sub-Container'>
-                              
-                                  <PsicomotricidadComponentLogoInfo />
-
-                                  <JuegoComponentLogoInfo />
-
-                          </div>
-
-                          <div className='ProyectoPage-Enlaces-Sub-Container'>
-
-                                  <YogaComponentLogoInfo />
-
-                                  <NaturalezaComponentLogoInfo />
-
-                          </div>
-
-                    </div>
-              </div>
+            </Box>
 
 
-
-    </Box>
+    </>
   )
 }

@@ -1,13 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import imagenCambianteNoticia1 from '../../../Images/inicio/noticia/noticias_1.jpg';
 import imagenCambianteNoticia2 from '../../../Images/inicio/noticia/noticias_2.jpg';
 import imagenCambianteNoticia3 from '../../../Images/inicio/noticia/noticias_3.jpg';
 import imagenCambianteNoticia4 from '../../../Images/inicio/noticia/noticias_4.jpg';
 import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
+
+
+
+
 export const NutricionistaPage = ( props ) => {
+
+
+      const navigate = useNavigate();
+
+      const handleReturnInicio = () => {
+          navigate('/inicioPage');
+      }
 
       const images = [
             imagenCambianteNoticia1,
@@ -35,7 +47,10 @@ export const NutricionistaPage = ( props ) => {
 
   return (
     <>
-        <Box  sx={{     backgroundColor: 'rgb(242, 186, 113)',
+
+    
+        <Box  sx={{     
+            //   backgroundColor: 'rgb(242, 186, 113)',
               '@media (max-width: 480px)': {
                     width: `${props.anchuraNutricionistaPage480px}rem`, 
                     marginTop: '1rem',
@@ -66,11 +81,14 @@ export const NutricionistaPage = ( props ) => {
 
                   <VolverAinicio />
 
+
                   <div className='nutricionPage-subContainer'>
                         
 
                         <div className='nutricionPage-nutricionLogo-container'>
-                                    <div className='nutricionPage-nutricionLogo' />
+
+                                    <div className='nutricionPage-nutricionLogo' onClick={handleReturnInicio} />
+
                         </div>
                         
                         <div className='nutricionPage-parrafo'>
@@ -121,6 +139,8 @@ export const NutricionistaPage = ( props ) => {
                   </div>
 
         </Box>
+
+
     </>
   )
 }

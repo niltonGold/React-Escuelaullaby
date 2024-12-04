@@ -1,5 +1,5 @@
 .JuegoParrafoConSangria-Principal-Container{
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
     text-align: justify;
 }   
@@ -9,6 +9,8 @@
     position: absolute;
     content: '-';
 }        
+
+
 
 
 
@@ -29,7 +31,6 @@
 
 
 
-
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     .JuegoParrafoConSangria-Principal-Container{
@@ -43,7 +44,6 @@
     }  
 
 }
-
 
 
 
@@ -63,7 +63,6 @@
 
 
 
-
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .JuegoParrafoConSangria-Principal-Container{
@@ -77,7 +76,6 @@
     }  
 
 }
-
 
 
 

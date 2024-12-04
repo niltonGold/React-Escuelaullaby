@@ -1,9 +1,22 @@
 import React from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
+
+
+
+
 export const FotosPage = ( props ) => {
+
+      
+  const navigate = useNavigate();
+
+  const handleReturnInicio = () => {
+      navigate('/inicioPage');
+  }
+
 
   return (
     <>
@@ -39,23 +52,32 @@ export const FotosPage = ( props ) => {
 
                   <VolverAinicio/>
 
+
                   <div className='fotosPage-fotosLogo-container'>
-                        <div className='fotosPage-fotosLogo' />
+                        
+
+                              <div className='fotosPage-fotosLogo' onClick={handleReturnInicio}/>
+
+
                   </div>
                 
+
                   <div className='fotosPage-imagenes-container'>
                   
-                        <div className='fotosPage-imagenesContainer'>
-                              <div className='fotosPage-imagen fotosPage-imagen1'/>
-                              <div className='fotosPage-imagen fotosPage-imagen2'/>
-                        </div>
-                        <div className='fotosPage-imagenesContainer'>
-                              <div className='fotosPage-imagen fotosPage-imagen3'/>
-                              <div className='fotosPage-imagen fotosPage-imagen4'/>
-                        </div>
-                        
-                  </div>
 
+                              <div className='fotosPage-imagenesContainer'>
+                                    <div className='fotosPage-imagen fotosPage-imagen1'/>
+                                    <div className='fotosPage-imagen fotosPage-imagen2'/>
+                              </div>
+
+                              
+                              <div className='fotosPage-imagenesContainer'>
+                                    <div className='fotosPage-imagen fotosPage-imagen3'/>
+                                    <div className='fotosPage-imagen fotosPage-imagen4'/>
+                              </div>
+                        
+
+                  </div>
 
 
         </Box>

@@ -8,64 +8,72 @@ import { TituloCabecera } from '../../../Components/componentsConstantes/tituloC
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import { HuertoEinvernaderoImagenesCambiantes } from '../../../Components/routesComponents/instalacionesComponents/huertoEinvernadero/huertoEinvernaderoImagenesCambiantes';
 
+
+
+
+
 export const HuertoEinvernadero = ( props ) => {
 
-      const IrAsalonDeActos = 'instalacionesPage/salonDeActos';
 
-      const HuertoEinvernaderoImagen = HuertoEinvernaderoTitulo;
+    const IrAsalonDeActos = 'instalacionesPage/salonDeActos';
 
-      const [HuertoEinvernaderoImagenAnchura, setHuertoEinvernaderoImagenAnchura] = useState(0);
+    const HuertoEinvernaderoImagen = HuertoEinvernaderoTitulo;
 
-      const [HuertoEinvernaderoImagenAltura, setHuertoEinvernaderoImagenAltura] = useState(0);
+    const [HuertoEinvernaderoImagenAnchura, setHuertoEinvernaderoImagenAnchura] = useState(0);
 
-      const HuertoEinvernaderoTexto = `Se encuentran en el patio de actividades dirigidas. 
-                                       Se trata de una zona espaciosa donde los niños aprenden 
-                                       a cultivar las plantas, así como a acercarse al concepto 
-                                       de preservar y cuidar el medio ambiente y el ecosistema.`
+    const [HuertoEinvernaderoImagenAltura, setHuertoEinvernaderoImagenAltura] = useState(0);
 
+    const HuertoEinvernaderoTexto = `Se encuentran en el patio de actividades dirigidas. 
+                                    Se trata de una zona espaciosa donde los niños aprenden 
+                                    a cultivar las plantas, así como a acercarse al concepto 
+                                    de preservar y cuidar el medio ambiente y el ecosistema.`
 
-      useEffect(() => {
-      // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
-      const updateDimensions = () => {
-            const width = window.innerWidth;
-            if (width <= 480) {
+    useEffect(() => {
+    // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
+    const updateDimensions = () => {
+        const width = window.innerWidth;
+        if (width <= 480) {
 
-                  setHuertoEinvernaderoImagenAnchura(198); // Ancho y alto para pantallas pequeñas
-                  setHuertoEinvernaderoImagenAltura(28);
+                setHuertoEinvernaderoImagenAnchura(198); // Ancho y alto para pantallas pequeñas
+                setHuertoEinvernaderoImagenAltura(28);
 
-            } else if (width >= 481 && width <= 767) {
+        } else if (width >= 481 && width <= 767) {
 
-                  setHuertoEinvernaderoImagenAnchura(297); // Ancho y alto para pantallas medianas
-                  setHuertoEinvernaderoImagenAltura(43);
+                setHuertoEinvernaderoImagenAnchura(297); // Ancho y alto para pantallas medianas
+                setHuertoEinvernaderoImagenAltura(43);
 
-            } else if (width >= 768 && width <= 959) {
+        } else if (width >= 768 && width <= 959) {
 
-                  setHuertoEinvernaderoImagenAnchura(475); // Ancho y alto para pantallas grandes
-                  setHuertoEinvernaderoImagenAltura(68);
+                setHuertoEinvernaderoImagenAnchura(475); // Ancho y alto para pantallas grandes
+                setHuertoEinvernaderoImagenAltura(68);
 
-            } else if (width >= 960 && width <= 1199) {
+        } else if (width >= 960 && width <= 1199) {
 
-                  setHuertoEinvernaderoImagenAnchura(594); // Ancho y alto para pantallas extra grandes
-                  setHuertoEinvernaderoImagenAltura(85);
+                setHuertoEinvernaderoImagenAnchura(594); // Ancho y alto para pantallas extra grandes
+                setHuertoEinvernaderoImagenAltura(85);
 
-            } else {
-                  setHuertoEinvernaderoImagenAnchura(741); // Ancho y alto para pantallas muy grandes
-                  setHuertoEinvernaderoImagenAltura(106);
-            }
-      };
+        } else {
+                setHuertoEinvernaderoImagenAnchura(741); // Ancho y alto para pantallas muy grandes
+                setHuertoEinvernaderoImagenAltura(106);
+        }
+    };
 
-            // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
-            updateDimensions();
-            window.addEventListener('resize', updateDimensions);
+        // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
+        updateDimensions();
+        window.addEventListener('resize', updateDimensions);
 
-            // Limpia el evento al desmontar el componente
-            return () => window.removeEventListener('resize', updateDimensions);
+        // Limpia el evento al desmontar el componente
+        return () => window.removeEventListener('resize', updateDimensions);
 
-      }, []);
+    }, []);
+
 
   return (
     <>
-        <Box  sx={{     backgroundColor: 'rgb(242, 186, 100)',
+
+
+        <Box  sx={{     
+                //   backgroundColor: 'rgb(242, 186, 100)',
                   '@media (max-width: 480px)': {
                         width: `${props.anchuraHuertoEinvernadero480px}rem`,
                         marginTop: '1rem',
@@ -115,6 +123,8 @@ export const HuertoEinvernadero = ( props ) => {
           
 
           </Box>
+
+
     </>
   )
 }

@@ -1,0 +1,127 @@
+.QuienesSomosImagenesCambiantes-image-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.QuienesSomosImagenesCambiantes-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.QuienesSomosImagenesCambiantes-fade-in {
+    opacity: 1;
+}
+
+.QuienesSomosImagenesCambiantes-fade-out {
+    opacity: 0;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .QuienesSomosImagenesCambiantes-image-container {
+        width: 223px;
+        height: 126px;
+    }
+    
+    .QuienesSomosImagenesCambiantes-image {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-in {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-out {
+    }
+  
+}
+  
+  
+  
+  
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .QuienesSomosImagenesCambiantes-image-container {
+        width: 334px;
+        height: 189px;
+    }
+    
+    .QuienesSomosImagenesCambiantes-image {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-in {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .QuienesSomosImagenesCambiantes-image-container {
+        width: 536px;
+        height: 301px;
+    }
+    
+    .QuienesSomosImagenesCambiantes-image {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-in {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .QuienesSomosImagenesCambiantes-image-container {
+        width: 671px;
+        height: 376px;
+    }
+    
+    .QuienesSomosImagenesCambiantes-image {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-in {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-out {
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .QuienesSomosImagenesCambiantes-image-container {
+        width: 838px;
+        height: 470px;
+    }
+    
+    .QuienesSomosImagenesCambiantes-image {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-in {
+    }
+    
+    .QuienesSomosImagenesCambiantes-fade-out {
+    }
+
+}

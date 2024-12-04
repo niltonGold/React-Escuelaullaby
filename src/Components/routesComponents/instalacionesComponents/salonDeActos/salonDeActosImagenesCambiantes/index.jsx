@@ -5,7 +5,10 @@ import imagen_2 from '../../../../../Images/instalaciones/salonDeActos/salondeac
 
 
 
+
+
 export const SalonDeActosImagenesCambiantes = ( ) => {
+
 
     const images = [
         imagen_1,
@@ -27,14 +30,21 @@ export const SalonDeActosImagenesCambiantes = ( ) => {
         return () => clearInterval(intervalId);
     }, [images.length]);
 
+
     return (
         <>
+
+
             <div className="SalonDeActosImagenesCambiantes-image-container">
+
                 <div
                     className={`SalonDeActosImagenesCambiantes-image ${isFading ? 'SalonDeActosImagenesCambiantes-fade-in' : 'SalonDeActosImagenesCambiantes-fade-out'}`}
                     style={{ backgroundImage: `url(${images[currentImage]})` }}
                 />
+                
             </div>
+
+
         </>
     );
 };

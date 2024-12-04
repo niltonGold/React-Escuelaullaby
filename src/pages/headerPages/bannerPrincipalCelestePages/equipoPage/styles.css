@@ -1,0 +1,104 @@
+.EquipoPage-Ayudantes-Container{
+    /* background-color: rgb(0, 0, 0, 0.8); */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.EquipoPage-izquierda{
+    /* background-color: rgb(250, 235, 215, 0.5); */
+    display: flex;
+    flex-direction: column;
+}
+
+.EquipoPage-derecha{
+    /* background-color: rgba(208, 223, 218, 0.5); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .EquipoPage-izquierda{
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+    
+    .EquipoPage-derecha{
+        gap: 2rem;
+        left: -64px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .EquipoPage-izquierda{
+        padding-top: 2.2rem;
+        gap: 2.2rem;
+    }
+    
+    .EquipoPage-derecha{
+        gap: 2.2rem;
+        left: -56px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .EquipoPage-izquierda{
+        padding-top: 2.8rem;
+        gap: 2.8rem;
+    }
+    
+    .EquipoPage-derecha{
+        gap: 2.8rem;
+        left: -104px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .EquipoPage-izquierda{
+        padding-top: 3.5rem;
+        gap: 3.5rem;
+    }
+    
+    .EquipoPage-derecha{
+        gap: 3.5rem;
+        left: -144px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .EquipoPage-izquierda{
+        padding-top: 5rem;
+        gap: 5rem;
+    }
+    
+    .EquipoPage-derecha{
+        gap: 5rem;
+        left: -128px;
+    }
+
+}
+  

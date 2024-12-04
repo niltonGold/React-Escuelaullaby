@@ -3,30 +3,45 @@ import './styles.css';
 import { useNavigate } from 'react-router-dom';
 import { InfoProyecto } from '../proyectos+info';
 
+
+
+
+
 export const NaturalezaComponentLogoInfo = () => {
 
-        const navigate = useNavigate();
 
-        const handleExploradoresPage = () => {
-                navigate('/proyecto/naturaleza');
-        };
+    const navigate = useNavigate();
 
-  return (
-    <>
-        <div className="NaturalezaComponentLogoInfo-Principal-Container NaturalezaComponentLogoInfo-diplay-flex-column">
-                
-                <div className="NaturalezaComponentLogoInfo-nube-Container">
-                        <div className="NaturalezaComponentLogoInfo-nube NaturalezaComponentLogoInfo-imagenRepeatPositionSize" />
-                </div>
+    const handleExploradoresPage = () => {
+        window.scrollTo({ top: 0 });
+        navigate('/proyectoPage/naturaleza');
+    };
 
-                <div onClick={handleExploradoresPage}>
-                        <InfoProyecto />
-                </div>
 
-                <div className="NaturalezaComponentLogoInfo-titulo NaturalezaComponentLogoInfo-imagenRepeatPositionSize" onClick={handleExploradoresPage}/>
+    return (
+        <>
 
-        </div>
-    </>
-  );
+
+            <div className="NaturalezaComponentLogoInfo-Principal-Container NaturalezaComponentLogoInfo-diplay-flex-column">
+                    
+                    <div className="NaturalezaComponentLogoInfo-nube-Container">
+
+                            <div className="NaturalezaComponentLogoInfo-nube NaturalezaComponentLogoInfo-imagenRepeatPositionSize" />
+
+                    </div>
+
+                    <div onClick={handleExploradoresPage}>
+
+                            <InfoProyecto />
+                            
+                    </div>
+
+                    <div className="NaturalezaComponentLogoInfo-titulo NaturalezaComponentLogoInfo-imagenRepeatPositionSize" onClick={handleExploradoresPage}/>
+
+            </div>
+
+
+        </>
+    );
 };
 

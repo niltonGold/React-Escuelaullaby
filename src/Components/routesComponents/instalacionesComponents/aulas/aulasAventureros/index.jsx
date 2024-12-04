@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const AulasAventureros = () => {
 
+
         const navigate = useNavigate();
 
         const handleAventurerosPage = () => {
@@ -14,6 +15,8 @@ export const AulasAventureros = () => {
   
   return (
     <>
+
+
         <div className="AulasAventureros-Principal-Container AulasAventureros-diplay-flex-column">
                 
                 <div className="AulasAventureros-nube AulasAventureros-imagenRepeatPositionSize AulasAventureros-positionAbsolute" />
@@ -29,11 +32,15 @@ export const AulasAventureros = () => {
                         <div className="AulasAventureros-imagen AulasAventureros-imagenRepeatPositionSize" onClick={handleAventurerosPage} />
 
                         <div onClick={handleAventurerosPage}>
+
                                 <Info/>
+                                
                         </div>
 
                 </div>
         </div>
+
+        
     </>
   );
 };

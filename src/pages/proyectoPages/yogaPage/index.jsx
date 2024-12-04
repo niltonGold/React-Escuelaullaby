@@ -5,23 +5,28 @@ import { VolverAProyectoYsiguiente } from '../../../Components/componentsConstan
 import YogaTitulo from '../../../Images/proyecto/yoga/yoga.png';
 import { TituloCabecera } from '../../../Components/componentsConstantes/tituloCabecera';
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
+import { YogaComponentImagen } from '../../../Components/routesComponents/proyectoComponents/yogaComponentImagen';
+
+
+
 
 
 export const YogaPage = ( props ) => {
 
-  const IrANaturalezaPage = 'proyecto/naturaleza';
 
-  const YogaTituloImagen = YogaTitulo;
+    const IrANaturalezaPage = 'proyectoPage/naturaleza';
 
-  const [YogaTituloImagenAnchura, setYogaTituloImagenAnchura] = useState(0);
-  
-  const [YogaTituloImagenAltura, setYogaTituloImagenAltura] = useState(0);
+    const YogaTituloImagen = YogaTitulo;
 
-  const YogaTexto1 = `Al finalizar cada clase de psicomotricidad, y en aquellos momentos 
-                       del día que así se requiera (siesta, cambio de actividad, etc.), se 
-                       realizará una pequeña sesión de yoga infantil, a través de la cual 
-                       aprenderán a relajarse, mejorar su atención para la siguiente actividad, 
-                       canalizar su energía, así como mejorar hábitos posturales.`;
+    const [YogaTituloImagenAnchura, setYogaTituloImagenAnchura] = useState(0);
+    
+    const [YogaTituloImagenAltura, setYogaTituloImagenAltura] = useState(0);
+
+    const YogaTexto1 = `Al finalizar cada clase de psicomotricidad, y en aquellos momentos 
+                        del día que así se requiera (siesta, cambio de actividad, etc.), se 
+                        realizará una pequeña sesión de yoga infantil, a través de la cual 
+                        aprenderán a relajarse, mejorar su atención para la siguiente actividad, 
+                        canalizar su energía, así como mejorar hábitos posturales.`;
 
     useEffect(() => {
       // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
@@ -56,60 +61,70 @@ export const YogaPage = ( props ) => {
       return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
+
   return (
-    <Box  sx={{     backgroundColor: 'rgb(242, 186, 113)',
-                    '@media (max-width: 480px)': {
-                              width: `${props.anchuraYogaPage480px}rem`, 
-                              marginTop: '1rem',
-                              marginBottom: '0rem', 
-                    },
-                    '@media (min-width: 481px) and (max-width: 767px)': {
-                              width: `${props.anchuraYogaPage481px_a_767px}rem`,
-                              marginTop: '1.5rem',
-                              marginBottom: '0rem',  
-                    },
-                    '@media (min-width: 768px) and (max-width: 959px)': {
-                              width: `${props.anchuraYogaPage768px_a_959px}rem`, 
-                              marginTop: '2rem',
-                              marginBottom: '5rem',
-                    },
-                    '@media (min-width: 960px) and (max-width: 1199px)': {
-                              width: `${props.anchuraYogaPage960px_a_1199px}rem`,
-                              marginTop: '2.5rem',
-                              marginBottom: '5rem',  
-                    },
-                    '@media (min-width: 1200px)': {
-                              width: `${props.anchuraYogaPage1200px}rem`,
-                              marginTop: '3rem',
-                              marginBottom: '5rem',  
-                    }  
-    }}>
+    <>
 
-            <VolverAProyectoYsiguiente enlace={IrANaturalezaPage} />
 
-            <div className='YogaLogoTituloEfecto'>
+            <Box  sx={{     
+                        // backgroundColor: 'rgb(242, 186, 113)',
+                        '@media (max-width: 480px)': {
+                                width: `${props.anchuraYogaPage480px}rem`, 
+                                marginTop: '1rem',
+                                marginBottom: '0rem', 
+                        },
+                        '@media (min-width: 481px) and (max-width: 767px)': {
+                                width: `${props.anchuraYogaPage481px_a_767px}rem`,
+                                marginTop: '1.5rem',
+                                marginBottom: '0rem',  
+                        },
+                        '@media (min-width: 768px) and (max-width: 959px)': {
+                                width: `${props.anchuraYogaPage768px_a_959px}rem`, 
+                                marginTop: '2rem',
+                                marginBottom: '5rem',
+                        },
+                        '@media (min-width: 960px) and (max-width: 1199px)': {
+                                width: `${props.anchuraYogaPage960px_a_1199px}rem`,
+                                marginTop: '2.5rem',
+                                marginBottom: '5rem',  
+                        },
+                        '@media (min-width: 1200px)': {
+                                width: `${props.anchuraYogaPage1200px}rem`,
+                                marginTop: '3rem',
+                                marginBottom: '5rem',  
+                        }  
+            }}>
 
-                        <TituloCabecera imagenBackgroundUbicacion={YogaTituloImagen}
-                                        anchuraTitulo={YogaTituloImagenAnchura}
-                                        alturaTitulo={YogaTituloImagenAltura} 
-                                    />
 
-            </div>
+                    <VolverAProyectoYsiguiente enlace={IrANaturalezaPage} />
 
-            <div className='YogaPage-parrafos-imagenes-container'>
 
-                    <div className='YogaPage-parrafos-container'>
+                    <div className='YogaLogoTituloEfecto'>
 
-                            <Parrafo parrafoTexto={YogaTexto1} />
+                                <TituloCabecera imagenBackgroundUbicacion={YogaTituloImagen}
+                                                anchuraTitulo={YogaTituloImagenAnchura}
+                                                alturaTitulo={YogaTituloImagenAltura} 
+                                />
 
                     </div>
 
-                    <div>imagen</div>
 
-            </div>
+                    <div className='YogaPage-parrafos-imagenes-container'>
+
+                            <div className='YogaPage-parrafos-container'>
+
+                                    <Parrafo parrafoTexto={YogaTexto1} />
+
+                            </div>
+
+                            <YogaComponentImagen />
+
+                    </div>
 
 
+            </Box>
 
-    </Box>
+
+    </>
   )
 }

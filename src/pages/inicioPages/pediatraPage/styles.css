@@ -6,21 +6,19 @@
     align-self: center;
 }
 
-
 .pediatraPage-pediatraLogo-container{
     /* background-color: rgb(98, 188, 188); */
     display: flex;
     justify-content: center;
 }
 
-
         .pediatraPage-pediatraLogo{
+            /* background-color: antiquewhite; */
             background-image: url('../../../Images/inicio/pediatra/pediatraLogo.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100% 100%;
             cursor: pointer;
-            /* background-color: antiquewhite; */
         }
 
 .pediatraPage-parrafo{
@@ -33,14 +31,13 @@
             overflow: hidden;
         }
 
-
                         .pediatraImages{
                             width: 100%;
                             height: 100%;
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: 100% 100%;
-                            transition: opacity 1s ease-in-out; /* Controla la transición de desvanecimiento */
+                            transition: opacity 1s ease-in-out;
                         }
 
                         .pediatra-fade-in {
@@ -53,44 +50,42 @@
                         
 
 
+
+
+
 @media (max-width: 480px) {
 
-.pediatraPage-subContainer{ 
-    gap: 1rem;
-}
+    .pediatraPage-subContainer{ 
+        gap: 1rem;
+    }
 
+    .pediatraPage-pediatraLogo-container{
+    }
 
-.pediatraPage-pediatraLogo-container{
-}
+            .pediatraPage-pediatraLogo{
+                border-radius: 18px;
+                width: 33px;
+                height: 33px;
+            }
 
+    .pediatraPage-parrafo{
+        font-size: 5px;
+        line-height: 8px;
+    }
 
-        .pediatraPage-pediatraLogo{
-            border-radius: 18px;
-            width: 33px;
-            height: 33px;
-        }
+            .pediatraPage-imagenes-container{
+                width: 206px;
+                height: 250px;
+            }
 
+                            .pediatraImages{
+                            }
 
-.pediatraPage-parrafo{
-    font-size: 5px;
-    line-height: 8px;
-}
-
-
-        .pediatraPage-imagenes-container{
-            width: 206px;
-            height: 250px;
-        }
-
-
-                        .pediatraImages{
-                        }
-
-                        .pediatra-fade-in {
-                        }
-                        
-                        .pediatra-fade-out {
-                        }
+                            .pediatra-fade-in {
+                            }
+                            
+                            .pediatra-fade-out {
+                            }
 
 }
 
@@ -99,42 +94,37 @@
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
-.pediatraPage-subContainer{ 
-    gap: 1.5rem;
-}
+    .pediatraPage-subContainer{ 
+        gap: 1.5rem;
+    }
 
+    .pediatraPage-pediatraLogo-container{
+    }
 
-.pediatraPage-pediatraLogo-container{
-}
+            .pediatraPage-pediatraLogo{
+                border-radius: 25px;
+                width: 49px;
+                height: 49px;
+            }
 
+    .pediatraPage-parrafo{
+        font-size: 7px;
+        line-height: 10px;
+    }
 
-        .pediatraPage-pediatraLogo{
-            border-radius: 25px;
-            width: 49px;
-            height: 49px;
-        }
+            .pediatraPage-imagenes-container{
+                width: 309px;
+                height: 376px;
+            }
 
+                            .pediatraImages{
+                            }
 
-.pediatraPage-parrafo{
-    font-size: 7px;
-    line-height: 10px;
-}
-
-
-        .pediatraPage-imagenes-container{
-            width: 309px;
-            height: 376px;
-        }
-
-
-                        .pediatraImages{
-                        }
-
-                        .pediatra-fade-in {
-                        }
-                        
-                        .pediatra-fade-out {
-                        }
+                            .pediatra-fade-in {
+                            }
+                            
+                            .pediatra-fade-out {
+                            }
 
 }
 
@@ -143,42 +133,37 @@
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-.pediatraPage-subContainer{ 
-    gap: 2rem;
-}
+    .pediatraPage-subContainer{ 
+        gap: 2rem;
+    }
 
+    .pediatraPage-pediatraLogo-container{
+    }
 
-.pediatraPage-pediatraLogo-container{
-}
+            .pediatraPage-pediatraLogo{
+                border-radius: 40px;
+                width: 80px;
+                height: 80px;
+            }
 
+    .pediatraPage-parrafo{
+        font-size: 11px;
+        line-height: 18px;
+    }
 
-        .pediatraPage-pediatraLogo{
-            border-radius: 40px;
-            width: 80px;
-            height: 80px;
-        }
+            .pediatraPage-imagenes-container{
+                width: 496px;
+                height: 602px;
+            }
 
+                            .pediatraImages{
+                            }
 
-.pediatraPage-parrafo{
-    font-size: 11px;
-    line-height: 18px;
-}
-
-
-        .pediatraPage-imagenes-container{
-            width: 496px;
-            height: 602px;
-        }
-
-
-                        .pediatraImages{
-                        }
-
-                        .pediatra-fade-in {
-                        }
-                        
-                        .pediatra-fade-out {
-                        }
+                            .pediatra-fade-in {
+                            }
+                            
+                            .pediatra-fade-out {
+                            }
 
 }
 
@@ -187,42 +172,37 @@
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
-.pediatraPage-subContainer{ 
-    gap: 2.5rem;
-}
+    .pediatraPage-subContainer{ 
+        gap: 2.5rem;
+    }
 
+    .pediatraPage-pediatraLogo-container{
+    }
 
-.pediatraPage-pediatraLogo-container{
-}
+            .pediatraPage-pediatraLogo{
+                border-radius: 50px;
+                width: 100px;
+                height: 100px;
+            }
 
+    .pediatraPage-parrafo{
+        font-size: 15px;
+        line-height: 23px;
+    }
 
-        .pediatraPage-pediatraLogo{
-            border-radius: 50px;
-            width: 100px;
-            height: 100px;
-        }
+            .pediatraPage-imagenes-container{
+                width: 620px;
+                height: 752px;
+            }
 
+                            .pediatraImages{
+                            }
 
-.pediatraPage-parrafo{
-    font-size: 15px;
-    line-height: 23px;
-}
-
-
-        .pediatraPage-imagenes-container{
-            width: 620px;
-            height: 752px;
-        }
-
-
-                        .pediatraImages{
-                        }
-
-                        .pediatra-fade-in {
-                        }
-                        
-                        .pediatra-fade-out {
-                        }
+                            .pediatra-fade-in {
+                            }
+                            
+                            .pediatra-fade-out {
+                            }
 
 }
 
@@ -231,41 +211,36 @@
 
 @media only screen and (min-width: 1200px) {
 
-.pediatraPage-subContainer{ 
-    gap: 3rem;
-}
+    .pediatraPage-subContainer{ 
+        gap: 3rem;
+    }
 
+    .pediatraPage-pediatraLogo-container{
+    }
 
-.pediatraPage-pediatraLogo-container{
-}
+            .pediatraPage-pediatraLogo{
+                border-radius: 60px;
+                width: 125px;
+                height: 125px;
+            }
 
+    .pediatraPage-parrafo{
+        font-size: 18px;
+        line-height: 28px;
+    }
 
-        .pediatraPage-pediatraLogo{
-            border-radius: 60px;
-            width: 125px;
-            height: 125px;
-        }
+            .pediatraPage-imagenes-container{
+                width: 775px;
+                height: 940px;
+            }
 
+                            .pediatraImages{
+                            }
 
-.pediatraPage-parrafo{
-    font-size: 18px;
-    line-height: 28px;
-}
-
-
-        .pediatraPage-imagenes-container{
-            width: 775px;
-            height: 940px;
-        }
-
-
-                        .pediatraImages{
-                        }
-
-                        .pediatra-fade-in {
-                        }
-                        
-                        .pediatra-fade-out {
-                        }
+                            .pediatra-fade-in {
+                            }
+                            
+                            .pediatra-fade-out {
+                            }
 
 }

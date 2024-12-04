@@ -5,21 +5,22 @@ import { Box } from '@mui/material';
 export const CuadernoNotas = ( props ) => {
   return (
     <>
+
         <Box  sx={{ '@media (max-width: 480px)': {
-                                        width: `${props.anchuraCuadernoNotas480px}rem`, 
-                                },
-                                '@media (min-width: 481px) and (max-width: 767px)': {
-                                        width: `${props.anchuraCuadernoNotas481px_a_767px}rem`, 
-                                },
-                                '@media (min-width: 768px) and (max-width: 959px)': {
-                                        width: `${props.anchuraCuadernoNotas768px_a_959px}rem`, 
-                                },
-                                '@media (min-width: 960px) and (max-width: 1199px)': {
-                                        width: `${props.anchuraCuadernoNotas960px_a_1199px}rem`, 
-                                },
-                                '@media (min-width: 1200px)': {
-                                        width: `${props.anchuraCuadernoNotas1200px}rem`, 
-                                }  
+                            width: `${props.anchuraCuadernoNotas480px}rem`, 
+                    },
+                    '@media (min-width: 481px) and (max-width: 767px)': {
+                            width: `${props.anchuraCuadernoNotas481px_a_767px}rem`, 
+                    },
+                    '@media (min-width: 768px) and (max-width: 959px)': {
+                            width: `${props.anchuraCuadernoNotas768px_a_959px}rem`, 
+                    },
+                    '@media (min-width: 960px) and (max-width: 1199px)': {
+                            width: `${props.anchuraCuadernoNotas960px_a_1199px}rem`, 
+                    },
+                    '@media (min-width: 1200px)': {
+                            width: `${props.anchuraCuadernoNotas1200px}rem`, 
+                    }  
         }}>   
                     
                     
@@ -90,6 +91,8 @@ export const CuadernoNotas = ( props ) => {
 
                     
         </Box>
+
+
     </>
   )
 }

@@ -14,13 +14,13 @@
 }
 
 .AulasDarwin-Principal-Big-Container{
-    background-color: rgb(0, 0, 255, 0.5);
+    /* background-color: rgb(0, 0, 255, 0.5); */
     display: flex;
     align-items: flex-end; 
 }
 
 .AulasDarwin-Principal-Container{
-    background-color: rgba(98, 98, 246, 0.5);
+    /* background-color: rgba(98, 98, 246, 0.5); */
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -35,35 +35,24 @@
         .AulasDarwin-titulo{
             background-image: url('../../../../../Images/instalaciones/aulas/aulasImagenesPrincipales/darwin/darwinTitulo.png');
             z-index: 2;
-
-            /* width: 91px;
-            height: 24px;
-            top: 7px; */
         }
 
         .AulasDarwin-edad{
             font-size: 400;
             z-index: 3;
-
-            /* top: 25px; */
         }
 
 
         .AulasDarwin-imagen-info{
             align-items: center;
             z-index: 2;
-
-            /* top: 25px;
-            gap: 0.2rem; */
         }
-
 
                 .AulasDarwin-imagen{
                     background-image: url('../../../../../Images/instalaciones/aulas/aulasImagenesPrincipales/darwin/darwinImagen.png');
                     cursor: pointer;
-                    /* width: 65px;
-                    height: 60px; */
                 }
+
 
 
 
@@ -112,14 +101,12 @@
                 gap: 0.2rem;                
             }
     
-    
                     .AulasDarwin-imagen{
                         width: 69px;
                         height: 67px;                        
                     }
     
 }
-
 
 
 
@@ -159,21 +146,17 @@
                 top: 28px;                
             }
     
-    
             .AulasDarwin-imagen-info{
                 top: 40px;
                 gap: 0.4rem;
             }
             
-    
-    
                     .AulasDarwin-imagen{
                         width: 103px;
                         height: 100px;                        
                     }
 
 }
-
 
 
 
@@ -218,7 +201,6 @@
                 top: 62px;
                 gap: 0.8rem;                
             }
-    
     
                     .AulasDarwin-imagen{
                         width: 164px;
@@ -266,12 +248,10 @@
                 top: 52px;                
             }
     
-    
             .AulasDarwin-imagen-info{
                 top: 85px;
                 gap: 0.9rem;                
             }
-    
     
                     .AulasDarwin-imagen{
                         width: 204px;
@@ -279,7 +259,6 @@
                     }
 
 }
-
 
 
 
@@ -319,13 +298,11 @@
                 top: 65px;                
             }
     
-    
             .AulasDarwin-imagen-info{
                 top: 105px;
                 gap: 1rem;                
             }
-    
-    
+
                     .AulasDarwin-imagen{
                         width: 256px;
                         height: 249px;                        

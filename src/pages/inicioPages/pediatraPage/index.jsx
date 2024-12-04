@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import { Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import imagenCambiantePediatra1 from '../../../Images/inicio/pediatra/pediatra_1.jpg';
 import imagenCambiantePediatra2 from '../../../Images/inicio/pediatra/pediatra_2.jpg';
 import { VolverAinicio } from '../../../Components/componentsConstantes/volverAInicio';
 
 export const PediatraPage = ( props ) => {
 
+      const navigate = useNavigate();
+
+      const handleReturnInicio = () => {
+            navigate('/inicioPage');
+      }
+      
       const images = [
             imagenCambiantePediatra1,
             imagenCambiantePediatra2,
@@ -31,6 +38,8 @@ export const PediatraPage = ( props ) => {
 
   return (
     <>
+
+
         <Box  sx={{     
             // backgroundColor: 'rgb(242, 186, 113)',
               '@media (max-width: 480px)': {
@@ -66,8 +75,11 @@ export const PediatraPage = ( props ) => {
 
                   <div className='pediatraPage-subContainer'>
 
+
                               <div className='pediatraPage-pediatraLogo-container'>
-                                    <div className='pediatraPage-pediatraLogo' />
+
+                                    <div className='pediatraPage-pediatraLogo' onClick={handleReturnInicio} />
+
                               </div>
 
                               <div className='pediatraPage-parrafo'>
@@ -92,10 +104,13 @@ export const PediatraPage = ( props ) => {
                                     
                               </div>
 
+
                   </div>
 
 
         </Box>
+
+
     </>
   )
 }

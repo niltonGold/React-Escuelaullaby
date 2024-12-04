@@ -13,7 +13,11 @@ import { AulasDarwin } from '../../../Components/routesComponents/instalacionesC
 
 
 
+
+
 export const AulasEnlacePrincipalPage = (props) => {
+
+
     const IrAhallYdespachos = 'instalacionesPage/hallYdespacho';
 
     // Aula Titulo
@@ -25,10 +29,6 @@ export const AulasEnlacePrincipalPage = (props) => {
                         específicas para satisfacer las necesidades de los niños en cada momento 
                         del día: cambiador, aseos y áreas de actividades. Todas las aulas, incluida 
                         la de psicomotricidad, cuentan con salida directa al patio.`;
-
-
-
-
 
     useEffect(() => {
         // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
@@ -63,8 +63,11 @@ export const AulasEnlacePrincipalPage = (props) => {
         return () => window.removeEventListener('resize', updateDimensions);
     }, []);
 
+
     return (
         <>
+
+
             <Box sx={{
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraAulasEnlacePrincipalPage480px}rem`,
@@ -93,18 +96,23 @@ export const AulasEnlacePrincipalPage = (props) => {
                 }
             }}>
                 
+                
                 <VolverAinstalacionesYsiguiente enlace={IrAhallYdespachos} />
                 
+
                 <div className='aulasEnlacePrincipalPage-subContainer'>
                     
                     
                             <div>
+
                                 <TituloCabecera 
                                     imagenBackgroundUbicacion={AulaTituloImagen}
                                     anchuraTitulo={AulaTituloImagenAnchura}
                                     alturaTitulo={AulaTituloImagenAltura} 
                                 />
+
                                 <Parrafo parrafoTexto={AulasTexto} />
+                                
                             </div>
 
                             <div className='aulasEnlacePrincipalPage-aulasEnlacesContainer'>
@@ -133,6 +141,8 @@ export const AulasEnlacePrincipalPage = (props) => {
                 </div>
 
             </Box>
+
+
         </>
     );
 }

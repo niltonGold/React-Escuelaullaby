@@ -2,56 +2,68 @@ import React from 'react';
 import './styles.css';
 import { useNavigate } from 'react-router-dom';
 
-export const InstalacionesEnlacesRedondos = ( props ) => {
 
-  const navigate = useNavigate();
 
-  const handleAulasPage = () => {
-    navigate('/instalacionesPage/aulas');
-  };
 
-  const handleHallYdespachoPage = () => {
-    navigate('/instalacionesPage/hallYdespacho');
-  };
 
-  const handleComedorPage = () => {
-    navigate('/instalacionesPage/comedor');
-  };
+export const InstalacionesEnlacesRedondos = (  ) => {
 
-  const handleCocinaYlavanderiaPage = () => {
-    navigate('/instalacionesPage/cocinaYlavanderia');
-  };
 
-  const handlePatiosPage = () => {
-    navigate('/instalacionesPage/patios');
-  };
+    const navigate = useNavigate();
 
-  const handleHuertoEinvernaderoPage = () => {
-    navigate('/instalacionesPage/huertoEinvernadero');
-  };
-
-  const handleSalonDeActosPage = () => {
-    navigate('/instalacionesPage/salonDeActos');
-  };
+    const scrollToTopAndNavigate = (path) => {
+        window.scrollTo({ top: 0 }); // Desplaza al inicio con suavidad
+        navigate(path);
+    };
   
-  return (
-    <>
-        <div className='InstalacionesEnlacesRedondos-Principal-Container'>
-            
-                <div className='instalacionesEnlacesRedondos-subContainer'>
-                    <div className='instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-aulasLogo' onClick={ handleAulasPage }/>
-                    <div className='instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-hallYdespachoLogo'onClick={ handleHallYdespachoPage }/>
-                    <div className='instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-comedorLogo' onClick={ handleComedorPage }/>
-                </div>
 
-                <div className='instalacionesEnlacesRedondos-subContainer'>
-                    <div className='instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-cocinaYlavanderiaLogo' onClick={ handleCocinaYlavanderiaPage }/>
-                    <div className='instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-patiosLogo' onClick={ handlePatiosPage }/>
-                    <div className='instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-huertoEinvernaderoLogo' onClick={ handleHuertoEinvernaderoPage }/>
-                    <div className='instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-salonDeActosLogo' onClick={ handleSalonDeActosPage }/>   
-                </div>
+    return (
+        <>
+
+
+            <div className='InstalacionesEnlacesRedondos-Principal-Container'>
                 
-        </div>
-    </>
+                    <div className="instalacionesEnlacesRedondos-subContainer">
+
+                            <div  className="instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-aulasLogo"
+                                onClick={() => scrollToTopAndNavigate('/instalacionesPage/aulas')}
+                            />
+
+                            <div  className="instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-hallYdespachoLogo"
+                                onClick={() => scrollToTopAndNavigate('/instalacionesPage/hallYdespacho')}
+                            />
+
+                            <div  className="instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-comedorLogo"
+                                onClick={() => scrollToTopAndNavigate('/instalacionesPage/comedor')}
+                            />
+
+                    </div>
+
+
+
+                    <div className="instalacionesEnlacesRedondos-subContainer">
+
+                            <div  className="instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-cocinaYlavanderiaLogo"
+                                onClick={() => scrollToTopAndNavigate('/instalacionesPage/cocinaYlavanderia')}
+                            />
+
+                            <div  className="instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-patiosLogo"
+                                onClick={() => scrollToTopAndNavigate('/instalacionesPage/patios')}
+                            />
+
+                            <div  className="instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-huertoEinvernaderoLogo"
+                                onClick={() => scrollToTopAndNavigate('/instalacionesPage/huertoEinvernadero')}
+                            />
+
+                            <div className="instalacionesEnlacesRedondos-Logo instalacionesEnlacesRedondos-salonDeActosLogo"
+                                onClick={() => scrollToTopAndNavigate('/instalacionesPage/salonDeActos')}
+                            />
+
+                    </div>
+                    
+            </div>
+
+
+        </>
   )
 }

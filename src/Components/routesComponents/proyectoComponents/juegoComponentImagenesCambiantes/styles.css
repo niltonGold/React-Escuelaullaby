@@ -1,106 +1,446 @@
 .JuegoComponentImagenesCambiantes-image-container {
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column; 
-    background-color: aqua;
-    width: 100%;
 }
 
 .JuegoComponentImagenesCambiantes-imagen-y-botones-prevYnext-container{
+    /* background-color: rgb(216, 216, 93); */
     display: flex;
     flex-direction: row;
-    background-color: rgb(216, 216, 93);
     width: 100%;
     justify-content: center;
     align-items: center;
     align-self: center;
 }
 
-.JuegoComponentImagenesCambiantes-image {
-    background-size: cover;
-    background-position: center;
-    transition: opacity 0.3s ease-in-out;
-    
-    width: 16.5rem;
-    height: 118px;
-}
+        .JuegoComponentImagenesCambiantes-navegadores {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            cursor: pointer;
+            font-weight: 900;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.JuegoComponentImagenesCambiantes-fade-in {
-    opacity: 1;
-}
+        .JuegoComponentImagenesCambiantes-navegadores:hover {
+            background: rgba(156, 156, 156);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 900;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.JuegoComponentImagenesCambiantes-fade-out {
-    opacity: 0;
-}
+        .JuegoComponentImagenesCambiantes-navegadores .prev {
+        }
+        
+        .JuegoComponentImagenesCambiantes-navegadores .next {
+        }
 
-.JuegoComponentImagenesCambiantes-nav {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: 900;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%; /* Hacer el botón circular */
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido dentro del círculo */
-    justify-content: center; /* Centra horizontalmente el contenido dentro del círculo */
+        .JuegoComponentImagenesCambiantes-image {
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.3s ease-in-out;
+        }
 
-    width: 1rem; /* Tamaño del círculo */
-    height: 1rem;
-    font-size: 11px;
-}
+            .JuegoComponentImagenesCambiantes-fade-in {
+                opacity: 1;
+            }
 
+            .JuegoComponentImagenesCambiantes-fade-out {
+                opacity: 0;
+            }
 
-.JuegoComponentImagenesCambiantes-nav:hover {
-    background: rgba(156, 156, 156); /* Cambiar color al pasar el ratón */
-}
-
-.JuegoComponentImagenesCambiantes-nav.prev {
-   
-    padding-left: 0px;
-    padding-right: 1.5px;
-    padding-top: 0px;
-    padding-bottom: 0.4px;
-    margin-right: 0.4rem;
-}
-
-
-.JuegoComponentImagenesCambiantes-nav.next {
-   
-    padding-left: 1.5px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0.4px;
-    margin-left: 0.4rem;
-}
-
-/* Indicadores (círculos) */
-.JuegoComponentImagenesCambiantes-indicators {
+.JuegoComponentImagenesCambiantes-indicadores {
     display: flex;
     justify-content: center;
 
-    margin-top: 10px; 
-    margin-bottom: 10px;
-    gap: 20px;
 }
 
-.JuegoComponentImagenesCambiantes-indicator {
+.JuegoComponentImagenesCambiantes-indicador {
     background: rgba(191, 191, 191, 0.9);
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s;
-    
-    width: 10px;
-    height: 10px;
 }
 
-.JuegoComponentImagenesCambiantes-indicator:hover {
+.JuegoComponentImagenesCambiantes-indicador:hover {
     background-color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.JuegoComponentImagenesCambiantes-indicador.JuegoComponentImagenesCambiantes_active {
+    background: rgba(156, 156, 156);
 }
 
 
-.JuegoComponentImagenesCambiantes-indicator.active {
-    background: rgba(156, 156, 156);
-    transform: scale(1.2);
+
+
+
+
+@media (max-width: 480px) {
+
+    .JuegoComponentImagenesCambiantes-image-container {
+    }
+    
+    .JuegoComponentImagenesCambiantes-imagen-y-botones-prevYnext-container{
+    }
+        
+            .JuegoComponentImagenesCambiantes-navegadores {
+                width: 1rem; 
+                height: 1rem;
+                font-size: 11px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores:hover {
+                width: 1rem; 
+                height: 1rem;
+                font-size: 11px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 1.5px;
+                padding-top: 0px;
+                padding-bottom: 0.4px;
+                margin-right: 0.4rem;
+            }
+
+            .JuegoComponentImagenesCambiantes-navegadores.next {
+                padding-left: 1.5px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0.4px;
+                margin-left: 0.4rem;
+            }
+
+            .JuegoComponentImagenesCambiantes-image {
+                width: 16.5rem;
+                height: 118px;
+            }
+
+                    .JuegoComponentImagenesCambiantes-fade-in {
+                    }
+                    
+                    .JuegoComponentImagenesCambiantes-fade-out {
+                    }
+
+    .JuegoComponentImagenesCambiantes-indicadores {
+        margin-top: 10px; 
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador {
+        width: 2px;
+        height: 10px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador:hover {
+        width: 2px;
+        height: 10px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador.JuegoComponentImagenesCambiantes_active {
+        width: 2px;
+        height: 10px;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .JuegoComponentImagenesCambiantes-image-container {
+    }
+    
+    .JuegoComponentImagenesCambiantes-imagen-y-botones-prevYnext-container{
+    }
+    
+            .JuegoComponentImagenesCambiantes-navegadores {
+                width: 1.2rem; 
+                height: 1.2rem;
+                font-size: 13px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores:hover {
+                width: 1.2rem; 
+                height: 1.2rem;
+                font-size: 13px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 1.3px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-right: 0.4rem;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.next {
+                padding-left: 1.3px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-left: 0.4rem;
+            }
+
+            .JuegoComponentImagenesCambiantes-image {
+                width: 25rem;
+                height: 195px;
+            }
+
+                    .JuegoComponentImagenesCambiantes-fade-in {
+                    }
+                    
+                    .JuegoComponentImagenesCambiantes-fade-out {
+                    }
+                
+    .JuegoComponentImagenesCambiantes-indicadores {
+        margin-top: 12px; 
+        margin-bottom: 12px;
+        gap: 20px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador {
+        width: 0px;
+        height: 14px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador:hover {
+        width: 0px;
+        height: 14px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador.JuegoComponentImagenesCambiantes_active {
+        width: 0px;
+        height: 14px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .JuegoComponentImagenesCambiantes-image-container {
+    }
+    
+    .JuegoComponentImagenesCambiantes-imagen-y-botones-prevYnext-container{
+    }
+    
+            .JuegoComponentImagenesCambiantes-navegadores {
+                width: 1.5rem; 
+                height: 1.5rem;
+                font-size: 17px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores:hover {
+                width: 1.5rem; 
+                height: 1.5rem;
+                font-size: 17px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 1.8px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-right: 0.5rem;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.next {
+                padding-left: 1.8px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-left: 0.5rem;
+            }
+    
+            .JuegoComponentImagenesCambiantes-image {
+                width: 41rem;
+                height: 332px;
+            }
+
+                    .JuegoComponentImagenesCambiantes-fade-in {
+                    }
+                    
+                    .JuegoComponentImagenesCambiantes-fade-out {
+                    }
+    
+    .JuegoComponentImagenesCambiantes-indicadores {
+        margin-top: 15px; 
+        margin-bottom: 15px;
+        gap: 30px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador {
+        width: 0px;
+        height: 22px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador:hover {
+        width: 0px;
+        height: 22px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador.JuegoComponentImagenesCambiantes_active {
+        width: 0px;
+        height: 22px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .JuegoComponentImagenesCambiantes-image-container {
+    }
+    
+    .JuegoComponentImagenesCambiantes-imagen-y-botones-prevYnext-container{
+    }
+    
+            .JuegoComponentImagenesCambiantes-navegadores {
+                width: 2rem; 
+                height: 2rem;
+                font-size: 20px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores:hover {
+                width: 2rem; 
+                height: 2rem;
+                font-size: 20px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 2px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-right: 0.5rem;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.next {
+                padding-left: 2px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-left: 0.5rem;
+            }
+    
+            .JuegoComponentImagenesCambiantes-image {
+                width: 49rem;
+                height: 424px;
+            }
+            
+                    .JuegoComponentImagenesCambiantes-fade-in {
+                    }
+                    
+                    .JuegoComponentImagenesCambiantes-fade-out {
+                    }
+
+    .JuegoComponentImagenesCambiantes-indicadores {
+        margin-top: 20px; 
+        margin-bottom: 20px;
+        gap: 45px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador  {
+        width: 5px;
+        height: 30px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador:hover {
+        width: 5px;
+        height: 30px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador .JuegoComponentImagenesCambiantes_active {
+        width: 5px;
+        height: 30px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .JuegoComponentImagenesCambiantes-image-container {
+    }
+    
+    .JuegoComponentImagenesCambiantes-imagen-y-botones-prevYnext-container{
+    }
+    
+            .JuegoComponentImagenesCambiantes-navegadores  {
+                width: 3rem; 
+                height: 3rem;
+                font-size: 30px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores:hover {
+                width: 3rem; 
+                height: 3rem;
+                font-size: 30px;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 5px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-right: 0.7rem;
+            }
+            
+            .JuegoComponentImagenesCambiantes-navegadores.next {
+                padding-left: 5px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-left: 0.7rem;
+            }
+    
+                    .JuegoComponentImagenesCambiantes-image {
+                        width: 61rem;
+                        height: 539px;
+                    }
+                    
+                    .JuegoComponentImagenesCambiantes-fade-in {
+                    }
+                    
+                    .JuegoComponentImagenesCambiantes-fade-out {
+                    }
+
+    .JuegoComponentImagenesCambiantes-indicadores {
+        margin-top: 30px; 
+        margin-bottom: 30px;
+        gap: 50px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador {
+        width: 10px;
+        height: 35px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador:hover {
+        width: 10px;
+        height: 35px;
+    }
+    
+    .JuegoComponentImagenesCambiantes-indicador.JuegoComponentImagenesCambiantes_active {
+        width: 10px;
+        height: 35px;
+    }
+
 }

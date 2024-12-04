@@ -1,0 +1,235 @@
+.VictoriaAyudanteDerecha-Container{
+    /* background-color: rgba(222, 222, 90, 0.5); */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+    .VictoriaAyudanteDerecha-nombre-texto-container{
+        /* background-color: rgb(240, 248, 255, 0.7); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+
+            .VictoriaAyudanteDerecha-nombre{
+                    /* background-color: rgb(165, 125, 76); */
+                    background-image: url('../../../../Images/equipo/equipoNombres/victoria.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    position: relative;
+            }
+            
+            .VictoriaAyudanteDerecha-texto{
+                    /* background-color: rgb(118, 137, 199, 0.5); */
+                    text-align: end;
+                    position: relative;
+            }
+
+                    .VictoriaAyudanteDerecha-texto-subcontainer{
+                        /* background-color: rgb(0, 255, 255, 0.5); */
+                        padding-right: 5px;
+                    }
+       
+    .VictoriaAyudanteDerecha-maestra{
+        /* background-color: aqua; */
+        background-image: url('../../../../Images/equipo/maestra.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+
+    }
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .VictoriaAyudanteDerecha-Container{
+        width: 11.5rem;
+        height: 68px;
+    }
+
+        .VictoriaAyudanteDerecha-nombre-texto-container{
+            height: 68px;
+        }
+
+                .VictoriaAyudanteDerecha-nombre{
+                        width: 33px;
+                        height: 11px;
+                        right: -62.5px;
+                        top: -8px; 
+                }
+                
+                .VictoriaAyudanteDerecha-texto{
+                        font-size: 5px;
+                        line-height: 8px;
+                        top: -15px;
+                        width: 115px;
+                }
+
+                        .VictoriaAyudanteDerecha-texto-subcontainer{
+                            padding-right: 5px;
+                        }
+
+        .VictoriaAyudanteDerecha-maestra{
+            width: 65px;
+            height: 68px;
+        }
+
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .VictoriaAyudanteDerecha-Container{
+        width: 15.5rem;
+        height: 102px;
+    }
+
+        .VictoriaAyudanteDerecha-nombre-texto-container{
+            height: 102px;
+        }
+
+                .VictoriaAyudanteDerecha-nombre{
+                    width: 49px;
+                    height: 18px;
+                    right: -92.5px;
+                    top: -10px; 
+                }
+                
+                .VictoriaAyudanteDerecha-texto{
+                    font-size: 7px;
+                    line-height: 9.5px;
+                    top: -22px;
+                    width: 149px;
+                }
+
+                        .VictoriaAyudanteDerecha-texto-subcontainer{
+                            padding-right: 8px;
+                        }
+
+        .VictoriaAyudanteDerecha-maestra{
+            width: 97px;
+            height: 102px;
+        }
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .VictoriaAyudanteDerecha-Container{
+        width: 27rem;
+        height: 162px;
+    }
+
+        .VictoriaAyudanteDerecha-nombre-texto-container{
+            height: 162px;
+        }
+
+                .VictoriaAyudanteDerecha-nombre{
+                    width: 79px;
+                    height: 28px;
+                    right: -148px;
+                    top: -22px;
+                }
+                
+                .VictoriaAyudanteDerecha-texto{
+                    font-size: 11px;
+                    line-height: 17px;
+                    top: -33px;
+                    width: 250px;
+                }
+
+                        .VictoriaAyudanteDerecha-texto-subcontainer{
+                            padding-right: 12px;
+                        }
+
+        .VictoriaAyudanteDerecha-maestra{
+            width: 154px;
+            height: 162px;
+        }
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .VictoriaAyudanteDerecha-Container{
+        width: 34rem;
+        height: 203px;
+    }
+
+        .VictoriaAyudanteDerecha-nombre-texto-container{
+            height: 203px;
+        }
+
+                .VictoriaAyudanteDerecha-nombre{
+                    width: 100px;
+                    height: 37px;
+                    right: -186px;
+                    top: -30px; 
+                }
+                
+                .VictoriaAyudanteDerecha-texto{
+                    font-size: 15px;
+                    line-height: 20px;
+                    top: -45px;
+                    width: 345px;
+                }
+
+                        .VictoriaAyudanteDerecha-texto-subcontainer{
+                            padding-right: 15px;
+                        }
+
+        .VictoriaAyudanteDerecha-maestra{
+            width: 193px;
+            height: 203px;
+        }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .VictoriaAyudanteDerecha-Container{
+        width: 40rem;
+        height: 254px;
+    }
+
+        .VictoriaAyudanteDerecha-nombre-texto-container{
+            height: 254px;
+        }
+
+                .VictoriaAyudanteDerecha-nombre{
+                    width: 121px;
+                    height: 40px;
+                    right: -229px;
+                    top: -38px; 
+                }
+                
+                .VictoriaAyudanteDerecha-texto{
+                    font-size: 18px;
+                    line-height: 24px;
+                    top: -52px;
+                    width: 395px;
+                }
+
+                        .VictoriaAyudanteDerecha-texto-subcontainer{
+                            padding-right: 20px;
+                        }
+
+        .VictoriaAyudanteDerecha-maestra{
+            width: 241px;
+            height: 254px;
+        }
+
+}
+      
+      

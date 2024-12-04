@@ -7,15 +7,15 @@ export const EnlacesRedondos = ( props ) => {
   const navigate = useNavigate();
 
   const handleEnlacesRedondos1 = () => {
-    navigate(`/${props.enlaceDeImagenRedonda1}`);
+    navigate(`/inicioPage/${props.enlaceDeImagenRedonda1}`);
   };
 
   const handleEnlacesRedondos2 = () => {
-    navigate(`/${props.enlaceDeImagenRedonda2}`);
+    navigate(`/inicioPage/${props.enlaceDeImagenRedonda2}`);
   };
 
   const handleEnlacesRedondos3 = () => {
-    navigate(`/${props.enlaceDeImagenRedonda3}`);
+    navigate(`/inicioPage/${props.enlaceDeImagenRedonda3}`);
   };
   
   return (

@@ -8,69 +8,78 @@ import { TituloCabecera } from '../../../Components/componentsConstantes/tituloC
 import { Parrafo } from '../../../Components/componentsConstantes/parrafo';
 import { CocinaYlavanderiaImagen } from '../../../Components/routesComponents/instalacionesComponents/cocinaYlavanderia/cocinaYlavanderiaImagen';
 
+
+
+
+
 export const CocinaYlavanderia = ( props ) => {
 
-      const IrAPatios = 'instalacionesPage/patios';
 
-      const CocinaYlavanderiaTituloImagen = CocinaYlavanderiaTitulo;
+    const IrAPatios = 'instalacionesPage/patios';
 
-      const [CocinaYlavanderiaTituloImagenAnchura, setCocinaYlavanderiaTituloImagenAnchura] = useState(0);
+    const CocinaYlavanderiaTituloImagen = CocinaYlavanderiaTitulo;
 
-      const [CocinaYlavanderiaTituloImagenAltura, setCocinaYlavanderiaTituloImagenAltura] = useState(0);
+    const [CocinaYlavanderiaTituloImagenAnchura, setCocinaYlavanderiaTituloImagenAnchura] = useState(0);
 
-      const CocinaYlavanderiaTexto = `La escuela dispone de una cocina visible desde el hall, donde 
-                            diariamente se preparan los menús de los niños, servidos por una 
-                            empresa de confianza, con máxima calidad en sus productos (proveedores de 
-                            primeras marcas) y servicios, teniendo siempre presente todas las alergias 
-                            e intolerancias alimentarias, así como dietas especiales por enfermedad. La comida es 
-                            tradicional (sin frituras), rica en variedad y sabores, con la finalidad 
-                            de que los niños conozcan la diversidad de alimentos que nos ofrece la 
-                            dieta mediterránea y aprendan los hábitos saludables relacionados con la 
-                            alimentación. Las familias tienen a su disposición a nuestra nutricionista, 
-                            que resolverá todas las cuestiones y dudas que puedan surgir en relación a 
-                            este tema. El centro cuenta además con una lavandería interna (baberos y ropa de cama).`
+    const [CocinaYlavanderiaTituloImagenAltura, setCocinaYlavanderiaTituloImagenAltura] = useState(0);
 
-      useEffect(() => {
-            // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
-            const updateDimensions = () => {
-                  const width = window.innerWidth;
-                  if (width <= 480) {
+    const CocinaYlavanderiaTexto = `La escuela dispone de una cocina visible desde el hall, donde 
+                        diariamente se preparan los menús de los niños, servidos por una 
+                        empresa de confianza, con máxima calidad en sus productos (proveedores de 
+                        primeras marcas) y servicios, teniendo siempre presente todas las alergias 
+                        e intolerancias alimentarias, así como dietas especiales por enfermedad. La comida es 
+                        tradicional (sin frituras), rica en variedad y sabores, con la finalidad 
+                        de que los niños conozcan la diversidad de alimentos que nos ofrece la 
+                        dieta mediterránea y aprendan los hábitos saludables relacionados con la 
+                        alimentación. Las familias tienen a su disposición a nuestra nutricionista, 
+                        que resolverá todas las cuestiones y dudas que puedan surgir en relación a 
+                        este tema. El centro cuenta además con una lavandería interna (baberos y ropa de cama).`
 
-                        setCocinaYlavanderiaTituloImagenAnchura(191); // Ancho y alto para pantallas pequeñas
-                        setCocinaYlavanderiaTituloImagenAltura(28);
+    useEffect(() => {
+        // Función para actualizar los valores de ancho y alto según el tamaño de la pantalla
+        const updateDimensions = () => {
+                const width = window.innerWidth;
+                if (width <= 480) {
 
-                  } else if (width >= 481 && width <= 767) {
+                    setCocinaYlavanderiaTituloImagenAnchura(191); // Ancho y alto para pantallas pequeñas
+                    setCocinaYlavanderiaTituloImagenAltura(28);
 
-                        setCocinaYlavanderiaTituloImagenAnchura(287); // Ancho y alto para pantallas medianas
-                        setCocinaYlavanderiaTituloImagenAltura(42);
+                } else if (width >= 481 && width <= 767) {
 
-                  } else if (width >= 768 && width <= 959) {
+                    setCocinaYlavanderiaTituloImagenAnchura(287); // Ancho y alto para pantallas medianas
+                    setCocinaYlavanderiaTituloImagenAltura(42);
 
-                        setCocinaYlavanderiaTituloImagenAnchura(465); // Ancho y alto para pantallas grandes
-                        setCocinaYlavanderiaTituloImagenAltura(68);
+                } else if (width >= 768 && width <= 959) {
 
-                  } else if (width >= 960 && width <= 1199) {
+                    setCocinaYlavanderiaTituloImagenAnchura(465); // Ancho y alto para pantallas grandes
+                    setCocinaYlavanderiaTituloImagenAltura(68);
 
-                        setCocinaYlavanderiaTituloImagenAnchura(581); // Ancho y alto para pantallas extra grandes
-                        setCocinaYlavanderiaTituloImagenAltura(85);
+                } else if (width >= 960 && width <= 1199) {
 
-                  } else {
-                        setCocinaYlavanderiaTituloImagenAnchura(725); // Ancho y alto para pantallas muy grandes
-                        setCocinaYlavanderiaTituloImagenAltura(106);
-                  }
-            };
+                    setCocinaYlavanderiaTituloImagenAnchura(581); // Ancho y alto para pantallas extra grandes
+                    setCocinaYlavanderiaTituloImagenAltura(85);
 
-            // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
-            updateDimensions();
-            window.addEventListener('resize', updateDimensions);
+                } else {
+                    setCocinaYlavanderiaTituloImagenAnchura(725); // Ancho y alto para pantallas muy grandes
+                    setCocinaYlavanderiaTituloImagenAltura(106);
+                }
+        };
 
-            // Limpia el evento al desmontar el componente
-            return () => window.removeEventListener('resize', updateDimensions);
+        // Llama a updateDimensions al montar el componente y cuando se redimensiona la pantalla
+        updateDimensions();
+        window.addEventListener('resize', updateDimensions);
+
+        // Limpia el evento al desmontar el componente
+        return () => window.removeEventListener('resize', updateDimensions);
     }, []);
+
 
   return (
     <>
-        <Box  sx={{     backgroundColor: 'rgb(242, 186, 100)',
+
+
+        <Box  sx={{     
+                // backgroundColor: 'rgb(242, 186, 100)',
                   '@media (max-width: 480px)': {
                         width: `${props.anchuraCocinaYlavanderia480px}rem`,
                         marginTop: '1rem',
@@ -96,9 +105,11 @@ export const CocinaYlavanderia = ( props ) => {
                         marginTop: '3rem',
                         marginBottom: '5rem',
                   }  
-          }}>
+        }}>
                   
+
                   <VolverAinstalacionesYsiguiente enlace={IrAPatios} />
+
 
                   <div  className='CocinaYlavanderia-subContainer'>
 
@@ -118,7 +129,10 @@ export const CocinaYlavanderia = ( props ) => {
                               
                   </div>
           
+
           </Box>
+
+
     </>
   )
 }

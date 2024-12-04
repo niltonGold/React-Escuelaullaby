@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate  } from 'react-router-dom';
 
 import { Header } from './Components/PrincipalComponents/Header';
 import { Footer } from './Components/PrincipalComponents/Footer';
@@ -35,10 +35,6 @@ import { HuertoEinvernadero } from './pages/instalacionesPages/huertoEinvernader
 import { SalonDeActos } from './pages/instalacionesPages/salonDeActos';
 
 
-
-
-
-
 import { ArtePage } from './pages/proyectoPages/artePage';
 import { MusicaPage } from './pages/proyectoPages/musicaPage';
 import { PsicomotricidadPage } from './pages/proyectoPages/psicomotricidadPage';
@@ -49,6 +45,10 @@ import { ExploradoresPage } from './pages/aulasPages/exploradoresPage';
 import { AventurerosPage } from './pages/aulasPages/aventurerosPage';
 import { DescubridoresPage } from './pages/aulasPages/descubridoresPage';
 import { DarwinPage } from './pages/aulasPages/darwinPage';
+
+
+
+
 
 function App() {
 
@@ -61,14 +61,12 @@ function App() {
       const Anchura_1_1200px = 65;
 
 
-
       // Anchuras de los componentes del inicioPage y del footer
       const Anchura_2_480px = 18;
       const Anchura_2_481px_a_767px = 27;
       const Anchura_2_768px_a_959px = 44.5;
       const Anchura_2_960px_a_1199px = 53.5;
       const Anchura_2_1200px = 67;
-
 
 
       // Anchuras de las paginas a las que apuntan, Escuela de padres, zona privada y contacto y 
@@ -80,7 +78,6 @@ function App() {
       const Anchura_3_1200px = 60;
 
 
-
       // Anchuras de las paginas a las que lleva los enlaces del banner celese del Header, quienes somos, instalaciones, proyecto, ingles, y equipo
       const Anchura_4_480px = 17;
       const Anchura_4_481px_a_767px = 26;
@@ -89,14 +86,12 @@ function App() {
       const Anchura_4_1200px = 65;
 
 
-
       // Anchuras de las paginas a las que llevan los enlaces de fotos, pediatra, noticias, decalogo, nutricionistas, excursiones
       const Anchura_5_480px = 16.5;
       const Anchura_5_481px_a_767px = 25.5;
       const Anchura_5_768px_a_959px = 42.5;
       const Anchura_5_960px_a_1199px = 51.5;
       const Anchura_5_1200px = 64.5;
-
 
       
       // Anchuras de las paginas a las que llevan los enlaces de aulas, hall y despacho, comedor, cocina y lavanderia, patios, huerto e invernadero salon de actos
@@ -118,26 +113,21 @@ function App() {
           <div className="App-container">
 
                   <div className='head'>
-                  <Header anchuraHeader480px={ Anchura_1_480px }
-                          anchuraHeader481px_a_767px={ Anchura_1_481px_a_767px }
-                          anchuraHeader768px_a_959px={ Anchura_1_768px_a_959px }
-                          anchuraHeader960px_a_1199px={ Anchura_1_960px_a_1199px }
-                          anchuraHeader1200px={ Anchura_1_1200px }
-                  />
+
+                              <Header anchuraHeader480px={ Anchura_1_480px }
+                                    anchuraHeader481px_a_767px={ Anchura_1_481px_a_767px }
+                                    anchuraHeader768px_a_959px={ Anchura_1_768px_a_959px }
+                                    anchuraHeader960px_a_1199px={ Anchura_1_960px_a_1199px }
+                                    anchuraHeader1200px={ Anchura_1_1200px }
+                              />
+
                   </div>
 
                   <main className='main-container'>
                   
                         <Routes>
                   
-                              {/* Enlace raiz */}
-                              <Route path='/' element={ <InicioPage  anchuraInicio480px={ Anchura_2_480px }
-                                                                  anchuraInicio481px_a_767px={ Anchura_2_481px_a_767px }
-                                                                  anchuraInicio768px_a_959px={ Anchura_2_768px_a_959px }
-                                                                  anchuraInicio960px_a_1199px={ Anchura_2_960px_a_1199px }
-                                                                  anchuraInicio1200px={ Anchura_2_1200px } 
-                                                            />} />
-
+                              <Route path="/" element={<Navigate to="/inicioPage" />} />
 
 
                               {/* Enlaces del Header, escuelaDePadres, ZonaPrivada, Contacto */}
@@ -187,12 +177,9 @@ function App() {
                                                                               anchuraProyectoPage960px_a_1199px={ Anchura_4_960px_a_1199px }
                                                                               anchuraProyectoPage1200px={ Anchura_4_1200px } 
                                                                               />} />
-                              <Route path='/inglesPage' element={ <InglesPage anchuraInglesPage480px={ Anchura_4_480px }
-                                                                              anchuraInglesPage481px_a_767px={ Anchura_4_481px_a_767px }
-                                                                              anchuraInglesPage768px_a_959px={ Anchura_4_768px_a_959px }
-                                                                              anchuraInglesPage960px_a_1199px={ Anchura_4_960px_a_1199px }
-                                                                              anchuraInglesPage1200px={ Anchura_4_1200px } 
-                                                                              />} />
+
+                              <Route path='/inglesPage' element={ <InglesPage />} />
+
                               <Route path='/equipoPage' element={ <EquipoPage anchuraEquipoPage480px={ Anchura_4_480px }
                                                                               anchuraEquipoPage481px_a_767px={ Anchura_4_481px_a_767px }
                                                                               anchuraEquipoPage768px_a_959px={ Anchura_4_768px_a_959px }
@@ -203,37 +190,37 @@ function App() {
 
 
                               {/* Enlaces del Header, inicio, quienesSomos, Instalaciones, Proyecto, Ingles, Equipo */}
-                              <Route path='/fotos' element={ <FotosPage anchuraFotosPage480px={ Anchura_5_480px }
+                              <Route path='/inicioPage/fotos' element={ <FotosPage anchuraFotosPage480px={ Anchura_5_480px }
                                                                         anchuraFotosPage481px_a_767px={ Anchura_5_481px_a_767px }
                                                                         anchuraFotosPage768px_a_959px={ Anchura_5_768px_a_959px }
                                                                         anchuraFotosPage960px_a_1199px={ Anchura_5_960px_a_1199px }
                                                                         anchuraFotosPage1200px={ Anchura_5_1200px } 
                                                                               />} />
-                              <Route path='/pediatra' element={ <PediatraPage anchuraPediatraPage480px={ Anchura_5_480px }
+                              <Route path='/inicioPage/pediatra' element={ <PediatraPage anchuraPediatraPage480px={ Anchura_5_480px }
                                                                               anchuraPediatraPage481px_a_767px={ Anchura_5_481px_a_767px }
                                                                               anchuraPediatraPage768px_a_959px={ Anchura_5_768px_a_959px }
                                                                               anchuraPediatraPage960px_a_1199px={ Anchura_5_960px_a_1199px }
                                                                               anchuraPediatraPage1200px={ Anchura_5_1200px } 
                                                                               />} />
-                              <Route path='/noticias' element={ <NoticiasPage anchuraNoticiasPage480px={ Anchura_5_480px }
+                              <Route path='/inicioPage/noticias' element={ <NoticiasPage anchuraNoticiasPage480px={ Anchura_5_480px }
                                                                               anchuraNoticiasPage481px_a_767px={ Anchura_5_481px_a_767px }
                                                                               anchuraNoticiasPage768px_a_959px={ Anchura_5_768px_a_959px }
                                                                               anchuraNoticiasPage960px_a_1199px={ Anchura_5_960px_a_1199px }
                                                                               anchuraNoticiasPage1200px={ Anchura_5_1200px } 
                                                                               />} />
-                              <Route path='/decalogo' element={ <DecalogoPage anchuraDecalogoPage480px={ Anchura_5_480px }
+                              <Route path='/inicioPage/decalogo' element={ <DecalogoPage anchuraDecalogoPage480px={ Anchura_5_480px }
                                                                               anchuraDecalogoPage481px_a_767px={ Anchura_5_481px_a_767px }
                                                                               anchuraDecalogoPage768px_a_959px={ Anchura_5_768px_a_959px }
                                                                               anchuraDecalogoPage960px_a_1199px={ Anchura_5_960px_a_1199px }
                                                                               anchuraDecalogoPage1200px={ Anchura_5_1200px } 
                                                                               />} />
-                              <Route path='/nutricionista' element={ <NutricionistaPage anchuraNutricionistaPage480px={ Anchura_5_480px }
+                              <Route path='/inicioPage/nutricionista' element={ <NutricionistaPage anchuraNutricionistaPage480px={ Anchura_5_480px }
                                                                                     anchuraNutricionistaPage481px_a_767px={ Anchura_5_481px_a_767px }
                                                                                     anchuraNutricionistaPage768px_a_959px={ Anchura_5_768px_a_959px }
                                                                                     anchuraNutricionistaPage960px_a_1199px={ Anchura_5_960px_a_1199px }
                                                                                     anchuraNutricionistaPage1200px={ Anchura_5_1200px } 
                                                                               />} />
-                              <Route path='/excursiones' element={ <ExcursionesPage anchuraExcursionesPage480px={ Anchura_5_480px }
+                              <Route path='/inicioPage/excursiones' element={ <ExcursionesPage anchuraExcursionesPage480px={ Anchura_5_480px }
                                                                                     anchuraExcursionesPage481px_a_767px={ Anchura_5_481px_a_767px }
                                                                                     anchuraExcursionesPage768px_a_959px={ Anchura_5_768px_a_959px }
                                                                                     anchuraExcursionesPage960px_a_1199px={ Anchura_5_960px_a_1199px }
@@ -318,68 +305,34 @@ function App() {
 
 
                               {/* Enlaces que estan en la pagina de proyectos (Arte, Música, Psicomotricidad, Juego, Yoga, Naturaleza)  */}
-                              <Route path='/proyecto/arte' element={ <ArtePage anchuraArtePage480px={ Anchura_6_480px }
+                              <Route path='/proyectoPage/arte' element={ <ArtePage anchuraArtePage480px={ Anchura_6_480px }
                                                                       anchuraArtePage481px_a_767px={ Anchura_6_481px_a_767px }
                                                                       anchuraArtePage768px_a_959px={ Anchura_6_768px_a_959px }
                                                                       anchuraArtePage960px_a_1199px={ Anchura_6_960px_a_1199px }
                                                                       anchuraArtePage1200px={ Anchura_6_1200px } 
                                                                   /> } />
-                              <Route path='/proyecto/musica' element={ <MusicaPage anchuraMusicaPage480px={ Anchura_6_480px }
+                              <Route path='/proyectoPage/musica' element={ <MusicaPage anchuraMusicaPage480px={ Anchura_6_480px }
                                                                           anchuraMusicaPage481px_a_767px={ Anchura_6_481px_a_767px }
                                                                           anchuraMusicaPage768px_a_959px={ Anchura_6_768px_a_959px }
                                                                           anchuraMusicaPage960px_a_1199px={ Anchura_6_960px_a_1199px }
                                                                           anchuraMusicaPage1200px={ Anchura_6_1200px } 
                                                                   /> } />
-                              <Route path='/proyecto/psicomotricidad' element={ <PsicomotricidadPage anchuraPsicomotricidadPage480px={ Anchura_6_480px }
+                              <Route path='/proyectoPage/psicomotricidad' element={ <PsicomotricidadPage anchuraPsicomotricidadPage480px={ Anchura_6_480px }
                                                                                             anchuraPsicomotricidadPage481px_a_767px={ Anchura_6_481px_a_767px }
                                                                                             anchuraPsicomotricidadPage768px_a_959px={ Anchura_6_768px_a_959px }
                                                                                             anchuraPsicomotricidadPage960px_a_1199px={ Anchura_6_960px_a_1199px }
                                                                                             anchuraPsicomotricidadPage1200px={ Anchura_6_1200px } 
                                                                                     /> } />
                               
-                              
+                              <Route path='/proyectoPage/juego' element={ <JuegoPage /> } /> 
 
-
-
-
-
-
-
-
-
-
-
-                              
-                              
-                              
-                              <Route path='/proyecto/juego' element={ <JuegoPage anchuraJuegoPage480px={ Anchura_6_480px }
-                                                                        anchuraJuegoPage481px_a_767px={ Anchura_6_481px_a_767px }
-                                                                        anchuraJuegoPage768px_a_959px={ Anchura_6_768px_a_959px }
-                                                                        anchuraJuegoPage960px_a_1199px={ Anchura_6_960px_a_1199px }
-                                                                        anchuraJuegoPage1200px={ Anchura_6_1200px } 
-                                                                  /> } /> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              <Route path='/proyecto/yoga' element={ <YogaPage anchuraYogaPage480px={ Anchura_6_480px }
+                              <Route path='/proyectoPage/yoga' element={ <YogaPage anchuraYogaPage480px={ Anchura_6_480px }
                                                                       anchuraYogaPage481px_a_767px={ Anchura_6_481px_a_767px }
                                                                       anchuraYogaPage768px_a_959px={ Anchura_6_768px_a_959px }
                                                                       anchuraYogaPage960px_a_1199px={ Anchura_6_960px_a_1199px }
                                                                       anchuraYogaPage1200px={ Anchura_6_1200px } 
                                                                   /> } />
-                              <Route path='/proyecto/naturaleza' element={ <NaturalezaPage anchuraNaturalezaPage480px={ Anchura_6_480px }
+                              <Route path='/proyectoPage/naturaleza' element={ <NaturalezaPage anchuraNaturalezaPage480px={ Anchura_6_480px }
                                                                                   anchuraNaturalezaPage481px_a_767px={ Anchura_6_481px_a_767px }
                                                                                   anchuraNaturalezaPage768px_a_959px={ Anchura_6_768px_a_959px }
                                                                                   anchuraNaturalezaPage960px_a_1199px={ Anchura_6_960px_a_1199px }

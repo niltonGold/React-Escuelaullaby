@@ -8,7 +8,11 @@ import imagen_5 from '../../../../../Images/instalaciones/aulas/darwin/darwin_5.
 import imagen_6 from '../../../../../Images/instalaciones/aulas/darwin/darwin_6.jpg';
 
 
+
+
+
 export const AulasDarwinImagenes = ( ) => {
+
 
     const images = [
         imagen_1,
@@ -34,14 +38,21 @@ export const AulasDarwinImagenes = ( ) => {
         return () => clearInterval(intervalId);
     }, [images.length]);
 
+
     return (
+        <>
+
 
             <div className="AulasDarwinImagenes-image-container">
+
                 <div
                     className={`AulasDarwinImagenes-image ${isFading ? 'AulasDarwinImagenes-fade-in' : 'AulasDarwinImagenes-fade-out'}`}
                     style={{ backgroundImage: `url(${images[currentImage]})` }}
                 />
+                
             </div>
 
+
+        </>
     );
 };

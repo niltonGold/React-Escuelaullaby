@@ -1,9 +1,17 @@
 import React from 'react';
 import './styles.css';
 
+
+
+
+
 export const DarwinTituloEncabezado = () => {
+
+
   return (
     <>
+
+
         <div className='DarwinTituloEncabezado-Principal-Container'>
 
                 <div className='DarwinTituloEncabezado-subContainer'>
@@ -14,6 +22,8 @@ export const DarwinTituloEncabezado = () => {
                         
                 </div>
         </div>
+
+        
     </>
   )
 }

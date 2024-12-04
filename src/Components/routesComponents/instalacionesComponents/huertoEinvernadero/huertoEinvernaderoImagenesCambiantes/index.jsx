@@ -5,7 +5,10 @@ import imagen_2 from '../../../../../Images/instalaciones/huertoEInvernadero/hue
 
 
 
+
+
 export const HuertoEinvernaderoImagenesCambiantes = ( ) => {
+
 
     const images = [
         imagen_1,
@@ -27,14 +30,21 @@ export const HuertoEinvernaderoImagenesCambiantes = ( ) => {
         return () => clearInterval(intervalId);
     }, [images.length]);
 
+
     return (
         <>
+
+
             <div className="HuertoEinvernaderoImagenesCambiantes-image-container">
+
                 <div
                     className={`HuertoEinvernaderoImagenesCambiantes-image ${isFading ? 'HuertoEinvernaderoImagenesCambiantes-fade-in' : 'HuertoEinvernaderoImagenesCambiantes-fade-out'}`}
                     style={{ backgroundImage: `url(${images[currentImage]})` }}
                 />
+                
             </div>
+
+
         </>
     );
 };

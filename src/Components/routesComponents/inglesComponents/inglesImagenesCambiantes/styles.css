@@ -1,0 +1,454 @@
+.InglesImagenesCambiantes-image-container {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column; 
+}
+
+.InglesImagenesCambiantes-imagen-y-botones-prevYnext-container{
+    /* background-color: rgb(216, 216, 93); */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+        .InglesImagenesCambiantes-navegadores {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            cursor: pointer;
+            font-weight: 900;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .InglesImagenesCambiantes-navegadores:hover {
+            background: rgba(156, 156, 156);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 900;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .InglesImagenesCambiantes-navegadores .prev {
+        }
+        
+        .InglesImagenesCambiantes-navegadores .next {
+        }
+
+        .InglesImagenesCambiantes-image {
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+            .InglesImagenesCambiantes-fade-in {
+                opacity: 1;
+            }
+
+            .InglesImagenesCambiantes-fade-out {
+                opacity: 0;
+            }
+
+.InglesImagenesCambiantes-indicadores {
+    display: flex;
+    justify-content: center;
+
+}
+
+.InglesImagenesCambiantes-indicador {
+    background: rgba(191, 191, 191, 0.9);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.InglesImagenesCambiantes-indicador:hover {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.InglesImagenesCambiantes-indicador.InglesImagenesCambiantes_active {
+    background: rgba(156, 156, 156);
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .InglesImagenesCambiantes-image-container {
+    }
+    
+    .InglesImagenesCambiantes-imagen-y-botones-prevYnext-container{
+        width: 20rem;
+    }
+        
+            .InglesImagenesCambiantes-navegadores {
+                width: 1rem; 
+                height: 1rem;
+                font-size: 11px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores:hover {
+                width: 1rem; 
+                height: 1rem;
+                font-size: 11px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 1.5px;
+                padding-top: 0px;
+                padding-bottom: 0.4px;
+                margin-right: 0.4rem;
+            }
+
+            .InglesImagenesCambiantes-navegadores.next {
+                padding-left: 1.5px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0.4px;
+                margin-left: 0.4rem;
+            }
+
+            .InglesImagenesCambiantes-image {
+                width: 17rem;
+                height: 118px;
+            }
+
+                    .InglesImagenesCambiantes-fade-in {
+                    }
+                    
+                    .InglesImagenesCambiantes-fade-out {
+                    }
+    
+    .InglesImagenesCambiantes-indicadores {
+        margin-top: 10px; 
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    
+    .InglesImagenesCambiantes-indicador {
+        width: 2px;
+        height: 10px;
+    }
+    
+    .InglesImagenesCambiantes-indicador:hover {
+        width: 2px;
+        height: 10px;
+    }
+    
+    .InglesImagenesCambiantes-indicador.InglesImagenesCambiantes_active {
+        width: 2px;
+        height: 10px;
+    }
+    
+    
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .InglesImagenesCambiantes-image-container {
+    }
+    
+    .InglesImagenesCambiantes-imagen-y-botones-prevYnext-container{
+        width: 30rem;
+    }
+    
+            .InglesImagenesCambiantes-navegadores {
+                width: 1.2rem; 
+                height: 1.2rem;
+                font-size: 13px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores:hover {
+                width: 1.2rem; 
+                height: 1.2rem;
+                font-size: 13px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 1.3px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-right: 0.4rem;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.next {
+                padding-left: 1.3px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-left: 0.4rem;
+            }
+
+            .InglesImagenesCambiantes-image {
+                width: 26rem;
+                height: 195px;
+            }
+
+                    .InglesImagenesCambiantes-fade-in {
+                    }
+                    
+                    .InglesImagenesCambiantes-fade-out {
+                    }
+                    
+    .InglesImagenesCambiantes-indicadores {
+        margin-top: 12px; 
+        margin-bottom: 12px;
+        gap: 20px;
+    }
+    
+    .InglesImagenesCambiantes-indicador {
+        width: 0px;
+        height: 14px;
+    }
+    
+    .InglesImagenesCambiantes-indicador:hover {
+        width: 0px;
+        height: 14px;
+    }
+    
+    .InglesImagenesCambiantes-indicador.InglesImagenesCambiantes_active {
+        width: 0px;
+        height: 14px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .InglesImagenesCambiantes-image-container {
+    }
+    
+    .InglesImagenesCambiantes-imagen-y-botones-prevYnext-container{
+        width: 48rem;
+    }
+    
+            .InglesImagenesCambiantes-navegadores {
+                width: 1.5rem; 
+                height: 1.5rem;
+                font-size: 17px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores:hover {
+                width: 1.5rem; 
+                height: 1.5rem;
+                font-size: 17px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 1.8px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-right: 0.5rem;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.next {
+                padding-left: 1.8px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-left: 0.5rem;
+            }
+    
+            .InglesImagenesCambiantes-image {
+                width: 43rem;
+                height: 332px;
+            }
+
+                    .InglesImagenesCambiantes-fade-in {
+                    }
+                    
+                    .InglesImagenesCambiantes-fade-out {
+                    }
+
+    .InglesImagenesCambiantes-indicadores {
+        margin-top: 15px; 
+        margin-bottom: 15px;
+        gap: 30px;
+    }
+    
+    .InglesImagenesCambiantes-indicador {
+        width: 0px;
+        height: 22px;
+    }
+    
+    .InglesImagenesCambiantes-indicador:hover {
+        width: 0px;
+        height: 22px;
+    }
+    
+    .InglesImagenesCambiantes-indicador.InglesImagenesCambiantes_active {
+        width: 0px;
+        height: 22px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .InglesImagenesCambiantes-image-container {
+    }
+    
+    .InglesImagenesCambiantes-imagen-y-botones-prevYnext-container{
+        width: 58rem;
+    }
+    
+            .InglesImagenesCambiantes-navegadores {
+                width: 2rem; 
+                height: 2rem;
+                font-size: 20px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores:hover {
+                width: 2rem; 
+                height: 2rem;
+                font-size: 20px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 2px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-right: 0.5rem;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.next {
+                padding-left: 2px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 1px;
+                margin-left: 0.5rem;
+            }
+    
+            .InglesImagenesCambiantes-image {
+                width: 52rem;
+                height: 424px;
+            }
+            
+                    .InglesImagenesCambiantes-fade-in {
+                    }
+                    
+                    .InglesImagenesCambiantes-fade-out {
+                    }
+
+    .InglesImagenesCambiantes-indicadores {
+        margin-top: 20px; 
+        margin-bottom: 20px;
+        gap: 45px;
+    }
+    
+    .InglesImagenesCambiantes-indicador  {
+        width: 5px;
+        height: 30px;
+    }
+    
+    .InglesImagenesCambiantes-indicador:hover {
+        width: 5px;
+        height: 30px;
+    }
+    
+    .InglesImagenesCambiantes-indicador .InglesImagenesCambiantes_active {
+        width: 5px;
+        height: 30px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .InglesImagenesCambiantes-image-container {
+    }
+    
+    .InglesImagenesCambiantes-imagen-y-botones-prevYnext-container{
+        width: 73rem;
+    }
+    
+    
+            .InglesImagenesCambiantes-navegadores  {
+                width: 3rem; 
+                height: 3rem;
+                font-size: 30px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores:hover {
+                width: 3rem; 
+                height: 3rem;
+                font-size: 30px;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.prev {
+                padding-left: 0px;
+                padding-right: 5px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-right: 0.7rem;
+            }
+            
+            .InglesImagenesCambiantes-navegadores.next {
+                padding-left: 5px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin-left: 0.7rem;
+            }
+    
+                    .InglesImagenesCambiantes-image {
+                        width: 65rem;
+                        height: 539px;
+                    }
+                    
+                    .InglesImagenesCambiantes-fade-in {
+                    }
+                    
+                    .InglesImagenesCambiantes-fade-out {
+                    }
+
+    .InglesImagenesCambiantes-indicadores {
+        margin-top: 30px; 
+        margin-bottom: 30px;
+        gap: 50px;
+    }
+    
+    .InglesImagenesCambiantes-indicador {
+        width: 10px;
+        height: 35px;
+    }
+    
+    .InglesImagenesCambiantes-indicador:hover {
+        width: 10px;
+        height: 35px;
+    }
+    
+    .InglesImagenesCambiantes-indicador.InglesImagenesCambiantes_active {
+        width: 10px;
+        height: 35px;
+    }
+
+}

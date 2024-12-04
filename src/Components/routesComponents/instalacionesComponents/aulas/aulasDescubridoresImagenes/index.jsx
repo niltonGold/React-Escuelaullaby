@@ -12,7 +12,11 @@ import imagen_9 from '../../../../../Images/instalaciones/aulas/descubridores/de
 import imagen_10 from '../../../../../Images/instalaciones/aulas/descubridores/descubridores_10.jpg';
 
 
+
+
+
 export const AulasDescubridoresImagenes = ( ) => {
+
 
     const images = [
         imagen_1,
@@ -42,14 +46,21 @@ export const AulasDescubridoresImagenes = ( ) => {
         return () => clearInterval(intervalId);
     }, [images.length]);
 
+
     return (
+        <>
+
 
             <div className="AulasDescubridoresImagenes-image-container">
+
                 <div
                     className={`AulasDescubridoresImagenes-image ${isFading ? 'AulasDescubridoresImagenes-fade-in' : 'AulasDescubridoresImagenes-fade-out'}`}
                     style={{ backgroundImage: `url(${images[currentImage]})` }}
                 />
+                
             </div>
 
+
+        </>
     );
 };
