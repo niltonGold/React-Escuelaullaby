@@ -10,52 +10,43 @@
   background-position: center;
   background-size: 100% 100%;
 
-  background-attachment: scroll;
+  background-attachment: fixed;
+} */
+
+.App-container {
+  position: relative;
+  min-height: 100vh;
 }
 
- */
-
-
- .background-fixed {
+.App-container::before {
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('Images/App/FondoApp.png'); /* Ruta a tu imagen */
-  background-size: cover;
+  background-image: url('Images/App/FondoApp.png');
   background-position: center;
-  z-index: -1; /* Coloca el fondo detrás del contenido */
+  background-size: cover;
+  z-index: -1;
 }
 
-/* Contenedor principal */
-.App-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  z-index: 1; /* Asegúrate de que el contenido esté encima del fondo */
-}
 
-.main-container {
-  flex-grow: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 
 
 .head{
   z-index: 99;
   width: 100%;
 }
-/* 
+
 .main-container{
   flex-grow: 1;
   width: 100%;
   display: flex;
   justify-content: center;
   z-index: 0;
-} */
+}
 
 body {
   font-family: 'Roboto', sans-serif;

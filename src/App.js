@@ -114,8 +114,7 @@ function App() {
     
 
     <Router>
-{/* Contenedor para el fondo fijo */}
-<div className="background-fixed"></div>
+
 
           <div className="App-container">
 
