@@ -60,7 +60,7 @@ body {
 
   .App-container {
     /* background-color: rgb(12, 41, 137); */
-    background-attachment: fixed;
+    background-attachment: scroll; 
   }
 
 }
