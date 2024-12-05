@@ -1,4 +1,6 @@
 import './App.css';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes, Navigate  } from 'react-router-dom';
 
 import { Header } from './Components/PrincipalComponents/Header';
@@ -102,6 +104,18 @@ function App() {
       const Anchura_6_768px_a_959px = 41;
       const Anchura_6_960px_a_1199px = 49;
       const Anchura_6_1200px = 61;
+
+
+      const navigate = useNavigate();
+
+      useEffect(() => {
+        // Redirige a la raíz si la página se recarga
+        if (window.location.pathname !== '/') {
+          navigate('/');
+        }
+      }, [navigate]);
+
+
 
 
   return (
