@@ -10,26 +10,14 @@
   background-position: center;
   background-size: 100% 100%;
 
-  background-attachment: fixed;
 } */
-
 .App-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-.App-container::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('Images/App/FondoApp.png');
   background-position: center;
   background-size: cover;
-  z-index: -1;
+  background-attachment: local;
 }
+
 
 
 
@@ -73,7 +61,7 @@ body {
 
   .App-container {
     /* background-color: rgb(31, 183, 117); */
-    /* background-attachment: fixed; */
+    /* background-attachment: scroll;  */
   }
 
 }
