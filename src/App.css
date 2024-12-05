@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/* .App-container {
+.App-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -9,14 +9,14 @@
   background-image: url('Images/App/FondoApp.png');
   background-position: center;
   background-size: 100% 100%;
-
-} */
-.App-container {
+  background-attachment: local;
+}
+/* .App-container {
   background-image: url('Images/App/FondoApp.png');
   background-position: center;
   background-size: cover;
   background-attachment: local;
-}
+} */
 
 
 
