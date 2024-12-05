@@ -9,19 +9,7 @@
   background-image: url('Images/App/FondoApp.png');
   background-position: center;
   background-size: 100% 100%;
-  background-attachment: local;
 }
-/* .App-container {
-  background-image: url('Images/App/FondoApp.png');
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
-} */
-
-
-
-
-
 
 .head{
   z-index: 99;
@@ -50,7 +38,7 @@ body {
 
   .App-container {
     /* background-color: rgb(236, 179, 167); */
-    /* background-attachment: scroll;  */
+    background-attachment: scroll; 
   }
 
 }
@@ -61,7 +49,7 @@ body {
 
   .App-container {
     /* background-color: rgb(31, 183, 117); */
-    /* background-attachment: scroll;  */
+    background-attachment: scroll; 
   }
 
 }
@@ -72,7 +60,7 @@ body {
 
   .App-container {
     /* background-color: rgb(12, 41, 137); */
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
   }
 
 }
@@ -83,7 +71,7 @@ body {
 
   .App-container {
     /* background-color: rgb(174, 0, 255); */
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
   }
 
 }
@@ -94,7 +82,7 @@ body {
 
   .App-container {
     /* background-color: rgb(255, 242, 0); */
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
   }
 
 }
