@@ -2,15 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 .App-container {
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url('Images/App/FondoApp.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed; */
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
   background-image: url('Images/App/FondoApp.png');
-  /* background-repeat: no-repeat; */
   background-position: center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-size: cover; /* Usa "cover" en lugar de 100% 100% para mejor adaptabilidad */
+  background-attachment: scroll; /* Cambiado de fixed a scroll */
 }
 
 .head{
