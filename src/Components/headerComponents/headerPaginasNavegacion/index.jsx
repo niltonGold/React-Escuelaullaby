@@ -24,6 +24,7 @@ export const HeaderPaginasNavegacion = () => {
     };
 
     const handleProjectClick = () => {
+        navigate('/proyectoPage');
         if (!isActivated) {
             setIsActivated(true); // Activa "Proyecto" al primer clic
         }
