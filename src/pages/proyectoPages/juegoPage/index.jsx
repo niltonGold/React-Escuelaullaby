@@ -74,34 +74,34 @@ export const JuegoPage = (  ) => {
   return (
     <>
 	    <Box  sx={{
-			    // backgroundColor: 'rgb(242, 186, 113, 0.6)',
+			    // backgroundColor: 'rgb(250, 235, 215)',
 			    display: 'flex',
 			    alignItems: 'center',
 			    flexDirection: 'column',
 			    '@media (max-width: 480px)': {
 				    width: `20rem`,
+					height: `27rem`,
 				    marginTop: '1rem',
-				    marginBottom: '0rem',
 			    },
 			    '@media (min-width: 481px) and (max-width: 767px)': {
 				    width: `29rem`,
+					height: `39rem`,
 				    marginTop: '1.5rem',
-				    marginBottom: '0rem',
 			    },
 			    '@media (min-width: 768px) and (max-width: 959px)': {
 				    width: `46rem`,
+					height: `61.5rem`,
 				    marginTop: '2rem',
-				    marginBottom: '5rem',
 			    },
 			    '@media (min-width: 960px) and (max-width: 1199px)': {
 				    width: `55rem`,
+					height: `77rem`,
 				    marginTop: '2.5rem',
-				    marginBottom: '5rem',
 			    },
 			    '@media (min-width: 1200px)': {
 				    width: `70rem`,
+					height: `95rem`,
 				    marginTop: '3rem',
-				    marginBottom: '5rem',
 			    }
 
 	    }}>

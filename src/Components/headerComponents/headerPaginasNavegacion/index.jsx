@@ -22,6 +22,7 @@ export const HeaderPaginasNavegacion = () => {
             setActive(path); // Actualizar el estado `active` a la ruta seleccionada
             navigate(path);  // Navegar a la página correspondiente
         }
+        setIsDropdownVisible(false);
     };
 
     const handleMouseEnter = () => {

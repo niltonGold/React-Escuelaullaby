@@ -12,10 +12,11 @@ export const VolverAaulas = () => {
 
   return (
     <>
-        <div className='VolverAaulas-container' onClick={handleVolverAaulasClick}>
-            <div className='VolverAaulas-subContainer'>
+        <div className='VolverAaulas-container'>
+            <div className='VolverAaulas-subContainer' onClick={handleVolverAaulasClick}>
                     &lt;&lt; Volver a Aulas
             </div>
+            <div/>
         </div>
     </>
   )

@@ -13,6 +13,7 @@ export const BannerCelesteCentral = ( props ) => {
     const navigate = useNavigate();
 
     const handleGoToContacto = () => {
+        window.scrollTo({ top: 0 });
         navigate('/contactoPage');
     }
 

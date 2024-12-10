@@ -8,12 +8,11 @@
     letter-spacing: normal;
     text-shadow: none;
     text-align: justify;
-    cursor: pointer;
     display: flex;
-    /* background-color: rgb(224, 188, 138); */
 }
 
         .VolverAaulas-subContainer{
+            cursor: pointer;
         }
         .VolverAaulas-subContainer:hover{
             background-color: rgba(176, 213, 235, 0.5);

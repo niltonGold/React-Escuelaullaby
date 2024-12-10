@@ -17,78 +17,78 @@ export const EquipoPage = ( props ) => {
 
 
   return (
-    <>
+	<>
 
 
-            <Box  sx={{     
-                // backgroundColor: 'rgb(242, 186, 113)',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-end',
-                '@media (max-width: 480px)': {
-                        width: `${props.anchuraEquipoPage480px}rem`,
-                        marginTop: '1rem',
-                        marginBottom: '0rem', 
-                        gap: '0.5rem',
-                },
-                '@media (min-width: 481px) and (max-width: 767px)': {
-                        width: `${props.anchuraEquipoPage481px_a_767px}rem`,
-                        marginTop: '1.5rem',
-                        marginBottom: '0rem', 
-                        gap: '1rem', 
-                },
-                '@media (min-width: 768px) and (max-width: 959px)': {
-                        width: `${props.anchuraEquipoPage768px_a_959px}rem`,
-                        marginTop: '2rem',
-                        marginBottom: '5rem',
-                        gap: '1.5rem', 
-                },
-                '@media (min-width: 960px) and (max-width: 1199px)': {
-                        width: `${props.anchuraEquipoPage960px_a_1199px}rem`,
-                        marginTop: '2.5rem',
-                        marginBottom: '5rem',
-                        gap: '2rem',   
-                },
-                '@media (min-width: 1200px)': {
-                        width: `${props.anchuraEquipoPage1200px}rem`,
-                        marginTop: '3rem',
-                        marginBottom: '5rem',
-                        gap: '2.5rem', 
-                }  
-            }}>
+			<Box  sx={{     
+				// backgroundColor: 'rgb(250, 235, 215)',
+				display: 'flex',
+				flexDirection: 'column',
+				alignItems: 'flex-end',
+				'@media (max-width: 480px)': {
+						width: `${props.anchuraEquipoPage480px}rem`,
+						height: `${props.alturaEquipoPage480px}rem`,
+						marginTop: '1rem',
+						gap: '0.5rem',
+				},
+				'@media (min-width: 481px) and (max-width: 767px)': {
+						width: `${props.anchuraEquipoPage481px_a_767px}rem`,
+						height: `${props.alturaEquipoPage481px_a_767px}rem`,
+						marginTop: '1.5rem',
+						gap: '1rem', 
+				},
+				'@media (min-width: 768px) and (max-width: 959px)': {
+						width: `${props.anchuraEquipoPage768px_a_959px}rem`,
+						height: `${props.alturaEquipoPage768px_a_959px}rem`,
+						marginTop: '2rem',
+						gap: '1.5rem', 
+				},
+				'@media (min-width: 960px) and (max-width: 1199px)': {
+						width: `${props.anchuraEquipoPage960px_a_1199px}rem`,
+						height: `${props.alturaEquipoPage960px_a_1199px}rem`,
+						marginTop: '2.5rem',
+						gap: '2rem',   
+				},
+				'@media (min-width: 1200px)': {
+						width: `${props.anchuraEquipoPage1200px}rem`,
+						height: `${props.alturaEquipoPage1200px}rem`,
+						marginTop: '3rem',
+						gap: '2.5rem', 
+				}  
+			}}>
 
 
-                    <ParrafoEquipo />
+					<ParrafoEquipo />
 
 
-                    <div className='EquipoPage-Ayudantes-Container'>
-                            
-                            <div className='EquipoPage-izquierda'>
+					<div className='EquipoPage-Ayudantes-Container'>
+							
+							<div className='EquipoPage-izquierda'>
 
-                                    <RosaAyudanteIzquierda />
+									<RosaAyudanteIzquierda />
 
-                                    <ClaudiaAyudanteIzquierda />
+									<ClaudiaAyudanteIzquierda />
 
-                                    <CarmenAyudanteIzquierda />
+									<CarmenAyudanteIzquierda />
 
-                            </div>
+							</div>
 
-                            <div className='EquipoPage-derecha'>
+							<div className='EquipoPage-derecha'>
 
-                                    <AnaAyudanteDerecha />
+									<AnaAyudanteDerecha />
 
-                                    <VictoriaAyudanteDerecha />
+									<VictoriaAyudanteDerecha />
 
-                                    <NoraAyudanteDerecha />
-                                    
-                            </div>
+									<NoraAyudanteDerecha />
+									
+							</div>
 
-                    </div>
-
-
-            </Box>
+					</div>
 
 
-    </>
+			</Box>
+
+
+	</>
   )
 }

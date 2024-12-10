@@ -27,31 +27,31 @@ export const AventurerosPage = ( props ) => {
 
 
         <Box sx={{
-                // backgroundColor: 'yellow',
+                // backgroundColor: 'rgb(250, 235, 215)',
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraAventurerosPage480px}rem`,
+                    height: `${props.alturaAventurerosPage480px}rem`,
                     marginTop: '1rem',
-                    marginBottom: '0rem',
                 },
                 '@media (min-width: 481px) and (max-width: 767px)': {
                     width: `${props.anchuraAventurerosPage481px_a_767px}rem`,
+                    height: `${props.alturaAventurerosPage481px_a_767px}rem`,
                     marginTop: '1.5rem',
-                    marginBottom: '0rem',
                 },
                 '@media (min-width: 768px) and (max-width: 959px)': {
                     width: `${props.anchuraAventurerosPage768px_a_959px}rem`,
+                    height: `${props.alturaAventurerosPage768px_a_959px}rem`,
                     marginTop: '2rem',
-                    marginBottom: '5rem',
                 },
                 '@media (min-width: 960px) and (max-width: 1199px)': {
                     width: `${props.anchuraAventurerosPage960px_a_1199px}rem`,
+                    height: `${props.alturaAventurerosPage960px_a_1199px}rem`,
                     marginTop: '2.5rem',
-                    marginBottom: '5rem',
                 },
                 '@media (min-width: 1200px)': {
                     width: `${props.anchuraAventurerosPage1200px}rem`,
+                    height: `${props.alturaAventurerosPage1200px}rem`,
                     marginTop: '3rem',
-                    marginBottom: '5rem',
                 }
         }}>
 

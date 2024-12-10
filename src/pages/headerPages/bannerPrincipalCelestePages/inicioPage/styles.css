@@ -1,5 +1,5 @@
 .InicioPage-Principal-Container{
-    /* background-color: azure; */
+    /* background-color: rgb(250, 235, 215); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,8 @@
 @media (max-width: 480px) {
 
     .InicioPage-Principal-Container{
-        margin-bottom: 0rem;
+        height: 27rem;
+        margin-top: 1rem;
     }
   
 }
@@ -24,7 +25,8 @@
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     .InicioPage-Principal-Container{
-        margin-bottom: 0rem;
+        margin-top: 1.5rem;
+        height: 39rem;
     }
 
 }
@@ -34,7 +36,8 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
     .InicioPage-Principal-Container{
-        margin-bottom: 5rem;
+        margin-top: 2rem;
+        height: 61.5rem;
     }
 
 }
@@ -44,7 +47,8 @@
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
     .InicioPage-Principal-Container{
-        margin-bottom: 5rem;
+        margin-top: 2.5rem;
+        height: 77rem;
     }
 
 }
@@ -54,7 +58,8 @@
 @media only screen and (min-width: 1200px) {
 
     .InicioPage-Principal-Container{
-        margin-bottom: 5rem;
+        margin-top: 3rem;
+        height: 95rem;
     }
 
 }

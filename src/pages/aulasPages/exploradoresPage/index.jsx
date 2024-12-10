@@ -29,31 +29,31 @@ export const ExploradoresPage = ( props ) => {
 
 
         <Box sx={{
-                // backgroundColor: 'yellow',
+                // backgroundColor: 'rgb(250, 235, 215)',
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraExploradoresPage480px}rem`,
+                    height: `${props.alturaExploradoresPage480px}rem`,
                     marginTop: '1rem',
-                    marginBottom: '0rem',
                 },
                 '@media (min-width: 481px) and (max-width: 767px)': {
                     width: `${props.anchuraExploradoresPage481px_a_767px}rem`,
+                    height: `${props.alturaExploradoresPage481px_a_767px}rem`,
                     marginTop: '1.5rem',
-                    marginBottom: '0rem',
                 },
                 '@media (min-width: 768px) and (max-width: 959px)': {
                     width: `${props.anchuraExploradoresPage768px_a_959px}rem`,
+                    height: `${props.alturaExploradoresPage768px_a_959px}rem`,
                     marginTop: '2rem',
-                    marginBottom: '5rem',
                 },
                 '@media (min-width: 960px) and (max-width: 1199px)': {
                     width: `${props.anchuraExploradoresPage960px_a_1199px}rem`,
+                    height: `${props.alturaExploradoresPage960px_a_1199px}rem`,
                     marginTop: '2.5rem',
-                    marginBottom: '5rem',
                 },
                 '@media (min-width: 1200px)': {
                     width: `${props.anchuraExploradoresPage1200px}rem`,
+                    height: `${props.alturaExploradoresPage1200px}rem`,
                     marginTop: '3rem',
-                    marginBottom: '5rem',
                 }
         }}>
 

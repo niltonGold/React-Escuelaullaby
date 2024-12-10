@@ -17,105 +17,105 @@ export const ProyectoPage = ( props ) => {
 
 
   const ProyectoPageTexto1 = `El PROYECTO EDUCATIVO Lullaby plantea un sistema 
-                              pedagógico moderno y de calidad diseñado y creado 
-                              específicamente para la escuela por la dirección y 
-                              personal docente del mismo, basado en el aprendizaje 
-                              por proyectos.`
+							  pedagógico moderno y de calidad diseñado y creado 
+							  específicamente para la escuela por la dirección y 
+							  personal docente del mismo, basado en el aprendizaje 
+							  por proyectos.`
 
   const ProyectoPageTexto2 = `Tiene sus cimientos en tres pilares fundamentales: el arte, 
-                              la música y el inglés. Cada uno de ellos es una disciplina 
-                              que se enseña de manera transversal y globalizada dentro 
-                              de la programación anual. `
+							  la música y el inglés. Cada uno de ellos es una disciplina 
+							  que se enseña de manera transversal y globalizada dentro 
+							  de la programación anual. `
 
   const ProyectoPageTexto3 = `La psicomotricidad infantil y el yoga representan 
-                              dos aspectos relevantes dentro del proyecto para un 
-                              óptimo desarrollo del equilibrio del cuerpo y la mente. 
-                              El aprendizaje a través del juego se convierte en la 
-                              metodología básica y esencial para su desarrollo.`
+							  dos aspectos relevantes dentro del proyecto para un 
+							  óptimo desarrollo del equilibrio del cuerpo y la mente. 
+							  El aprendizaje a través del juego se convierte en la 
+							  metodología básica y esencial para su desarrollo.`
 
 
   return (
-    <>
+	<>
 
 
-            <Box  sx={{     
-                            // backgroundColor: 'rgb(242, 186, 113)',
-                            '@media (max-width: 480px)': {
-                                    width: `${props.anchuraProyectoPage480px}rem`, 
-                                    marginTop: '1rem',
-                                    marginBottom: '0rem', 
-                            },
-                            '@media (min-width: 481px) and (max-width: 767px)': {
-                                    width: `${props.anchuraProyectoPage481px_a_767px}rem`,
-                                    marginTop: '1.5rem',
-                                    marginBottom: '0rem',   
-                            },
-                            '@media (min-width: 768px) and (max-width: 959px)': {
-                                    width: `${props.anchuraProyectoPage768px_a_959px}rem`,
-                                    marginTop: '2rem',
-                                    marginBottom: '5rem', 
-                            },
-                            '@media (min-width: 960px) and (max-width: 1199px)': {
-                                    width: `${props.anchuraProyectoPage960px_a_1199px}rem`,
-                                    marginTop: '2.5rem',
-                                    marginBottom: '5rem',  
-                            },
-                            '@media (min-width: 1200px)': {
-                                    width: `${props.anchuraProyectoPage1200px}rem`, 
-                                    marginTop: '3rem',
-                                    marginBottom: '5rem', 
-                            }  
-            }}>
+			<Box  sx={{     
+							// backgroundColor: 'rgb(250, 235, 215)',
+							'@media (max-width: 480px)': {
+									width: `${props.anchuraProyectoPage480px}rem`, 
+									height: `${props.alturaProyectoPage480px}rem`,
+									marginTop: '1rem',
+							},
+							'@media (min-width: 481px) and (max-width: 767px)': {
+									width: `${props.anchuraProyectoPage481px_a_767px}rem`,
+									height: `${props.alturaProyectoPage481px_a_767px}rem`,
+									marginTop: '1.5rem',   
+							},
+							'@media (min-width: 768px) and (max-width: 959px)': {
+									width: `${props.anchuraProyectoPage768px_a_959px}rem`,
+									height: `${props.alturaProyectoPage768px_a_959px}rem`,
+									marginTop: '2rem',
+							},
+							'@media (min-width: 960px) and (max-width: 1199px)': {
+									width: `${props.anchuraProyectoPage960px_a_1199px}rem`,
+									height: `${props.alturaProyectoPage960px_a_1199px}rem`,
+									marginTop: '2.5rem', 
+							},
+							'@media (min-width: 1200px)': {
+									width: `${props.anchuraProyectoPage1200px}rem`, 
+									height: `${props.alturaProyectoPage1200px}rem`,
+									marginTop: '3rem',
+							}  
+			}}>
 
 
-                    <div  className='ProyectoPage-subContainer'>
+					<div  className='ProyectoPage-subContainer'>
 
 
-                            <div className='ProyectoPage-titulo_parrafo-container'>
-                
-                                    <Parrafo parrafoTexto={ProyectoPageTexto1} />
+							<div className='ProyectoPage-titulo_parrafo-container'>
+				
+									<Parrafo parrafoTexto={ProyectoPageTexto1} />
 
-                                    <Parrafo parrafoTexto={ProyectoPageTexto2} />
+									<Parrafo parrafoTexto={ProyectoPageTexto2} />
 
-                                    <Parrafo parrafoTexto={ProyectoPageTexto3} />
+									<Parrafo parrafoTexto={ProyectoPageTexto3} />
 
-                            </div>
+							</div>
 
-                            <div className='ProyectoPage-Enlaces-Big-Container'>
-                                
-                                    <div className='ProyectoPage-Enlaces-Sub-Container'>
+							<div className='ProyectoPage-Enlaces-Big-Container'>
+								
+									<div className='ProyectoPage-Enlaces-Sub-Container'>
 
-                                            <ArteComponentLogoInfo />
-                                            
-                                            <MusicaComponentLogoInfo />
+											<ArteComponentLogoInfo />
+											
+											<MusicaComponentLogoInfo />
 
-                                    </div>
+									</div>
 
-                                    <div className='ProyectoPage-Enlaces-Sub-Container'>
-                                        
-                                            <PsicomotricidadComponentLogoInfo />
+									<div className='ProyectoPage-Enlaces-Sub-Container'>
+										
+											<PsicomotricidadComponentLogoInfo />
 
-                                            <JuegoComponentLogoInfo />
+											<JuegoComponentLogoInfo />
 
-                                    </div>
+									</div>
 
-                                    <div className='ProyectoPage-Enlaces-Sub-Container'>
+									<div className='ProyectoPage-Enlaces-Sub-Container'>
 
-                                            <YogaComponentLogoInfo />
+											<YogaComponentLogoInfo />
 
-                                            <NaturalezaComponentLogoInfo />
+											<NaturalezaComponentLogoInfo />
 
-                                    </div>
+									</div>
 
-                            </div>
-
-
-                    </div>
+							</div>
 
 
-            </Box>
+					</div>
 
 
-    </>
+			</Box>
+
+
+	</>
   )
 }

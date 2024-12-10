@@ -69,30 +69,31 @@ export const AulasEnlacePrincipalPage = (props) => {
 
 
             <Box sx={{
+                // backgroundColor: 'rgb(250, 235, 215)',
                 '@media (max-width: 480px)': {
                     width: `${props.anchuraAulasEnlacePrincipalPage480px}rem`,
+                    height: `${props.alturaAulasEnlacePrincipalPage480px}rem`,
                     marginTop: '1rem',
-                    marginBottom: '0rem',
                 },
                 '@media (min-width: 481px) and (max-width: 767px)': {
                     width: `${props.anchuraAulasEnlacePrincipalPage481px_a_767px}rem`,
+                    height: `${props.alturaAulasEnlacePrincipalPage481px_a_767px}rem`,
                     marginTop: '1.5rem',
-                    marginBottom: '0rem',
                 },
                 '@media (min-width: 768px) and (max-width: 959px)': {
                     width: `${props.anchuraAulasEnlacePrincipalPage768px_a_959px}rem`,
+                    height: `${props.alturaAulasEnlacePrincipalPage768px_a_959px}rem`,
                     marginTop: '2rem',
-                    marginBottom: '5rem',
                 },
                 '@media (min-width: 960px) and (max-width: 1199px)': {
                     width: `${props.anchuraAulasEnlacePrincipalPage960px_a_1199px}rem`,
+                    height: `${props.alturaAulasEnlacePrincipalPage960px_a_1199px}rem`,
                     marginTop: '2.5rem',
-                    marginBottom: '5rem',
                 },
                 '@media (min-width: 1200px)': {
                     width: `${props.anchuraAulasEnlacePrincipalPage1200px}rem`,
+                    height: `${props.alturaAulasEnlacePrincipalPage1200px}rem`,
                     marginTop: '3rem',
-                    marginBottom: '5rem',
                 }
             }}>
                 

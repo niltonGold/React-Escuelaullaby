@@ -27,7 +27,7 @@
         }
 
         .JuegoComponentImagenesCambiantes-navegadores:hover {
-            background: rgba(156, 156, 156);
+            background: rgb(143, 136, 136);
             color: white;
             border: none;
             cursor: pointer;
@@ -79,7 +79,7 @@
 }
 
 .JuegoComponentImagenesCambiantes-indicador.JuegoComponentImagenesCambiantes_active {
-    background: rgba(156, 156, 156);
+    background: rgb(121, 119, 119);
 }
 
 

@@ -79,32 +79,32 @@ export const CocinaYlavanderia = ( props ) => {
 
 
         <Box  sx={{     
-                // backgroundColor: 'rgb(242, 186, 100)',
-                  '@media (max-width: 480px)': {
-                        width: `${props.anchuraCocinaYlavanderia480px}rem`,
-                        marginTop: '1rem',
-                        marginBottom: '0rem', 
-                  },
-                  '@media (min-width: 481px) and (max-width: 767px)': {
-                        width: `${props.anchuraCocinaYlavanderia481px_a_767px}rem`,
-                        marginTop: '1.5rem',
-                        marginBottom: '0rem', 
-                  },
-                  '@media (min-width: 768px) and (max-width: 959px)': {
-                        width: `${props.anchuraCocinaYlavanderia768px_a_959px}rem`,
-                        marginTop: '2rem',
-                        marginBottom: '5rem', 
-                  },
-                  '@media (min-width: 960px) and (max-width: 1199px)': {
-                        width: `${props.anchuraCocinaYlavanderia960px_a_1199px}rem`,
-                        marginTop: '2.5rem',
-                        marginBottom: '5rem', 
-                  },
-                  '@media (min-width: 1200px)': {
-                        width: `${props.anchuraCocinaYlavanderia1200px}rem`,
-                        marginTop: '3rem',
-                        marginBottom: '5rem',
-                  }  
+                    // backgroundColor: 'rgb(250, 235, 215)',
+                    '@media (max-width: 480px)': {
+                            width: `${props.anchuraCocinaYlavanderia480px}rem`,
+                            height: `${props.alturaaCocinaYlavanderiaPage480px}rem`,
+                            marginTop: '1rem',
+                    },
+                    '@media (min-width: 481px) and (max-width: 767px)': {
+                            width: `${props.anchuraCocinaYlavanderia481px_a_767px}rem`,
+                            height: `${props.alturaaCocinaYlavanderiaPage481px_a_767px}rem`,
+                            marginTop: '1.5rem',
+                    },
+                    '@media (min-width: 768px) and (max-width: 959px)': {
+                            width: `${props.anchuraCocinaYlavanderia768px_a_959px}rem`,
+                            height: `${props.alturaaCocinaYlavanderiaPage768px_a_959px}rem`,
+                            marginTop: '2rem',
+                    },
+                    '@media (min-width: 960px) and (max-width: 1199px)': {
+                            width: `${props.anchuraCocinaYlavanderia960px_a_1199px}rem`,
+                            height: `${props.alturaaCocinaYlavanderiaPage960px_a_1199px}rem`,
+                            marginTop: '2.5rem',
+                    },
+                    '@media (min-width: 1200px)': {
+                            width: `${props.anchuraCocinaYlavanderia1200px}rem`,
+                            height: `${props.alturaaCocinaYlavanderiaPage1200px}rem`,
+                            marginTop: '3rem',
+                    }  
         }}>
                   
 
