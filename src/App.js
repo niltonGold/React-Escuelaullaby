@@ -400,16 +400,16 @@ function App() {
 																												alturaHuertoEinvernaderoPage1200px={ Altura_1200px } 
 																			  /> } />
 							  <Route path='/instalacionesPage/salonDeActos' element={ <SalonDeActos anchuraSalonDeActos480px={ Anchura_6_480px }
-																				  anchuraSalonDeActos481px_a_767px={ Anchura_6_481px_a_767px }
-																				  anchuraSalonDeActos768px_a_959px={ Anchura_6_768px_a_959px }
-																				  anchuraSalonDeActos960px_a_1199px={ Anchura_6_960px_a_1199px }
-																				  anchuraSalonDeActos1200px={ Anchura_6_1200px } 
+																				  					anchuraSalonDeActos481px_a_767px={ Anchura_6_481px_a_767px }
+																				  					anchuraSalonDeActos768px_a_959px={ Anchura_6_768px_a_959px }
+																				  					anchuraSalonDeActos960px_a_1199px={ Anchura_6_960px_a_1199px }
+																				  					anchuraSalonDeActos1200px={ Anchura_6_1200px } 
 
-																				  alturaHuertoEinvernaderoPage480px={ Altura_480px }
-																												alturaHuertoEinvernaderoPage481px_a_767px={ Altura_481px_a_767px }
-																												alturaHuertoEinvernaderoPage768px_a_959px={ Altura_768px_a_959px }
-																												alturaHuertoEinvernaderoPage960px_a_1199px={ Altura_960px_a_1199px }
-																												alturaHuertoEinvernaderoPage1200px={ Altura_1200px } 
+																				  					alturaSalonDeActosPage480px={ Altura_480px }
+																									alturaSalonDeActosPage481px_a_767px={ Altura_481px_a_767px }
+																									alturaSalonDeActosPage768px_a_959px={ Altura_768px_a_959px }
+																									alturaSalonDeActosPage960px_a_1199px={ Altura_960px_a_1199px }
+																									alturaSalonDeActosPage1200px={ Altura_1200px } 
 																			  /> } />    
 
 
