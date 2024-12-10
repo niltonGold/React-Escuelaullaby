@@ -30,6 +30,7 @@ export const HeaderPaginasNavegacion = () => {
 
     // Funciones para el menú de "Proyecto"
     const handleProjectClick = () => {
+        navigate('/proyectoPage');
         if (!isActivated) {
             setIsActivated(true);
         }
@@ -59,6 +60,7 @@ export const HeaderPaginasNavegacion = () => {
 
     // Funciones para el menú de "Instalaciones"
     const handleInstalacionesClick = () => {
+        navigate('/instalacionesPage');
         if (!isActivatedInstalaciones) {
             setIsActivatedInstalaciones(true);
         }
