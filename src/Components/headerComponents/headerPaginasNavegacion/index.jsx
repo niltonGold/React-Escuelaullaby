@@ -12,49 +12,84 @@ export const HeaderPaginasNavegacion = () => {
 
     const [active, setActive] = useState(location.pathname || '/inicioPage');
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+    const [isDropdownVisibleInstalaciones, setIsDropdownVisibleInstalaciones] = useState(false);
     const [isActivated, setIsActivated] = useState(false);
+    const [isActivatedInstalaciones, setIsActivatedInstalaciones] = useState(false);
 
     const handleClick = (path) => {
         if (active !== path) {
             setActive(path);
             navigate(path);
         }
-        setIsDropdownVisible(false); // Oculta el menú al navegar
-        setIsActivated(false); // Reinicia la activación
+        // Ocultar ambos menús si se selecciona una subpágina o se navega fuera
+        setIsDropdownVisible(false);
+        setIsActivated(false);
+        setIsDropdownVisibleInstalaciones(false);
+        setIsActivatedInstalaciones(false);
     };
 
+    // Funciones para el menú de "Proyecto"
     const handleProjectClick = () => {
-        navigate('/proyectoPage');
         if (!isActivated) {
-            setIsActivated(true); // Activa "Proyecto" al primer clic
+            setIsActivated(true);
         }
-        setIsDropdownVisible(!isDropdownVisible); // Alterna el menú desplegable
-        setActive('/proyectoPage'); // Marca "Proyecto" como activo
+        setIsDropdownVisible(!isDropdownVisible);
+        setActive('/proyectoPage');
     };
 
     const handleMouseEnterProject = () => {
         if (isActivated) {
-            setIsDropdownVisible(true); // Muestra el menú si está activado
+            setIsDropdownVisible(true);
         }
     };
 
     const handleMouseLeaveProject = () => {
-        setIsDropdownVisible(false); // Oculta el menú al salir
+        setIsDropdownVisible(false);
     };
 
     const handleMouseEnterMenu = () => {
         if (isActivated) {
-            setIsDropdownVisible(true); // Mantiene el menú visible al entrar
+            setIsDropdownVisible(true);
         }
     };
 
     const handleMouseLeaveMenu = () => {
-        setIsDropdownVisible(false); // Oculta el menú al salir completamente del área
+        setIsDropdownVisible(false);
+    };
+
+    // Funciones para el menú de "Instalaciones"
+    const handleInstalacionesClick = () => {
+        if (!isActivatedInstalaciones) {
+            setIsActivatedInstalaciones(true);
+        }
+        setIsDropdownVisibleInstalaciones(!isDropdownVisibleInstalaciones);
+        setActive('/instalacionesPage');
+    };
+
+    const handleMouseEnterInstalaciones = () => {
+        if (isActivatedInstalaciones) {
+            setIsDropdownVisibleInstalaciones(true);
+        }
+    };
+
+    const handleMouseLeaveInstalaciones = () => {
+        setIsDropdownVisibleInstalaciones(false);
+    };
+
+    const handleMouseEnterMenuInstalaciones = () => {
+        if (isActivatedInstalaciones) {
+            setIsDropdownVisibleInstalaciones(true);
+        }
+    };
+
+    const handleMouseLeaveMenuInstalaciones = () => {
+        setIsDropdownVisibleInstalaciones(false);
     };
 
     useEffect(() => {
-        setActive(location.pathname); // Actualiza `active` si la ruta cambia manualmente
+        setActive(location.pathname);
     }, [location.pathname]);
+
 
     return (
         <>
@@ -91,39 +126,89 @@ export const HeaderPaginasNavegacion = () => {
 
                                 {/* --------------------------------------------------------------------------------------- */}
 
-                                    <div>
-                                        <div className='headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide' />
-                                        <div
-                                            className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
-                                                        headerPaginasNavegacion-texto   
-                                                        ${active.startsWith('/instalacionesPage') ? 'headerPaginasNavegacion-active' : ''}`}
-                                            onClick={() => handleClick('/instalacionesPage')}>
-                                            Instalaciones
-                                        </div>
-                                    </div>
+                                <div
+                        onMouseEnter={handleMouseEnterInstalaciones}
+                        onMouseLeave={handleMouseLeaveInstalaciones}
+                    >
+                        <div className="headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide" />
+                        <div
+                            className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
+                                headerPaginasNavegacion-texto
+                                ${active.startsWith('/instalacionesPage') ? 'headerPaginasNavegacion-active' : ''}`}
+                            onClick={handleInstalacionesClick}
+                        >
+                            Instalaciones
+                        </div>
+
+                        <div
+                            className="headerPaginasNavegacion_MenuDesplegable"
+                            onMouseEnter={handleMouseEnterMenuInstalaciones}
+                            onMouseLeave={handleMouseLeaveMenuInstalaciones}
+                        >
+                            <div className={`dropdown-menu-instalaciones ${isDropdownVisibleInstalaciones ? 'show-instalaciones' : ''}`}>
+                                <div className="subpagina-instalaciones" onClick={() => handleClick('/instalacionesPage/aulas')}>
+                                    Aulas
+                                </div>
+                                <div className="subpagina-instalaciones" onClick={() => handleClick('/instalacionesPage/hallYdespacho')}>
+                                    Hall y Despacho
+                                </div>
+                                <div className="subpagina-instalaciones" onClick={() => handleClick('/instalacionesPage/comedor')}>
+                                    Comedor
+                                </div>
+                                <div className="subpagina-instalaciones" onClick={() => handleClick('/instalacionesPage/cocinaYlavanderia')}>
+                                    Cocina y Lavandería
+                                </div>
+                                <div className="subpagina-instalaciones" onClick={() => handleClick('/instalacionesPage/patios')}>
+                                    Patios
+                                </div>
+                                <div className="subpagina-instalaciones" onClick={() => handleClick('/instalacionesPage/huertoEinvernadero')}>
+                                    Huerto e Invernadero
+                                </div>
+                                <div className="subpagina-instalaciones" onClick={() => handleClick('/instalacionesPage/salonDeActos')}>
+                                    Salón de Actos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                 {/* --------------------------------------------------------------------------------------- */}
 
                                 <div
-                        onMouseEnter={handleMouseEnterProject} // Muestra el menú al entrar
-                        onMouseLeave={handleMouseLeaveProject} // Oculta el menú al salir
+                        onMouseEnter={handleMouseEnterProject}
+                        onMouseLeave={handleMouseLeaveProject}
                     >
                         <div className="headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide" />
                         <div
                             className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
                                 headerPaginasNavegacion-texto
                                 ${active.startsWith('/proyectoPage') ? 'headerPaginasNavegacion-active' : ''}`}
-                            onClick={handleProjectClick} // Activa "Proyecto" y muestra el menú
+                            onClick={handleProjectClick}
                         >
                             Proyecto
                         </div>
 
                         <div
                             className="headerPaginasNavegacion_MenuDesplegable"
-                            onMouseEnter={handleMouseEnterMenu} // Mantiene el menú abierto al entrar
-                            onMouseLeave={handleMouseLeaveMenu} // Oculta el menú al salir completamente del área del menú desplegable
+                            onMouseEnter={handleMouseEnterMenu}
+                            onMouseLeave={handleMouseLeaveMenu}
                         >
-                            {/* Menú desplegable */}
                             <div className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}>
                                 <div className="subpagina" onClick={() => handleClick('/proyectoPage/arte')}>
                                     Arte
@@ -158,6 +243,8 @@ export const HeaderPaginasNavegacion = () => {
                                             Inglés
                                         </div>
                                     </div>
+                                
+                                {/* --------------------------------------------------------------------------------------- */}
 
                                     <div>
                                         <div className='headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide' />

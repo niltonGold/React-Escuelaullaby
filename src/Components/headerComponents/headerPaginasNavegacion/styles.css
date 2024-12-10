@@ -54,53 +54,27 @@
                                 color: rgb(255, 255, 255);
                             }
 
-
 .headerPaginasNavegacion_MenuDesplegable {
     position: relative;
 }
 
-/* .dropdown-menu {
+
+/* menu desplegable proyecto */
+.dropdown-menu {
     position: absolute;
     top: 100%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     opacity: 0;
-    transition: opacity 0.8s ease; 
-    pointer-events: none; 
-}
-
-
-.dropdown-menu.show {
-    opacity: 1;
-    pointer-events: auto; 
-    color: rgb(38, 139, 210);
-} 
-
-
-
-.dropdown-menu div {
-    cursor: pointer;
-    transition: color 0.7s ease, background-color 0.7s ease;
-}
-
-.dropdown-menu div:hover {
-    color:rgb(16, 44, 138);
-    background-color: rgb(206, 222, 232);
-}*/
-
-
-
-.dropdown-menu {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .dropdown-menu.show {
     opacity: 1;
     pointer-events: auto;
+    color: rgb(38, 139, 210);
 }
 
 .dropdown-menu div {
@@ -114,20 +88,42 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .subpagina{
     background-color: #ddedf7;
+}
 
-    /* padding: 3px; */
+
+/* menu desplegable instalaciones */
+.dropdown-menu-instalaciones {
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.dropdown-menu-instalaciones.show-instalaciones {
+    opacity: 1;
+    pointer-events: auto;
+    color: rgb(38, 139, 210);
+}
+
+.dropdown-menu-instalaciones div {
+    cursor: pointer;
+    transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+.dropdown-menu-instalaciones div:hover {
+    color: rgb(16, 44, 138);
+    background-color: rgb(206, 222, 232);
+}
+
+
+.subpagina-instalaciones{
+    background-color: #ddedf7;
 }
 
 
@@ -182,6 +178,7 @@
                                     border-radius: 8px;  
                                 }
 
+
     /* Menu desplegable */
     .headerPaginasNavegacion_MenuDesplegable {
     }
@@ -206,7 +203,30 @@
         padding: 3px;
     }
 
+            /* menu desplegable instalaciones */
+            .dropdown-menu-instalaciones {
+                width: 70px;
+                padding: 1.5px;
+                gap: 1.5px;
+                left: -1rem;
+            }
+
+            .dropdown-menu-instalaciones.show-instalaciones {
+            }
+
+            .dropdown-menu-instalaciones div {
+            }
+
+            .dropdown-menu-instalaciones div:hover {
+            }
+
+
+            .subpagina-instalaciones{
+                padding: 3px;
+            }
+
 }
+
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -279,6 +299,29 @@
     .subpagina{
         padding: 3px;
     }
+
+
+            /* menu desplegable instalaciones */
+            .dropdown-menu-instalaciones {
+                width: 90px;
+                padding: 1.5px;
+                gap: 1.5px;
+                left: -1.1rem;
+            }
+
+            .dropdown-menu-instalaciones.show-instalaciones {
+            }
+
+            .dropdown-menu-instalaciones div {
+            }
+
+            .dropdown-menu-instalaciones div:hover {
+            }
+
+
+            .subpagina-instalaciones{
+                padding: 3px;
+            }
 
 }
 
@@ -354,6 +397,29 @@
         padding: 3px;
     }
 
+ 
+            /* menu desplegable instalaciones */
+            .dropdown-menu-instalaciones {
+                width: 145px;
+                padding: 2px;
+                gap: 2px;
+                left: -2rem;
+            }
+
+            .dropdown-menu-instalaciones.show-instalaciones {
+            }
+
+            .dropdown-menu-instalaciones div {
+            }
+
+            .dropdown-menu-instalaciones div:hover {
+            }
+
+
+            .subpagina-instalaciones{
+                padding: 3px;
+            } 
+
 }
 
 
@@ -428,7 +494,31 @@
         padding: 3px;
     }
 
+
+            /* menu desplegable instalaciones */
+            .dropdown-menu-instalaciones {
+                width: 200px;
+                padding: 2px;
+                gap: 2px;
+                left: -2.8rem;
+            }
+
+            .dropdown-menu-instalaciones.show-instalaciones {
+            }
+
+            .dropdown-menu-instalaciones div {
+            }
+
+            .dropdown-menu-instalaciones div:hover {
+            }
+
+
+            .subpagina-instalaciones{
+                padding: 3px;
+            }
+
 }
+
 
 
 @media only screen and (min-width: 1200px) {
@@ -502,6 +592,27 @@
         padding: 3px;
     }
 
-}
 
-                            
+            /* menu desplegable instalaciones */
+            .dropdown-menu-instalaciones {
+                width: 250px;
+                padding: 3px;
+                gap: 3px;
+                left: -3.5rem;
+            }
+
+            .dropdown-menu-instalaciones.show-instalaciones {
+            }
+
+            .dropdown-menu-instalaciones div {
+            }
+
+            .dropdown-menu-instalaciones div:hover {
+            }
+
+
+            .subpagina-instalaciones{
+                padding: 3px;
+            }
+
+}
