@@ -33,6 +33,10 @@ export const HeaderPaginasNavegacion = () => {
         setIsDropdownVisible(false); // Oculta el menú desplegable
     };
 
+    const handleMostrarMenu = () => {
+        setIsDropdownVisible(true);
+    }
+
     useEffect(() => {
         // Cambia `active` solo si la ruta cambia manualmente
         setActive(location.pathname);
@@ -100,10 +104,10 @@ export const HeaderPaginasNavegacion = () => {
 
                                                 </div>
                                                         
-                                                <div className=' headerPaginasNavegacion_MenuDesplegable '>
+                                                <div className=' headerPaginasNavegacion_MenuDesplegable ' onClick={ handleMostrarMenu }>
                                                         
                                                         {/* Menú desplegable */}
-                                                        <div className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}>
+                                                        <div className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`} >
                                                             <div className='subpagina' onClick={() => handleClick('/proyectoPage/arte')}>Arte</div>
                                                             <div className='subpagina' onClick={() => handleClick('/proyectoPage/musica')}>Música</div>
                                                             <div className='subpagina' onClick={() => handleClick('/proyectoPage/psicomotricidad')}>Psicomotricidad</div>
