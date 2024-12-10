@@ -54,34 +54,30 @@
                                 color: rgb(255, 255, 255);
                             }
 
-/* Menu desplegable */
+
 .headerPaginasNavegacion_MenuDesplegable {
     position: relative;
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
     position: absolute;
-    top: 100%; /* Aparece justo debajo del botón */
+    top: 100%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    /* z-index: 999; */
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.8s ease; /* Transición de opacidad */
-    pointer-events: none; /* Evita que el menú interactúe cuando está oculto */
-
-    /* padding: 3px;
-    gap: 3px;
-    left: -1.5rem; */
+    opacity: 0;
+    transition: opacity 0.8s ease; 
+    pointer-events: none; 
 }
 
-/* Menú visible */
+
 .dropdown-menu.show {
     opacity: 1;
-    pointer-events: auto; /* Permite la interacción cuando está visible */
+    pointer-events: auto; 
     color: rgb(38, 139, 210);
+} 
 
-}
+
 
 .dropdown-menu div {
     cursor: pointer;
@@ -91,7 +87,42 @@
 .dropdown-menu div:hover {
     color:rgb(16, 44, 138);
     background-color: rgb(206, 222, 232);
+}*/
+
+
+
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
+
+.dropdown-menu.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-menu div {
+    cursor: pointer;
+    transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+.dropdown-menu div:hover {
+    color: rgb(16, 44, 138);
+    background-color: rgb(206, 222, 232);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .subpagina{
     background-color: #ddedf7;

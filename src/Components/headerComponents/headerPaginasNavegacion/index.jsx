@@ -7,41 +7,53 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 
 export const HeaderPaginasNavegacion = () => {
-
-
     const navigate = useNavigate();
-
     const location = useLocation();
-    
-    const [active, setActive] = useState(location.pathname || '/inicioPage');
 
-    const [isDropdownVisible, setIsDropdownVisible] = useState(false); // Estado para controlar la visibilidad del menú desplegable
+    const [active, setActive] = useState(location.pathname || '/inicioPage');
+    const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+    const [isActivated, setIsActivated] = useState(false);
 
     const handleClick = (path) => {
         if (active !== path) {
-            setActive(path); // Actualizar el estado `active` a la ruta seleccionada
-            navigate(path);  // Navegar a la página correspondiente
+            setActive(path);
+            navigate(path);
         }
-        setIsDropdownVisible(false);
+        setIsDropdownVisible(false); // Oculta el menú al navegar
+        setIsActivated(false); // Reinicia la activación
     };
 
-    const handleMouseEnter = () => {
-        setIsDropdownVisible(true); // Muestra el menú desplegable
+    const handleProjectClick = () => {
+        if (!isActivated) {
+            setIsActivated(true); // Activa "Proyecto" al primer clic
+        }
+        setIsDropdownVisible(!isDropdownVisible); // Alterna el menú desplegable
+        setActive('/proyectoPage'); // Marca "Proyecto" como activo
     };
 
-    const handleMouseLeave = () => {
-        setIsDropdownVisible(false); // Oculta el menú desplegable
+    const handleMouseEnterProject = () => {
+        if (isActivated) {
+            setIsDropdownVisible(true); // Muestra el menú si está activado
+        }
     };
 
-    const handleMostrarMenu = () => {
-        setIsDropdownVisible(true);
-    }
+    const handleMouseLeaveProject = () => {
+        setIsDropdownVisible(false); // Oculta el menú al salir
+    };
+
+    const handleMouseEnterMenu = () => {
+        if (isActivated) {
+            setIsDropdownVisible(true); // Mantiene el menú visible al entrar
+        }
+    };
+
+    const handleMouseLeaveMenu = () => {
+        setIsDropdownVisible(false); // Oculta el menú al salir completamente del área
+    };
 
     useEffect(() => {
-        // Cambia `active` solo si la ruta cambia manualmente
-        setActive(location.pathname);
+        setActive(location.pathname); // Actualiza `active` si la ruta cambia manualmente
     }, [location.pathname]);
-
 
     return (
         <>
@@ -91,35 +103,48 @@ export const HeaderPaginasNavegacion = () => {
 
                                 {/* --------------------------------------------------------------------------------------- */}
 
-                                    <div>
-                                        <div className='headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide' />
-                                        <div onMouseLeave={handleMouseLeave}>
-                                                <div className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
-                                                                headerPaginasNavegacion-texto
-                                                                ${active.startsWith('/proyectoPage') ? 'headerPaginasNavegacion-active' : ''}`}
-                                                    onClick={() => handleClick('/proyectoPage')}
-                                                    onMouseEnter={handleMouseEnter} >
+                                <div
+                        onMouseEnter={handleMouseEnterProject} // Muestra el menú al entrar
+                        onMouseLeave={handleMouseLeaveProject} // Oculta el menú al salir
+                    >
+                        <div className="headerPaginasNavegacion-inicioCasaLogo inicioCasaLogo-hide" />
+                        <div
+                            className={`headerPaginasNavegacion-inicioCasaLogo-texto-container 
+                                headerPaginasNavegacion-texto
+                                ${active.startsWith('/proyectoPage') ? 'headerPaginasNavegacion-active' : ''}`}
+                            onClick={handleProjectClick} // Activa "Proyecto" y muestra el menú
+                        >
+                            Proyecto
+                        </div>
 
-                                                        Proyecto
-
-                                                </div>
-                                                        
-                                                <div className=' headerPaginasNavegacion_MenuDesplegable ' onClick={ handleMostrarMenu }>
-                                                        
-                                                        {/* Menú desplegable */}
-                                                        <div className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`} >
-                                                            <div className='subpagina' onClick={() => handleClick('/proyectoPage/arte')}>Arte</div>
-                                                            <div className='subpagina' onClick={() => handleClick('/proyectoPage/musica')}>Música</div>
-                                                            <div className='subpagina' onClick={() => handleClick('/proyectoPage/psicomotricidad')}>Psicomotricidad</div>
-                                                            <div className='subpagina' onClick={() => handleClick('/proyectoPage/juego')}>Juego</div>
-                                                            <div className='subpagina' onClick={() => handleClick('/proyectoPage/yoga')}>Yoga</div>
-                                                            <div className='subpagina' onClick={() => handleClick('/proyectoPage/naturaleza')}>Naturaleza</div>
-                                                        </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                
+                        <div
+                            className="headerPaginasNavegacion_MenuDesplegable"
+                            onMouseEnter={handleMouseEnterMenu} // Mantiene el menú abierto al entrar
+                            onMouseLeave={handleMouseLeaveMenu} // Oculta el menú al salir completamente del área del menú desplegable
+                        >
+                            {/* Menú desplegable */}
+                            <div className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}>
+                                <div className="subpagina" onClick={() => handleClick('/proyectoPage/arte')}>
+                                    Arte
+                                </div>
+                                <div className="subpagina" onClick={() => handleClick('/proyectoPage/musica')}>
+                                    Música
+                                </div>
+                                <div className="subpagina" onClick={() => handleClick('/proyectoPage/psicomotricidad')}>
+                                    Psicomotricidad
+                                </div>
+                                <div className="subpagina" onClick={() => handleClick('/proyectoPage/juego')}>
+                                    Juego
+                                </div>
+                                <div className="subpagina" onClick={() => handleClick('/proyectoPage/yoga')}>
+                                    Yoga
+                                </div>
+                                <div className="subpagina" onClick={() => handleClick('/proyectoPage/naturaleza')}>
+                                    Naturaleza
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                                 {/* --------------------------------------------------------------------------------------- */}
                                 
                                     <div>
